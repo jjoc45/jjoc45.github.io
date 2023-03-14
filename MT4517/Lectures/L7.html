@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Ring homomorphisms and isomorphisms
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">A{text-decoration:none} A:hover{text-decoration:underline}</style>
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Rings and Fields</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Division and Euclidean algorithms)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Factor rings and the isomorphism theorems)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Ring homomorphisms and isomorphisms
+</font></h2>
+<p>
+Just as in Group theory we look at maps which "preserve the operation", in Ring theory we look at maps which preserve both operations.
+<p align=justify>
+<font color=red><b>Definition</b></font>
+<p align=justify>
+A map <i>f</i> : <i>R</i>&#8594; <i>S</i> between rings is called a <b>ring homomorphism</b> if<br>
+<i>f</i>(<i>x</i> + <i>y</i>) = <i>f</i>(<i>x</i>) + <i>f</i>(<i>y</i>) and <i>f</i>(<i>xy</i>) + <i>f</i>(<i>x</i>)<i>f</i>(<i>y</i>) for all <i>x</i>, <i>y</i> &#8712; <i>R</i>.
+<p align=justify>
+<font color=green><b>Remarks</b></font><br>
+<ol type=a><li>The operations on the left are in the ring <i>R</i>; those on the right are in <i>S</i>.
+<p align=justify>
+<li>Since such a homomorphism is a group homomorphism from (<i>R</i>, +) to (<i>S</i>, +) it maps 0<sub><i>R</i></sub> to 0<sub><i>S</i></sub>.<br>
+Even if the rings <i>R</i> and <i>S</i> have multiplicative identities a ring homomorphism will not necessarily map 1<sub><i>R</i></sub> to 1<sub><i>S</i></sub>.
+<p align=justify>
+<li>It is easy to check that the composition of ring homomorphisms is a ring homomorphism.<br>
+</ol><br>
+<font color=red><b>Definition</b></font>
+<p align=justify>
+A ring homomorphism which is a bijection (one-one and onto) is called a <b>ring isomorphism</b>.
+<p align=justify>
+If <i>f</i> : <i>R</i> &#8594; <i>S</i> is such an isomorphism, we call the rings <i>R</i> and <i>S</i> isomorphic and write <i>R</i> <img src= "../Symbolgifs/iso.gif" > <i>S</i>.
+<p align=justify>
+<font color=green><b>Remarks</b></font><br>
+<ol type=a><br>
+<li>Isomorphic rings have all their ring-theoretic properties identical. One such ring can be regarded as "the same" as the other.<br>
+<li>The inverse map of the bijection f is also a ring homomorphism.<br>
+</ol><br>
+<font color=blue><b>Examples</b></font><br>
+<ol><br>
+<li>The map from <b>Z</b> to <b>Z</b><sub><i>n</i></sub> given by <i>x</i> &#8614; <i>x</i> mod <i>n</i> is a ring homomorphism. It is not (of course) a ring isomorphism.
+<p align=justify>
+<li>The map from <b>Z</b> to <b>Z</b> given by <i>x</i> &#8614; 2<i>x</i> is a group homomorphism on the additive groups but is not a ring homomorphism.
+<p align=justify>
+<li>The map from <b>Z</b> to the ring of 2 &#215; 2 real matrices given by x &#8614; <img src= ../Diagrams/L7_1.gif align = middle>  is a ring homomorphism which does not map the multiplicative identity to the multiplicative identity. 
+<p align=justify>
+Of course the map <i>x</i> &#8614; <i>x</i> mod <i>n</i> is a homomorphism which does map the identity to the identity.<br>
+<li>The "evaluation at <sup>1</sup>/<sub>2</sub> map" from the ring of continuous real-valued functions on the interval [0, 1] to <b>R</b> given by (<i>e</i><sub>&#189;</sub>)<i>f</i> = <i>f</i> (<sup>1</sup>/<sub>2</sub>) for <i>f</i> belongs <i>C</i>[0, 1] is a ring homomorphism.
+<p align=justify>
+<li>The "evaluation at 1 map" from the ring <b>Q</b>[<i>x</i>] to <b>Q</b> given by (<i>e</i><sub>1</sub>)<i>p</i> = <i>p</i>(1) for <i>p</i> &#8712; <b>Q</b>[x] is a ring homomorphism.<br>
+That is: <i>e</i><sub>1</sub>(<i>a</i><sub>0</sub> + <i>a</i><sub>1</sub><i>x</i> + <i>a</i><sub>2</sub><i>x</i><sup>2</sup> + ... + <i>a</i><sub><i>n</i></sub><i>x</i><sup><i>n</i></sup>) = <i>a</i><sub>0</sub> + <i>a</i><sub>1</sub> + <i>a</i><sub>2</sub> + ... + <i>a</i><sub><i>n</i></sub>.
+<p align=justify>
+<li>The "evaluation at &#8730;2 map" from <b>Z</b>[<i>x</i>] to <b>R</b> given by <i>p</i> &#8614; <i>p</i>(&#8730;2) is a ring homomorphism.<br>
+This will turn out to be a surprisingly important example.
+<p align=justify>
+<li>The map from <b>C</b> to ring of 2 &#215; 2 real matrices given by <i>a</i> + <i>bi</i> &#8614; <img src= ../Diagrams/L7_3.gif align = middle> is a ring isomorphism.
+<p align=justify>
+<font color=green><b>Proof</b></font>: Exercise.<img src= ../Diagrams/xproofend.gif align = right>
+<p align=justify>
+<li>Let <i>R</i> be the field with 9 elements {<i>a</i> + <i>bx</i> | <i>a</i>, <i>b</i> &#8712; <b>Z</b><sub>3</sub>} and the multiplication rule <i>x</i><sup>2</sup> = -1. <br>
+Let <i>S</i> be the field with 9 elements {<i>a</i> + <i>by</i> | <i>a</i>, <i>b</i> &#8712; <b>Z</b><sub>3</sub> } and the multiplication rule <i>y</i><sup>2</sup> = <i>y</i> + 1.<br>
+Then the map defined by 1 &#8614; 1 and <i>x</i> &#8614; <i>y</i> + 1 defines a ring isomorphism.
+<p align=justify>
+<font color=green><b>Proof</b></font>: We'll see a neat way of proving this later.<img src= ../Diagrams/xproofend.gif align = right><br>
+</ol><br>
+The connection of this with the last section is given by:
+<p align=justify>
+<font color=red><b>Definition</b></font>
+<p align=justify>
+The <b>kernel</b> of a (ring) homomorphism is the set of elements mapped to 0.
+<p align=justify>
+That is, if <i>f</i>: <i>R</i>&#8594; <i>S</i> is a ring homomorphism, <i>ker</i>(<i>f</i>) = <i>f</i><sup>-1</sup>(0) = {<i>r</i> &#8712; <i>R</i> | <i>f</i>(<i>r</i>) = 0<sub><i>S</i></sub> }.
+<p align=justify>
+<font color=red><b>Theorem</b></font>
+<p align=justify>
+The kernel of a ring homomorphism is an ideal.
+<p align=justify>
+<font color=green><font color=red>Proof</font></font><br>
+An easy verification.<img src= ../Diagrams/xproofend.gif align = right>
+<p align=justify>
+<font color=green><b>Remarks</b></font>
+<p align=justify>
+<ol type=a><li>Note the similarity with the corresponding result for groups: <i>the kernel of a group homomorphism is a normal subgroup.</i>
+<p align=justify>
+<li>If the ring <i>R</i> is not commutative, the kernel is a two-sided ideal.<br>
+</ol><br>
+<font color=blue><b>Examples</b></font>
+<p align=justify>
+<ol><li>The kernel of the above map from <b>Z</b> to <b>Z</b><sub><i>n</i></sub> is the ideal <i>n</i><b>Z</b>.
+<p align=justify>
+<li>Just as in the group-theory case, the kernel of a homomorphism is {0} if and only if the homomorphism is one-one.<br>
+<font color=green><b>Proof</b></font><br>
+(=>) If <i>f</i>(<i>r</i>) = <i>f</i>(<i>s</i>) then <i>f</i>(<i>r</i> - <i>s</i>) = 0 and so <i>r</i> - <i>s</i> belongs <i>ker</i>(<i>f</i>) and we have <i>r</i> - <i>s</i> = 0.<br>
+(<=) If <i>a</i> &#8712; <i>ker</i>(<i>f</i>) and <i>a</i> &#8800; 0 then <i>a</i>, 0 &#8614; 0 and so the map is not one-one.<img src= ../Diagrams/xproofend.gif align = right>
+<p align=justify>
+<li>The kernel of the "evaluation at 0" map from <b>R</b>[<i>x</i>] to <b>R</b> is the ideal  &lt; <i>x</i> &gt;  of polynomials with zero constant terms.
+<p align=justify>
+<li>The kernel of the "evaluation at 0 taken modulo 2" map from <b>Z</b>[<i>x</i>] to <b>Z</b><sub>2</sub> is the ideal  &lt; 2, <i>x</i> &gt;  of polynomials with even constant terms.<br>
+</ol><br>
+<font color=green><b>Remark</b></font>
+<p align=justify>
+We will see later that every ideal is the kernel of a ring homomorphism. This is similar to the group theory result that every normal subgroup is the kernel of a group homomorphism.
+<p align=justify>
+The last result in this section also parallels the corresponding example in Group theory,
+<p align=justify>
+<font color=red><b>Theorem</b></font>
+<p align=justify>
+The image of a ring homomorphism <i>f</i>: <i>R</i>&#8594; <i>S</i> is a subring of <i>S</i>.
+<p align=justify>
+<font color=green><b>Proof</b></font>
+<p align=justify>
+The image is the set <i>im</i>(<i>f</i>) = {<i>s</i> &#8712; <i>S</i> | <i>s</i> = <i>f</i>(<i>r</i>) for some <i>r</i> &#8712; <i>R</i> }. It is easy to do the verification.<img src= ../Diagrams/xproofend.gif align = right>
+<p align=justify>
+<font color=blue><b>Example</b></font>
+<p align=justify>
+The image of <i>e</i><sub>&#8730;2</sub>  from <b>Z</b>[<i>x</i>] to <b>R</b> is the subring {<i>a</i> + <i>b</i> &#8730;2 | <i>a</i>, <i>b</i> &#8712; <b>Z</b> } we met earlier.<img src= ../Diagrams/xproofend.gif align = right><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Division and Euclidean algorithms)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Factor rings and the isomorphism theorems)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC/EFR 2004</font>
+</body></html>
+<p>
