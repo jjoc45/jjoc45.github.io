@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Solution 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">A{text-decoration:none} A:hover{text-decoration:underline}</style></head>
+<body bgcolor="ffffff">
+<font color=red> Rings and Fields</font>
+<hr>
+<h2><font color=blue>Solution 5</font></h2>
+<p>
+<ol><p><li>The other irreducible polynomial in <b>Z</b><sub>3</sub>[<i>x</i>] is <i>x</i><sup>2</sup> + <i>x</i> + 2. <br>
+The map <i>x</i> &#8614; <i>y</i> + 2 maps <b>Z</b><sub>3</sub>[<i>x</i>]/ &lt; <i>x</i><sup>2</sup> + 1 &gt; isomorpically to <b>Z</b><sub>3</sub>[<i>y</i>]/ &lt; <i>y</i><sup>2</sup> + <i>y</i> + 2 &gt; .
+<p align=justify>
+The map <i>x</i> &#8614; <i>y</i> + 1 maps <b>Z</b><sub>2</sub>[<i>x</i>]/ &lt; <i>x</i><sup>3</sup> + <i>x</i><sup>2</sup> + 1 &gt; isomorpically to <b>Z</b><sub>2</sub>[<i>y</i>]/ &lt; <i>y</i><sup>3</sup> + <i>y</i> + 1 &gt; .
+<p align=justify>
+<br>
+
+<p><li>There are <i>p</i> quadratic polynomials of the form (<i>x</i> - <i>&#945;</i>)<sup>2</sup> and <i>p</i>(<i>p</i> - 1)/2 of the form (<i>x</i> - <i>&#945;</i>)(<i>x</i> - <i>&#946;</i>). Since there are <i>p</i><sup>2</sup> quadratic polynomials altogether and any reducible quadratic polynomial is a product of linear factors, there are <i>p</i><sup>2</sup> - <i>p</i> - <i>p</i>(<i>p</i> - 1)/2 = <sup>1</sup>/<sub>2</sub> <i>p</i>(<i>p</i> - 1) irreducible ones.
+<p align=justify>
+Play the same game with the cubic polynomials:<br>
+There are <i>p</i> of the form (<i>x</i> - <i>&#945;</i>)<sup>3</sup>, <i>p</i>(<i>p</i> - 1) of the form (<i>x</i> - <i>&#945;</i>)(<i>x</i> - <i>&#946;</i>)<sup>2</sup> and <i>p</i>(<i>p</i> - 1)(<i>p</i> - 2)/6 of the form (<i>x</i> - <i>&#945;</i>)(<i>x</i> - <i>&#946;</i>)(<i>x</i> - <i>&#947;</i>).<br>
+The other reducible ones are of the form (<i>x</i> - <i>&#945;</i>)<i>q</i>(<i>x</i>) with <i>q</i>(<i>x</i>) an irreducible quadratic. <br>
+We've just counted those and so there are <i>p</i>  &#215; <i>p</i>(<i>p</i> - 1)/2 like this. <br>
+Take these away from the total number <i>p</i><sup>3</sup> of all cubic monic polynomials to get <sup>1</sup>/<sub>3</sub> <i>p</i>(<i>p</i>-1)(<i>p</i>+1) irreducible ones.
+<p align=justify>
+The corresponding formulae for irreducible polynomials of degrees 4, 5, 6 and 7 are:<br>
+<sup>1</sup>/<sub>4</sub> <i>p</i>(<i>p</i> - 1)(<i>p</i> + 1)<i>p</i><br>
+<sup>1</sup>/<sub>5</sub> <i>p</i>(<i>p</i> - 1)(<i>p</i> + 1)(<i>p</i><sup>2</sup> + 1)<br>
+<sup>1</sup>/<sub>6</sub> <i>p</i>(<i>p</i> - 1)(<i>p</i> + 1)(<i>p</i><sup>3</sup> + <i>p</i> - 1)<br>
+<sup>1</sup>/<sub>7</sub> <i>p</i>(<i>p</i> - 1)(<i>p</i> + 1)(<i>p</i><sup>4</sup> + <i>p</i><sup>2</sup> + 1)
+<p align=justify>
+<br>
+
+<p><li>Let <i>f</i> (for Frobenius!) be the map. Then it is easy to see that <i>f</i>(<i>ab</i>) = <i>f</i>(<i>a</i>)<i>f</i>(<i>b</i>).<br>
+For the addition: <i>f</i>(<i>a</i> + <i>b</i>) = (<i>a</i> + <i>b</i>)<sup><i>p</i></sup> = <i>a</i><sup><i>p</i></sup>+ <sub><i>p</i></sub><i>C</i><sub>1</sub><i>a</i><sup><i>p</i>-1</sup><i>b</i> + ... + <sub><i>p</i></sub><i>C</i><sub><i>p</i>-1</sub><i>ab</i><sup><i>p</i>-1</sup> + <i>b</i><sup><i>p</i></sup> = <i>a</i><sup><i>p</i></sup> + <i>b</i><sup><i>p</i></sup> as required since all the binomial coefficients vanish mod <i>p</i>.<br>
+To see that the binomial coefficient is divisible by <i>p</i> if <i>p</i> is prime, observe that <sub><i>p</i></sub><i>C</i><sub><i>r</i></sub> = <i>p</i>! (<i>p</i> - <i>r</i>)! /<i>r</i>! and there is nothing on the bottom to cancel out the <i>p</i> in the <i>p</i>! on top
+<p align=justify>
+<br>
+
+<p><li>If <i>J</i> is an ideal of <i>S</i> then it is easy to check that <i>f</i><sup>-1</sup>(<i>J</i>) is an ideal of <i>R</i> which certainly contains <i>f</i><sup>-1</sup>(0) = <i>I</i>.<br>
+If <i>K</i> is an ideal of <i>R</i> containing <i>I</i> then <i>f</i>(<i>K</i>) is an ideal of <i>S</i>. (You need the fact that <i>f</i> is onto to verify that the image is closed under multiplication by elements of <i>S</i>.)<br>
+These two correspondences are inverse to each other:<br>
+It is easy to see that starting with <i>J</i> you get back to <i>J</i>. Starting with <i>K</i> an element <i>r</i> &#8712; <i>K</i> maps to an element <i>s</i> &#8712; <i>S</i> and then under <i>f</i><sup>-1</sup> back to a collection of elements of <i>R</i> which all differ from <i>r</i> by elements of the kernel <i>I</i>. Hence they are all in the ideal <i>K</i> and we have our original set.
+<p align=justify>
+<br>
+
+<p><li>Starting with any non-zero matrix and multiplying on the left and right by other "elementary matrices" (ones with one 1 and 3 zeros) will let you get a non-zero entry in any of the four positions. Then multiplying by scalar matrices and adding will let you get any matrix. Hence an ideal which contains any non-zero matrix must contain them all. So the ring has only two ideals {0} and <i>R</i>.<br>
+A similar proof shows that any matrix ring with field entries is simple. (Where did we use the fact that the entries were from a field?)
+<p align=justify>
+<br>
+
+<p><li>Try a few. The element 1 has order 1; 2 has order 2; <i>x</i> and 2<i>x</i> have order 4; the rest have order 8.
+<p align=justify>
+Since <i>x</i><sup>3</sup> + 2<i>x</i> = -1 we have 2<i>x</i>(<i>x</i><sup>2</sup> + 2) = 1 and so <i>x</i><sup>-1</sup> = 2<i>x</i><sup>2</sup> + 1.
+<p align=justify>
+Since the group has order 26 the order of an element is either 1, 2, 13 or 26 (by Lagrange's theorem). So we need only show that <i>x</i> does not have order 13. If <i>x</i> has order 13 then <i>x</i><sup>-1</sup> = <i>x</i><sup>12</sup>. Since <i>x</i><sup>3</sup> = <i>x</i> +2, we have <i>x</i><sup>6</sup> = <i>x</i><sup>2</sup> + <i>x</i> + 1 and <i>x</i><sup>12</sup> = <i>x</i><sup>2</sup> + 1 &#8800; <i>x</i><sup>-1</sup>.<br>
+So <i>x</i> has order 26.
+<p align=justify>
+In a cyclic group of order 26, the number of generators is the number of elements 1, 2, ..., 25 which are coprime to 26. There are 12 of these.
+<p align=justify>
+<br>
+
+<p><li>Substitute to verify that <i>x</i><sup>2</sup> + <i>x</i> has roots 0, 2, 3 and 5. This does not contradict the result that a polynomial of degree <i>k</i> has at most <i>k</i> roots because that was for polynomials <i>over a field</i>.
+<p align=justify>
+<br>
+
+<p><li>By FLT the polynomial gives zero on substituting <i>x</i> = 0, 1, 2, ... , <i>p</i> - 1. Hence it factorises into <i>p</i> linear factors.
+<p align=justify>
+Proving FLT uses the fact that the multiplicative group of the field <b>Z</b><sub><i>p</i></sub> has <i>p</i> - 1 elements and that the order of any element divides the order of the group. The same proof works for the multiplicative group of the field of order <i>p</i><sup><i>k</i></sup>. (You don't even need the fact that the group is cyclic!)
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

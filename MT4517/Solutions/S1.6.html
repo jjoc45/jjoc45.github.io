@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Solution 1.6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">A{text-decoration:none} A:hover{text-decoration:underline}</style></head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 1.6</font></h2>
+<p>
+
+a)&nbsp;&nbsp;<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = (<i>p</i><sup>2</sup> - <i>q</i><sup>2</sup>)<sup>2</sup> + (2<i>pq</i>)<sup>2</sup> = (<i>p</i><sup>4</sup> - 2<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + <i>q</i><sup>4)</sup>+ 4<i>p</i><sup>2</sup><i>q</i><sup>2</sup> =  <i>p</i><sup>4</sup> + 2<i>p</i><sup>2</sup><i>q</i><sup>2</sup> + <i>q</i><sup>4</sup> = (<i>p</i><sup>2</sup> + <i>q</i><sup>2</sup>)<sup>2</sup> = <i>c</i><sup>2</sup>.  <img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+b)&nbsp;&nbsp;Any square modulo 4 is either 0 or 1. Since <i>a</i> and <i>b</i> are coprime they are not both even and since <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> is a square this must be 1 mod 4. Hence <i>a</i> and <i>b</i> cannot both be odd.  <img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+c)&nbsp;&nbsp;We have both <i>a</i> and <i>c</i> odd and so <i>a</i> &#177; <i>b</i> are both even and we may take (<i>c</i> + <i>a</i>)/2 = <i>P</i> and (<i>c</i> - <i>a</i>)/2 = <i>Q</i>. We need to show that <i>P</i> and <i>Q</i> are exact squares. <br>
+Then 4<i>PQ</i> = (<i>c</i> + <i>a</i>)(<i>c</i> - <i>a</i>) = <i>c</i><sup>2</sup> - <i>a</i><sup>2</sup> = <i>b</i><sup>2</sup>. Since <i>a</i>, <i>b</i> are coprime, so are <i>a</i>, <i>b</i> and <i>c</i> and hence <i>c</i> + <i>a</i> and <i>c</i> - <i>a</i> have no common factors. So <i>P</i> and <i>Q</i> are coprime and since the product 4<i>PQ</i> is a square, both <i>P</i> and <i>Q</i> are squares. So take <i>p</i> = &#8730;<i>P</i> and <i>q</i> = &#8730;<i>Q</i> and we have <i>b</i> = 2<i>pq</i> as required.  <img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Taking small coprime values for <i>p</i>, <i>q</i> with <i>p</i>, <i>q</i> not both odd gives the eight primitive Pythagorean triples:<br>
+(3, 4, 5), (15, 8, 17), (35, 12, 37), (5, 12, 13), (21, 20, 29), (45, 28, 53), (7, 24, 25), (9, 40, 41).   <img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+d)&nbsp;&nbsp;The above pair (<i>a</i>, <i>b</i>) = (21, 20) is pretty good. The next good ones are (119, 120), (697, 696), (4059, 4060), (23661, 23660), (137903, 137904), ... corresponding to <i>p</i> = 5, 12, 29, 70, 169, 408, ... and <i>q</i> = 2, 5, 12, 29, 70, 169, ... which you can find using Maple. Can you see how these sequences of <i>p</i>'s and <i>q</i>'s continue?<br>
+e)&nbsp;&nbsp;This suggests looking for <i>a</i> - <i>b</i> = &#177;1 or equivalently (<i>p</i><sup>2</sup> - <i>q</i><sup>2</sup>) - 2<i>pq</i> = &#177;1. We can write this as (<i>p</i> - <i>q</i>)<sup>2</sup> - 2<i>q</i><sup>2</sup> = &#177;1 or, putting <i>p</i> - <i>q</i> = <i>r</i> as <i>r</i><sup>2</sup> - 2<i>q</i><sup>2</sup> = &#177;1. This is a famous equation called <i>Pell's equation</i> and can be solved (with infinitely many solutions) by continued fractions methods.<br>
+For example, take <i>r</i> = 577 and <i>q</i> = 408  giving <i>p</i> = 985 and (<i>a</i>, <i>b</i>) = (803761, 803760).<br>
+You can find out more about this at:<br>
+<a href= http://www-history.mcs.st-and.ac.uk/HistTopics/Pell.html >http://www-history.mcs.st-and.ac.uk/HistTopics/Pell.html</a><br>
+
+<p>
+
+</body></html>
+<p>
