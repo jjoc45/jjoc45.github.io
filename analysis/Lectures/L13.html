@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>The epsilon-delta definition</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L12.html">Previous page</a><br>
+(Limits of functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L14.html">Next page</a><br>
+(Some horrible functions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The epsilon-delta definition</font></h2>
+<p>
+<dl>From the above definition of convergence using sequences is useful because the arithmetic properties of sequences gives an easy way of proving the corresponding arithmetic properties of continuous functions. We now use this definition to deduce the more well-known <i>&#949;</i>-<i>&#948;</i> definition of continuity.
+<p align=justify>
+Informally: <i>Close points</i> (<i>&#948;</i> apart) <i>are mapped to close points</i> (<i>&#949;</i> apart).
+<p align=justify>
+We formalise this to get the following:
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A function <i>f</i> from <b>R</b> to <b>R</b> is <b>continuous at a point <i>p</i> &#8712; R</b> if<br>
+given <i>&#949;</i> &gt; 0 there exists <i>&#948;</i> &gt; 0 such that if |<i>p</i> - <i>x</i>| &lt; <i>&#948;</i> then |<i>f</i> (<i>p</i>) - <i>f</i> (<i>x</i>)| &lt; <i>&#949;</i>.
+<p align=justify>
+<dt><b><font color=green>Theorem</font></b><br>
+<dd><i>This definition is equivalent to the previous one.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd><i>First</i>, we show that continuity in this definition implies continuity in the previous definition.<br>
+So suppose (<i>x</i><sub><i>n</i></sub>)&#8594; <i>p</i>. We must prove that (<i>f</i> (<i>x</i><sub><i>n</i></sub>))&#8594; <i>f</i> (<i>p</i>). <br>
+That is given <i>&#949;</i> &gt; 0 we must find <i>N</i> such that |<i>f</i> (<i>x</i><sub><i>n</i></sub>) - <i>f</i> (<i>p</i>)| &lt; <i>&#949;</i> if <i>n</i> &gt; <i>N</i>.<br>
+Given such an <i>&#949;</i> from the new definition of continuity there is a <i>&#948;</i> such that |<i>f</i> (<i>x</i><sub><i>n</i></sub>) - <i>f</i> (<i>p</i>)| &lt; <i>&#949;</i> whenever |<i>x</i><sub><i>n</i></sub>- <i>p</i>| &lt; <i>&#948;</i>.<br>
+Since (<i>x</i><sub><i>n</i></sub>) converges to <i>p</i>, there is a <i>N</i> such that this happens whenever <i>n</i> &gt; <i>N</i> and so with this value of <i>N</i> our definition is satisfied.
+<p align=justify>
+<i>Secondly</i>, we show that the sequential definition implies the <i>&#949;</i>-<i>&#948;</i> one.<br>
+Given <i>&#949;</i> &gt; 0, suppose that we could not find a suitable <i>&#948;</i>. Then <i>&#948;</i> = 1 would not work and so we must have some <i>x</i><sub>1</sub> such that |<i>x</i><sub>1</sub>- <i>p</i>| &lt; 1 and |<i>f</i> (<i>x</i><sub>1</sub>) - <i>f</i> (<i>p</i>)| &gt; <i>&#949;</i>.<br>
+Similarly, <i>&#948;</i> = <sup>1</sup>/<sub>2</sub>will not work, and so we can find <i>x</i><sub>2</sub> further down the sequence than <i>x</i><sub>1</sub> such that |<i>x</i><sub>2</sub>- <i>p</i>| &lt; <sup>1</sup>/<sub>2</sub> and |<i>f</i> (<i>x</i><sub>2</sub>) - <i>f</i> (<i>p</i>)| &gt; <i>&#949;</i>.<br>
+Continuing in this way we get a sequence (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, ... ) which by construction converges to <i>p</i>, but for which <i>f</i> (<i>x</i><sub><i>n</i></sub>) is always at least <i>&#949;</i> away from <i>f</i> (<i>p</i>). So we cannot have (<i>f</i> (<i>x</i><sub><i>n</i></sub>)) converging to <i>f</i> (<i>p</i>) and we have a contradiction.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Application</font></b>
+<p align=justify>
+<dd><i>The function defined by </i><i>f</i> (<i>x</i>) = &#8730;<i>x</i> <i>is continuous.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Given <i>&#949;</i> &gt; 0 we must show that |&#8730;<i>x</i> - &#8730;<i>p</i>| &lt; <i>&#949;</i> provided that <i>x</i>, <i>p</i> are close enough.<br>
+Now |&#8730;<i>x</i> - &#8730;<i>p</i>| = |<i>x</i> - <i>p</i>|/|&#8730;<i>x</i> + &#8730;<i>p</i>| &lt; |<i>x</i> - <i>p</i>| /&#8730;<i>p</i> and so choosing <i>&#948;</i> = <i>&#949;</i>/&#8730;<i>p</i> will do.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Remark</font></b>
+<p align=justify>
+<dd>The definition of continuity "doesn't quite work" at <i>p</i> = 0 for this function since the function is not defined for <i>x</i> &lt; 0. One can define a notion of "one-sided continuity" to take care of examples like this.<br>
+</dl>
+<p align=justify>
+<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L12.html">Previous page</a><br>
+(Limits of functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L14.html">Next page</a><br>
+(Some horrible functions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

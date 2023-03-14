@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Continuity for Real functions</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L10.html">Previous page</a><br>
+(Cauchy sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L12.html">Next page</a><br>
+(Limits of functions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Continuity for Real functions</font></h2>
+<p>
+<dl>We now introduce the second important idea in Real analysis.
+<p align=justify>
+Continuity can be defined in several different ways which make rigorous the idea that a continuous function has a graph with no breaks in it or equivalently that "close points" are mapped to "close points".
+<p align=justify>
+For example, <img src= ../Diagrams/x11-1.gif align = middle> is the graph of a continuous function on the interval (<i>a</i>, <i>b</i>)
+<p align=justify>
+while <img src= ../Diagrams/x11-2.gif align = middle> is the graph of a function with a discontinuity at <i>c</i>.
+<p align=justify>
+To understand this, observe that some points close to <i>c</i> (arbitrarily close to the left) are mapped to points which are not close to <i>f</i> (<i>c</i>).
+<p align=justify>
+We will give a definition in terms of convergence of sequences and show later how it can be reformulated in terms of the above description.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A function <i>f</i> : <b>R</b>&#8594; <b>R</b> is said to be <b>continuous at a point <i>p</i> &#8712; R</b> if whenever (<i>a</i><sub><i>n</i></sub>) is a real sequence converging to <i>p</i>, the sequence (<i>f</i> (<i>a</i><sub><i>n</i></sub>)) converges to <i>f</i> (<i>p</i>).
+<p align=justify>
+<dt><b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A function <i>f</i> defined on a subset <i>D</i> of <b>R</b> is said to be <b>continuous</b> if it is continuous at every point <i>p</i> &#8712; <i>D</i>.
+<p align=justify>
+<dt><b><font color=red>Example</font></b>
+<p align=justify>
+<dd>In the discontinuous function above take a sequence of reals converging to <i>c</i> from below. (That is, all the terms are  &lt; <i>c</i>.) Then the image of these gives a sequence which does not converge to <i>f</i> (<i>c</i>).
+<p align=justify>
+We also have the following.
+<p align=justify>
+<dt><b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A real valued function <i>f</i> defined on a subset <i>S</i> of <b>R</b> is said to be <b>continuous</b> if it is continuous at all points of <i>S</i>.
+<p align=justify>
+<dt>It will be easier to give (a lot of) examples of continuous functions after we have proved the following two results.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+<dd>If <i>f</i> and <i>g</i> are functions from <b>R</b> to <b>R</b>, we define the function <i>f</i> + <i>g</i> by (<i>f</i> + <i>g</i>)(<i>x</i>) = <i>f</i> (<i>x</i>) + <i>g</i>(<i>x</i>) for all <i>x</i> in <b>R</b>.<br>
+Similarly we may define the difference, product and quotient of functions.
+<p align=justify>
+<dt><b><font color=green>Theorem</font></b><br>
+<dd><i>If f and g are continuous a point p of </i><b>R</b><i>, then so are  f </i>+<i> g, f - g, f.g and </i>(<i>provided g</i>(<i>p</i>) &#8800; 0)<i> <font size=+1><sup>f</sup> /<sub></sub>g </font>.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>This follows directly from the corresponding arithmetic properties of sequences.<br>
+For example: to prove that <i>f</i> + <i>g</i> is continuous at <i>p</i> &#8712; <b>R</b><br>
+Suppose (<i>x</i><sub><i>n</i></sub>)&#8594; <i>p</i>. We are told that (<i>f</i> (<i>x</i><sub><i>n</i></sub>))&#8594; <i>f</i> (<i>p</i>) and (<i>g</i>(<i>x</i><sub><i>n</i></sub>))&#8594; <i>g</i>(<i>p</i>) and we must prove that (<i>f</i> + <i>g</i>)(<i>x</i><sub><i>n</i></sub>))&#8594; (<i>f</i> + <i>g</i>)(<i>p</i>).<br>
+But the LHS of this expression is <i>f</i> (<i>x</i><sub><i>n</i></sub>) + <i>g</i>(<i>x</i><sub><i>n</i></sub>) and the RHS is <i>f</i> (<i>p</i>) + <i>g</i>(<i>p</i>) and so the result follows from the arithmetic properties of sequences.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=green>Theorem</font></b><br>
+<dd><i>The composite of continuous functions is continuous.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Suppose <i>f</i>: <b>R</b>&#8594; <b>R</b> and <i>g</i>: <b>R</b>&#8594; <b>R</b>. Then the composition <i><i>g</i></i> <img src= "../Symbolgifs/comp.gif" > <i>f</i> is defined by <i>g</i> <img src= "../Symbolgifs/comp.gif" > <i>f</i> (<i>x</i>) = <i>g</i>(<i>f</i> (<i>x</i>)).<br>
+We assume that <i>f</i> is continuous at <i>p</i> and that <i>g</i> is continuous at <i>f</i> (<i>p</i>). So suppose that (<i>x</i><sub><i>i</i></sub>)&#8594; <i>p</i>. Then (<i>f</i> (<i>x</i><sub><i>i</i></sub>))&#8594; <i>f</i> (<i>p</i>) and then (<i>g</i>(<i>f</i> (<i>x</i><sub><i>i</i></sub>)))&#8594; <i>g</i>(<i>f</i> (<i>p</i>)) which is what we need.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1>Clearly the identity function which <i>x</i> &#8614; <i>x</i> is continuous. <br>
+Hence, using the above, any polynomial function is continuous and hence any <i>rational function</i> (a ratio of polynomial functions) is continuous at any point where the denominator is non-zero.
+<p align=justify>
+<li 2>We will see later that functions like &#8730;, sin, cos, exp, log, ... are continuous. It follows that , for example sin<sup>2</sup>(<i>x</i> + 5), exp(-<i>x</i><sup>2</sup>), &#8730;(1 + <i>x</i><sup>4</sup>), ... are continuous since they are made by composing continuous functions.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L10.html">Previous page</a><br>
+(Cauchy sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L12.html">Next page</a><br>
+(Limits of functions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

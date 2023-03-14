@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Some properties of convergent sequences</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Convergence in the Reals)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Monotonic sequences)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Some properties of convergent sequences</font></h2>
+<p>
+<ol><a name ="bdd"></a><li 1><i>Any convergent sequence is bounded </i>(<i>both above and below</i>).
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose that the sequence ( <i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i>. Take <i>&#949;</i> = 1 (say). Then choose <i>N</i> so that whenever <i>n</i> &gt; <i>N</i> we have <i>a</i><sub><i>n</i></sub> within <plusminus> 1 of <i>&#945;</i>.
+<p align=justify>
+Then (apart from the finite set { <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, ... , <i>a</i><sub><i>N</i></sub>} all the terms of the sequence are bounded by <i>&#945;</i> + 1 and <i>&#945;</i> - 1. <br>
+So an upper bound for the sequence is max {<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , ... , <i>a</i><sub><i>N</i></sub> , <i>&#945;</i> + 1 }. Similarly one can find a lower bound.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><b><font color=green>Arithmetic properties</font></b>
+<p align=justify>
+<i>If the sequence</i> (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i><i> and </i>(<i>b</i><sub><i>n</i></sub>)&#8594; <i>&#946;</i><i> then</i><br>
+<dl><br>
+<dd>(i) <nb><nb> (<i>a</i><sub><i>n</i></sub>+ <i>b</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> + <i>&#946;</i><br>
+<dd>(ii) <nb><nb>(<i>a</i><sub><i>n</i></sub>- <i>b</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> - <i>&#946;</i><br>
+<dd>(iii) <nb>(<i>a</i><sub><i>n</i></sub><i>b</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> <i>&#946;</i><br>
+<dd>(iv) <nb><font size=+1>(<sup><i>a</i><sub><i>n</i></sup></sub>/<sub><i>b</i><sub><i>n</i></sub></sub>)</font>&#8594; <font size=+1><sup><i>&#945;</i></sup>/<sub><i>&#946;</i></sub></font> (<i>provided b<sub>n</i></sub>&#8800; 0 <i>and</i> <i>&#946;</i> &#8800;</i> 0).<br>
+</dl><br>
+<b><font color=green>Proof</font></b><br>
+Given <i>&#949;</i> &gt; 0, choose <i>n</i><sub>1</sub>such that if <i>n</i> &gt; <i>n</i><sub>1</sub> then <i>a</i><sub><i>n</i></sub> is closer than <i>&#949;</i> to <i>&#945;</i> and choose <i>n</i><sub>2</sub> so that when <i>n</i> &gt; <i>n</i><sub>2</sub> we have <i>b</i><sub><i>n</i></sub> is closer than <i>&#949;</i> to <i>&#946;</i>.
+<p align=justify>
+Then if <i>n</i> &gt; max {<i>n</i><sub>1</sub>, <i>n</i><sub>2</sub>} we have <i>a</i><sub><i>n</i></sub>+ <i>b</i><sub><i>n</i></sub> is closer than 2<i>&#949;</i> to <i>&#945;</i> + <i>&#946;</i> and <i>a</i><sub><i>n</i></sub>- <i>b</i><sub><i>n</i></sub> is closer than 2<i>&#949;</i> to <i>&#945;</i> - <i>&#946;</i> and so is arbitrarily small.<br>
+The others are a bit trickier:
+<p align=justify>
+|<i>a</i><sub><i>n</i></sub><i>b</i><sub><i>n</i></sub>-<i>&#945;</i><i>&#946;</i>| &#8804; | (<i>a</i><sub><i>n</i></sub>- <i>&#945;</i>)<i>b</i><sub><i>n</i></sub>+ <i>&#945;</i>(<i>b</i><sub><i>n</i></sub>- <i>&#946;</i>)| &#8804; |<i>b</i><sub><i>n</i></sub>| |(<i>a</i><sub><i>n</i></sub>- <i>&#945;</i>| + |<i>&#945;</i>| |<i>b</i><sub><i>n</i></sub>- <i>&#946;</i>| &#8804; |<i>b</i><sub><i>n</i></sub>| + |<i>&#945;</i>| <i>&#949;</i>.<br>
+But (<i>b</i><sub><i>n</i></sub>) is bounded by Property 1 above and so this is &lt; <i>M</i><i>&#949;</i> for some bound <i>M</i> and so can be made arbitrarily small by choosing <i>&#949;</i> small enough.
+<p align=justify>
+To prove the result about quotients, we first prove that <font size=+1>(<sup>1</sup>/<sub><i>b</i><sub><i>n</i></sub></sub>)</font>&#8594; <font size=+1><sup>1</sup>/<sub><i>&#946;</i></sub></font> and then use (iii) above.<br>
+<font size=+1>|<sup>1</sup>/<sub><i>b</i><sub><i>i</i></sub></sub></font> - <font size=+1><sup>1</sup>/<sub><i>&#946;</i></sub>|</font> = |<i>&#946;</i> - <i>b</i><sub><i>i</i></sub>| &lt; <font size=+1><sup><i>&#949;</i></sup>/<sub>|<i>&#946;</i><i>b</i><sub><i>i</i></sub>|</sub></font>.<br>
+So if we could prove that <font size=+1><sup>1</sup>/<sub>|<i>&#946;</i><i>b</i><sub><i>i</i></sub>|</sub></font> is bounded then we would be OK.<br>
+Now <font size=+1><sup>1</sup>/<sub>|<i>&#946;</i>|</sub></font> is OK so we've only got to worry about <font size=+1>(<sup>1</sup>/<sub><i>b</i><sub><i>n</i></sub></sub>)</font>. <br>
+We are told that (<i>b</i><sub><i>n</i></sub>)&#8594; <i>&#946;</i> and so for <i>n</i> large enough ( &gt; <i>N</i> say) we have <i>b</i><sub><i>n</i></sub> is within <font size=+1>|<sup><i>&#946;</i></sup>/<sub>2</sub> |</font> of <i>&#946;</i> and hence is at least |<i>&#946;</i>/<sub>2</sub>| away from 0. <br>
+But then <font size=+1><sup>1</sup>/<sub><i>b</i><sub><i>n</i></sub></sub></font> &lt; <font size=+1><sup>1</sup>/<sub>|<i>&#946;</i>/<sub>2</sub>|</sub></font> and so <i>is</i> bounded as required.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Convergence in the Reals)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Monotonic sequences)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

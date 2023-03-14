@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Cauchy sequences</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L9.html">Previous page</a><br>
+(Subsequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L11.html">Next page</a><br>
+(Continuity for Real functions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Cauchy sequences</font></h2>
+<p>
+<dl>One of the problems with deciding if a sequence is convergent is that you need to have a limit before you can test the definition.
+<p align=justify>
+<a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Bolzano.html">Bernard Bolzano</a> was the first to spot a way round this problem by using an idea first introduced by the French mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Cauchy.html">Augustin Louis Cauchy</a> (1789 to 1857).
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A sequence is called a <b>Cauchy sequence</b> if the terms of the sequence eventually all become arbitrarily close to one another.<br>
+That is, given <i>&#949;</i> &gt; 0 there exists <i>N</i> such that if <i>m</i>, <i>n</i> &gt; <i>N</i> then |<i>a</i><sub><i>m</i></sub>- <i>a</i><sub><i>n</i></sub>| &lt; <i>&#949;</i>.
+<p align=justify>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol><li 1>Note that this definition does not mention a limit and so can be checked from knowledge about the sequence.
+<p align=justify>
+<li 2>It is not enough to have each term "close" to the next one. (|<i>a</i><sub><i>m</i></sub>- <i>a</i><sub><i>m</i>+1</sub>| &lt; <i>&#949;</i>. For example, the divergent sequence of partial sums of the harmonic series (<a href="L6.html#harm">see this earlier example</a>) does satisfy this property, but not the condition for a Cauchy sequence.
+<p align=justify>
+<li 3>We will see (shortly) that Cauchy sequences are the same as convergent sequences for sequences in <b>R</b>. However, we will see later that when we introduce the idea of convergent in a more general context Cauchy sequences and convergent sequences may be different.
+<p align=justify>
+<li 4><a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Cantor.html">Cantor</a> (1845 to 1918) used the idea of a Cauchy sequence of rationals to give a constructive definition of the Real numbers independent of the use of <a href="A3.html">Dedekind Sections</a>.<br>
+</ol><br>
+<b><font color=red>Some properties of Cauchy sequences</font></b>
+<p align=justify>
+<ol><li 1><i>Any Cauchy sequence is bounded.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+(When we introduce Cauchy sequences in a more general context later, this result will still hold.)<br>
+The proof is essentially the same as the <a href="L7.html#bdd">corresponding result</a> for convergent sequences.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><i>Any convergent sequence is a Cauchy sequence.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> then given <i>&#949;</i> &gt; 0 choose <i>N</i> so that if <i>n</i> &gt; <i>N</i> we have |<i>a</i><sub><i>n</i></sub>- <i>&#945;</i>| &lt; <i>&#949;</i>. Then if <i>m</i>, <i>n</i> &gt; <i>N</i> we have |<i>a</i><sub><i>m</i></sub>- <i>a</i><sub><i>n</i></sub>| = |(<i>a</i><sub><i>m</i></sub>- <i>&#945;</i>) - (<i>a</i><sub><i>m</i></sub>- <i>&#945;</i>)| &#8804; |<i>a</i><sub><i>m</i></sub>- <i>&#945;</i>| + |<i>a</i><sub><i>m</i></sub>- <i>&#945;</i>| &lt; 2<i>&#949;</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 3><b><font color=green>The Main Result about Cauchy sequences</font></b>
+<p align=justify>
+<i>A Real Cauchy sequence is convergent.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Since the sequence is bounded it has a convergent subsequence with limit <i>&#945;</i>.<br>
+<i>Claim</i>:<br>
+This <i>&#945;</i> is the limit of the Cauchy sequence.<br>
+<i>Proof of that</i>: <br>
+Given <i>&#949;</i> &gt; 0 go far enough down the subsequence that a term <i>a</i><sub><i>n</i></sub> of the subsequence is within <i>&#949;</i> of <i>&#945;</i>. Provided we are far enough down the Cauchy sequence any <i>a</i><sub><i>m</i></sub> will be within <i>&#949;</i> of this <i>a</i><sub><i>n</i></sub> and hence within 2<i>&#949;</i> of <i>&#945;</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol><b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol><li 1>The fact that in <b>R</b> Cauchy sequences are the same as convergent sequences is sometimes called the <i>Cauchy criterion for convergence</i>.
+<p align=justify>
+<li 2>The use of the Completeness Axiom to prove the last result is crucial. For example, let (<i>a<sub>n</sub></i>) be a sequence of rational numbers converging to an irrational.<br>
+[e.g. (1, 1.4, 1.41, 1.414, ... )&#8594; &#8730;2 ]<br>
+Then since (<i>a</i><sub><i>n</i></sub>) is a convergent sequence in <b>R</b> it is a Cauchy sequence in <b>R</b> and hence also a Cauchy sequence in <b>Q</b>. But it has no limit in <b>Q</b>.
+<p align=justify>
+<li 3>In fact one can formulate the Completeness axiom in terms of Cauchy sequences.<br>
+Here are some equivalent formulations of the axiom
+<p align=justify>
+<b>III</b> Every subset of <b>R</b> which is bounded above has a least upper bound.
+<p align=justify>
+<b>III*</b> In <b>R</b> every bounded monotonic sequence is convergent.
+<p align=justify>
+<b>III**</b> In <b>R</b> every Cauchy sequence is convergent.
+<p align=justify>
+We will see later that the formulation <b>III**</b> is a useful way of generalising the idea of completeness to structures which are more general than ordered fields.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L9.html">Previous page</a><br>
+(Subsequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L11.html">Next page</a><br>
+(Continuity for Real functions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

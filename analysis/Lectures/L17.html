@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Convergence in infinite dimensional spaces</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L16.html">Previous page</a><br>
+(Convergence in a metric space)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L18.html">Next page</a><br>
+(Properties of uniform convergence)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Convergence in infinite dimensional spaces</font></h2>
+<p>
+We will consider some more examples of convergence in metrics.
+<p align=justify>
+First, we look at some examples of convergence in spaces of sequences.
+<p align=justify>
+<ol><li 1>Let <i>X</i> be the set of all bounded real sequences with the metric <i>d</i><sub>&#8734;</sub> defined earlier.<br>
+Take the sequence of "points" in <i>X</i> (that is, a sequence of sequences) given by:
+<p align=justify>
+<b><i>x</i><sub>1</sub></b> = (<sup>1</sup>/<sub>1</sub> , <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , ... ), <b><i>x</i><sub>2</sub></b> = (<sup>1</sup>/<sub>1<sup>2</sup></sub> , <sup>1</sup>/<sub>2<sup>2</sup></sub> , <sup>1</sup>/<sub>3<sup>2</sup></sub> , ... ), <b><i>x</i><sub>3</sub></b> = (<sup>1</sup>/<sub>1<sup>3</sup></sub> , <sup>1</sup>/<sub>2<sup>3</sup></sub> , <sup>1</sup>/<sub>3<sup>3</sup></sub> , ... ) , ... <br>
+Then this sequence of sequences converges to the sequence <b><i>y</i></b> = (1 , 0 , 0 , 0 , ... ) in <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<i>d</i><sub>&#8734;</sub>(<b><i>x</i><sub><i>n</i></sub></b>, <b><i>y</i></b>) = lub { 0 , <sup>1</sup>/<sub>2<sup><i>n</i></sup></sub>, <sup>1</sup>/<sub>3<sup><i>n</i></sup></sub>, ... } = <sup>1</sup>/<sub>2<sup><i>n</i></sup></sub>and this is small when <i>n</i> is large.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2>This next example shows one of the differences between the finite and infinite-dimensional cases.
+<p align=justify>
+Take the sequence in <i>X</i> given by:
+<p align=justify>
+<b><i>x</i><sub>1</sub></b> = (1 , 0 , 0 , ... ), <b><i>x</i><sub>2</sub></b> = (0 , 1 , 0 , ... ), <b><i>x</i><sub>3</sub></b> = (0 , 0 , 1 , 0 , ... ), ... <br>
+Then although the "sequence of first components", the "sequence of second components", the "sequence of third components", ... all converge to 0, the sequence <b><i>x</i><sub><i>n</i></sub></b> does <i>not</i> converge to the zero sequence: <b>0</b>, since <i>d</i><sub>&#8734;</sub>(<b><i>x</i><sub><i>n</i></sub></b>, <b>0</b>) = 1 for all <i>n</i>.
+<p align=justify>
+So the theorem proved for finite dimensional spaces in the last section does not hold for this infinite dimensional space.<br>
+<img src= ../Diagrams/x17-1.gif align = right>
+<p align=justify>
+<li 3>Define a sequence of functions in <i>C</i>[0, 1] by <i>f</i><sub>1</sub>(<i>t</i>) = <i>t</i>  , <i>f</i><sub>2</sub>(<i>t</i>) = <i>t</i>/<sub>2</sub> , <i>f</i><sub>3</sub>(<i>t</i>) = <i>t</i>/<sub>3</sub> , ...<br>
+We claim that this sequence converges to the 0-function in the metric <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+The maximum of the function |<i>f</i><sub><i>n</i></sub>(<i>x</i>) - 0| is at <i>x</i> = 1 and is <sup>1</sup>/<font size=+1><sub><i>n</i></sub></font>. Thus the real sequence (<i>d</i><sub>&#8734;</sub>(<i>f</i><sub><i>n</i></sub>, 0))&#8594; 0 and so the 0-function is the limit.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remarks</font></b><br>
+<img src= ../Diagrams/x17-2.gif align = right><br>
+We can get a "picture" of what convergence in the metric <i>d</i><sub>&#8734;</sub> "Looks like".<br>
+Given a function <i>g</i> on (say) [0, 1], we can draw "An <i>&#949;</i>-band" around its graph.
+<p align=justify>
+Then a function is within <i>&#949;</i> of <i>g</i> provided its graph lies in this <i>&#949;</i> band.
+<p align=justify>
+Thus a sequence (<i>f</i><sub><i>n</i></sub>)&#8594; <i>g</i> in <i>d</i><sub>&#8734;</sub> if the graphs of every function "far enough down" the sequence lie in an arbitrarily small <i>&#949;</i> band.<br>
+<br clear=right>
+<p align=justify>
+<li 4>This time we consider converence in the <i>d</i><sub>1</sub> metric given by <i>d</i><sub>1</sub>(<i>f</i>, <i>g</i>) = <img src= "../Symbolgifs/int01.gif" align=middle >|<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)|<i>dx</i>. (i.e. the "distance between the functions is the <i>area</i> between their graphs").
+<p align=justify>
+<ol type=i><br>
+<li i>The picture above shows that the sequence of functions (<i>x</i>/<sub><i>n</i></sub>) converges to the 0-function.<br>
+<img src= ../Diagrams/x17-3.gif align = right>
+<p align=justify>
+<li ii>Here is a curious sequence of "spike functions"<br>
+<p align=right><br>
+Define <i>f</i><sub><i>n</i></sub>(<i>x</i>) by:
+<p align=justify>
+Then (<i>f</i><sub><i>n</i></sub>)&#8594; the 0-function in the metric <i>d</i><sub>1</sub>.<br>
+<br clear=right><br>
+<b><font color=green>Proof</font></b><br>
+<i>d</i><sub>1</sub>(<i>f</i><sub><i>n</i></sub>, 0) = the area under the curve = <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font> and so (<i>d</i><sub>1</sub>(<i>f</i><sub><i>n</i></sub>, 0))&#8594; 0 and the sequence converges.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Note however, that this sequence does not converge to the 0-function in <i>d</i><sub>&#8734;</sub> since the graph of <i>f</i><sub><i>n</i></sub> "sticks out" of any small <i>&#949;</i> band of the 0-function.
+<p align=justify>
+Thus it can happen that a sequence which converges in one metric may fail to converge in another.<br>
+</ol></ol><br>
+<b><font color=red>Remarks</font></b><br>
+<ol type = a><li a>Convergence of sequences of functions in the metric <i>d</i><sub>&#8734;</sub> is particularly important. It is called <b>uniform convergence</b> and it turns out that this convergence has particularly nice properties, particularly in relation to differentiation and integration.
+<p align=justify>
+<li b>Convergence of sequences of functions in the metric <i>d</i><sub>1</sub>is also important. It is called <b>convergence in the mean</b> (because in some sense it "Averages out" the distance between functions). It is important in some applications. For example, the partial sums of the Fourier series of a function converges to the function <i>in the mean</i>.
+<p align=justify>
+<li c>The most obvious way of considering convergence of a sequence of functions is <b>pointwise convergence</b>. That is, a sequence (<i>f</i><sub><i>n</i></sub>) of functions in (say) <i>C</i>[0, 1] is <i>pointwise convergent</i> to <i>f</i> if at each <i>x</i> &#8712; [0. 1], the <i>real</i> sequence (<i>f</i><sub><i>n</i></sub>(<i>x</i>)) converges in <b>R</b> to <i>f</i> (<i>x</i>).<br>
+For example, the pointwise limit of the sequence of "spike functions" above is the function defined by <i>f</i> (<sup>1</sup>/<sub>2</sub>) = 1 and <i>f</i> (<i>x</i>) = 0 otherwise.<br>
+</ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L16.html">Previous page</a><br>
+(Convergence in a metric space)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L18.html">Next page</a><br>
+(Properties of uniform convergence)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

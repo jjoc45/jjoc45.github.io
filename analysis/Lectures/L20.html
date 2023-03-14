@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>The intermediate value theorem</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L19.html">Previous page</a><br>
+(The Weierstrass approximation theorem)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L21.html">Next page</a><br>
+(The boundedness theorem)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The intermediate value theorem</font></h2>
+<p>
+<dl>The naive definition of continuity (<i>The graph of a continuous function has no breaks in it</i>) can be used to explain the fact that a function which starts on below the <i>x</i>-axis and finishes above it must cross the axis somewhere.
+<p align=justify>
+<dt><b><font color=green>The Intermediate Value Theorem</font></b><br>
+<dd><i>If <nb>f<nb> is a function which is continuous at every point of the interval </i>[<i>a</i>, <i>b</i>]<i> and</i> <i>f</i> (<i>a</i>) &lt; 0, <i>f</i> (<i>b</i>) &gt; 0 <i>then</i> <i>f</i> (<i>x</i>) = 0 <i>at some point</i> <i>x</i> &#8712; (<i>a</i>, <i>b</i>).
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>The idea of the proof is to look for the <i>first</i> point at which the graph of <i>f</i> crosses the axis.<br>
+Let <i>X</i> = {<i>x</i> &#8712; [<i>a</i>, <i>b</i>] | <i>f</i> (<i>y</i>) &#8804; 0 for all <i>y</i> &#8712; [<i>a</i>, <i>x</i>]}. Then <i>X</i> is non-empty since <i>a</i> &#8712; <i>X</i> and <i>X</i> &#8838; [<i>a</i>, <i>b</i>] so it is bounded. Hence by the Completeness Axiom, <i>X</i> has a least upper bound <i>&#945;</i> (say).<br>
+We claim that <i>f</i> (<i>&#945;</i>) = 0.
+<p align=justify>
+<b><font color=green>Proof of that:</font></b><br>
+We will show that either of the assumptions <i>f</i> (<i>&#945;</i>) &gt; 0 or <i>f</i> (<i>&#945;</i>) &lt; 0 leads to a contradiction and the result then follows from the Trichotomy property of the Order Axiom.<br>
+So suppose <i>f</i> (<i>&#945;</i>) &gt; 0. Say <i>f</i> (<i>&#945;</i>) = <i>&#949;</i>. Then for some <i>&#948;</i> &gt; 0 we have <i>f</i> (<i>x</i>) &gt; 0 for <i>x</i> lying in the interval (<i>&#945;</i> - <i>&#948;</i>, <i>&#945;</i> + <i>&#948;</i>).<br>
+But then <i>&#945;</i> - <i>&#948;</i> would be an upper bound of <i>X</i>, contradicting the fact that <i>&#945;</i> is the <i>least</i> upper bound.<br>
+Similarly, suppose <i>f</i> (<i>&#945;</i>) &lt; 0. Say <i>f</i> (<i>&#945;</i>) = -<i>&#949;</i>. Then for some <i>&#948;</i> &gt; 0 we have <i>f</i> (<i>x</i>) &lt; 0 for <i>x</i> lying in the interval (<i>&#945;</i> - <i>&#948;</i>, <i>&#945;</i> + <i>&#948;</i>). <br>
+But this is a contradiction since <i>&#945;</i> is an upper bound of <i>X</i>.<br>
+This completes the proof.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Remarks</font></b><br>
+<ol><li 1>You should compare this to the earlier proof of the existence of &#8730;2. The fact that these two proofs are so similar is no coincidence, since we could prove the existence of &#8730;2 by applying the intermediate value theorem to the function <i>f</i> (<i>x</i>) = <i>x</i><sup>2</sup> - 2 on the interval [1, 2].
+<p align=justify>
+<li 2>The reason that this result is called the Intermediate Value Theorem comes from the following corollary.<br>
+</ol><br>
+<dt><b><font color=green>Corollary</font></b><br>
+<dd><i>If <nb>f<nb> is a continuous function on the interval </i>[<i>a</i>, <i>b</i>]<i> and c is a real number between</i> <i>f</i> (<i>a</i>) <i>and</i> <i>f</i> (<i>b</i>) <i>then</i> <i>f</i> (<i>x</i>) <i>attains the value c at some point between a and b.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Apply the theorem to the function <i>f</i> (<i>x</i>) - <i>c</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Applications</font></b>
+<p align=justify>
+<ol><li 1><i>Any real polynomial of odd degree has a real root.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose <i>p</i>(<i>x</i>) = <i>x</i><sup><i>k</i></sup>+ <i>a</i><sub><i>k</i>-1</sub><i>x</i><sup><i>k</i>-1</sup>+ ... + <i>a</i><sub>1</sub><i>x</i> + <i>a</i><sub>0</sub>. Then as <i>x</i>&#8594; &#8734;, <i>p</i>(<i>x</i>)&#8594; &#8734;. Also, since <i>k</i> is odd, as <i>x</i>&#8594; -&#8734;, <i>p</i>(<i>x</i>)&#8594; -&#8734;. Hence one can find an interval on which <i>p</i> changes sign and so we must have a real root.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2>Solving an equation <i>f</i> (<i>x</i>) = 0.
+<p align=justify>
+<ol type=a><br>
+<img src= ../Diagrams/x20-1.gif align = right><br>
+<li a><b><font color=green>The bisection method</font></b><br>
+Find an interval [<i>a</i>, <i>b</i>] on which the function changes sign. Then evaluate <i>f</i> at the midpoint <font size=+1><sup>(<i>a</i>+<i>b</i>)</sup>/<sub>2</sub></font> and choose whichever subinterval <i>f</i> changes sign on. Then repeat to get smaller and smaller subintervals.<br>
+<br clear=right><br>
+<img src= ../Diagrams/x20-2.gif align = right>
+<p align=justify>
+<li b><b><font color=green>The method of false position</font></b><br>
+The same idea, but this time instead of taking the midpoint of the interval, linearly interpolate between (<i>a</i>, <i>f</i> (<i>a</i>)) and (<i>b</i>, <i>f</i> (<i>b</i>)) to decide where to split the interval. In fact, this is at the point <i>c</i> = (<i>b</i> <i>f</i> (<i>a</i>) - <i>a</i> <i>f</i> (<i>b</i>))/(<i>f</i> (<i>a</i>) - <i>f</i> (<i>b</i>)).<br>
+<br clear=right>
+<p align=justify>
+These methods are both very robust and do not require assumptions about differentiability needed, for example, for the (usually) faster <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Newton.html">Newton</a>-<a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Raphson.html">Raphson</a> method.<br>
+</ol><br>
+<br clear=right>
+<p align=justify>
+<li 3>The intermediate value theorem can be used to prove a variety of simple "real-life" results.
+<p align=justify>
+<ol type=a><br>
+<img src= ../Diagrams/x20-3.gif align = right><br>
+<li a><b><font color=green>The mashed potato theorem</font></b><br>
+A plate of mashed potato can be evenly divided by a single straight vertical knife cut.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+In position <i>K</i><sub>1</sub> less than half the potato is at the left of the knife, in position <i>K</i><sub>2</sub> more than half is at the left. Hence (by the intermediate value theorem) there is an intermediate position where exactly half is at one side.<br>
+You may care to think of how continuity should be involved in this argument.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<br clear=right><br>
+<img src= ../Diagrams/x20-4.gif align = right><br>
+<li b><b><font color=green>The mashed potato and beans theorem</font></b><br>
+A plate of mashed potato and baked beans can be evenly divided by a single straight vertical knife cut.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Choose one particular angle and the last result shows that you can divide the potatoes by a cut <i>K</i><sub><i>&#945;</i></sub> at this angle. Then (say) there will be more than half the beans on the left of the cut. Now vary the angle continuously by &#960; (180 degrees) until the knife is in the same position as before, but pointing the other way. At each angle, make sure you bisect the potatoes. Now less than half the beans are on the left and so you passed through an intermediate position where both beans and potatoes were divided fairly.<br>
+This result even holds true if you pile the beans on top of the potato (or vice versa).<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li c>Note that the above two results were achieved with vertical cuts. If you allow cuts which are not vertical, you can use the extra "degree of freedom" to prove:
+<p align=justify>
+<b><font color=green>The bowl of fruit theorem</font></b><br>
+An apple, a pear and a banana can be equally divided by a single knife-cut.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Exercise.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+This last result is usually called the <i>Ham Sandwich Theorem</i> (two pieces of bread and the ham).
+<p align=justify>
+By putting the three pieces of fruit far apart, you should see that you do not have any freedom to deal with a fourth volume. If you move from three dimensions to four, though ...
+<p align=justify>
+</ol></ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L19.html">Previous page</a><br>
+(The Weierstrass approximation theorem)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L21.html">Next page</a><br>
+(The boundedness theorem)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

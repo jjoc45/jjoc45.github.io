@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Convergence in the Reals</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L5.html">Previous page</a><br>
+(Axioms for the Real numbers)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L7.html">Next page</a><br>
+(Some properties of convergent sequences)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Convergence in the Reals</font></h2>
+<p>
+<dl>One of the two most important ideas in Real analysis is that of <i>convergence of a sequence</i>.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A <b>sequence</b> in <b>R</b> is a <i>list</i> or <i>ordered set</i>: (<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , <i>a</i><sub>3</sub> , ... ) of real numbers.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+One may define a sequence (<i>a</i><sub><i>n</i></sub>) by giving an explicit formula for the <i>n</i>th term.<br>
+<ol><li 1>(<sup>1</sup>/<font size=+1><sub><i>n</i></font></sub>) = ( 1 , <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , ... )
+<p align=justify>
+<li 2>(sin(<font size=+1><sup>&#960;<i>n</i></sup></font>/<sub>4</sub>)) = (<sup>1</sup>/<sub>&#8730;2</sub> ,1 , <sup>1</sup>/<sub>&#8730;2</sub> , 0 , -<sup>1</sup>/<sub>&#8730;2</sub> ,-1 , -<sup>1</sup>/<sub>&#8730;2</sub> , 0 , ... )
+<p align=justify>
+<li 3><font size=+1>( <sup>(5<i>n</i>+2)</sup>/<sub>(3<i>n</i>+1)</sub> )</font> = ( <sup>7</sup>/<sub>4</sub> , <sup>12</sup>/<sub>7</sub> , <sup>17</sup>/<sub>10</sub> , <sup>22</sup>/<sub>13</sub> , <sup>27</sup>/<sub>16</sub> , ... )<br>
+</ol><br>
+One may define a sequence by a <i>recurrence relation</i>. This gives a formula for the <i>n</i>th term in terms of earlier ones.
+<p align=justify>
+<ol start=4><li 4><i>a</i><sub><i>n</i>+1</sub> = <i>a</i><sub><i>n</i></sub>/(<i>a</i><sub><i>n</i></sub>+ 1), <i>a</i><sub>1</sub> = 1. <br>
+This gives the sequence ( 1 , <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , <sup>1</sup>/<sub>4</sub> , ... ).
+<p align=justify>
+<li 5><i>f</i><sub><i>n</i>+2</sub> = <i>f</i><sub><i>n</i>+1</sub> + <i>f</i><sub><i>n</i></sub> and <i>f</i><sub>1</sub> = <i>f</i><sub>2</sub> = 1. <br>
+This gives (1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... )
+<p align=justify>
+This is the Fibonacci sequence first introduced by the Italian mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Fibonacci.html">Fibonacci</a> or <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Fibonacci.html">Leonard of Pisa</a> (1170 to 1250) and much studied by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Lucas.html">Edouard Lucas</a> (1842 to 1891).
+<p align=justify>
+<li 6><i>a</i><sub><i>n</i>+1</sub> = (<i>a</i><sub><i>n</i></sub>+ 2/<i>a</i><sub><i>n</i></sub>)/2 and <i>a</i><sub>1</sub> = 1.<br>
+This gives ( 1 , <sup>3</sup>/<sub>2</sub> , <sup>17</sup>/<sub>12</sub> , <sup>577</sup>/<sub>408</sub> , <sup>665857</sup>/<sub>470832</sub> , ... ) which is approximately ( 1, 1.5, 1.41667, 1.414215, 1,414213562, ... )
+<p align=justify>
+This is the result of applying <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Newton.html">Newton</a>'s method for solving an equation to <i>x</i><sup>2</sup> = 2 and hence gives a method of calculating &#8730;2.
+<p align=justify>
+<li 7><i>a</i><sub><i>n</i>+1</sub> = <i>a</i><sub><i>n</i></sub> + 1/<i>n</i><sup>2</sup> and <i>a</i><sub>1</sub> = 0.<br>
+This gives the sequence ( 0 , 1 , <sup>5</sup>/<sub>4</sub> , <sup>49</sup>/<sub>36</sub> , <sup>205</sup>/<sub>144</sub> , <sup>5269</sup>/<sub>3600</sub> , ... ) which is approximately ( 0, 1, 1.25, 1.3611, 1.423611, 1.463611, ... )<br>
+These are the partial sums of the <i>series</i> <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><font size=+1>(<sup>1</sup>/<sub><i>i</i><sup>2</sup></sub>)</font> which the Swiss mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Euler.html">Leonhard Euler</a> (1707 to 1783) proved "settles down" to 1.6449... = &#960;<sup>2</sup><font size=+1>/<sub>6</sub></font>.<br>
+</ol><br>
+One may think of a sequence as being used to approximate a real number which might be difficult to get hold of directly. For example, the sequence 6) above gives approximations to the number &#8730;2.
+<p align=justify>
+The main thing to remember is:
+<p align=justify>
+<b><font color=red>Informal definition</font></b>
+<p align=justify>
+<dd>A real sequence ( <i>a</i><sub><i>n</i></sub>) is said to be <b>convergent to a limit</b> <i>&#945;</i> if all the terms of the sequence become close (<b>*</b>) to <i>&#945;</i> for <i>n</i> large (<b>**</b>).
+<p align=justify>
+<dt>To formalise the idea at (<b>*</b>), we mean that if we are given any small <i>error</i> <i>&#949;</i> then the terms of the sequence are within <i>&#949;</i> of <i>&#945;</i> provided <i>n</i> is big enough. By big enough (<b>**</b>) we mean that we can find some <i>N</i> so that this happens when <i>n</i> &gt; <i>N</i>.
+<p align=justify>
+We get the rigorous statement corresponding to the above:
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A real sequence ( <i>a</i><sub><i>n</i></sub>) <b>converges to a limit</b> <i>&#945;</i> if:<br>
+given <i>&#949;</i> &gt; 0, there exists <i>N</i> &#8712; <b>N</b> such that if <i>n</i> &gt; <i>N</i> then | <i>a</i><sub><i>n</i></sub>- <i>&#945;</i> | &lt; <i>&#949;</i>.
+<p align=justify>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol><li 1>The <i>N</i> that it is necessary to choose will depend on what <i>&#949;</i> you are using. In general, the smaller the <i>&#949;</i> the bigger you will have to choose <i>N</i>.<br>
+<li 2>Note that <i>all</i> the terms <i>a</i><sub><i>n</i></sub> with <i>n</i> &gt; <i>N</i> must approximate <i>&#945;</i> to better than <i>&#949;</i>.<br>
+<li 3>In terms of quantifiers we may express this as:<br>
+A sequence (<i>x</i><sub><i>i</i></sub>)&#8594; <i>&#945;</i> if (<img src= "../Symbolgifs/forall.gif" ><i>&#949;</i> &gt; 0) (<img src= "../Symbolgifs/thereexists.gif" ><i>N</i> &#8712; <b>N</b>)(<img src= "../Symbolgifs/forall.gif" > <i>n</i> &gt; <i>N</i>)(|<i>x</i><sub><i>n</i></sub> - <i>&#945;</i>| &lt; <i>&#949;</i>)<br>
+Note that since the "(<img src= "../Symbolgifs/thereexists.gif" ><i>N</i> &#8712; <b>N</b>)" occurs after the "(<img src= "../Symbolgifs/forall.gif" ><i>&#949;</i> &gt; 0)" the value of <i>N</i> that we must find is allowed to depend upon <i>&#949;</i>.<br>
+<li 4>A sequence which does not converge is called <b>divergent</b>.<br>
+</ol>
+<p align=justify>
+<b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1><i>The sequence </i>( 1 , <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , ... )<i> is convergent to</i> 0.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Given <i>&#949;</i> use the Archimedian property to choose <i>N</i> with <sup>1</sup>/<sub><i>N</i></sub>&#8804; <i>&#949;</i>. Then if <i>n</i> &gt; <i>N</i> we have <sup>1</sup>/<font size=+1><sub><i>n</i></sub></font> &lt; <sup>1</sup>/<font size=+1><sub><i>N</i></sub></font> &#8804; <i>&#949;</i>.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><i>The sequence </i>( 1, 2, 3, 4, ... )<i> is not convergent </i>(<i>to any limit</i>).
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+We will see later than any unbounded sequence does not converge.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<a name ="harm"></a><br>
+<li 3><i>The sequence </i>(1, <sup>3</sup>/<sub>2</sub> , <sup>11</sup>/<sub>6</sub> , <sup>25</sup>/<sub>12</sub> , <sup>137</sup>/<sub>60</sub> , <sup>49</sup>/<sub>20</sub> , ... ) = (1 , 1 +<sup>1</sup>/<sub>2</sub> , 1 +<sup>1</sup>/<sub>2</sub>+<sup>1</sup>/<sub>3</sub> , 1 +<sup>1</sup>/<sub>2</sub>+<sup>1</sup>/<sub>3</sub>+<sup>1</sup>/<sub>4</sub> , ... ), <i> where </i><i>a</i><sub><i>n</i></sub>= <img src= "../Symbolgifs/sigmai1n.gif" align=middle >(<sup>1</sup>/<font size=+1><sub><i>i</i></sub></font>)<i>, is not convergent.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+The terms of this sequence are the partial sums of the <i>harmonic series</i> <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><font size=+1>(<sup>1</sup>/<sub><i>i</i></sub>)</font>. This result was first proved by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Bernoulli_Jacob.html">Jacob Bernoulli</a> (1654 to 1705)<br>
+Group the terms of the <i>series</i> in the following way.<br>
+1 + <sup>1</sup>/<sub>2</sub> + (<sup>1</sup>/<sub>3</sub>+<sup>1</sup>/<sub>4</sub>) + (<sup>1</sup>/<sub>5</sub>+<sup>1</sup>/<sub>6</sub>+<sup>1</sup>/<sub>7</sub>+<sup>1</sup>/<sub>8</sub>) + (<sup>1</sup>/<sub>9</sub>+<sup>1</sup>/<sub>10</sub>+ ... +<sup>1</sup>/<sub>16</sub>) + ... <br>
+and these terms are bigger than the terms of<br>
+1 + <sup>1</sup>/<sub>2</sub>+ (<sup>1</sup>/<sub>4</sub>+<sup>1</sup>/<sub>4</sub>) + (<sup>1</sup>/<sub>8</sub>+<sup>1</sup>/<sub>8</sub>+<sup>1</sup>/<sub>8</sub>+<sup>1</sup>/<sub>8</sub>) + (<sup>1</sup>/<sub>16</sub>+<sup>1</sup>/<sub>16</sub>+ ... +<sup>1</sup>/<sub>16</sub>) + ... = 1 + <sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> + ...<br>
+and the partial sums of this series are clearly unbounded.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 4><i>The sequence </i>( 1, 0, 1, 0, 1, 0, 1, 0, ... )<i> is not convergent even though it is bounded</i>.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L5.html">Previous page</a><br>
+(Axioms for the Real numbers)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L7.html">Next page</a><br>
+(Some properties of convergent sequences)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

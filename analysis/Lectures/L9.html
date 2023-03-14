@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Subsequences</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L8.html">Previous page</a><br>
+(Monotonic sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L10.html">Next page</a><br>
+(Cauchy sequences)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Subsequences</font></h2>
+<p>
+<dl>We have seen some bounded sequences which do not converge. We can, however, say something about such sequences.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A <b>subsequence</b> is an infinite ordered subset of a sequence.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<dd>(<i>a</i><sub>2</sub> , <i>a</i><sub>4</sub> , <i>a</i><sub>6</sub> , ... ) is a subsequence of (<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , <i>a</i><sub>3</sub> , <i>a</i><sub>4</sub> , ... ). So is (<i>a</i><sub>1</sub> , <i>a</i><sub>10</sub> , <i>a</i><sub>100</sub> , <i>a</i><sub>1000</sub> , ... ).
+<p align=justify>
+<dt><b><font color=green>Theorem</font></b><br>
+<dd><i>Any subsequence of a convergent sequence is convergent </i>(<i>to the same limit</i>).
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Look at the definition!<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt>The nicest thing about these subsequences is a result attributed to the Czech mathematician and philosopher <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Bolzano.html">Bernard Bolzano</a> (1781 to 1848) and the German mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Weierstrass.html">Karl Weierstrass</a> (1815 to 1897).
+<p align=justify>
+<b><font color=green>The Bolzano-Weierstrass Theorem</font></b><br>
+<dd><i>Every bounded sequence has a convergent subsequence.</i>
+<p align=justify>
+<dt><b><font color=red>Remark</font></b>
+<p align=justify>
+<dd>Notice that a bounded sequence may have many convergent subsequences (for example, a sequence consisting of a counting of the rationals has subsequences converging to <i>every</i> real number) or rather few (for example a convergent sequence has all its subsequences having the same limit).
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Suppose the sequence (<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , <i>a</i><sub>3</sub> , <i>a</i><sub>4</sub> , ... ) is bounded and lies in (say) the interval [0, 1].<br>
+Then we construct a convergent subsequence by a bisection process.<br>
+Split the interval [0, 1] into two halves [0 , <sup>1</sup>/<sub>2</sub>] and [<sup>1</sup>/<sub>2</sub> , 1]. Then (at least) one of the halves will contain infinitely many terms of the sequence. Suppose it is [0 , <sup>1</sup>/<sub>2</sub>]. Choose <i>x</i><sub>1</sub>to be one of these terms.<br>
+Then split this interval in half again and repeat the process choosing <i>x</i><sub>2</sub> to be further down the sequence than <i>x</i><sub>1</sub>. Continuing in this way, at the <i>n</i>th stage we will choose a term <i>x</i><sub><i>n</i></sub> lying in an interval [<i>a</i><sub><i>n</i></sub> , <i>b</i><sub><i>n</i></sub>].
+<p align=justify>
+<b>Claim:</b> The subsequence (<i>x</i><sub><i>n</i></sub>) is convergent.
+<p align=justify>
+<b>Proof of claim</b><br>
+The sequence (<i>l</i><sub><i>n</i></sub>) of "Left-hand ends" of intervals is monotonic increasing, bounded above by 1 and hence has a limit <i>&#945;</i>.<br>
+The sequence (<i>r</i><sub><i>n</i></sub>) of "right-hand ends" of intervals is monotonic decreasing, bounded below by 0 and hence has a limit <i>&#946;</i>.<br>
+Since the length of the interval [<i>l</i><sub><i>n</i></sub> , <i>r</i><sub><i>n</i></sub>] has length (<sup>1</sup>/<sub>2</sub>)<sup><i>n</i></sup>, we must have <i>&#945;</i> = <i>&#946;</i> and since the sequence (<i>x</i><sub><i>n</i></sub>) is trapped between (<i>l</i><sub><i>n</i></sub>) and (<i>r</i><sub><i>n</i></sub>), it converges to the same limit.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</dl>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L8.html">Previous page</a><br>
+(Monotonic sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L10.html">Next page</a><br>
+(Cauchy sequences)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

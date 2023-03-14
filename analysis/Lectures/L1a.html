@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Some logic</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L1.html">Previous page</a><br>
+(Some set theory)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L2.html">Next page</a><br>
+(Rationals and irrationals)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Some logic</font></h2>
+<p>
+<b><font color=red>Definition</font></b><br>
+A <b>proposition</b> is a statement which can be either TRUE or FALSE.
+<p align=justify>
+For example, the proposition <i>P</i> = " 2 + 2 = 4 " is true, while <i>Q</i> = " There is a real number <i>x</i> such that <i>x</i><sup>2</sup> = -1 " is false.
+<p align=justify>
+If <i>P</i> and <i>Q</i> are propositions then the proposition <i>P</i> <img src= "../Symbolgifs/and.gif" > <i>Q</i> (read <i>P and Q</i>) is true if both <i>P</i> and <i>Q</i> are true and false otherwise.<br>
+The proposition <i>P</i> <img src= "../Symbolgifs/or.gif" > <i>Q</i> (read <i>P or Q</i>) is true if either <i>P</i> or <i>Q</i> (or both) are true and is false otherwise.<br>
+The proposition &#172;<i>P</i> (read <i>not P</i>) is true if <i>P</i> is false and is false if <i>P</i> is true.<br>
+The proposition <i>P</i> &#8658; <i>Q</i> (read <i>P implies Q</i> or <i>if P then Q</i>) is only false if <i>P</i> is true and <i>Q</i> is false and is true otherwise.<br>
+In particular, if <i>P</i> and <i>Q</i> are both false then <i>P</i> &#8658; <i>Q</i> is true.<br>
+The proposition <i>P</i> &#8660; <i>Q</i> (read <i>P is equivalent to Q</i> or <i>P if and only if Q</i>) is true if either both <i>P</i> and <i>Q</i> are true or both <i>P</i> and <i>Q</i> are false and is false otherwise.
+<p align=justify>
+The English mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Boole.html">George Boole</a> (1815 to 1864) noticed that arguments involving propositions could be reduced to set theory. In particular, any argument involving three propositions or less can be proved using a Venn diagram -- invented by the English mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Venn.html">John Venn</a> (1834 to 1923).<br>
+<img src= ../Diagrams/x01-1.gif align = right><br>
+If we take a Venn diagram involving sets <i>A</i> and <i>B</i> and take the proposition <i>P</i> to be "The point <i>x</i> &#8712; <i>A</i>" and <i>Q</i> to be "The point <i>x</i> &#8712; <i>B</i>" then <i>P</i> <img src= "../Symbolgifs/and.gif" > <i>Q</i> is the proposition "The point <i>x</i> &#8712; <i>A</i> &#8745; <i>B</i>" and <i>P</i> <img src= "../Symbolgifs/or.gif" > <i>Q</i> is the proposition "The point <i>x</i> &#8712; <i>A</i> &#8746; <i>B</i>".<br>
+<br clear=right><br>
+Many of the propositions we will encounter in this course are constructed using the <i>quantifiers</i> &#8704; and &#8707;.
+<p align=justify>
+The symbol &#8704; stands for <i>for all</i> or <i>for every</i> or <i>for each</i> ...<br>
+The symbol &#8707; stands for <i>there exists</i> or <i>there is a</i> or <i>for some</i> ...<br>
+To make the expressions easier to interpret we can put in some <i>such that</i>'s or something similar.
+<p align=justify>
+We can combine these with other expressions, as for example:
+<p align=justify>
+(&#8704; <i>m</i>&#8712; <b>N</b>) (&#8707; <i>n</i> &#8712; <b>N</b>) (<i>n</i> &gt; <i>m</i>) <br>
+which we can read as:<br>
+<font color=red>For every integer <i>m</i> there is some integer <i>n</i> such that <i>n</i> &gt; <i>m</i>.</font><br>
+This is true since we can take (say) <i>n</i> = <i>m</i> + 1.
+<p align=justify>
+However, the statement:<br>
+(&#8707; <i>n</i>&#8712; <b>N</b>) (&#8704; <i>m</i> &#8712; <b>N</b>) (<i>n</i> &gt; <i>m</i>)<br>
+which we can read as:<br>
+<font color=red>There is some integer <i>n</i> such that for every integer <i>m</i> we have <i>n</i> &gt; <i>m</i></font><br>
+is false since there is no integer which is bigger than <i>every</i> integer.
+<p align=justify>
+Note that in the first of these two expressions, the <i>m</i> which we need to find to show that the expression is true can depend on <i>n</i>, but in the second, because the &#8707; comes before the &#8704;, we have to find an <i>m</i> which does <i>not</i> depend on a particular <i>n</i>.<br>
+So the order in which the quantifiers are written is important.<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L1.html">Previous page</a><br>
+(Some set theory)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L2.html">Next page</a><br>
+(Rationals and irrationals)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

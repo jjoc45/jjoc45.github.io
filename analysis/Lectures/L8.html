@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Monotonic sequences</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L7.html">Previous page</a><br>
+(Some properties of convergent sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L9.html">Next page</a><br>
+(Subsequences)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Monotonic sequences</font></h2>
+<p>
+<dl>We now want to investigate what the Completeness axiom tells us about the convergence of sequences.<br>
+Unfortunately, the example of the sequence (1, 0, 1, 0, ... ) shows that bounded sequences do not necessarily have limits.
+<p align=justify>
+We need the following.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A sequence (<i>a</i><sub><i>n</i></sub>) is <b>monotonic increasing</b> if <i>a</i><sub><i>n</i>+1</sub>&#8805; <i>a</i><sub><i>n</i></sub> for all <i>n</i> &#8712; <b>N</b>.
+<p align=justify>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<dd>The sequence is <i>strictly</i> monotonic increasing if we have &gt; in the definition.<br>
+Monotonic <i>decreasing</i> sequences are defined similarly.
+<p align=justify>
+<dt>Then the big result is
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<dd><i>A bounded monotonic increasing sequence is convergent.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>We will prove that the sequence converges to its least upper bound (whose existence is guaranteed by the Completeness axiom).<br>
+So let <i>&#945;</i> be the least upper bound of the sequence. Given <i>&#949;</i> &gt; 0, we'll show that all the terms of the sequence (except the first few) are in the interval (<i>&#945;</i> - <i>&#949;</i>, <i>&#945;</i> + <i>&#949;</i>).<br>
+Now since <i>&#945;</i> + <i>&#949;</i> is an upper bound of the sequence, all the terms certainly satisfy <i>a</i><sub><i>n</i></sub>&lt; <i>&#945;</i> + <i>&#949;</i>.<br>
+Also since <i>&#945;</i> - <i>&#949;</i> is <i>not</i> an upper bound of the sequence, we must have <i>a</i><sub><i>N</i></sub>&gt; <i>&#945;</i> - <i>&#949;</i> for some <i>N</i>. But then all the later terms will be &gt; <i>&#945;</i> - <i>&#949;</i> also and so (for <i>n</i> &gt; this <i>N</i>) we have our condition for convergence.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<dd>A similar result is true for a bounded monotonic decreasing sequence (which converges to its greatest lower bound).
+<p align=justify>
+There are sequences which are convergent without being monotonic.<br>
+For example, the sequences (-1 , <sup>1</sup>/<sub>2</sub> , <sup>-1</sup>/<sub>3</sub> , <sup>1</sup>/<sub>4</sub> , ... ) and (<sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>2<sup>2</sup></sub> , <sup>1</sup>/<sub>3</sub> , <sup>1</sup>/<sub>3<sup>2</sup></sub> , ... ) both converge to 0.
+<p align=justify>
+For sequences given by recurrence relations it is sometimes easy to see what their limits are.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1> Define a sequence by <i>a</i><sub><i>n</i>+1</sub>= &#8730;(2<i>a</i><sub><i>n</i></sub>- 1) with <i>a</i><sub>1</sub>= 2.
+<p align=justify>
+Then <i>suppose</i> that this has a limit <i>&#945;</i>. Then for large <i>n</i>, we have <i>a</i><sub><i>n</i></sub>= <i>&#945;</i> (approx) and <i>a</i><sub><i>n</i>+1</sub>= <i>&#945;</i> (approx) and so we must have <i>&#945;</i> = &#8730;(2<i>&#945;</i> -1) and hence <i>&#945;</i><sup>2</sup> = 2<i>&#945;</i> - 1 and we get <i>&#945;</i> = 1.
+<p align=justify>
+To show that it does indeed have a limit, we'll prove that it is monotonic decreasing and bounded below. 
+<p align=justify>
+Since the terms of the sequence are positive, the sequence is clearly bounded below by 0.
+<p align=justify>
+To show monotonicity:<br>
+<i>a</i><sub><i>n</i>+1</sub>- <i>a</i><sub><i>n</i></sub>= &#8730;(2<i>a</i><sub><i>n</i></sub>- 1) - &#8730;(2<i>a</i><sub><i>n</i>-1</sub>- 1) <br>
+and if we now use the fact that &#8730;<i>x</i> - &#8730;<i>y</i> = (<i>x</i> - <i>y</i>)/(&#8730;<i>x</i> + &#8730;<i>y</i>) <br>
+we get <i>a</i><sub><i>n</i>+1</sub>- <i>a</i><sub><i>n</i></sub>= 2(<i>a</i><sub><i>n</i></sub>-<i>a</i><sub><i>n</i>-1</sub>)/(&#8730;(2<i>a</i><sub><i>n</i></sub>- 1) + &#8730;(2<i>a</i><sub><i>n</i>-1</sub>- 1)) and the result then follows by induction.
+<p align=justify>
+<li 2>Define <i>a</i><sub><i>n</i>+1</sub>= (<i>a</i><sub><i>n</i></sub><sup>2</sup> + 1)<font size=+1>/<sub>2</sub></font> with <i>a</i><sub>1</sub> = 2.
+<p align=justify>
+Claim: This is monotonic increasing.<br>
+<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>= (<i>a</i><sub><i>n</i></sub><sup>2</sup> - <i>a</i><sub><i>n</i>-1</sub><sup>2</sup>)<font size=+1>/<sub>2</sub></font> = (<i>a</i><sub><i>n</i></sub> + <i>a</i><sub><i>n</i>-1</sub>)(<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>-1</sub>)<font size=+1>/<sub>2</sub></font> and so (since <i>a</i><sub><i>n</i></sub> &gt; 0) the result follows by induction.
+<p align=justify>
+What is the limit ?<br>
+The limit <i>&#945;</i> satisfies <i>&#945;</i> = (<i>&#945;</i><sup>2</sup>+ 1)<font size=+1>/<sub>2</sub></font> and hence <i>&#945;</i> = 1.<br>
+But since the sequence starts at 2 and increases, it cannot converge to 1 and hence it has <i>no limit</i>.
+<p align=justify>
+One may show that if one takes the starting value <i>a</i><sub>1</sub> = <sup>1</sup>/<sub>2</sub> then the sequence is bounded above and <i>does</i> converge to 1.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L7.html">Previous page</a><br>
+(Some properties of convergent sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L9.html">Next page</a><br>
+(Subsequences)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

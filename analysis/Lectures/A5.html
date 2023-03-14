@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Cardinal numbers</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A4.html">Previous page</a><br>
+(Farey sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A6.html">Next page</a><br>
+(Continued fractions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Cardinal numbers</font></h2>
+<p>
+As well as the idea of countability, <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Cantor.html">Georg Cantor</a> introduced the concept of a <i>cardinal number</i>. Two sets have the same <b>cardinal number</b> if there is a one-one correspondence between them. So finite cardinals look the same as ordinary integers. It's when we get to infinite sets that things get interesting.
+<p align=justify>
+Cantor defined the cardinal of the natural numbers <b>N</b> to be &#8501;<sub>0</sub>. The symbol &#8501; is called <i>aleph</i> and is the first letter of the Hebrew alphabet. 
+<p align=justify>
+So all countable sets have cardinal &#8501;<sub>0</sub>.
+<p align=justify>
+You can do arithmetic with cardinals as follows.
+<p align=justify>
+If disjoint sets <i>A</i> and <i>B</i> have cardinals <b><i>m</i></b> and <b><i>n</i></b>, then we define <b><i>m</i></b> + <b><i>n</i></b> to be the cardinal of the union <i>A</i> &#8746; <i>B</i>. It should be clear that for finite cardinals this agrees with the usual definition.
+<p align=justify>
+We define <b><i>m</i></b> &#215; <b><i>n</i></b> to be the cardinal of the Cartesian product <i>A</i> &#215; <i>B</i>. Again this agrees with the usual definition for finite sets.
+<p align=justify>
+For the infinite cardinal &#8501;<sub>0</sub> you can use the results on countability to show that &#8501;<sub>0</sub> + <b><i>m</i></b> = &#8501;<sub>0</sub> for any finite cardinal <b><i>m</i></b>, and indeed, &#8501;<sub>0</sub> + &#8501;<sub>0</sub> = &#8501;<sub>0</sub>.
+<p align=justify>
+Also, &#8501;<sub>0</sub> &#215; <b><i>m</i></b> = &#8501;<sub>0</sub> for any finite cardinal <b><i>m</i></b>, and &#8501;<sub>0</sub> &#215; &#8501;<sub>0</sub> = &#8501;<sub>0</sub>.
+<p align=justify>
+If sets <i>A</i> and <i>B</i> are finite then we can count the number of maps from <i>A</i> to <i>B</i> by observing that we have a choice of |<i>B</i>| elements of <i>B</i> to which we can map every element of <i>A</i>.<br>
+Hence if the sets <i>A</i> and <i>B</i> have cardinals <b><i>m</i></b> and <b><i>n</i></b>, then we define <b>n</b><sup><b><i>m</i></b></sup> to be the cardinal of the set of maps from <i>A</i> to <i>B</i>. Then we get the usual results for finite cardinals and can verify that, for example, &#8501;<sub>0</sub> &#215; &#8501;<sub>0</sub> = &#8501;<sub>0</sub><sup>2</sup>.
+<p align=justify>
+Now things get a little tricky. A subset <i>T</i> of a set <i>S</i> can be represented by a map from <i>S</i> to the two element set {0, 1}, by mapping <i>s</i> to 1 if <i>s</i> &#8712; <i>T</i> and mapping it to 0 otherwise. So the set of subsets of <b>N</b> is in one-one correspondence with the set of maps from <b>N</b> to this two element set. So this set has cardinal <b>2</b><sup>&#8501;<sub>0</sub> </sup> . Cantor's diagonalisation argument shows that this is <i>strictly greater</i> than &#8501;<sub>0</sub>.
+<p align=justify>
+Note that a map from <b>N</b> to <b>N</b> can be considered as a certain subset of <b>N &#215; N</b> and so the set of all maps from <b>N</b> to <b>N</b> is contained in the set of subsets of the countable set <b>N &#215; N</b>. Hence we may show that &#8501;<sub>0</sub><sup>&#8501;<sub>0</sub></sup> = <b>2</b><sup>&#8501;<sub>0</sub></sup>.
+<p align=justify>
+You can identify the decimal expansion of a real number in the interval [0, 1] with a map from <b>N</b> to the ten-element set of decimal digits. So the cardinality of the set <b>R</b> of real numbers is the same as <b>10</b><sup>&#8501;<sub>0</sub></sup> which is the same as <b>2</b><sup>&#8501;<sub>0</sub></sup>. This is often called <b><i>C</i></b> : the cardinality of the <i>continuum</i>.
+<p align=justify>
+With a bit of effort one may verify that cardinality of the set of all functions from <b>R</b> to <b>R</b> is <b>2<sup><i>C</i></sup></b> and is strictly greater than <b><i>C</i></b>.
+<p align=justify>
+One question which mathematicians puzzled over for a long time was whether there was a cardinal between &#8501;<sub>0</sub> and <b>2</b><sup>&#8501;<sub>0</sub></sup> = <b><i>C</i></b>. The conjecture that there was no set with such a cardinal is called the <i>Continuum Hypothesis</i>. 
+<p align=justify>
+This was the first of the famous set of questions that <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Hilbert.html">David Hilbert</a> posed in 1900. In 1940 the Austrian mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Godel.html">Kurt G&ouml;del</a> showed that this could not be disproved using the other axioms of Set Theory. Then in 1963, the American mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Cohen.html">Paul Cohen</a> proved that it could not be proved either. So one may either accept it or deny it.
+<p align=justify>
+Cantor also devised a theory of <i>ordinal numbers</i> (associated with ordered rather than unordered sets). As with the cardinal numbers, these coincide with <b>N</b> for finite sets, but for infinite sets, you get some really wild stuff!<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A4.html">Previous page</a><br>
+(Farey sequences)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A6.html">Next page</a><br>
+(Continued fractions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

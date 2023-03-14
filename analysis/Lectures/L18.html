@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Properties of uniform convergence</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L17.html">Previous page</a><br>
+(Convergence in infinite dimensional spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L19.html">Next page</a><br>
+(The Weierstrass approximation theorem)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Properties of uniform convergence</font></h2>
+<p>
+We recall that <i>uniform convergence</i> is convergence in the metric <i>d</i><sub>&#8734;</sub> on a space of functions.
+<p align=justify>
+Some of the examples we considered in the last section show that it is possible for a sequence of continuous functions to be pointwise convergent to a non-continuous function. <br>
+Some of the other metrics we have considered give some similar unpleasant results.<br>
+<img src= ../Diagrams/x18-1.gif align = right><br>
+For example, consider the sequence of functions (<i>f</i><sub><i>n</i></sub>) where <i>f</i><sub><i>n</i></sub> is:
+<p align=justify>
+<br clear=right><br>
+<img src= ../Diagrams/x18-2.gif align = right><br>
+Then the pointwise limit of (<i>f</i><sub><i>n</i></sub>) is the function <i>f</i> given by <i>f</i> (<i>x</i>) = 0 if <i>x</i> &lt; <sup>1</sup>/<sub>2</sub> and <i>f</i> (<i>x</i>) = 1 otherwise. Its graph is:<br>
+<br clear=right><br>
+Then it is easy to see that <i>d</i><sub>1</sub>(<i>f</i><sub><i>n</i></sub>, <i>f</i>) = <font size=+1><sup>1</sup>/<sub>2<i>n</i></sub></font>&#8594; 0 as <i>n</i>&#8594; &#8734;. Unfortunately, <i>f</i> does not lie in <i>C</i>[0, 1] and so we cannot quite talk about convergence in this space. However, the sequence (<i>f</i><sub><i>n</i></sub>) is a <i>Cauchy sequence</i> in <i>C</i>[0, 1] with the metric <i>d</i><sub>1</sub>.
+<p align=justify>
+This motivates:
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A space in which every Cauchy sequence is convergent is called a <b>complete space</b>.
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol><li 1>What we saw earlier about the Completeness axiom can now be phrased as:<br>
+<i>The real numbers</i> <b>R</b><i> form a complete space under the usual metric.</i>
+<p align=justify>
+<li 2>The last example shows that <i>C</i>[0, 1] under the metric <i>d</i><sub>1</sub> is <i>not</i> a complete space. We saw earlier that the set of rationals <b>Q</b> under the usual metric is not a complete space.<br>
+</ol>
+<p align=justify>
+The nice thing about the metric <i>d</i><sub>&#8734;</sub> is:
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<dd><i>The space C</i>[0, 1]<i> under uniform convergence</i> (<i>the metric <i>d</i></i><sub>&#8734;</sub>)<i> is a complete space</i>.
+<p align=justify>
+<dl><br>
+<b><font color=green>Proof</font></b><br>
+<dd>We need to show that if (<i>f</i><sub><i>n</i></sub>) is a Cauchy sequence under <i>d</i><sub>&#8734;</sub> (that is: Given <i>&#949;</i> &gt; 0 there exists <i>N</i> such that if <i>m</i>, <i>n</i> &gt; <i>N</i> then <i>d</i><sub>&#8734;</sub>&lt; <i>&#949;</i>) then the sequence has a limit in <i>C</i>[0, 1].
+<p align=justify>
+First we show that the sequence converges to its pointwise limit in the metric <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+<b><font color=green>Proof of that</font></b><br>
+Take a point <i>x</i> &#8712; [0, 1]. Then the sequence (<i>f</i><sub><i>n</i></sub>(<i>x</i>)) is a real sequence which, from the fact that (<i>f</i><sub><i>n</i></sub>) is a Cauchy sequence, is a Cauchy sequence in <b>R</b> and hence has a limit which we will call <i>f</i> (<i>x</i>). Thus the pointwise limit <i>f</i> is defined.
+<p align=justify>
+Since at each point <i>f</i><sub><i>n</i></sub>(<i>x</i>) is close to <i>f</i> (<i>x</i>) we have the lub{ |<i>f</i><sub><i>n</i></sub>(<i>x</i>) - <i>f</i> (<i>x</i>)| for <i>x</i> &#8712; [0, 1] } is small and so (<i>f</i><sub><i>n</i></sub>)&#8594; <i>f</i> in <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+The last thing we need to prove is that the pointwise limit <i>f</i> is continuous.
+<p align=justify>
+<b><font color=green>Proof of that</font></b><br>
+To prove that <i>f</i> is continuous at <i>p</i> &#8712; [0, 1], take some <i>&#949;</i> &gt; 0. Choose <i>N</i> such that <i>d</i><sub>&#8734;</sub>(<i>f</i><sub><i>n</i></sub>, <i>f</i>) &lt; <i>&#949;</i>.<br>
+Then since <i>f</i><sub><i>n</i></sub> is continuous, there exists <i>&#948;</i> such that if <i>x</i> is in the interval (<i>p</i> - <i>&#948;</i>, <i>p</i> + <i>&#948;</i>) then |<i>f</i><sub><i>n</i></sub>(<i>x</i>) - <i>f</i><sub><i>n</i></sub>(<i>p</i>)| &lt; <i>&#949;</i>. Then |<i>f</i> (<i>x</i>) - <i>f</i> (<i>p</i>)| = |<i>f</i> (<i>x</i>) - <i>f</i><sub><i>n</i></sub>(<i>x</i>) + <i>f</i><sub><i>n</i></sub>(<i>x</i>) - <i>f</i><sub><i>n</i></sub>(<i>p</i>) + <i>f</i><sub><i>n</i></sub>(<i>p</i>) - <i>f</i> (<i>p</i>)| &lt; |<i>f</i> (<i>x</i>) - <i>f</i><sub><i>n</i></sub>(<i>x</i>)| + |<i>f</i><sub><i>n</i></sub>(<i>x</i>) - <i>f</i><sub><i>n</i></sub>(<i>p</i>)| + |<i>f</i><sub><i>n</i></sub>(<i>p</i>) - <i>f</i> (<i>p</i>)| &lt; <i>&#949;</i> + <i>&#949;</i> + <i>&#949;</i> and so can be made arbitrarily small.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</dl></dd>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L17.html">Previous page</a><br>
+(Convergence in infinite dimensional spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L19.html">Next page</a><br>
+(The Weierstrass approximation theorem)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

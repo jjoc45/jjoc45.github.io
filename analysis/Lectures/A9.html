@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>More about the delta-function</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A8.html">Previous page</a><br>
+(Space filling curves)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>More about the delta-function</font></h2>
+<p>
+The <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Heaviside.html">Heaviside</a> function <i>H</i> is defined by <i>H</i>(<i>x</i>) = 0 if <i>x</i> &#8804; 0 and <i>H</i>(<i>x</i>) = 1 if <i>x</i> &gt; 0.<br>
+Now observe that <img src= ../Diagrams/xA9-1.gif align = middle> and so it is reasonable to regard <img src= ../Diagrams/xA9-2.gif align = middle>.<br>
+Of course <i>H</i> doesn't have a properly defined tangent at <i>x</i> = 0 so it is stretching things a bit to think of it like this.<br>
+Notice that if you want to play this game a bit more and integrate the Heaviside function itself, you will find that <img src= ../Diagrams/xA9-4.gif align = middle> is a function which is 0 if <i>x</i> &lt; 0 and equal to <i>x</i> if <i>x</i> &gt; 0 and so it is the continuous (but not differentiable) function (<i>x</i> + |<i>x</i>|)/2.
+<p align=justify>
+<img src= ../Diagrams/xA9-3.gif align = right>What happens if you differentiate the <i>&#948;</i>-function ?
+<p align=justify>
+Well, you can think of the <i>&#948;</i>-function as being approximated by a sequence of functions which concentrate their area closer and closer to the origin. <br>
+<p align=right><br>
+Graphs of these function are shown on the left of the diagram.<br>
+<p><br>
+You can differentiate this sequence of functions to get a sequence approximating <i>D</i><i>&#948;</i> looking like the graphs on the right.<br>
+<br clear=right><br>
+This gives something like a <i>dipole</i> which is useful for applied mathematicians and physicists to model things like magnetism.
+<p align=justify>
+Note that if we use <i>convolution</i>, we have <i>f</i> (<i>x</i>) = <i>f</i> * <i>&#948;</i>(<i>x</i>) = <img src= "../Symbolgifs/intR.gif" align=middle ><i>f</i> (<i>t</i>)<i>&#948;</i>(<i>x</i>-<i>t</i>) <i>dt</i> and so <font size=+1><sup><i>d</i></sup>/<sub><i>dx</i></sub></font><i>f</i> (<i>x</i>) = <font size=+1><sup><i>d</i></sup>/<sub><i>dx</i></sub></font><img src= "../Symbolgifs/intR.gif" align=middle ><i>f</i> (<i>t</i>)<i>&#948;</i>(<i>x</i>-<i>t</i>) <i>dt</i> = <img src= "../Symbolgifs/intR.gif" align=middle ><i>f</i> (<i>t</i>)<font size=+1><sup><i>d</i></sup>/<sub><i>dx</i></sub></font><i>&#948;</i>(<i>x</i>-<i>t</i>) <i>dt</i> = <i>f</i> * <i>D</i><i>&#948;</i>(<i>x</i>). Hence convolution with <i>D</i><i>&#948;</i> is the same as differentiation.
+<p align=justify>
+All this is a bit shaky, but it turned out that dealing with functions like this gave the right answers and so physicists in particular used these ideas to set up the mathematics they needed to do Quantum Mechanics.
+<p align=justify>
+In the 1950's the French mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Schwartz.html">Laurent Schwartz</a> (born 1915) found a way of making all of this rigorous and developed what is now called the <i>Theory of Distributions</i>. This has had a big influence on the way mathematicians deal with Partial Differential Equations.<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A8.html">Previous page</a><br>
+(Space filling curves)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

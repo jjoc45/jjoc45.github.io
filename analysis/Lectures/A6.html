@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Continued fractions</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A5.html">Previous page</a><br>
+(Cardinal numbers)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A7.html">Next page</a><br>
+(The Golden Ratio)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Continued fractions</font></h2>
+<p>
+You can think of calculating the decimal expansion of a (positive) real number as the result of implementing the algorithm:
+<blockquote><p align=justify>
+(*) Make a note of the integer part of the number. Subtract this from the number. <br>
+This gives a number <i>x</i> in the range [0,1). If <i>x</i> &#8800; 0 then:<br>
+<font color=red>** Multiply <i>x</i> by 10 **</font><br>
+This gives a number &#8805; 0. Now repeat the loop from (*).
+</blockquote><p align=justify>
+We can replace the step at <font color=red>**</font> ... <font color=red>**</font> by anything else that makes <i>x</i> bigger.
+<p align=justify>
+In particular, if we put in:
+<blockquote><p align=justify>
+<font color=red>** Take the reciprocal 1/<i>x</i> of <i>x</i> **</font>
+</blockquote><p align=justify>
+then we get the <i>Continued fraction expansion</i> of <i>x</i>.
+<p align=justify>
+If you are lucky enough to have a calculator with a <b><font size=+1>[<sup>1</sup>/<sub><i>x</i></sub>]</font></b> button, then you can calculate this for (say) &#960; = 3.141592654... and get the sequence 3, 7, 15, 1, 292, 1, 1, 1, ... which is written <img src= ../Diagrams/xA6-1.gif align = middle> which is shorthand for <img src= ../Diagrams/xA6-2.gif align = middle>
+<p align=justify>
+Truncating this at 3 + <sup>1</sup>/<sub>7</sub> gives the approximation <sup>22</sup>/<sub>7</sub> while truncating it at 3 + <sup>1</sup>/<sub>7+</sub><sup>1</sup>/<sub>15+</sub><sup>1</sup>/<sub>1</sub> gives the approximation <sup>355</sup>/<sub>113</sub> = 3.14159292... which is correct to 6 decimal places. It is a particularly good approximation since it stops just short of the rather large number: 292.
+<p align=justify>
+This was (amazingly) known to the Chinese mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Tsu.html">Ch'ung Chi Tsu</a> before 500 AD. Sadly, we don't know how he found it.
+<p align=justify>
+Continued fractions are used to get good rational approximations for real numbers.
+<p align=justify>
+You can use your calculator to experiment with some other real numbers.
+<p align=justify>
+For example, see what happens when you calculate the sequence for &#8730;2. From this, for example, one can get the approximation <sup>89</sup>/<sub>70</sub> for &#8730;2. (Note: (<sup>89</sup>/<sub>70</sub>)<sup>2</sup> = <sup>9801</sup>/<sub>4900</sub> which is pretty close to 2.)
+<p align=justify>
+What you get if you start with (1 + &#8730;5)/2 is even more surprising.
+<p align=justify>
+In fact, you will find that the continued fraction expansion of the square root of <i>any</i> rational number is rather special.<br>
+ <br>
+Some of the famous irrational numbers have interesting continued fractions.<br>
+The Irish-born mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Brouncker.html">Lord Brouncker</a> (1620 to 1684) found a continued fraction expansion:
+<p align=justify>
+<dd><img src= ../Diagrams/Picontfrac.gif align = middle><br>
+<dt><br>
+The Dutch mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Huygens.html">Christiaan Huygens</a> (1629 to 1695) refused to believe him until Brouncker showed that he could compute &#960; to 10 decimal places using this expansion.
+<p align=justify>
+The Swiss mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Euler.html">Leonhard Euler</a> (1707 to 1783) found a continued fraction expression for <i>e</i> (the base of natural logarithms): <br>
+<dd><i>e</i> = 2 + <sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>2+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>4+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>6+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>8+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>1+</sub><sup>1</sup>/<sub>10+</sub>...<br>
+<dt><br>
+There is a Web site on Continued fractions at <a href=http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/cfINTRO.html>THIS LINK</a>.
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A5.html">Previous page</a><br>
+(Cardinal numbers)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A7.html">Next page</a><br>
+(The Golden Ratio)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

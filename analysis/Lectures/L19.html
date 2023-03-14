@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>The Weierstrass approximation theorem</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L18.html">Previous page</a><br>
+(Properties of uniform convergence)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L20.html">Next page</a><br>
+(The intermediate value theorem)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The Weierstrass approximation theorem</font></h2>
+<p>
+One of the most important ways in which a metric is used is in approximation. Given a function <i>f</i>, finding a sequence which converges to <i>f</i> in the metric <i>d</i><sub>&#8734;</sub> is called <b>uniform approximation</b>. The most important result in this area is due to the German mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Weierstrass.html">Karl Weierstrass</a> (1815 to 1897).
+<p align=justify>
+<dl><b><font color=green>The Weierstrass Approximation theorem</font></b><br>
+<dd><i>Any continuous function on a bounded interval can be uniformly approximated by polynomial functions.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>There are several different ways of proving this important theorem. Here is a method which introduces concepts which are important in other areas of mathematics too.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+If <i>f</i> and <i>g</i> are <i>suitable</i> functions on <b>R</b>, then the <b>convolution</b> <i>f</i> * <i>g</i> is the function defined by <i>f</i> * <i>g</i>(<i>x</i>) = <img src= "../Symbolgifs/intR.gif" align=middle > <i>f</i> (<i>x</i> - <i>t</i>) <i>g</i>(<i>t</i>) <i>dt</i> (<i>suitable</i> means ensuring that the integral exists).
+<p align=justify>
+This concept of convolution is important in the theory of <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Laplace.html">Laplace</a> transforms among other places.
+<p align=justify>
+It turns out that the set <i>X</i> of suitable functions is than a ring under the operations <b>+</b> and <b>*</b> in much the same way that <i>X</i> forms a ring under the usual addition and multiplication.
+<p align=justify>
+The Laplace transform <img src= "../Symbolgifs/laplace.gif" > is then a <i>ring homomorphism</i> from (<i>X</i> <b>+ *</b>) to (<i>X</i> <b>+ .</b>)<br>
+That is: <img src= "../Symbolgifs/laplace.gif" >(<i>f</i> + <i>g</i>) = <img src= "../Symbolgifs/laplace.gif" >(<i>f</i>) + <img src= "../Symbolgifs/laplace.gif" >(<i>g</i>) and <img src= "../Symbolgifs/laplace.gif" >(<i>f</i> * <i>g</i>) = <img src= "../Symbolgifs/laplace.gif" >(<i>f</i>).<img src= "../Symbolgifs/laplace.gif" >(<i>g</i>).
+<p align=justify>
+Thinking about convolution as an algebraic operation, we may ask: <i>Is there an identity element for this operation</i>?<br>
+The answer is: <i>Almost</i>!
+<p align=justify>
+The English mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Dirac.html">Paul Dirac</a> (1902 to 1984) one of the most important founders of Quantum Mechanics, invented the <i>&#948;</i>-function.<br>
+This is a "function" with the properties:<br>
+<i>&#948;</i>(<i>x</i>) = 0 if <i>x</i> &#8800; 0 and <img src= "../Symbolgifs/intR.gif" align=middle > <i>&#948;</i>(<i>x</i>) <i>dx</i> = 1.
+<p align=justify>
+You should think of it as "The density function of a unit mass or charge at the origin".
+<p align=justify>
+Of course it is not really a function since we would have to have <i>&#948;</i>(0) = &#8734; in a rather special way, but it turns out that provided one only uses it in integrals everything is OK.
+<p align=justify>
+For example, <i>f</i> * <i>&#948;</i>(<i>x</i>) = <img src= "../Symbolgifs/intR.gif" align=middle > <i>f</i> (<i>x</i> - <i>t</i>) <i>&#948;</i>(<i>t</i>) <i>dt</i> = <i>f</i> (<i>x</i>) since <i>&#948;</i>(<i>t</i>) = 0 except at <i>t</i> = 0.
+<p align=justify>
+What we will now do is find a sequence of functions (<i>K</i><sub><i>n</i></sub>) which approximate the <i>&#948;</i>-function. The sequence (<i>K</i><sub><i>n</i></sub>* <i>f</i>) will then approximate <i>&#948;</i> * <i>f</i> = <i>f</i>. 
+<p align=justify>
+<img src= ../Diagrams/x19-1.gif align = right><br>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+The <i>n</i>-th <b>Landau kernel function</b> <i>K</i><sub><i>n</i></sub>= <i>c</i><sub><i>n</i></sub>(1 - <i>x</i><sup>2</sup>)<sup><i>n</i></sup> for <i>x</i> &#8712; [-1, 1] and 0 otherwise, where <i>c</i><sub><i>n</i></sub> is chosen so that <img src= "../Symbolgifs/intR.gif" align=middle > <i>K<sub>n</sub></i> = 1.<br>
+<p align=right><br>
+Here are graphs of some of these functions: 
+<p align=justify>
+Note that these are the graphs of the density functions of unit masses concentrated on smaller and smaller areas.<br>
+<br clear=right>
+<p align=justify>
+<b><font color=green>Lemma</font></b><br>
+<i>If f is a continuous function on the interval</i> [-1, 1] <i>then K<sub>n</sub></i> * <i>f is a polynomial.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<i>K</i><sub><i>n</i></sub>* <i>f</i> (<i>x</i>) = <img src= "../Symbolgifs/intm11.gif" align=middle ><i>K</i><sub><i>n</i></sub>(<i>x</i> - <i>t</i>)<i>f</i> (<i>t</i>) <i>dt</i> and <i>K</i><sub><i>n</i></sub> is a polynomial and so <i>K</i><sub><i>n</i></sub>(<i>x</i> - <i>t</i>) can be expanded as <i>g</i><sub>0</sub>(<i>t</i>) + <i>g</i><sub>1</sub>(<i>t</i>) = ... + <i>g</i><sub>2<i>n</i></sub>(<i>t</i>)<i>x</i><sup>2<i>n</i></sup> and so the integral is a polynomial in <i>x</i>.
+<p align=justify>
+<b><font color=green>Lemma</font></b><br>
+<i>The sequence</i> (<i>K<sub>n</sub></i> * <i>f</i>)&#8594; <i>f in d<sub>&#8734;</sub></i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+We need to show that <i>K</i><sub><i>n</i></sub> has "most of its area" concentrated near <i>x</i> = 0.<br>
+First we estimate how big <i>c</i><sub><i>n</i></sub> is:<br>
+<img src= "../Symbolgifs/intm11.gif" align=middle >(1 - <i>t</i>)<sup>2</sup>)<sup><i>n</i></sup><i>dt</i> = 2<img src= "../Symbolgifs/intm11.gif" align=middle >(1 - <i>t</i>)<sup><i>n</i></sup>(1 + <i>t</i>)<sup><i>n</i></sup><i>dt</i> &#8805; 2 <img src= "../Symbolgifs/intm11.gif" align=middle >(1 - <i>t</i>)<sup><i>n</i></sup><i>dt</i> = 2/(<i>n</i>+1).<br>
+Since <img src= "../Symbolgifs/intR.gif" align=middle > <i>K</i><sub><i>n</i></sub>= 1 we must have <i>c</i><sub><i>n</i></sub>&#8804; (<i>n</i>+1)/2.<br>
+[In fact, <i>c</i><sub><i>n</i></sub> grows like a multiple of &#8730;<i>n</i>. For large <i>n</i>, <i>c</i><sub><i>n</i></sub> is approximately 0.566&#8730;<i>n</i>.]<br>
+Look at the area under <i>K</i><sub><i>n</i></sub> which is <i>not</i> near 0.<br>
+<img src= "../Symbolgifs/intd1.gif" align=middle ><i>K</i><sub><i>n</i></sub>(<i>t</i>) <i>dt</i> = <img src= "../Symbolgifs/intd1.gif" align=middle ><i>c</i><sub><i>n</i></sub>(1 - <i>t</i><sup>2</sup>)<sup><i>n</i></sup><i>dt</i> &#8804; (<i>n</i>+1)/2 <img src= "../Symbolgifs/intd1.gif" align=middle >(1 - <i>&#948;</i><sup>2</sup>)<sup><i>n</i></sup><i>dt</i><br>
+since <i>K</i><sub><i>n</i></sub> is decreasing on [<i>&#948;</i>, 1] and this is (<i>n</i> + 1)/2 (1-<i>&#948;</i><sup>2</sup>)<sup><i>n</i></sup>(1-<i>&#948;</i>).<br>
+If <i>r</i> = 1 - <i>&#948;</i><sup>2</sup> then (<i>n</i> + 1)<i>r</i><sup><i>n</i></sup>--> 0 as <i>n</i>&#8594; &#8734;.<br>
+We are told that <i>f</i> is continuous and by a theorem we will prove in the next section we may assume that <i>f</i> is bounded by <i>M</i> (say).<br>
+If <i>x</i> &#8712; [0, 1] then given <i>&#949;</i> &gt; 0 we can find <i>&#948;</i> &gt; 0 such that if |<i>t</i>| &lt; <i>&#948;</i> then |<i>f</i> (<i>x</i> - <i>t</i>) - <i>f</i> (<i>x</i>)| &lt; <i>&#949;</i>.<br>
+So now look at the convolution : <i>K</i><sub><i>n</i></sub>* <i>f</i>.<br>
+|<i>f</i> (<i>x</i>) - <i>K</i><sub><i>n</i></sub>* <i>f</i> (<i>x</i>)| = <img src= "../Symbolgifs/intm11.gif" align=middle >|<i>f</i> (<i>x</i>) - <i>f</i> (<i>x</i> - <i>t</i>)| <i>K</i><sub><i>n</i></sub>(<i>t</i>) <i>dt</i> = <img src= "../Symbolgifs/intm1md.gif" align=middle > + <img src= "../Symbolgifs/intmdd.gif" align=middle > + <img src= "../Symbolgifs/intd1.gif" align=middle >.<br>
+Now on [-1, -<i>&#948;</i>] and on [<i>&#948;</i>, 1] we have <i>K</i><sub><i>n</i></sub>(<i>t</i>) is small if we choose <i>&#948;</i> small. In fact, we can choose <i>&#948;</i> so that <i>K</i><sub><i>n</i></sub>(<i>t</i>) &lt; <i>&#949;</i>/<i>M</i> here and then the first and third integrals are &lt; <i>&#949;</i>.<br>
+For the middle integral, <img src= "../Symbolgifs/intmdd.gif" align=middle >|<i>f</i> (<i>x</i>) - <i>f</i> (<i>x</i> - <i>t</i>)|<i>K</i><sub><i>n</i></sub>(<i>t</i>) <i>dt</i> &#8804; <img src= "../Symbolgifs/intmdd.gif" align=middle ><i>&#949;</i><i>K</i><sub><i>n</i></sub>(<i>t</i>) <i>dt</i> &lt; <i>&#949;</i> since <img src= "../Symbolgifs/intm11.gif" align=middle ><i>K</i><sub><i>n</i></sub>(<i>t</i>) <i>dt</i> = 1.<br>
+Thus |<i>f</i> (<i>x</i>) - <i>K</i><sub><i>n</i></sub>* <i>f</i> (<i>x</i>)| is small when <i>n</i> is large and we have our convergence. This completes the proof of the Weierstrass approximation theorem.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol><img src= ../Diagrams/x19-2.gif align = right><br>
+<li 1>If you take a function like <i>x</i> <img src= "../Symbolgifs/goesto.gif" > |<i>x</i>| with a graph:<br>
+which is continuous but which is not differentiable at <i>x</i> = 0, then we can approximate it uniformly by polynomial functions which are (of course) all differentiable. <br>
+Thus the uniform limit of differentiable functions is not necessarily differentiable.<br>
+<br clear=right><br>
+<li 2>The Weierstrass theorem is about functions which are continuous on a closed bounded inteval like [<i>a</i>, <i>b</i>].<br>
+Although one can define uniform limits of functions on (say) the whole real line <b>R</b>, there are continuous functions which "grow too fast" (like the exponential function <i>e</i><font size=+1><sup><i>x</i></sup></font>) or grow too slowly (like sin(<i>x</i>)) to be approximated well on the whole line. Of course such functions can all be approximated well on a "finite bit" of <b>R</b>.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L18.html">Previous page</a><br>
+(Properties of uniform convergence)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L20.html">Next page</a><br>
+(The intermediate value theorem)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

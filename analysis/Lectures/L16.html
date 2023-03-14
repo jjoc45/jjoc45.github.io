@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Convergence in a metric space</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L15.html">Previous page</a><br>
+(Metric spaces: definition and examples)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L17.html">Next page</a><br>
+(Convergence in infinite dimensional spaces)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Convergence in a metric space</font></h2>
+<p>
+Just as a convergent sequence in <b>R</b> can be thought of as a sequence of better and better approximtions to a limit, so a sequence of "points" in a metric space can approximate a limit here.
+<p align=justify>
+<dl><dt><b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A sequence (<i>x</i><sub><i>n</i></sub>) of points in a metric space (<i>X</i>, <i>d</i>) converges to a limit <i>&#945;</i> if the <i>real sequence</i> (|<i>d</i>(<i>x</i><sub><i>n</i></sub>, <i>&#945;</i>)| converges to 0 in <b>R</b>.
+<p align=justify>
+<dt><b><font color=red>Remark</font></b>
+<p align=justify>
+<dd>If you insist on "back to basics" this reads:<br>
+Given <i>&#949;</i> &gt; 0 there exists <i>N</i> &#8712; <b>N</b> such that if <i>n</i> &gt; <i>N</i> then we have <i>d</i>(<i>x</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i>.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1>For <b>R</b> with its usual metric this is the same as before.
+<p align=justify>
+<li 2>In <b>C</b> with the metric <i>d</i>(<i>z</i>, <i>w</i>) = |<i>z</i> - <i>w</i>|, consider the sequence (<i>z</i>, <i>z</i><sup>2</sup>, <i>z</i><sup>3</sup>, ...) with |<i>z</i>| &lt; 1.<br>
+Then this sequence converges to 0 &#8712; <b>C</b>.
+<p align=justify>
+<img src= ../Diagrams/x16-1.gif align = right>
+<p align=justify>
+e.g. Take <i>z</i> = <font size=+1><sup>(1+<i>i</i>)</sup>/<sub>2</sub></font> so that |<i>z</i>| = <font size=+1><sup>1</sup>/<sub>&#8730;2</sub></font><br>
+<p align=right><br>
+The points lie on a spiral.<br>
+<br clear=right>
+<p align=justify>
+<b><font color=green>Proof that the sequence converges</font></b>
+<p align=justify>
+Look at the real sequence (<i>d</i>(<i>x</i><sub><i>n</i></sub>, 0)) = (|<i>z</i><sup><i>n</i></sup>- 0|) = (|<i>z</i>|<sup><i>n</i></sup>)&#8594; 0 since |<i>z</i>| &lt; 1.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 3>Look at the sequence in <b>R</b><sup>2</sup> given in the following way.<br>
+<i>x</i><sub>1</sub>= 2&#8730;3, <i>y</i><sub>1</sub>= 3 and then define the later terms by 2/<i>x</i><sub><i>n</i>+1</sub>= 1/<i>x</i><sub><i>n</i></sub>+ 1/<i>y</i><sub><i>n</i></sub> and <i>y</i><sub><i>n</i>+1</sub>= &#8730;(<i>x</i><sub><i>n</i>+1</sub><i>y</i><sub><i>n</i></sub>).<br>
+This gives a sequence which evaluates numerically to:<br>
+( (3.4642, 3.0000), (3.2154, 3.1057), (3.1596, 3.1325), (3.1460, 3.1392), (3.1426, 3.1408), 3.1418, 3.1414), ...)
+<p align=justify>
+<img src= ../Diagrams/x16-2.gif align = right>
+<p align=justify>
+This sequence is based on the method used by <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Archimedes.html">Archimedes</a> to calculate &#960;.<br>
+Start with <i>x</i><sub>1</sub>= the semiperimeter of the "outside hexagon"<br>
+Start with <i>y</i><sub>1</sub>= the semiperimeter of the "inside hexagon"<br>
+and then double the number of sides to get a 12-gon , a 24-gon, etc.<br>
+<a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Archimedes.html">Archimedes</a> took the calculation up to <i>n</i> = 5 (corresponding to a 96-gon).
+<p align=justify>
+In fact the sequence in <b>R</b><sup>2</sup> converges to the point (&#960;, &#960;).<br>
+</ol>
+<p align=justify>
+<dt>This last result suggests the following.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<dd><i>Convergence in</i> <b>R</b><sup>2</sup> <i>with its usual metric d</i><sub>2</sub><i> is "componentwise"</i>.
+<p align=justify>
+That is ((<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub>), ... )&#8594; (<i>&#945;</i> , <i>&#946;</i>) if and only if <br>
+(<i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , ... )&#8594; <i>&#945;</i> and (<i>y</i><sub>1</sub> , <i>y</i><sub>2</sub> , ... )&#8594; <i>&#946;</i>.
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>( &#8658; ) Given <i>&#949;</i> &gt; 0 we know that we have <i>N</i> so that if <i>n</i> &gt; <i>N</i> then &#8730;(|<i>x</i><sub><i>n</i></sub>- <i>&#945;</i>|<sup>2</sup>+ |<i>y</i><sub><i>n</i></sub>- <i>&#946;</i>|<sup>2</sup>) &lt; <i>&#949;</i>. But then we must have |<i>x</i><sub><i>n</i></sub>- <i>&#945;</i>| &lt; <i>&#949;</i> and so (<i>x</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i>. Similarly for the other component.
+<p align=justify>
+Conversely: Given <i>&#949;</i> &gt; 0 choose <i>N</i> so that if <i>n</i> &gt; <i>N</i> then |<i>x</i><sub><i>n</i></sub>- <i>&#945;</i>| &lt; <i>&#949;</i> and |<i>y</i><sub><i>n</i></sub>- <i>&#946;</i>| &lt; <i>&#949;</i>. But then &#8730;(|<i>x</i><sub><i>n</i></sub>- <i>&#945;</i>|<sup>2</sup>+ |<i>y</i><sub><i>n</i></sub>- <i>&#946;</i>|<sup>2</sup>) &lt; &#8730;(<i>&#949;</i><sup>2</sup>+ <i>&#949;</i><sup>2</sup>) = &#8730;2 <i>&#949;</i> and so we may make this as small as we like.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt>In fact this last result holds for any <i>finite-dimensional</i> space <b>R</b><sup><i>n</i></sup> and also holds for such spaces with <i>any</i> of the metrics <i>d</i><sub><i>p</i></sub>. The situation for <i>infinite-dimensional</i> spaces of sequences or functions is different as we will see in the next section.<br>
+</dl>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L15.html">Previous page</a><br>
+(Metric spaces: definition and examples)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L17.html">Next page</a><br>
+(Convergence in infinite dimensional spaces)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

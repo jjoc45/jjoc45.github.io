@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Space filling curves</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A7.html">Previous page</a><br>
+(The Golden Ratio)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A9.html">Next page</a><br>
+(More about the delta-function)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Space filling curves</font></h2>
+<p>
+We saw that there is a one-one correspondence between, say, the rationals in the interval [0, 1] and the set <b>Q</b> &#215; <b>Q</b>. So it is not so unlikely that there are at least as many points in the interval [0, 1] as there are in the unit square [0, 1] &#215; [0, 1].
+<p align=justify>
+In fact the map which takes a real number 0.<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub>... to the pair (0.<i>a</i><sub>1</sub><i>a</i><sub>3</sub><i>a</i><sub>5</sub>... , 0.<i>a</i><sub>2</sub><i>a</i><sub>4</sub><i>a</i><sub>6</sub>... ) is an <i>onto</i> map. (It is only the fact that reals with terminating decimals can either end in 000... or 999... that stops it from being a one-one correspondence.)<br>
+<img src= ../Diagrams/xA8-1.gif align = right><br>
+You can think of a <i>path</i> or a <i>curve</i> in <b>R</b><sup>2</sup> as the image of a continuous function <i>p</i> from the interval [0, 1] to <b>R</b><sup>2</sup>.
+<p align=justify>
+<p align=right><br>
+Here is a picture:<br>
+<br clear=right>
+<p align=justify>
+However, this picture may be a bit misleading. In 1890, the Italian mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Peano.html">Giuseppe Peano</a> (1858 to 1932) devised a continuous curve which goes through <i>every point</i> of the unit square. Of course, the picture of its image is not very interesting! <br>
+<br clear=right><br>
+<img src= ../Diagrams/xA8-2.gif align = right><br>
+<p align=right><br>
+Here is how you can make it:<br>
+<br clear=right><br>
+Then, to make <i>p</i><sub>3</sub>, one replaces each of the straight line segments in <i>p</i><sub>2</sub> by a similar "Peano detour". And so on.
+<p align=justify>
+<img src= ../Diagrams/xA8-3.gif align = right><br>
+<p align=right><br>
+Here is what the image of <i>p</i><sub>4</sub> looks like when it is "partially drawn":
+<p align=justify>
+<br clear=right><br>
+This will give a sequence (<i>p</i><sub>1</sub> , <i>p</i><sub>2</sub> , <i>p</i><sub>3</sub> , ... ) of continuous maps from [0, 1] to <b>R</b><sup>2</sup>, which, with a bit of effort, one can show forms a Cauchy sequence under the metric <i>d</i><sub>&#8734;</sub>. Then the theorem about the completeness of spaces of functions under this metric shows that the sequence converges to a continuous map from the interval to the unit square.
+<p align=justify>
+To see that the path does go through every point of the square, observe that the "grid" that you get gets tighter and tighter as you take more and more paths in the sequence, and so any point in the plane will be the limit of points in the images of the <i>p</i><sub><i>n</i></sub>'s. Of course, the limit of the paths will have infinite length, but it will be continuous.
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "A7.html">Previous page</a><br>
+(The Golden Ratio)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "A9.html">Next page</a><br>
+(More about the delta-function)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

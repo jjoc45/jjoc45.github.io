@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Metric spaces: definition and examples</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L14.html">Previous page</a><br>
+(Some horrible functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L16.html">Next page</a><br>
+(Convergence in a metric space)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Metric spaces: definition and examples</font></h2>
+<p>
+<dl>The ideas of convergence and continuity introduced in the last sections are useful in a more general context. In particular we will be able to apply them to sequences of functions.<br>
+The basic idea that we need to talk about convergence is to find a way of saying when two things are close. A metric space is something in which this makes sense.
+<p align=justify>
+<b><font color=red>Definitions</font></b>
+<p align=justify>
+<dd>Let <i>X</i> be a set. A <b>metric</b> on <i>X</i> is an assignment of a distance <i>d</i>(<i>x</i>, <i>y</i>) &#8712; <b>R</b> to every pair of "points" <i>x</i>, <i>y</i> in <i>X</i> <br>
+(that is <i>d</i>: <i>X</i> &#215; <i>X</i>&#8594; <b>R</b>) satisfying the following:<br>
+<ol><li 1>(Positivity) For all <i>x</i>, <i>y</i> &#8712; <i>X</i>, <i>d</i>(<i>x</i>, <i>y</i>) &#8805; 0 and <i>d</i>(<i>x</i>, <i>y</i>) = 0 if and only if <i>x</i> = <i>y</i>,
+<p align=justify>
+<li 2>(Symmetry) For all <i>x</i>, <i>y</i> &#8712; <i>X</i>, <i>d</i>(<i>x</i>, <i>y</i>) = <i>d</i>(<i>y</i>, <i>x</i>),
+<p align=justify>
+<li 3>(The triangle inequality) For all <i>x</i>, <i>y</i>, <i>z</i> &#8712; <i>X</i>, <i>d</i>(<i>x</i>, <i>y</i>) + <i>d</i>(<i>y</i>, <i>z</i>) &#8805; <i>d</i>(<i>x</i>, <i>z</i>).<br>
+</ol><br>
+A <b>metric space</b> is a set <i>X</i> together with such a metric.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1>The prototype: The set of <i>real numbers</i> <b>R</b> with the metric <i>d</i>(<i>x</i>, <i>y</i>) = |<i>x</i> - <i>y</i>|.<br>
+This is what is called the <i>usual metric</i> on <b>R</b>.
+<p align=justify>
+<img src= ../Diagrams/x15-1.gif align = right><br>
+<li 2>The <i>complex numbers</i> <b>C</b> with the metric <i>d</i>(<i>z</i>, <i>w</i>) = |<i>z</i> - <i>w</i>|.<br>
+Although the formula looks similar to the real case, the | | represent the modulus of the complex number. The picture looks different too.<br>
+<br clear=right><br>
+<li 3>The <i>plane</i> <b>R</b><sup>2</sup> with the usual metric <i>d</i><sub>2</sub> obtained from Pythagoras's theorem.<br>
+<i>d</i><sub>2</sub>((<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)) = &#8730;((<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>)<sup>2</sup> + (<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>)<sup>2</sup>).<br>
+The picture looks similar to the complex numbers case.<br>
+<br clear=right><br>
+<img src= ../Diagrams/x15-2.gif align = right><br>
+<li 4>The <i>plane</i> <b>R</b><sup>2</sup> with the <i>taxicab</i> metric <i>d</i><sub>1</sub>.<br>
+<i>d</i><sub>1</sub>((<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)) = |<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>| + |<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>|.<br>
+<br clear=right><br>
+<img src= ../Diagrams/x15-3.gif align = right><br>
+<li 5>The <i>plane</i> <b>R</b><sup>2</sup> with the <i>supremum</i> metric <i>d</i><sub>&#8734;</sub>.<br>
+<i>d</i><sub>&#8734;</sub>((<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)) = max{<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>|, |<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>|}.<br>
+<br clear=right><br>
+In the above three examples the first two properties of the metric are easy to check. The triangle inequality is a bit harder.
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><img src= ../Diagrams/x15-4.gif align = right><li a>To visualise the last three examples, it helps to look at the unit circles. That is the sets {<i>P</i> &#8712; <b>R</b><sup>2</sup>| <i>d</i>(<b>0</b>, <i>P</i>) = 1 }<br>
+<br clear=right><br>
+<li b>The subscripts on the <i>d</i>'s are explained by the fact that there is a whole <i>family</i> of metrics :<br>
+<i>d</i><sub><i>p</i></sub> given by<br>
+<i>d</i><sub><i>p</i></sub>((<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)) = [|<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>|<sup><i>p</i></sup>+ |<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>|<sup><i>p</i></sup>]<sup>1/<i>p</i></sup>for any <i>p</i> &#8805; 1.<br>
+If you let <i>p</i>&#8594; &#8734; you get the example <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+<li c>Examples 3. to 5. above can be defined for higher dimensional spaces <b>R</b><sup><i>n</i></sup> also. The next two examples show that one can even use them in some infinite dimensional spaces.<br>
+</ol><br>
+<li 6>Let <i>X</i> be the set of all bounded real sequences (<i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x</i><sub>3</sub> , ... ). Define a metric <i>d</i><sub>&#8734;</sub> on <i>X</i> by <br>
+<i>d</i><sub>&#8734;</sub>((<i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x</i><sub>3</sub> , ... ), (<i>y</i><sub>1</sub> , <i>y</i><sub>2</sub> , <i>y</i><sub>3</sub> , ... )) = lub{<i>x</i><sub>1</sub> - <i>y</i><sub>1</sub>|, |<i>x</i><sub>2</sub> - <i>y</i><sub>2</sub>|, |<i>x</i><sub>3</sub> - <i>y</i><sub>3</sub>|, ... }.
+<p align=justify>
+(You had better have the sequences bounded or the lub won't exist.)
+<p align=justify>
+This is a metric space that experts call <i>l</i><sup>&#8734;</sup> ("Little <i>l</i>-infinity").
+<p align=justify>
+The other metrics above can be generalised to spaces of sequences also.
+<p align=justify>
+Let us look at some other "infinite dimensional spaces".<br>
+<img src= ../Diagrams/x15-5.gif align = right><br>
+<li 7>Let <i>B</i>[0, 1] be the set of all bounded functions on the interval [0, 1]. Then define a metric (again called the supremum metric) by <i>d</i><sub>&#8734;</sub>(<i>f</i>, <i>g</i>) = <img src= "../Symbolgifs/lub01.gif" align=middle >{|<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)|}.<br>
+<p align=right><br>
+Here is a picture: 
+<p align=justify>
+Although we have drawn the graphs of continuous functions we really only need them to be bounded. <br>
+Note that <i>d</i><sub>&#8734;</sub> is "The maximum distance between the graphs of the functions".<br>
+<br clear=right><br>
+<img src= ../Diagrams/x15-7.gif align = right><br>
+<li 8>Let <i>C</i>[0, 1] be the set of all <i>continuous</i> functions on the interval [0, 1]. <br>
+Then define a metric <i>d</i><sub>1</sub> by <i>d</i><sub>1</sub>(<i>f</i>, <i>g</i>) = <img src= "../Symbolgifs/int01.gif" align=middle >|<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)| <i>dx</i>.<br>
+<p align=right><br>
+Here is a picture: <br>
+<br clear=right>
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><li a>Deciding whether or not an integral of a function exists is in general a bit tricky. In this case, however, it is OK since continuous functions are always integrable.
+<p align=justify>
+<li b>The hard bit about proving that this is a metric is showing that if <i>d</i>(<i>f</i>, <i>g</i>) = 0 then <i>f</i> = <i>g</i>. For this you need to use the fact that <i>f</i> and <i>g</i> are continuous.
+<p align=justify>
+<li c>This last example can be generalised to metrics <i>d</i><sub><i>p</i></sub> with formulae like: <br>
+<i>d</i><sub><i>p</i></sub>(<i>f</i>, <i>g</i>) = [<img src= "../Symbolgifs/int01.gif" align=middle >|<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)|<sup><i>p</i></sup><i>dx</i>]<sup>1/<i>p</i></sup>.<br>
+The case <i>p</i> = 2 is particularly important to theoretical physicists and leads to something called <i>Hilbert Space</i> named after the mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Hilbert.html">David Hilbert</a> (1862 to 1943).<br>
+</ol></ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L14.html">Previous page</a><br>
+(Some horrible functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L16.html">Next page</a><br>
+(Convergence in a metric space)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

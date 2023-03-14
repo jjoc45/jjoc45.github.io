@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>The boundedness theorem</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L20.html">Previous page</a><br>
+(The intermediate value theorem)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L22.html">Next page</a><br>
+(Images of intervals)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The boundedness theorem</font></h2>
+<p>
+<dl>This result explains why closed bounded intervals have nicer properties than other ones.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<dd><i>A continuous function on a closed bounded interval is bounded and attains its bounds.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Suppose <i>f</i> is defined and continuous at every point of the interval [<i>a</i>, <i>b</i>]. Then if <i>f</i> were not bounded above, we could find a point <i>x</i><sub>1</sub> with <i>f</i> (<i>x</i><sub>1</sub>) &gt; 1, a point <i>x</i><sub>2</sub> with <i>f</i> (<i>x</i><sub>2</sub>) &gt; 2, ...<br>
+Now look at the sequence (<i>x</i><sub><i>n</i></sub>). By the Bolzano-Weierstrass theorem, it has a subsequence (<i>x</i><sub><i>i</i><sub><i>j</i></sub></sub>) which converges to a point <i>&#945;</i> &#8712; [<i>a</i>, <i>b</i>]. By our construction the sequence (<i>f</i> (<i>x</i><sub><i>i</i><sub><i>j</i></sub></sub>)) is unbounded, but by the continuity of <i>f</i>, this sequence <i>should</i> converge to <i>f</i> (<i>&#945;</i>) and we have a contradiction.<br>
+The proof that <i>f</i> is bounded below is similar.
+<p align=justify>
+To show that <i>f</i> attains its bounds, take <i>M</i> to be the least upper bound of the set <i>X</i> = { <i>f</i> (<i>x</i>) | <i>x</i> &#8712; [<i>a</i>, <i>b</i>] }. We need to find a point <i>&#946;</i> &#8712; [<i>a</i>, <i>b</i>] with <i>f</i> (<i>&#946;</i>) = <i>M</i> . To do this we construct a sequence in the following way:<br>
+For each <i>n</i> &#8712; <b>N</b>, let <i>x</i><sub><i>n</i></sub> be a point for which | <i>M</i> - <i>f</i> (<i>x</i><sub><i>n</i></sub>) | &lt; <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>. Such a point must exist otherwise <i>M</i> - <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font> would be an upper bound of <i>X</i>. Some subsequence of (<i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , ... ) converges to <i>&#946;</i> (say) and (<i>f</i> (<i>x</i><sub>1</sub>) , <i>f</i> (<i>x</i><sub>2</sub>) , ... )&#8594; <i>M</i> and by continuity <i>f</i> (<i>&#946;</i>) = <i>M</i> as required.<br>
+The proof that <i>f</i> attains its lower bound is similar.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</dl><br>
+Here are some examples to show why you must have a <i>closed bounded</i> interval for this result to work.
+<p align=justify>
+<ol><li 1>Interval not closed<br>
+The function <i>f</i>: (0, 1&#93;&#8594; <b>R</b> defined by <i>f</i> (<i>x</i>) = <font size=+1><sup>1</sup> /<sub><i>x</i></sub></font> is continuous but not bounded.<br>
+The function <i>f</i>: &#91;0, 1)&#8594; <b>R</b> defined by <i>f</i> (<i>x</i>) = <i>x</i> is continuous and bounded but does not attain its least upper bound of 1.
+<p align=justify>
+<li 2>Interval not bounded<br>
+The function <i>f</i>: &#91;0, &#8734;)&#8594; <b>R</b> defined by <i>f</i> (<i>x</i>) = <i>x</i> is continuous but not bounded.<br>
+The function <i>f</i>: &#91;0, &#8734;)&#8594; <b>R</b> defined by <i>f</i> (<i>x</i>) = <font size=+1><sup><i>x</i></sup>/<sub>(1+<i>x</i>)</sub></font> is continuous and bounded but does not attain its least upper bound of 1.<br>
+</ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L20.html">Previous page</a><br>
+(The intermediate value theorem)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L22.html">Next page</a><br>
+(Images of intervals)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

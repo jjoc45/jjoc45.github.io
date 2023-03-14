@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Axioms for the Real numbers</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L4.html">Previous page</a><br>
+(Infinity and infinities)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L6.html">Next page</a><br>
+(Convergence in the Reals)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Axioms for the Real numbers</font></h2>
+<p>
+<dl>We saw before that the Real numbers <b>R</b> have some rather unexpected properties. In fact, there are many things which it is difficult to prove rigorously.
+<p align=justify>
+<b><font color=red>Examples</font></b>
+<p align=justify>
+<dd>How do we know that &#8730;2 exists? In other words how can we be sure that there is some real number whose square is 2?<br>
+It is easy to convince yourself that (say) 2 + 3 = 3 + 2. How about &#8730;2 + &#8730;3 = &#8730;3 + &#8730;2 or <i>e</i> +&#960; = &#960; + <i>e</i>?
+<p align=justify>
+<dt>One's intuition about what should be true works pretty well for <b>N</b> or <b>Z</b> or even for <b>Q</b>. Things don't get hard until we are forced (like the Pythagoreans) to admit the existence of irrationals.
+<p align=justify>
+There are constructive methods for making the full set <b>R</b> from <b>Q</b> and hence starting with <b>N</b>. The first rigorous construction was given by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Dedekind.html">Richard Dedekind</a> (1831 to 1916) in 1872. 
+<p align=justify>
+You can see more about <a href=A3.html>Dedekind's construction</a>.
+<p align=justify>
+However, for the moment we will simply give a set of axioms for the Reals and leave it to intuition that there is something that satisfies these axioms.
+<p align=justify>
+We start with a set, which we'll call <b>R</b> and a pair <b>+ .</b> of binary operations.
+<p align=justify>
+<b><font color=red>The Axioms</font></b> 
+<p align=justify>
+<dd>These are divided into three groups.
+<p align=justify>
+<dt><b>I The algebraic axioms</b>
+<p align=justify>
+<dd><b>R</b> <i>is a field under</i> <b>+</b> <i>and</i> <b>.</b><br>
+This means that (<b>R</b>, +) and (<b>R</b>, .) are both abelian groups and the distributive law (<i>a</i> + <i>b</i>)<i>c</i> = <i>ab</i> + <i>ac</i> holds.
+<p align=justify>
+<dt><b>II The order axioms</b>
+<p align=justify>
+<dd>There is a relation &gt; on <b>R</b>.<br>
+(That is, given any pair <i>a</i>, <i>b</i> then <i>a</i> &gt; <i>b</i> is either true or false). 
+<p align=justify>
+It satisfies:
+<p align=justify>
+a) Trichotomy: For any <i>a</i> &#8712; <b>R</b> exactly one of <i>a</i> &gt; 0, <i>a</i> = 0, 0 &lt; <i>a</i> is true.
+<p align=justify>
+b) If <i>a</i>, <i>b</i> &gt; 0 then <i>a</i> + <i>b</i> &gt; 0 and <i>a</i>.<i>b</i> &gt; 0
+<p align=justify>
+c) If <i>a</i> &gt; <i>b</i> then <i>a</i> + <i>c</i> &gt; <i>b</i> + <i>c</i> for any <i>c</i>
+<p align=justify>
+Something satisfying axioms <b>I</b> and <b>II</b> is called an <b>ordered field</b>.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b><br>
+</dl><br>
+<ol><li 1><i>The field</i> <b>Q</b> <i>of rationals is an ordered field.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Define <font size=+1><sup><i>a</i></sup>/<sub><i>b</i></sub></font> &gt; <font size=+1><sup><i>c</i></sup>/<sub><i>d</i></sub></font> provided that <i>b</i>, <i>d</i> &gt; 0 and <i>ad</i> &gt; <i>bc</i> in <b>Z</b>. One may easily verify the axioms.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><i>The field</i> <b>C</b><i> of complex numbers is not an ordered field under any ordering.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose <i>i</i> &gt; 0. Then -1 = <i>i</i><sup>2</sup> &gt; 0 and adding 1 to both sides gives 0 &gt; 1.<br>
+But squaring both sides gives (-1)<sup>2</sup> = 1 &gt; 0 and so we get a contradiction.<br>
+A similar argument starting with i &lt; 0 also gives a contradiction.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right></ol><br>
+<dl><dt>The above two groups of axioms can be used to deduce any algebraic or order properties of <b>R</b>.
+<p align=justify>
+<b><font color=red>Example</font></b>
+<p align=justify>
+<dd><i>The ordering &gt; on </i><b>R</b><i> is <b>transitive</b>.</i> <br>
+That is, if <i>a</i> &gt; <i>b</i> and <i>b</i> &gt; <i>c</i> then <i>a</i> &gt; <i>c</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<i>a</i> &gt; <i>b</i> if and only if <i>a</i> - <i>b</i> &gt; <i>b</i> - <i>b</i> = 0 by Axiom <b>II c)</b><br>
+<i>a</i> &gt; <i>c</i> if and only if <i>a</i> - <i>c</i> &gt; <i>c</i> - <i>c</i> = 0<br>
+Hence (<i>a</i> - <i>b</i>) + (<i>a</i> - <i>c</i>) &gt; 0 and so <i>a</i> - <i>c</i> &gt; 0 and we have <i>a</i> &gt; <i>c</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt>The thing which distinguishes <b>R</b> from <b>Q</b> (and from other subfields) is the <i>Completeness Axiom</i>.
+<p align=justify>
+<b><font color=red>Definitions</font></b>
+<p align=justify>
+<dd>An <b>upper bound</b> of a non-empty subset <i><i>A</i></i> of <b>R</b> is an element <i><i>b</i></i> &#8712; <b>R</b> with <i>b</i> &#8805; <i>a</i> for all <i>a</i> &#8712; <i>A</i>.<br>
+An element <i>M</i> &#8712; <b>R</b> is a <b>least upper bound</b> or <b>supremum</b> of <i>A</i> if<br>
+<i>M</i> is an upper bound of <i>A</i> and if <i>b</i> is an upper bound of <i>A</i> then <i>b</i> &#8805; <i>M</i>.<br>
+That is, if <i>M</i> is a lub of <i>A</i> then (<img src= "../Symbolgifs/thereexists.gif" ><i>b</i> &#8712; <b>R</b>)(<img src= "../Symbolgifs/forall.gif" ><i>x</i> &#8712; <i>A</i>)(<i>b</i> &#8805; <i>x</i>) &#8658; <i>b</i> &#8805; <i>M</i><br>
+A <b>lower bound</b> of a non-empty subset <i>A</i> of <b>R</b> is an element <i>d</i> &#8712; <b>R</b> with <i>d</i> &#8804; <i>a</i> for all <i>a</i> &#8712; <i>A</i>.<br>
+An element <i>m</i> &#8712; <b>R</b> is a greatest lower bound or infimum of <i>A</i> if<br>
+<i>m</i> is a lower bound of <i>A</i> and if <i>d</i> is an upper bound of <i>A</i> then <i>m</i> &#8805; <i>d</i>.
+<p align=justify>
+<dt>We can now state:
+<p align=justify>
+<b>III The Completeness Axiom</b>
+<p align=justify>
+<dd><i>If a non-empty set A has an upper bound, it has a least upper bound.</i>
+<p align=justify>
+Something which satisfies Axioms I, II and III is called a <b>complete ordered field</b>.
+<p align=justify>
+<dt><b><font color=red>Remark</font></b>
+<p align=justify>
+<dd>In fact one can prove that up to "isomorphism of ordered fields", <b>R</b> is the only complete ordered field.
+<p align=justify>
+Note that the ordered field <b>Q</b> is not complete<br>
+For example, the set {<i>q</i> &#8712; <b>Q</b> | <i>q</i><sup>2</sup> &lt; 2} is bounded but does not have a least upper bound in <b>Q</b>. We will see why in a little while.
+<p align=justify>
+<dt><b><font color=red>Some consequences of the completeness axiom.</font></b><br>
+</dl><br>
+<ol><li 1><i>A subset A which has a lower bound has a greatest lower bound.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Let <i>B</i> = {<i>x</i> &#8712; <b>R</b> | -<i>x</i> &#8712; <i>A</i>}. Then  <i>B</i> is bounded above by -(the lower bound of <i>A</i>) and so has a least upper bound <i>b</i> say. It is then easy to check that -<i>b</i> is a greatest lower bound of <i>A</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><b><font color=green>The Archimedean property of the Reals</font></b>
+<p align=justify>
+<i>If a</i> &gt; 0 <i>in </i><b>R</b><i>, then for some n</i> &#8712; <b>N</b> <i>we have </i><font size=+1><sup>1</sup>/<sub><i>n</i></sub></font> &lt; <i>a</i>.<br>
+Equivalently: Given any <i>x</i> &#8712; <b>R</b>, for some <i>n</i> &#8712; <b>N</b> we have <i>n</i> &gt; <i>x</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+This last statement is equivalent to saying that <b>N</b> is not bounded above. This seems like a very obvious fact, but we will prove it rigorously from the axioms.<br>
+Suppose <b>N</b> were bounded above. Then it would have a least upper bound, <i>M</i> say. But then <i>M</i> - 1 is not an upper bound and so there is an integer <i>n</i> &gt; <i>M</i> - 1. But then <i>n</i> + 1 &gt; <i>M</i> contradicting the fact that <i>M</i> is an upper bound.
+<p align=justify>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+This result has been attributed to the great Greek mathematician (born in Syracuse in Sicily) <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Archimedes.html">Archimedes</a> (287BC to 212BC) and appears in Book V of <i>The Elements</i> of <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Euclid.html">Euclid</a> (325BC to 265BC).
+<p align=justify>
+From this we can deduce :
+<p align=justify>
+<li 3><i>Between any two real numbers is an rational number.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Let <i>a</i> &#8800; <i>b</i> be real numbers with (say) <i>a</i> &lt; <i>b</i>. Choose <i>n</i> so that <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font> &lt; <i>b</i> - <i>a</i>. Then look at multiples of <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>. Since these are unbounded, we may choose the first such multiple with <font size=+1><sup><i>m</i></sup>/<sub><i>n</i></sub></font> &gt; <i>a</i>.<br>
+We claim that <font size=+1><sup><i>m</i></sup>/<sub><i>n</i></sub></font> &lt; <i>b</i>. If not, then since <font size=+1><sup>(<i>m</i>-1)</sup>/<sub><i>n</i></sub></font> &lt; <i>a</i> and <font size=+1><sup><i>m</i></sup>/<sub><i>n</i></sub></font> &gt; <i>b</i> we would have <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font> &gt; <i>b</i> - <i>a</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+A set <i>A</i> with the property that an element of <i>A</i> lies in every interval (<i>a</i>, <i>b</i>) of <b>R</b> is called <b>dense</b> in <b>R</b>. <br>
+We have just proved that the rationals <b>Q</b> are dense in <b>R</b>. In fact, the irrationals are also dense in <b>R</b>.
+<p align=justify>
+We can now prove the result we stated earlier.
+<p align=justify>
+<li 4><i>The real number</i> &#8730;2 <i>exists.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+We will get &#8730;2 as the least upper bound of the set <i>A</i> = {<i>q</i> &#8712; <b>Q</b> | <i>q</i><sup>2</sup> &lt; 2 }. We know that <i>A</i> is bounded above (by 2 say) and so its least upper bound <i>b</i> exists by Axiom III.<br>
+We now prove that <i>b</i><sup>2</sup> &lt; 2 and <i>b</i><sup>2</sup> &gt; 2 both lead to contradictions and so we must have <i>b</i><sup>2</sup> = 2 (by the Trichotomy rule).<br>
+So suppose that <i>b</i><sup>2</sup> &gt; 2. Look at (<i>b</i> - 1 /<i>n</i> )<sup>2</sup> = <i>b</i><sup>2</sup> - 2<i>b</i> /<i>n</i> + 1 /<i>n</i><sup>2</sup> &gt; <i>b</i><sup>2</sup> - 2<i>b</i>/<i>n</i>. <br>
+When is this &gt; 2 ? <br>
+Answer: When <i>b</i><sup>2</sup> - 2<i>b</i>/<i>n</i> &gt; 2 which happens if and only if <i>b</i><sup>2</sup> - 2 &gt; 2<i>b</i>/<i>n</i> or 1/<i>n</i> &lt; (<i>b</i><sup>2</sup> -2)/2<i>b</i> and we can choose such an <i>n</i> by the Archmedean property. Thus <i>b</i> - 1/<i>n</i> is an upper bound, contradicting the assumption that <i>b</i> was the <i>least</i> upper bound.<br>
+Similarly, if <i>b</i><sup>2</sup> &lt; 2 then (<i>b</i> + 1/<i>n</i>)<sup>2</sup> = <i>b</i><sup>2</sup> + 2<i>b</i>/<i>n</i> + 1/<i>n</i><sup>2</sup> &gt; <i>b</i><sup>2</sup> + 2<i>b</i>/<i>n</i>.<br>
+Can this be &lt; 2 ? <br>
+Answer: Yes, when <i>b</i><sup>2</sup> + 2<i>b</i>/<i>n</i> &lt; 2 which happens if and only if 2 - <i>b</i><sup>2</sup> &gt; 2 <i>b</i>/<i>n</i> or 1/<i>n</i> &lt; (2 - <i>b</i><sup>2</sup>)/2<i>b</i> and we can choose an <i>n</i> satisfying this, leading to the conclusion that <i>b</i> would not be an upper bound.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 5><i>Real numbers can be defined by decimal expansions.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Given the decimal expansion (say) 0.<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub>... consider the set (of rationals) {0.<i>a</i><sub>1</sub> , 0.<i>a</i><sub>1</sub><i>a</i><sub>2</sub> , 0.<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub> , ...} = { <i>a</i><sub>1</sub>/10 , (10 <i>a</i><sub>1</sub> + <i>a</i><sub>2</sub>)/100 , (100 <i>a</i><sub>1</sub> + 10 <i>a</i><sub>2</sub> + <i>a</i><sub>3</sub>)/1000 , ... }.<br>
+This is bounded above -- say by (<i>a</i><sub>1</sub>+ 1)/10 or by (10 <i>a</i><sub>1</sub>+<i>a</i><sub>2</sub>+ 1)/100 etc. and so it has a <i>least upper bound</i>.<br>
+This is the real number defined by the decimal expansion.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L4.html">Previous page</a><br>
+(Infinity and infinities)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L6.html">Next page</a><br>
+(Convergence in the Reals)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

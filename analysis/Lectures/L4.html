@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Infinity and infinities</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L3.html">Previous page</a><br>
+(Functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L5.html">Next page</a><br>
+(Axioms for the Real numbers)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Infinity and infinities</font></h2>
+<p>
+<dl>It was not until the 19th Century that mathematicians discovered that infinity comes in different sizes. <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Cantor.html">Georg Cantor</a> (1845 to 1918) defined the following.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>Any set which can be put into one-one correspondence with <b>N</b> is called <b>countable</b>.
+<p align=justify>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<dd>Given such a set, one can count off its elements: 1st, 2nd, 3rd, .. and will eventually reach any element of the set.<br>
+We will see later that many infinite sets are countable but that some are not.<br>
+Some versions of the above definition include finite sets among the countable ones, but we will (mostly) not do so.
+<p align=justify>
+<dt><b><font color=red>Examples of some countable sets</font></b>
+<p align=justify>
+<ol><li 1><i>The set </i><b>Z</b><i> of </i>(<i>positive, zero and negative</i>)<i> integers is countable.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Here is a counting. That is, we list the elements<br>
+<pre><b>N</b>  1  2  3  4  5  6  7 ...
+<b>Z</b>  0  1 -1  2 -2  3 -3 ...</pre>
+You can (if you wish) write down a formula: <sup>1</sup>/<sub>2</sub> <i>n</i> if <i>n</i> is even, <sup>1</sup>/<sub>2</sub> (<i>n</i> - 1)  if <i>n</i> is odd.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><i>The set </i><b>N &#215; N</b><i> is countable.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Count the points with integer coefficients in the positive quadrant as shown. (The formula is now rather tricky to write down.)<br>
+<img src= ../Diagrams/x04-1.gif><br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 3><i>The set </i><b>Q</b><i> of all rationals is countable.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Write down a positive rational <font size=+1><sup><i>x</i></sup>/<sub><i>y</i></sub></font> at the point (<i>x</i>, <i>y</i>) in the plane and count as in the last example, except that you can leave out a point if you have already counted the rational. You have to do this because, for example, <sup>1</sup>/<sub>1</sub> = <sup>2</sup>/<sub>2</sub> etc.<br>
+<img src= ../Diagrams/x04-2.gif>
+<p align=justify>
+This will count all the positive rationals. Then use the same trick as in example 1 to count <i>all</i> the rationals.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol><br>
+The amazing insight achieved by Cantor is the following result.
+<p align=justify>
+<dt><b><font color=green>Theorem</font></b> (Cantor 1874)<br>
+<dd><i>The set of real numbers </i><b>R</b><i> is not countable.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>We will show that the set of reals in the interval (0, 1) is not countable. <br>
+This proof is called the <i>Cantor diagonalisation argument</i>.
+<p align=justify>
+Suppose we could write down all the decimal expansions of the reals in (0, 1) in a list:<br>
+0.<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub><i>a</i><sub>4</sub><i>a</i><sub>5</sub>...<br>
+0.<i>b</i><sub>1</sub><i>b</i><sub>2</sub><i>b</i><sub>3</sub><i>b</i><sub>4</sub><i>b</i><sub>5</sub>...<br>
+0.<i>c</i><sub>1</sub><i>c</i><sub>2</sub><i>c</i><sub>3</sub><i>c</i><sub>4</sub><i>c</i><sub>5</sub>...<br>
+0.<i>d</i><sub>1</sub><i>d</i><sub>2</sub><i>d</i><sub>3</sub><i>d</i><sub>4</sub><i>d</i><sub>5</sub>...<br>
+...<br>
+and now define a decimal <i>x</i> = <i>x</i><sub>1</sub><i>x</i><sub>2</sub><i>x</i><sub>3</sub><i>x</i><sub>4</sub>... by <i>x</i><sub>1</sub>&#8800; <i>a</i><sub>1</sub> (or 9), <i>x</i><sub>2</sub>&#8800; <i>b</i><sub>2</sub> (or 9), <i>x</i><sub>3</sub>&#8800; <i>c</i><sub>3</sub> (or 9), etc.<br>
+Then the decimal expansion of <i>x</i> does not end in recurring 9's and it differs from the <i>n</i>th element of the list in the <i>n</i>th decimal place. Hence it represents an element of the interval (0, 1) which is not in our counting and so we do not have a counting of the reals in (0, 1).<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Some properties of countability</font></b><br>
+</dl><br>
+<ol><li 1><b><font color=green>Theorem</font></b><br>
+<dd><i>A subset of a countable set is either finite or countable.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+If <i>A</i> is countable and <i>B</i> &#8838; <i>A</i> then count through the elements of <i>A</i> leaving out those which are not in <i>B</i>.<br>
+More rigorously, let <i>b</i><sub>1</sub> be the first element of <i>B</i> to be counted. Then either <i>B</i> - {<i>b</i><sub>1</sub>} is empty, in which case the set is finite, or one can repeat the process to get <i>b</i><sub>2</sub> , <i>b</i><sub>3</sub> , etc.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><b><font color=green>Theorem</font></b><br>
+<dd><i>A countable union of finite or countable sets is finite or countable.</i><br>
+That is, if the sets <i>A</i><sub><i>i</i></sub> are finite or countable for each <i>i</i> in the finite or countable set <i>I</i> then <img src= ../Diagrams/x04-8.gif align = middle> is finite or countable.
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+This is based on the fact that <b>N &#215; N</b> is countable.<br>
+Since <i>I</i> is countable we may as well take <i>I</i> = <b>N</b>. Then use <b>N</b> &#215; {1} to count <i>A</i><sub>1</sub> , <b>N</b> &#215; {2} to count <i>A</i><sub>2</sub> , etc.<br>
+If the <i>A</i><sub><i>i</i></sub> overlap, leave out any elements counted already and one gets a one-one correspondence between a subset of <b>N &#215; N</b> which is thus countable by the last result.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol><br>
+One of the amazing consequences of Cantor's work is that it proves the existence of a class of real numbers which previously had been very difficult to investigate.<br>
+<dl><br>
+<dt><b><font color=red>Definition</font></b>
+<p align=justify>
+<dd>A real number is called <b>algebraic</b> if it is a root of a polynomial with rational (or integer) coefficients. <br>
+Other real numbers are called <b>transcendental</b>.
+<p align=justify>
+<dt><b><font color=red>Examples</font></b>
+<p align=justify>
+<ol><li 1>If <i>n</i> is a positive integer then &#8730;<i>n</i> is a root of <i>x</i><sup>2</sup> - <i>n</i> = 0 and so is algebraic.<br>
+<li 2>The real number &#8730;2 + &#8730;3 satisfies the equation (<i>x</i><sup>2</sup> - 5)<sup>2</sup> = 24 <i>x</i><sup>2</sup> and so is also algebraic.<br>
+</ol><br>
+<dt><b><font color=green>Theorem</font></b> (Cantor)<br>
+<dd><i>The set of algebraic numbers is countable. Hence there are uncountably many transcendental numbers.</i>
+<p align=justify>
+<dt><b><font color=green>Proof</font></b><br>
+<dd>Since a polynomial of degree <i>n</i> with rational coeficients has (<i>n</i>+ 1) coefficients, such polynomials can be put into one-one correspondence with <b>Q &#215; Q &#215; ... &#215; Q</b> (<i>n</i>+ 1 times). This is countable by an extension of the above result about <b>N &#215; N</b> and so there are only countably many such polynomials. Such a polynomial can have at most <i>n</i> roots and so there are only countably many such roots.<br>
+Finally, the set of <i>all</i> such roots is the union over <i>n</i> of the roots of polynomials of degree <i>n</i> and so there are countably many of these.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<dt><b><font color=red>Remarks</font></b>
+<p align=justify>
+<dd>Many mathematicians found this proof of the existence of transcendentals rather unsatisfactory.<br>
+In 1851, <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Liouville.html">Liouville</a> was the first to prove the existence of a transcendental. He prove that the number 0.110001000... (with a 1 in the <i>n</i>! place and 0 elsewhere is transcendental.<br>
+In 1873, <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Hermite.html">Hermite</a> proved that <i>e</i> is transcendental.<br>
+In 1882, <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Lindemann.html">Lindemann</a> proved that &#960; is transcendental.<br>
+In 1900, <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Hilbert.html">Hilbert</a> published a famous set of problems to challenge mathematicians in the new century. The 23rd problem was to prove that if <i>a</i> is algebraic (<i>a</i> &#8800; 0, 1) and <i>x</i> is irrational then <i>a</i><font size=+1><sup><i>x</i></font></sup> is transcendental. This was proved by <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Gelfond.html">Gelfond</a> in 1934.<br>
+</dl><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L3.html">Previous page</a><br>
+(Functions)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L5.html">Next page</a><br>
+(Axioms for the Real numbers)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>
