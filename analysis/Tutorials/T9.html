@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Exercises 9</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T8.html">Previous page</a><br>
+(Exercises 8)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T10.html">Next page</a><br>
+(Exercises 10)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 9</font></h2>
+<p>
+<ol><li 1>Define the metric <i>d</i><sub>2</sub> on the space <i>C</i>[0,1] of continuous functions on [0,1] by <i>d</i><sub>2</sub>(<i>f</i>,<i>g</i>) =[<img src= "../Symbolgifs/int01.gif" align=middle >(<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>))<sup>2</sup><i>dx</i>]<sup>1/2</sup>.<br>
+If <i>a</i>, <i>b</i> are fixed real numbers, calculate <i>d</i><sub>2</sub>(<i>x</i><sup>2</sup>, <i>ax</i> + <i>b</i>). Use the usual method for finding the turning points of a function of two variables to find the values of <i>a</i>, <i>b</i> for which this distance is a minimum. <br>
+[This is the process of linear regression which is important in many areas of applied mathematics and statistics.]
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Let (<i>f</i><sub><i>n</i></sub>) be a sequence of continuous functions on a bounded interval, which satisfy |<i>f</i><sub><i>n</i></sub>(<i>x</i>)| &#8804; <i>M</i><sub><i>n</i></sub>for real numbers <i>M</i><sub><i>n</i></sub> and all <i>x</i> in the interval. If the <i>series</i> <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><i>M</i><sub><i>n</i></sub> is convergent, prove that the partial sums of the series <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><i>f</i><sub><i>n</i></sub>(<i>x</i>) are uniformly convergent to a continuous function.<br>
+[Hint: Show that the sequence of partial sums of <img src= "../Symbolgifs/sigmai1inf.gif" align=middle > <i>f</i><sub><i>n</i></sub>(<i>x</i>) are a Cauchy sequence in <i>C</i>[0,1] and then use the result about completeness of this space.]<br>
+This result is known as the <b><font color=red>Weierstrass <i>M</i>-test</font></b> after the German mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Weierstrass.html">Karl Weierstrass</a> (1815 to 1897).<br>
+In 1861 the German mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Riemann.html">Bernhard Riemann</a> (1826 to 1866) studied the function given by the series <img src= "../Symbolgifs/sigmai1inf.gif" align=middle >sin(<i>n</i><sup>2</sup><i>x</i>)/<i>n</i><sup>2</sup> and tried to show that it was a continuous function whose derivative did not exist at any point. Use the last result to prove that this series does define a continuous function.<br>
+In fact this function <i>is</i> differentiable, though only at a countable subset of points. In 1872 Weierstrass defined the function <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><i>b</i><sup><i>n</i></sup>cos(<i>a</i><sup><i>n</i></sup><i>x</i>) where 0 &lt; <i>b</i> &lt; 1 and <i>a</i> is an odd positive integer with <i>ab</i> &gt; 1. He was able to prove that it is differentiable nowhere. Use the Weierstrass <i>M</i>-test to prove that it is continuous. This was the first such function to be discovered.
+<p align=justify>
+<img src= ../Diagrams/xT9-2.gif>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src= ../Diagrams/xT9-3.gif> 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Define a function on the set of integers <b>Z</b> by <i>d</i>(<i>m</i>, <i>n</i>) = 1/2<sup><i>r</i></sup> if <i>m</i> &#8800; <i>n</i> where 2<sup><i>r</i></sup> is the largest power of 2 dividing <i>m</i> - <i>n</i> and <i>d</i>(<i>m</i>,<i>m</i>) = 0. <br>
+Prove that <i>d</i> is a metric on <b>Z</b>. This is called the 2<i>-adic metric</i>. <br>
+Prove that the sequence (1, 2, 4, 8, 16, ...) converges to 0 in this metric.<br>
+The mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Hensel.html">Kurt Hensel</a> (1861 - 1941, born in what was K&ouml;nigsberg in Germany and is now Kaliningrad in Russia) used ideas like this to prove results in Number Theory.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S9.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T8.html">Previous page</a><br>
+(Exercises 8)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T10.html">Next page</a><br>
+(Exercises 10)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Exercises 7</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 7</font></h2>
+<p>
+<ol><li 1>The Heaviside function (named after the English mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Heaviside.html">Oliver Heaviside</a> (1850 to 1925) who also has the ionic layer mentioned in the lyrics of the musical <i>Cats</i> called after him) is defined by:<br>
+<i>h</i>(<i>x</i>) = 0 for <i>x</i> &#8804; 0 and <i>h</i>(<i>x</i>) = 1 for <i>x</i> &gt; 0. <br>
+Prove that <i>h</i> is not continuous at 0 using: <br>
+(i) the sequential definition of continuity,<br>
+(ii) the <i>&#949;</i>-<i>&#948;</i> definition of continuity.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Use the <i>&#949;</i>-<i>&#948;</i> definition of continuity to prove that the function <i>f</i> (<i>x</i>) = <i>x</i><sup>2</sup> is continuous at the point <i>x</i> = 1.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>The function the <i>floor</i> of <i>x</i> is defined to be <i>x</i> rounded down to an integer and is written <img src= "../Symbolgifs/floor1.gif" ><i>x</i><img src= "../Symbolgifs/floor2.gif" >. <br>
+So for example the floor of 2.6 is 2 and the floor of -3.3 is -4 while the floor of 5 is 5.<br>
+Prove that this function is discontinuous at every integer and continuous elsewhere.<br>
+(You can probably guess what the <i>ceiling</i> of <i>x</i> is.)<br>
+The integer part function is denoted by [<i>x</i>]. So for example [-3.5] = -3 and [2.8] = 2.<br>
+Prove that this function is continuous at 0 but discontinuous at all other integers.<br>
+The fractional part of <i>x</i> is denoted by {<i>x</i>}. Where is this function continuous?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>Let <i>f</i> and <i>g</i> be functions which are continuous on the whole of <b>R</b> and with <i>f</i> (0) = <i>g</i> (0). <br>
+Prove that the function defined by <i>h</i>(<i>x</i>) = <i>f</i> (<i>x</i>) for <i>x</i> &#8804; 0 and <i>h</i>(<i>x</i>) = <i>g</i>(<i>x</i>) for <i>x</i> &gt; 0 is continuous everywhere.<br>
+Hence prove that the absolute value function | <i>x</i> | is continuous everywhere.<br>
+If <i>f</i> is a continuous function on <b>R</b>, prove that the function | <i>f</i> (<i>x</i>) | is also continuous on <b>R</b>.<br>
+If <i>f</i> and <i>g</i> are continuous functions prove that the function <i>M</i>(<i>x</i>) = max{<i>f</i> (<i>x</i>), <i>g</i> (<i>x</i>)} is also continuous.<br>
+[Hint: Prove that max(<i>a</i>, <i>b</i>) =((<i>a</i> + <i>b</i>) + |<i>a</i> - <i>b</i>|)/2 for any real numbers <i>a</i> and <i>b</i>.]<br>
+Prove that the function <i>m</i>(<i>x</i>) = min{<i>f</i> (<i>x</i>), <i>g</i> (<i>x</i>)} is continuous if <i>f</i> and <i>g</i> are.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<img src= ../Diagrams/xT7-1.gif align = right><br>
+<li 5>Use this picture of the unit circle with the angle <i>ABC</i> = <i>x</i> and angle <i>ABD</i> = <i>y</i> to prove that | sin <i>x</i> - sin <i>y</i> | &#8804; | <i>x</i> - <i>y</i> |<br>
+Hence prove that the function <i>f</i> (<i>x</i>) = sin <i>x</i> is continuous everywhere.<br>
+Prove that the function cos <i>x</i> is continuous everywhere and hence locate the points where the function tan <i>x</i> is continuous and prove it.<br>
+<br clear=right>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S7.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Exercises 6</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T5.html">Previous page</a><br>
+(Exercises 5)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T7.html">Next page</a><br>
+(Exercises 7)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 6</font></h2>
+<p>
+<ol><li 1>For each of the following sequences, decide whether they are eventually monotonic (and prove it).<br>
+(a) ( (<i>n</i>+1)/(<i>n</i>+2) )<br>
+(b) (<i>n</i> + 8/<i>n</i>)<br>
+(c) (<i>n</i> + (-1)<sup><i>n</i></sup>)<br>
+(d) (2<i>n</i> + (-1)<sup><i>n</i></sup>) 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Let <i>s</i><sub><i>n</i></sub> be the partial sum <img src= ../Diagrams/xT6-1.gif align = middle> of the series <img src= "../Symbolgifs/sigmai1inf.gif" align=middle >(1/<i>i</i><sup>2</sup>). Prove that the sequence (<i>s</i><sub><i>n</i></sub>) is monotonic and use induction to show that <i>s</i><sub><i>n</i></sub>&#8804; 2 - <sup>1</sup>/<sub><i>n</i></sub>. Hence prove that the series converges.<br>
+<a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Euler.html">Leonhard Euler</a> (1707 to 1783) showed that its limit is &#960;<sup>2</sup>/<sub>6</sub>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Define a sequence (<i>a</i><sub><i>n</i></sub>) by <i>a</i><sub>1</sub>= 1 and <i>a</i><sub><i>n</i>+1</sub>= <i>a</i><sub><i>n</i></sub>+ <sup>1</sup>/<sub><i>n</i></sub> for <i>n</i> &#8805; 1. Prove that the limit as <i>n</i>&#8594; &#8734; of |<i>a</i><sub><i>n</i></sub>- <i>a</i><sub><i>n</i>+1</sub>| is 0 but that (<i>a</i><sub><i>n</i></sub>) is <i>not</i> a Cauchy sequence.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>Let (<i>s</i><sub><i>n</i></sub>) be the sequence of partial sums of the <i>positive</i> series <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><i>b</i><sub><i>n</i></sub>. If 0 &#8804; <i>b</i><sub><i>n</i></sub>&#8804; <i>c</i><sub><i>n</i></sub> and <img src= "../Symbolgifs/sigmai1inf.gif" align=middle ><i>c</i><sub><i>n</i></sub> has a convergent sequence of partial sums, deduce that (<i>s</i><sub><i>n</i></sub>) is monotonic and bounded above and hence convergent.<br>
+This is the so called <b><font color=red>Comparison Test for positive series</font></b> discovered by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Bernoulli_Jacob.html">Jacob Bernoulli</a> (1654 to 1705).
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Let 0 &lt; <i>r</i> &lt; 1 and let (<i>a</i><sub><i>n</i></sub>) be a sequence for which |<i>a</i><sub><i>n</i></sub>- <i>a</i><sub><i>n</i>+1</sub>| &lt; <i>r</i><sup><i>n</i></sup> for all <i>n</i>. Prove that (<i>a</i><sub><i>n</i></sub>) is a Cauchy sequence.<br>
+Define a sequence (<i>a</i><sub><i>n</i></sub>) by <i>a</i><sub>1</sub>= 0, <i>a</i><sub>2</sub>= 1 and <i>a</i><sub><i>n</i>+1</sub>= <i>a</i><sub><i>n</i></sub>/3 + 2<i>a</i><sub><i>n</i>-1</sub>/3 for <i>n</i> &gt; 1. Use the last result to show that this is a Cauchy sequence and hence prove that it is convergent.<br>
+Any guesses about what it converges to?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>For any <i>x</i> &gt; 0 we have <i>x</i><sup>0</sup>= 1 and 0<sup><i>x</i></sup>= 0. So is the limit as <i>x</i>&#8594; 0+ of <i>x</i><sup><i>x</i></sup>= 0 or 1 or neither? <br>
+What is the limit as <i>n</i>&#8594; &#8734; of <i>n</i><sup>1/<i>n</i></sup>?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>If you invest &#163;<i>N</i> at a rate of (say)12% per annum <i>simple interest</i>, then at the end of the year you would have &#163;<i>N</i>(1 + 0.12). <br>
+If the interest were calculated twice (i.e. the rate is 6% per 6 months) you would have &#163;<i>N</i>(1 + 0.06)<sup>2</sup> at the end of the year. (This is called <i>compound interest</i>.) <br>
+If the interest were calculated 3 times a year, you would have &#163;<i>N</i>(1 + 0.04)<sup>3</sup> at the end. And so on. <br>
+Compounding more and more often, the number of pounds you would have at the end of the year would be the limit as <i>n</i>&#8594; &#8734; of the sequence (<i>a</i><sub><i>n</i></sub>) with <i>a</i><sub><i>n</i></sub>= <i>N</i>(1+0.12/<i>n</i>)<sup><i>n</i></sup>.<br>
+Take logarithms, replace 1/<i><i>n</i></i> by <i>x</i> and use l'H&ocirc;pital's rule to find the limit as <i>x</i>&#8594; 0.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.7.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S6.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T5.html">Previous page</a><br>
+(Exercises 5)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T7.html">Next page</a><br>
+(Exercises 7)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

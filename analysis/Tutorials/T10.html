@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Exercises 10</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T9.html">Previous page</a><br>
+(Exercises 9)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 10</font></h2>
+<p>
+<ol><li 1>If <i>f</i>, <i>g</i> are continuous functions on an interval [<i>a</i>, <i>b</i>], prove that <i>d</i><sub>1</sub>(<i>f</i>, <i>g</i>) &#8804; (<i>b</i> - <i>a</i>)<i>d</i><sub>&#8734;</sub>(<i>f</i>, <i>g</i>).<br>
+Hence prove that if a sequence (<i>f</i><sub><i>n</i></sub>) in <i>C</i>[<i>a</i>, <i>b</i>] converges to a function <i>f</i> in <i>d</i><sub>&#8734;</sub> it also converges to <i>f</i> in <i>d</i><sub>1</sub>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Let <i>f</i> be a continuous function on the interval [0,1] for which <i>f</i> (0) = <i>f</i> (1). By considering the function <i>h</i>(<i>x</i>) = <i>f</i> (<i>x</i>) - <i>f</i> (<i>x</i> + <sup>1</sup>/<sub>2</sub>) on a suitable interval, prove that there is some point <i>x</i> in [0, <sup>1</sup>/<sub>2</sub>] for which <i>f</i> (<i>x</i>) = <i>f</i> (<i>x</i> + <sup>1</sup>/<sub>2</sub>).<br>
+Deduce that there are two points opposite one another on the equator where the temperature is the same.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Let <i>f</i> be a function from <b>R</b> to <b>R</b> for which there is a constant <i>&#955;</i> &lt; 1 such that | <i>f</i> (<i>x</i>) - <i>f</i> (<i>y</i>) | &#8804; <i>&#955;</i>| <i>x</i> - <i>y</i>|. Such a function is called a <i>contraction mapping</i>.<br>
+Choose a point <i>x</i><sub>0</sub> and define a sequence (<i>a</i><sub><i>n</i></sub>) by <i>a</i><sub>1</sub>= <i>x</i><sub>0</sub>, <i>a</i><sub><i>n</i>+1</sub>= <i>f</i> (<i>a</i><sub><i>n</i></sub>) for <i>n</i> &#8805; 1. Prove that this is a Cauchy sequence and that it has a limit <i>a</i> which is a fixed point of <i>f</i>. i.e. <i>f</i> (<i>a</i>) = <i>a</i>.<br>
+Prove that this fixed point is unique.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<b>The next three questions try to show you why the metric <i>d</i><sub>2</sub> is an easier one to work with than <i>d</i><sub>1</sub> or <i>d</i><sub>&#8734;</sub>.</b><br>
+<img src= ../Diagrams/xT10-1.gif align = right><br>
+<li 4>
+<p align=justify>
+Find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub>1</sub>. <br>
+i.e find the value of <i>a</i> which minimises <i>d</i><sub>1</sub>(<i>x</i><sup>2</sup>, <i>ax</i>). <br>
+For this you have to minimise the shaded area. <br>
+Calculate this area by first finding the <i>x</i>-coordinate of the point <i>P</i> in terms of <i>a</i>.<br>
+<br clear=right>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<img src= ../Diagrams/xT10-2.gif align = right><br>
+<li 5>
+<p align=justify>
+Find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub>&#8734;</sub>. <br>
+i.e. find the value of <i>a</i> which minimises <i>d</i><sub>&#8734;</sub>(<i>x</i><sup>2</sup>, <i>ax</i>). <br>
+For this you have to choose <i>a</i> so that the "vertical distance between the graphs" is a minimum. <br>
+From the picture, you can see that the best you can do is to adjust the value of <i>a</i> so that the two dark lines have equal length.<br>
+<br clear=right>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Use the method of Exercises 9 Question 1 to find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub>2</sub>. 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S10.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S10.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T9.html">Previous page</a><br>
+(Exercises 9)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

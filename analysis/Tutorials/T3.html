@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Exercises 3</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T2.html">Previous page</a><br>
+(Exercises 2)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T4.html">Next page</a><br>
+(Exercises 4)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 3</font></h2>
+<p>
+<ol><li 1> Use the axioms for a field to prove that 0 . <i>a</i> = 0 for any element <i>a</i> of a field.
+<p align=justify>
+Prove that -1 . -1 = 1 and thereby justify the old rhyme:
+<blockquote><p align=justify>
+<i>Minus times minus is equal to plus<br>
+The reasons for this we will not discuss.</i>
+</blockquote><p align=justify>
+Use the axioms for an ordered field to prove that 1 &gt; 0 in any ordered field.
+<p align=justify>
+Suppose that <i>a</i>, <i>b</i>, <i>c</i> are elements of an ordered field. Prove the following.<br>
+if <i>a</i> &gt; 0 then 0 &gt; -<i>a</i>,<br>
+if <i>a</i> &gt; 0 and 0 &gt; <i>b</i> then 0 &gt; <i>a</i> . <i>b</i>,<br>
+if <i>a</i> &gt; <i>b</i> and 0 &gt; <i>c</i> then <i>b</i> . <i>c</i> &gt; <i>a</i> . <i>c</i>,<br>
+if <i>a</i> &gt; 0 then <i>a</i><sup>-1</sup> &gt; 0, if 0 &gt; <i>a</i> then 0 &gt; <i>a</i><sup>-1</sup>. 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2> Let <i>F</i> be the set {0, 1, 2, 3, 4, 5, 6} on which addition and multiplication are defined modulo 7. Show that <i>F</i> is a field under these operations.
+<p align=justify>
+Define an ordering 6 &gt; 5 &gt; 4 &gt; 3 &gt; 2 &gt; 1 &gt; 0 on <i>F</i> and show that <i>F</i> is not an ordered field under this ordering.<br>
+Prove that <i>F</i> is not an ordered field under any ordering.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3> Write down the least upper bound (lub) and greatest lower bound (glb) of each of the following sets. <br>
+In which cases are the lub and glb elements of the set?
+<p align=justify>
+(a) {<i>x</i> &#8712; <b>Q</b> | <i>x</i><sup>3</sup> &lt; 2} <br>
+(b) {<i>x</i> &#8712; <b>R - Q</b> | <i>x</i><sup>2</sup> &#8804; 2}<br>
+(c) {1 , <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , <sup>1</sup>/<sub>4</sub> , <sup>1</sup>/<sub>5</sub> , ...}<br>
+(d) {<i>x</i> &#8712; <b>R</b> | <i>x</i><sup>2<i>n</i>+1</sup> = 2 for some <i>n</i> &#8712; <b>N</b>}<br>
+(e) {<font size=+1><sup><i>m</i></sup>/<sub><i>n</i></sub></font> &#8712; <b>Q</b> | 0 &#8804; <i>m</i> &lt; <i>n</i>}<br>
+(f) {<font size=+1><sup><i>m</i></sup>/<sub><i>n</i></sub></font> &#8712; <b>Q</b> | 0 &lt; <i>m</i> &lt; <i>n</i> with both <i>m</i>, <i>n</i> odd}<br>
+(g) real numbers in (0, 1) whose decimal expansions do not contain the digit 9,<br>
+(h) real numbers in (0, 1) whose decimal expansions contain only odd digits.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4> Show that the real numbers in (0, 1) whose first decimal digit is &#8800; 9 form an interval of length <sup>9</sup>/<sub>10</sub>. <br>
+Prove that the real numbers in (0, 1) whose first and second decimal digits are &#8800; 9 form an union of nine intervals of total length <sup>81</sup>/<sub>100</sub>.<br>
+Show that the real numbers with no 9 in the first three digits form a union of intervals of total length (<sup>9</sup>/<sub>10</sub>)<sup>3</sup>.
+<p align=justify>
+Hence prove that the set of Question 3(g) may be enclosed in a union of intervals of arbitrarily small total length. (Such sets are said to have <i>measure zero</i>.)
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S3.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T2.html">Previous page</a><br>
+(Exercises 2)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T4.html">Next page</a><br>
+(Exercises 4)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>

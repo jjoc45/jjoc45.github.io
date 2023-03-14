@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Exercises 5</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>MT2002 Analysis</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T4.html">Previous page</a><br>
+(Exercises 4)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T6.html">Next page</a><br>
+(Exercises 6)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 5</font></h2>
+<p>
+<ol><li 1>Use the arithmetic properties of convergent sequences to find the limits of the following sequences.<br>
+(a) ( 2<i>n</i>/(<i>n</i><sup>2</sup>+ 1) )<br>
+(b) ( (<i>n</i><sup>2</sup>- 2<i>n</i> + 1)/(<i>n</i><sup>2</sup>+ 2<i>n</i> + 1) )<br>
+(c) ( 3<sup><i>n</i></sup>/(2<sup><i>n</i></sup>+ 3<sup><i>n</i></sup>) )<br>
+(d) (&#8730;(<i>n</i> + 1) - &#8730;<i>n</i> ) [Multiply top and bottom by &#8730;(<i>n</i> + 1) + &#8730;<i>n</i>]
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>By looking for suitable divergent subsequences, prove that the following sequences are divergent.<br>
+(a) ( sin(<i>n</i>&#960;/3) )<br>
+(b) ( (-1)<sup><i>n</i></sup><i>n</i>/(2<i>n</i>+1) )
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Prove that <i>n</i>!/<i>n</i><sup><i>n</i></sup>&lt; <sup>1</sup>/<sub><i>n</i></sub>, and hence show that the sequence <i>n</i>!/<i>n</i><sup><i>n</i></sup> converges to 0.<br>
+[The Scottish mathematician (who was also the manager of a mine at Leadhills) <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Stirling.html">James Stirling</a> (1692 to 1770) showed that the sequence ( <i>n</i>!/(<i>e</i><sup><i>n</i></sup><i>n</i><sup><i>n</i>+1/2</sup>) ) converges to &#8730;(2&#960;).]
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>A sequence (<i>a</i><sub><i>n</i></sub>) satisfies <i>a</i><sub><i>n</i>+1</sub>= 2<i>a</i><sub><i>n</i></sub>/(1+<i>a</i><sub><i>n</i></sub>) for <i>n</i> = 1, 2, ...<br>
+(a) If <i>a</i><sub>1</sub>= 2, prove that the sequence is monotonic decreasing and bounded and find its limit.<br>
+(b) If <i>a</i><sub>1</sub>= <sup>1</sup>/<sub>2</sub> , prove that the sequence is monotonic increasing and bounded and find its limit.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Let (<i>a</i><sub><i>n</i></sub>) be a sequence such that the subsequence of even terms (<i>a</i><sub>2<i>n</i></sub>) and the subsequence of odd terms (<i>a</i><sub>2<i>n</i>-1</sub>) both converge to the same limit <i>&#945;</i>. Prove that (<i>a</i><sub><i>n</i></sub>) converges to <i>&#945;</i>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Let (<i>f</i><sub><i>n</i></sub>) be the <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Fibonacci.html">Fibonacci</a> sequence (1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , ... ) satisfying <i>f</i><sub>1</sub> = <i>f</i><sub>2</sub> = 1 and <i>f</i><sub><i>n</i>+1</sub>= <i>f</i><sub><i>n</i></sub>+ <i>f</i><sub><i>n</i>-1</sub>. <br>
+Let (<i>r</i><sub><i>n</i></sub>) be the sequence of ratios of successive Fibonacci numbers. So <i>r</i><sub><i>n</i></sub>= <i>f</i><sub><i>n</i>+1</sub>/<i>f</i><sub><i>n</i></sub> and (<i>r</i><sub><i>n</i></sub>) = (1 , 2 , <sup>3</sup>/<sub>2</sub> , <sup>5</sup>/<sub>3</sub> , <sup>8</sup>/<sub>5</sub> , <sup>13</sup>/<sub>8</sub> , <sup>21</sup>/<sub>13</sub> , ...) . Is this sequence monotonic? [Use a calculator.] <br>
+Prove that <i>r</i><sub><i>n</i>+1</sub> = 1 + 1/<i>r</i><sub><i>n</i></sub> and hence prove that <i>if</i> this sequence were convergent then its limit would be (&#8730;5 + 1)/2. (This is the number that the Ancient Greeks called the <i>Golden Ratio</i>.)<br>
+Prove that <i>r</i><sub><i>n</i>+2</sub> = (2<i>r</i><sub><i>n</i></sub> + 1)/(<i>r</i><sub><i>n</i></sub> + 1). <br>
+Hence show that the subsequence of odd terms and the subsequence of even terms are monotonic and bounded. <br>
+Deduce that (<i>r</i><sub><i>n</i></sub>) is convergent to the Golden Ratio.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S5.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S5.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T4.html">Previous page</a><br>
+(Exercises 4)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T6.html">Next page</a><br>
+(Exercises 6)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC September 2001</font>
+</body></html>
+<p>
