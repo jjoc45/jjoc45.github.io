@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Definition and examples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">A{text-decoration:none} A:hover{text-decoration:underline}</style>
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Rings and Fields</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L2.html">Previous page</a><br>
+(Some historical background)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L4.html">Next page</a><br>
+(Integral domains and Fields)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Definition and examples</font></h2>
+<p>
+Looking at the common features of the examples discussed in the last section suggests:
+<p align=justify>
+<font color=red><b>Definition</b></font>
+<p align=justify>
+A <b>ring</b> is a set <i>R</i> together with a pair of binary operations + and . satisfying the axioms:<br>
+<ol><li 1><i>R</i> is an abelian group under the operation + ,<br>
+<li 2>The operation . is associative (and it is of course closed also),<br>
+<li 3>The operations satisfy the <i>Distributive Laws</i>:<br>
+For &#8704; <i>a</i>, <i>b</i>, <i>c</i> &#8712; <i>R</i> we have (<i>a</i> + <i>b</i>).<i>c</i> = (<i>a</i>.<i>c</i> + <i>b</i>.<i>c</i>) and <i>a</i>.(<i>b</i> + <i>c</i>) = <i>a</i>.<i>b</i> + <i>a</i>.<i>c</i> .<br>
+</ol>
+<p align=justify>
+<font color=green><b>Remarks</b></font>
+<p align=justify>
+<ol type=a><li a>The <i>additive identity</i> is called the <b>zero</b> of the ring and is written 0.<br>
+Note that 0.<i>a</i> = <i>a</i>.0 = 0 for all <i>a</i> &#8712; <i>R</i> (See Exercises 1 Qu 1)
+<p align=justify>
+<li b><i>Sometimes</i> the ring has a multiplicative identity. If it does, we call it a <b>Ring with identity</b> and write the multiplicative identity as 1.
+<p align=justify>
+<li c>Even if the ring has an identity, it may not be possible to find multiplicative inverses. In particular (if |<i>R</i>| &gt; 1) the element 0 will never have an inverse.
+<p align=justify>
+<li d>The operation . is not necessarily commutative. If it is, we call <i>R</i> a <b>commutative ring</b>.<br>
+</ol><br>
+<font color=blue><b>Examples</b></font>
+<p align=justify>
+<ol><li 1>The integers <b>Z</b> with the usual addition and multiplication is a commutative ring with identity. The only elements with (multiplicative) inverses are &#177;1.
+<p align=justify>
+<li 2>The integers modulo <i>n</i>: <b>Z</b><sub><i>n</i></sub> form a commutative ring with identity under addition and multiplication modulo <i>n</i>. This is a finite ring {0, 1, ... , <i>n</i> - 1} and the elements <i>a</i> which are coprime to <i>n</i> are the ones which are invertible.
+<p align=justify>
+<li 3>The sets <b>Q</b>, <b>R</b>, <b>C</b> are all commutative rings with identity under the appropriate addition and multiplication. In these every non-zero element has an inverse.
+<p align=justify>
+<li 4>The quaternions <b>H</b> = {<i>a</i> + <i>ib</i> + <i>jc</i> + <i>kd</i> | <i>a</i>, <i>b</i>, <i>c</i>, <i>d</i> &#8712; <b>R</b>} mentioned in the last section form a <i>non-commutative</i> ring with identity under the appropriate addition and a multiplication which satisfies the rules:<br>
+<dd><i>i</i><sup>2</sup> = <i>j</i><sup>2</sup> = <i>k</i><sup>2</sup> = <i>i</i> <i>j</i> <i>k</i> = -1.<br>
+<dt>In fact one can find an inverse for any non-zero quaternion using the trick:<br>
+<dd>(<i>a</i> + <i>ib</i> + <i>jc</i> + <i>kd</i>)(<i>a</i> - <i>ib</i> - <i>jc</i> - <i>kd</i>) = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> + <i>c</i><sup>2</sup> + <i>d</i><sup>2</sup> <br>
+<dt>as in the similar method for finding the inverse of a complex number.
+<p align=justify>
+<li 5>The set of all 2 &#215; 2 real matrices forms a ring under the usual matrix addition and multiplication.<br>
+This is a non-commutative ring with identity <img src= ../Diagrams/idmat.gif align = center>.<br>
+In fact, the set of <i>n</i> &#215; <i>n</i> matrices with entries in <i>any ring</i> forms a ring.
+<p align=justify>
+<li 6>Just as we can specify a finite group by giving its multiplication table, we can specify a finite ring by giving addition and multiplication tables.<br>
+For example, <i>R</i> = {0, <i>a</i>, <i>b</i>, <i>c</i>} with tables  <img src= ../Diagrams/tables.gif align = center><br>
+Then it is true (but almost impossible to check) that these do satisfy the ring axioms.<br>
+In fact these are the addition and multiplication tables of <br>
+<img src= ../Diagrams/mats.gif align = top><br>
+where arithmetic is done modulo 2.
+<p align=justify>
+<li 6><b>Polynomials</b><br>
+As indicated in the last section these are some of the most important examples of rings.
+<p align=justify>
+<font color=red><b>Definition</b></font>
+<p align=justify>
+Let <i>R</i> be a commutative ring with an identity. Then a <b>polynomial with coefficients in</b> <i>R</i> <b>in an indeterminate</b> <i>x</i> is something of the form <br>
+<dd><i>a</i><sub>0</sub> + <i>a</i><sub>1</sub><i>x</i> + <i>a</i><sub>2</sub><i>x</i><sup>2</sup> + ... + <i>a</i><sub><i>n</i></sub><i>x</i><sup><i>n</i></sup>  where <i>a</i><sub><i>i</i></sub> &#8712; <i>R</i>.<br>
+<dt>One adds and multiplies polynomials "in the usual way".<br>
+The ring of such polynomials is denoted by <i>R</i>[<i>x</i>].
+<p align=justify>
+<font color=green><b>Remarks</b></font>
+<p align=justify>
+<ol type=a><li a>Note that each non-zero polynomial has a finite degree: the largest <i>n</i> for which <i>a</i><sub><i>n</i></sub> &#8800; 0.
+<p align=justify>
+<li b>The indeterminate <i>x</i> is <b>not</b> a member of <i>R</i>. Neither are <i>x</i><sup>2</sup>, <i>x</i><sup>3</sup>, ... They are simply "markers" to remind us how to add and multiply.<br>
+One could (and maybe should) define a polynomial to be a sequence (<i>a</i><sub>0</sub> , <i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , ... ) in which only finitely many of the terms are non-zero. <br>
+<font color=green><b>Exercise:</b></font> Write down how to add and multiply two such sequences.
+<p align=justify>
+<li c>Two polynomials are equal if and only if all of their coefficients are equal.<br>
+</ol></ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L2.html">Previous page</a><br>
+(Some historical background)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L4.html">Next page</a><br>
+(Integral domains and Fields)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC/EFR 2004</font>
+</body></html>
+<p>
