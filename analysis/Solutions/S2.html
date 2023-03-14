@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Solution 2</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 2</font></h2>
+<p>
+<ol><p><li><b>(a)</b> not one-one, not onto<br>
+<b>(b)</b> one-one correspondence<br>
+<b>(c)</b> one-one, not onto<br>
+<b>(d)</b> one-one, not onto<br>
+<b>(e)</b> one-one correspondence<br>
+<b>(f)</b> one-one, not onto<br>
+<b>(g)</b> Draw the graph to see that it is not one-one but is onto<br>
+<b>(h)</b> not one-one, not onto
+<p align=justify>
+
+<p><li><b>(a)</b> Let <i>x</i> &#8712; <i>f</i>[<i>A</i> &#8745; <i>B</i>]. Then <i>x</i> = <i>f</i> (<i>y</i>) for <i>y</i> &#8712; <i>A</i> &#8745; <i>B</i>. So <i>y</i> &#8712; <i>A</i> and <i>x</i> &#8712; <i>f</i>[<i>A</i>]. Similarly <i>x</i> &#8712; <i>f</i>[<i>B</i>] and so <i>x</i> &#8712; <i>f</i>[<i>A</i>] &#8745; <i>f</i>[<i>B</i>].<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Suppose <i>f</i> is one-one and let <i>y</i> &#8712; <i>f</i>[<i>A</i>] &#8745; <i>f</i>[<i>B</i>]. Then <i>y</i> = <i>f</i> (<i>a</i>) for <i>a</i> &#8712; <i>A</i> and <i>y</i> = <i>f</i> (<i>b</i>) for <i>b</i> &#8712; <i>B</i>. Thus <i>f</i> (<i>a</i>) = <i>f</i> (<i>b</i>) and by the one-one property, <i>a</i> = <i>b</i> <isin <i>A</i> &#8745; <i>B</i>. Hence <i>y</i> &#8712; <i>f</i>[<i>A</i> &#8745; <i>B</i>] and the two sets are equal.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b>(b)</b> Let <i>x</i> &#8712; <i>f</i>[<i>f</i> <sup>-1</sup>[<i>B</i>]]. Then <i>x</i> = <i>f</i> (<i>y</i>) for <i>y</i> &#8712;<i>f</i> <sup>-1</sup>[<i>B</i>]. Hence <i>f</i> (<i>y</i>) &#8712; <i>B</i> and we have <i>f</i>[<i>f</i> <sup>-1</sup>[<i>B</i>]] &#8838; <i>f</i>[<i>B</i>].<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If <i>f</i> is onto, take <i>y</i> &#8712; <i>f</i>[<i>B</i>]. Then <i>y</i> = <i>f</i> (<i>b</i>) for some <i>b</i> &#8712; <i>B</i>. By the onto condition, <i>b</i> = <i>f</i> (<i>a</i>) for some <i>a</i> &#8712; <i>f</i> <sup>-1</sup>[<i>B</i>] &#8838; <i>X</i>. Thus <i>y</i> &#8712; <i>f</i>[<i>f</i> <sup>-1</sup>[<i>B</i>]] and the two sets are equal.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p><li>Each element of <i>A</i> may be mapped to any element of <i>B</i> and so we get <i>n</i><sup><i>m</i></sup> different maps.<br>
+If the map is <i>one-one</i> we have a choice of <i>n</i> elements for the image of the first element of <i>A</i>, a choice of <i>n</i> - 1 for the second, etc. Thus we have <i>n</i>(<i>n</i> - 1)(<i>n</i> - 2) ... (<i>n</i> - <i>m</i> +1) = <font size=+1><sup><i>n</i>!</sup>/<sub><i>m</i>!</sub></font> one-one maps. (Of course, if <i>m</i> &gt; <i>n</i> we get no such maps.)
+<p align=justify>
+<img src= ../Diagrams/xS2-3.gif align = right>The number of <i>onto</i> maps is harder to calculate.<br>
+ <br>
+The number of onto maps from a set of size <i>m</i> to a set of size <i>n</i> are shown on the right for some small values.
+<p align=justify>
+These numbers are related to numbers discovered by the Scottish mathematician <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Stirling.html">James Stirling</a> (1692 to 1770).<br>
+<br clear=right>
+<p align=justify>
+If <i>f</i>: <i>A</i>&#8594; <i>B</i> is a one-one map defined on a finite set <i>A</i> then the image of <i>f</i> has the same number of elements. Hence if |<i>A</i>| =|<i>B</i>| the map is onto. Example 1f) above shows that this result may fail for infinite sets.
+<p align=justify>
+
+<p><li>The function which maps (<i>m</i>, <i>n</i>) to 2<sup><i>m</i></sup>3<sup><i>n</i></sup> is one-one by the uniqueness of factorisation. This maps <b>N &#215; N</b> onto its image is a one-one correspondence. This image is a subset of <b>N</b> and hence is countable.<br>
+Define a map from <b>N &#215; N &#215; ... &#215; N&#8594; N</b> by mapping (<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , ... , <i>a</i><sub><i>n</i></sub>) to <i>p</i><sub>1</sub><sup><i>a</i><sub>1</sub></sup><i>p</i><sub>2</sub><sup><i>a</i><sub>2</sub></sup> ... <i>p</i><sub><i>n</i></sub><sup><i>a</i><sub><i>n</i></sub></sup> where <i>p</i><sub>1</sub> , ... , <i>p</i><sub><i>n</i></sub> are distinct primes and the result follows in a similar way.
+<p align=justify>
+
+<p><li>Choosing a subset of a set with <i>n</i> elements means making a choice about whether to include each element or not, so you get a choice of 2<sup><i>n</i></sup> possible subsets.<br>
+[Equivalently, a map from a set <i>S</i> to {0, 1} corresponds to a subset by mapping the elements of the subset to 1 and the other elements to 0. (This is called the <i>characteristic function</i> of the subset.) By question 3 above, there are 2<sup><i>n</i></sup> such maps.]
+<p align=justify>
+Hence the set of all finite subsets is &#8746;{subsets of size <i>n</i>} where the union is taken over all <i>n</i> &#8712; <b>N</b>. This is a countable union of finite sets and hence is countable.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>We can adapt the <i>Cantor diagonalisation process</i> as follows.<br>
+Suppose <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub> , <i>A</i><sub>3</sub> , ... is a counting of <i>all</i> the proper (&#8800; <b>N</b>) subsets of <b>N</b>.<br>
+Let <i>X</i> be the set {<i>a</i><sub>1</sub> , <i>a</i><sub>2</sub> , <i>a</i><sub>3</sub> , ...} where <i>a</i><sub>1</sub>&#8713; <i>A</i><sub>1</sub> , <i>a</i><sub>2</sub>&#8713; <i>A</i><sub>2</sub> , ...<br>
+Then the set <i>X</i> is not in the counting.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xS2-6.gif align = right>Tabulating <i>f</i> as suggested gives a table as on the right:
+<p align=justify>
+This gives a one-one correspondence between <b>N &#215; N</b> and <b>N</b> which is similar to (but not quite the same as) that given in the section on <i>Infinity and infinities</i>.<br>
+(One starts at the <i>bottom</i> of the line <i>m</i> + <i>n</i> = constant each time.)<br>
+<br clear=right><br>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

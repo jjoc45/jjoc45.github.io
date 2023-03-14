@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Solution 5</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 5</font></h2>
+<p>
+<ol><p><li><b>(a)</b> (2<i>n</i>/(<i>n</i><sup>2</sup>+ 1)) =((<sup>2</sup>/<sub><i>n</i></sub>)/(1 + <sup>1</sup>/<sub><i>n</i><sup>2</sup></sub>))&#8594; 0/(1 + 0) = 0.<br>
+<b>(b)</b> (<i>n</i><sup>2</sup> - 2<i>n</i> + 1)/(<i>n</i><sup>2</sup> + 2<i>n</i> + 1) = (1 - 2/<i>n</i> + 1/<i>n</i><sup>2</sup>)/(1 + 2/<i>n</i> + 1/<i>n</i><sup>2</sup>) and so (<i>a</i><sub><i>n</i></sub>)&#8594; (1 - 0 + 0)/(1 + 0 + 0) = 1.<br>
+<b>(c)</b> 3<sup><i>n</i></sup>/(2<sup><i>n</i></sup> + 3<sup><i>n</i></sup>) = 1/((<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup> + 1) and so (<i>a</i><sub><i>n</i></sub>)&#8594; 1/(0 + 1) = 1<br>
+<b>(d)</b> &#8730;(<i>n</i> + 1) - &#8730;<i>n</i> = [(&#8730;(<i>n</i> + 1) - &#8730;<i>n</i>)(&#8730;(<i>n</i> + 1) + &#8730;<i>n</i>)]/(&#8730;(<i>n</i> + 1) + &#8730;<i>n</i>) = [(<i>n</i> + 1) - <i>n</i>]/(&#8730;(<i>n</i> + 1) + &#8730;<i>n</i>) = 1/(&#8730;(<i>n</i> + 1) + &#8730;<i>n</i>) and so the sequence&#8594; 0 as <i>n</i>&#8594; &#8734;.
+<p align=justify>
+
+<p><li><b>(a)</b> Taking <i>n</i> = 1, 3, 7, 9, 13, 15, ... gives a subsequence (<sup>&#8730;3</sup>/<sub>2</sub> , 0  , <sup>&#8730;3</sup>/<sub>2</sub> , 0 , ... ) which does not converge. Hence the original sequence does not converge.<br>
+<b>(b)</b> The subsequence of even terms&#8594; 1 and the subsequence of odd terms&#8594; -1 and so (since the limits of subsequences of a convergent sequence are the same as the limit of the sequence) the sequence is not convergent. 
+<p align=justify>
+
+<p><li>0 &lt; <i>n</i>!/<i>n</i><sup><i>n</i></sup> = (1.2.3. ... .<i>n</i>)/(<i>n</i>.<i>n</i>. ... .<i>n</i>) &lt; <sup>1</sup>/<sub><i>n</i></sub>. Since the constant sequence (0)&#8594; 0 and the sequence (<sup>1</sup>/<sub><i>n</i></sub>)&#8594; 0 the given sequence&#8594; 0 by the "squeeze rule".
+<p align=justify>
+Stirling's formula shows that <i>n</i>! grows approximately like &#8730;(2&#960;) <i>n</i><sup><i>n</i>+0.5</sup><i>e</i><sup>-<i>n</i></sup>. For example, for <i>n</i> = 100, <i>n</i>! is about 0.93326 &#215; 10<sup>158</sup> while Stirling's approximation is 0.93248 &#215; 10<sup>158</sup>. An even better approximation is obtained by replacing <i>e</i><sup>-<i>n</i></sup> by <i>e</i><sup>-<i>n</i>+1/(12<i>n</i>)</sup>. This gives an approximation of 0.93323 &#215; 10<sup>158</sup> for 100!.
+<p align=justify>
+
+<p><li><i>a</i><sub><i>n</i>+1</sub>- <i>a</i><sub><i>n</i></sub>= 2<i>a</i><sub><i>n</i></sub>/(1+<i>a</i><sub><i>n</i></sub>) - 2<i>a</i><sub><i>n</i>-1</sub>/(1+<i>a</i><sub><i>n</i>-1</sub>) = 2(<i>a</i><sub><i>n</i></sub>- <i>a</i><sub><i>n</i>-1</sub>)/[(1+<i>a</i><sub><i>n</i></sub>)(1+<i>a</i><sub><i>n</i>-1</sub>)]<br>
+Hence, provided <i>a</i><sub><i>n</i>-1</sub>, <i>a</i><sub><i>n</i></sub>&gt; -1, the sequence is monotonic.<br>
+If <i>a</i><sub>1</sub> = 2 then <i>a</i><sub>2</sub> = <sup>4</sup>/<sub>3</sub> and so the sequence is monotonic decreasing and since it is clearly bounded below by 0, it is convergent.<br>
+If <i>a</i><sub>1</sub> = <sup>1</sup>/<sub>2</sub> then <i>a</i><sub>2</sub> = <sup>2</sup>/<sub>3</sub> and so the sequence is monotonic increasing. It is easy to prove by induction that if <i>a</i><sub>1</sub> &lt; 1 then <i>a</i><sub><i>n</i></sub> &lt; 1 for all <i>n</i> and so the sequence is bounded above and hence convergent.<br>
+In either case, the limit <i>&#945;</i> must satisfy <i>&#945;</i> = 2<i>&#945;</i>/(1 + <i>&#945;</i>) &#8658; <i>&#945;</i> = 1.
+<p align=justify>
+
+<p><li>Given <i>&#949;</i> &gt; 0, choose <i>N</i> so that <i>a</i><sub>2<i>n</i></sub> is within <i>&#949;</i> of <i>&#945;</i> for 2<i>n</i> &gt; <i>N</i> and <i>a</i><sub>2<i>n</i>-1</sub> is within <i>&#949;</i> of <i>&#945;</i> for 2<i>n</i> - 1 &gt; <i>N</i>. Then all the terms of the sequence are eventually within <i>&#949;</i> of <i>&#945;</i> and the sequence converges.
+<p align=justify>
+
+<p><li>The sequence (<i>r</i><sub><i>n</i></sub>) is (1, 2, 1.5, 1.6, 1.625, 1.615, 1.619, 1.618, ... ) (approximately). Hence it is <i>not</i> monotonic -- though you might notice that the subsequences of odd and even terms are monotonic.<br>
+<i>r</i><sub><i>n</i>+1</sub> = <i>f</i><sub><i>n</i>+2</sub>/<i>f</i><sub><i>n</i>+1</sub> = (<i>f</i><sub><i>n</i>+1</sub> + <i>f</i><sub><i>n</i></sub>)/<i>f</i><sub><i>n</i>+1</sub> = 1 + <i>f</i><sub><i>n</i></sub>/<i>f</i><sub><i>n</i>+1</sub>= 1 + 1/<i>r</i><sub><i>n</i></sub>. <br>
+So if the sequence (<i>r</i><sub><i>n</i></sub>) converges to a limit <i>&#945;</i>, <i>&#945;</i> satisfies <i>&#945;</i> = 1 + 1/<i>&#945;</i> &#8658; <i>&#945;</i><sup>2</sup>- <i>&#945;</i> - 1 = 0 &#8658; (if (<i>&#945;</i> &gt; 1) <i>&#945;</i> = (&#8730;5 + 1)/2.<br>
+From the above, <i>r</i><sub><i>n</i>+2</sub> = 1 + 1/<i>r</i><sub><i>n</i>+1</sub> = 1 + 1/(1+1/<i>r</i><sub><i>n</i></sub>) = 1 + <i>r</i><sub><i>n</i></sub>/(<i>r</i><sub><i>n</i></sub>+ 1) = (2<i>r</i><sub><i>n</i></sub>+ 1)/(<i>r</i><sub><i>n</i></sub>+ 1) as required.<br>
+<i>r</i><sub><i>n</i>+2</sub> - <i>r</i><sub><i>n</i></sub>= (2<i>r</i><sub><i>n</i></sub> + 1)/(<i>r</i><sub><i>n</i></sub> + 1) - (2<i>r</i><sub><i>n</i>-2</sub> + 1)/(<i>r</i><sub><i>n</i>-2</sub> + 1) = 2(<i>r</i><sub><i>n</i></sub> - <i>r</i><sub><i>n</i>-2</sub>)/[(<i>r</i><sub><i>n</i></sub> + 1)(<i>r</i><sub><i>n</i>-2</sub> + 1)]. <br>
+Hence by induction, since <i>r</i><sub>3</sub> - <i>r</i><sub>1</sub> &gt; 0, the sequence of odd terms is monotonic increasing and since <i>r</i><sub>4</sub> - <i>r</i><sub>2</sub> &lt; 0, the subsequence of even terms is monotonic decreasing. Hence, by question 4 above, the sequence converges to (&#8730;5 + 1)/2.
+<p align=justify>
+
+<p><li>lign=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

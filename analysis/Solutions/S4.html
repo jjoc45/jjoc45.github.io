@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Solution 4</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 4</font></h2>
+<p>
+<ol><p><li>If <i>a</i>, <i>b</i> are both &#8805; 0 or both &#8804; 0 then we have equality. If (say) <i>a</i> &gt; 0, <i>b</i> &lt; 0 so that -<i>b</i> = <i>c</i> &gt; 0 then the LHS = <i>a</i> - <i>c</i> and the RHS = <i>a</i> + <i>c</i> and -<i>c</i> &lt; <i>c</i>. Similarly if <i>a</i> &lt; 0, <i>b</i> &gt; 0.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>It is called the triangle inequality since if <i>a</i>, <i>b</i> &#8712; <i>C</i> and |&nbsp;| denotes the modulus of a complex number, this is the geometric theorem that the sum of the lengths of any two sides of a triangle is &#8805; the length of the third side.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>The above proves the result for <i>n</i> = 2. Assume that it is true for <i>n</i> = <i>k</i> and consider it for <i>n</i> = <i>k</i> + 1.<br>
+|<i>a</i><sub>1</sub>+ <i>a</i><sub>2</sub>+ ... + <i>a</i><sub><i>k</i></sub>+ <i>a</i><sub><i>k</i>+1</sub>| &#8804; |<i>a</i><sub>1</sub>+ <i>a</i><sub>2</sub>+ ... + <i>a</i><sub><i>k</i></sub>| + |<i>a</i><sub><i>k</i>+1</sub>| by the <i>n</i> = 2 case and this is &#8804; (|<i>a</i><sub>1</sub>| + |<i>a</i><sub>2</sub>| + ... + |<i>a</i><sub><i>k</i></sub>|) + |<i>a</i><sub><i>k</i>+1</sub>| by the inductive assumption.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p><li>(<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> and (<i>b</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i>. Since <i>a</i><sub><i>n</i></sub>&#8804; <i>x</i><sub><i>n</i></sub>&#8804; <i>b</i><sub><i>n</i></sub> we have <i>a</i><sub><i>n</i></sub>- <i>&#945;</i> &#8804; <i>x</i><sub><i>n</i></sub>- <i>&#945;</i> &#8804; <i>b</i><sub><i>n</i></sub>-<i>&#945;</i>. Now, given <i>&#949;</i> &gt; 0, when <i>n</i> is large enough, <i>a</i><sub><i>n</i></sub>- <i>&#945;</i> and <i>b</i><sub><i>n</i></sub>- <i>&#945;</i> both lie in an interval (-<i>&#949;</i>, <i>&#949;</i>) around 0 and since <i>x</i><sub><i>n</i></sub>- <i>&#945;</i> is between them it also lies in this interval. This is the condition for convergence.
+<p align=justify>
+
+<p><li><b>(a)</b> (1, <sup>-1</sup>/<sub>2</sub>, <sup>1</sup>/<sub>3</sub>, <sup>-1</sup>/<sub>4</sub>, ... )&#8594; 0 but is not monotonic.<br>
+<b>(b)</b> (1, 0, 1, 0, ... ) is bounded but not convergent.<br>
+<b>(c)</b> Every convergent sequence is bounded.<br>
+<b>(d)</b> (1, 2, 3, ... ) is monotonic (increasing) but not bounded.<br>
+<b>(e)</b> (1, 1<sup>2</sup>, 2, 2<sup>2</sup>, 3, 3<sup>2</sup>, ... ) diverges to &#8734; but not monotonically.<br>
+<b>(f)</b> Monotonic bounded sequences are always convergent.<br>
+<b>(g)</b> (1, -1, 2, -2, ... ) is unbonded and not monotonic.<br>
+<b>(h)</b> (<sup>1</sup>/<sub>2</sub>, <sup>1</sup>/<sub>2<sup>2</sup>,</sub><sup>1</sup>/<sub>3</sub>, <sup>1</sup>/<sub>3<sup>2</sup>,</sub>... )&#8594; &#8734; but is not monotonic.
+<p align=justify>
+
+<p><li>We must choose <i>N</i> so that |(2<i>n</i> + 1)/(<i>n</i> + 1) - 2| &lt; <i>&#949;</i> for <i>n</i> &gt; <i>N</i>. That is 2/(<i>n</i> + 1) &lt; <i>&#949;</i> or <i>n</i> &gt; 2/<i>&#949;</i> - 1. So for the three values of <i>&#949;</i> given we can take <i>N</i> = 19, 199, 1999.<br>
+For the second sequence, |(2<i>n</i><sup>2</sup>+1)/(<i>n</i><sup>2</sup>+ 1) - 2| = 1/(<i>n</i><sup>2</sup>+ 1) and for this to be &lt; <i>&#949;</i> we must take <i>n</i> &gt; &#8730;(1/<i>&#949;</i> - 1) which gives <i>N</i> = 3, 9, 99.
+<p align=justify>
+
+<p><li><b>(a)</b> If (<i>a</i><sub><i>n</i></sub>) = (1, -1, 1, -1, ... ) then (|<i>a</i><sub><i>n</i></sub>|) converges even though (<i>a</i><sub><i>n</i></sub>) does not.<br>
+<b>(b)</b> If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> then (|<i>a</i><sub><i>n</i></sub>|)&#8594;|<i>&#945;</i>| as is esy to check from the definition.<br>
+<b>(c)</b> Take <i>a</i><sub><i>n</i></sub>= -<i>b</i><sub><i>n</i></sub>= <i>n</i>. Then (<i>a</i><sub><i>n</i></sub>), (<i>b</i><sub><i>n</i></sub>) do not converge, but (<i>a</i><sub><i>n</i></sub>+ <i>b</i><sub><i>n</i></sub>) does.<br>
+<b>(d)</b> Since (<i>a</i><sub><i>n</i></sub>+ <i>b</i><sub><i>n</i></sub>) and (<i>a</i><sub><i>n</i></sub>) converge, so does the sequence (<i>a</i><sub><i>n</i></sub>+ <i>b</i><sub><i>n</i></sub>- <i>a</i><sub><i>n</i></sub>) = (<i>b</i><sub><i>n</i></sub>).
+<p align=justify>
+
+<p><li>If (<i>a</i><sub><i>n</i></sub>) converges, the <i>k</i>th decimal place <i>&#945;</i> must be close to (and hence equal to) the (<i>k</i>+1)st, (<i>k</i>+2)nd, etc. That is, the decimal expansion must end in either repeating 0's, repeating 1's, ... , repeating 9's. Such an <i>&#945;</i> is an integer multiple of <sup>1</sup>/<sub>9</sub>&#177; something with a terminating decimal expansion.<br>
+The limit of the sequence will then be of the form <font size=+1><sup><i>k</i></sup>/<sub>9</sub></font> with <i>k</i> an integer in the range 0, ... , 9. (The cases <i>k</i> = 0, 9 are 0.0 and 1.0 respectively.)
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

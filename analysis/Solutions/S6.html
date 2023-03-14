@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Solution 6</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 6</font></h2>
+<p>
+<ol><p><li><b>(a)</b> <i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>-1</sub> = (<i>n</i> + 1)/(<i>n</i> + 2) - <i>n</i>/(<i>n</i> + 1) = 1/[(<i>n</i> + 1)(<i>n</i> + 2)] &gt; 0. Hence the sequence is monotonic increasing.<br>
+<b>(b)</b> <i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>-1</sub> = <i>n</i> + 1 + 8/(<i>n</i> + 1) - <i>n</i> - 8/<i>n</i> = 1 - 8/[<i>n</i>(<i>n</i> + 1)] and so this is positive provided <i>n</i> &#8805; 3 and the sequence is monotonic increasing from then on.<br>
+<b>(c)</b> The sequence is (0, 3, 2, 5, 4, 7, 6, ... ) and never becomes monotone.<br>
+<b>(d)</b> The sequence is (1, 5, 5, 9, 9, 13, 13, ... ) and is monotone.
+<p align=justify>
+
+<p><li><i>s</i><sub><i>n</i>+1</sub>- <i>s</i><sub><i>n</i></sub>= 1/(<i>n</i>+1)<sup>2</sup>&gt; 0 and so the sequence is monotonic increasing. <br>
+Clearly <i>s</i><sub>1</sub>&#8804; 2 - 1/1. Now assume the result is true for <i>n</i> = <i>k</i> and consider <i>s</i><sub><i>k</i>+1</sub>= <i>s</i><sub><i>k</i></sub>+ 1/(<i>k</i> + 1)<sup>2</sup>&#8804; 2 - 1/<i>k</i> + 1/(<i>k</i> + 1)<sup>2</sup> (by the inductive hypothesis) and this can be written as: 2 - 1/(<i>k</i> + 1) &#215; [(<i>k</i> + 1)/<i>k</i> - 1/(<i>k</i> + 1)] = 2 - 1/(<i>k</i> + 1) &#215; [(<i>k</i><sup>2</sup> + <i>k</i> + 1)/(<i>k</i><sup>2</sup> + <i>k</i>)] &#8804; 2 - 1/(<i>k</i> + 1) as required.<br>
+So the sequence of partial sums is monotonic increasing and bounded above and hence convergent.
+<p align=justify>
+Proving that its sum is &#960;<sup>2</sup>/6 is quite a bit harder. One can do it by defining a function <i>f</i> (<i>x</i>) = 0 if -&#960; &#8804; <i>x</i> &#8804; 0 and x<sup>2</sup> if 0 &lt; <i>x</i> &#8804; &#960; and expanding it as a Fourier series, though that is not how Euler originally proved it!
+<p align=justify>
+
+<p><li><i>a</i><sub><i>n</i></sub>is the partial sum of the (divergent) harmonic series: 1 + <sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>3</sub> + <sup>1</sup>/<sub>4</sub> + ... . Hence (<i>a</i><sub><i>n</i></sub>) is not a Cauchy sequence even though |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>|&#8594; 0 as <i>n</i>&#8594; &#8734;.
+<p align=justify>
+
+<p><li>Since <i>s</i><sub><i>n</i>+1</sub> - <i>s</i><sub><i>n</i></sub> = <i>b</i><sub><i>n</i>+1</sub> &#8805; 0 the sequence (<i>s</i><sub><i>n</i></sub>) is monotonic increasing. It is bounded above by the limit of <img src= "../Symbolgifs/sigma.gif" > <i>c</i><sub><i>n</i></sub> and hence is convergent.
+<p align=justify>
+
+<p><li>Assume <i>m</i> &gt; <i>n</i> and we will prove that |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>m</i></sub>| is small for large enough <i>m</i>, <i>n</i>.<br>
+|<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>m</i></sub>| = |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>+1</sub> + <i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i>+2</sub> + ... + <i>a</i><sub><i>m</i>-1</sub> - <i>a</i><sub><i>m</i></sub>| &#8804; |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>+1</sub>| + |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i>+2</sub>| + ... + |<i>a</i><sub><i>m</i>-1</sub> - <i>a</i><sub><i>m</i></sub>| &#8804; <i>r</i><sup><i>n</i></sup> + <i>r</i><sup><i>n</i>+1</sup> + ... + <i>r</i><sup><i>m</i></sup>. Since this is part of "the tail" of the convergent Geometric Series: <img src= "../Symbolgifs/sigma.gif" > <i>r</i><sup><i>n</i></sup> this is small for large <i>m</i>, <i>n</i>.<br>
+The sequence (<i>a</i><sub><i>n</i></sub>) is certainly bounded above by 1. Now <i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub> = <i>a</i><sub><i>n</i></sub>/3 + 2<i>a</i><sub><i>n</i>-1</sub>/3 - <i>a</i><sub><i>n</i></sub> and so |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>| = <sup>2</sup>/<sub>3</sub>|<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>-1</sub>|. Now use induction to get |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>| &#8804; (<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup> and then the last result shows that we have a convergent sequence.
+<p align=justify>
+Finding its limit is rather tricky. Experimenting with Maple suggests that <sup>3</sup>/<sub>5</sub> is a good guess.<br>
+A standard way of dealing with recurrence relations like this one is to guess a solution of the form <i>a</i><sub><i>n</i></sub> = <i>&#956;</i><sup><i>n</i></sup> which in this case gives <i>&#956;</i> = 1 or -<sup>2</sup>/<sub>3</sub> and the general solution is then of the form <i>a</i><sub><i>n</i></sub>= <i>A</i>.1<sup><i>n</i></sup> + <i>B</i>.(-<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup> for some constants <i>A</i> and <i>B</i>. <br>
+Choosing <i>A</i> and <i>B</i> to give the correct answer for <i>a</i><sub>1</sub> and <i>a</i><sub>2</sub> gives the formula <i>a</i><sub><i>n</i></sub> = <sup>3</sup>/<sub>5</sub> + <sup>9</sup>/<sub>10</sub> &#215; (-<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup>and so as <i>n</i>&#8594; &#8734; we have (<i>a</i><sub><i>n</i></sub>)&#8594; <sup>3</sup>/<sub>5</sub>.
+<p align=justify>
+
+<p><li>Your calculator should convince you that as <i>x</i>&#8594; 0+, <i>x</i><sup><i>x</i></sup>&#8594; 1. (For example, for <i>x</i> = 0.001, <i>x</i><sup><i>x</i></sup>= 0.993... )<br>
+To prove it, take logarithms. (The log function treats limits nicely since it is a <i>continuous</i> function for <i>x</i> &gt; 0.)<br>
+log(<i>x</i><sup><i>x</i></sup>) = <i>x</i> log(<i>x</i>) = log(<i>x</i>)/(<sup>1</sup>/<sub><i>x</i></sub>) and then by l'H&ocirc;pital's rule this limit is (<sup>1</sup>/<sub><i>x</i></sub>)/(<sup>-1</sup>/<sub><i>x</i><sup>2</sup></sub>) = -<i>x</i>&#8594; 0 as <i>x</i>&#8594; 0.<br>
+Hence the limit of <i>x</i><sup><i>x</i></sup> as <i>x</i>&#8594; 0 is <i>e</i><sup>0</sup> = 1.<br>
+For the last part, put <i>x</i> = <sup>1</sup>/<sub><i>n</i></sub>.
+<p align=justify>
+
+<p><li>Let <i>x</i><sub><i>n</i></sub> = (1 + <i>R</i>/<i>n</i>)<sup><i>n</i></sup> where <i>R</i> is the rate of interest. Then if the limit of the sequence (<i>x</i><sub><i>n</i></sub>) = <i>&#945;</i>, by the continuity of the logarithm function we have the limit of the sequence (log(<i>x</i><sub><i>n</i></sub>)) = log(<i>&#945;</i>).<br>
+Now log(<i>x</i><sub><i>n</i></sub>) = <i>n</i> log(1 + <i>R</i>/<i>n</i>) and by l'H&ocirc;pital's Rule, if <i>x</i> = <sup>1</sup>/<sub><i>n</i></sub>, the limit of 1/<i>x</i> &#215; log(1 + <i>Rx</i>) as <i>x</i>&#8594; 0+ is the same as the limit of <i>R</i>/(1 + <i>Rx</i>) which is <i>R</i>. Hence the limit of the sequence (<i>x</i><sub><i>n</i></sub>) is <i>e</i><sup><i>R</i></sup>. If <i>R</i> = 0.12 this is about 1.127. So after a year you have <i>N</i> &#215; 1.127 -- slightly more than the <i>N</i> &#215; 1.12 you would have had with simple interest.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Solution 9.2</title>
+</head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 9.2</font></h2>
+<p>
+
+Let <img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub> be the partial sum of <img src= "../Symbolgifs/sigma.gif" > <i>f</i><sub><i>i</i></sub>, assume that <i>m</i> &gt; <i>n</i> and look at <i>d</i><sub>&#8734;</sub>(<img src= "../Symbolgifs/sigmalc.gif" ><sub><i>m</i></sub>- <img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub>) = max { |<i>f</i><sub><i>n</i>+1</sub>(<i>x</i>) + ... + <i>f</i><sub><i>m</i></sub>(<i>x</i>)| for <i>x</i> &#8712; [<i>a</i>, <i>b</i>]} &#8804; max {|<i>f</i><sub><i>n</i>+1</sub>(<i>x</i>)| + ... + |<i>f</i><sub><i>m</i></sub>(<i>x</i>)| } &#8804; <i>M</i><sub><i>n</i>+1</sub>+ ... + <i>M</i><sub><i>m</i></sub>.<br>
+Since the series <img src= "../Symbolgifs/sigma.gif" > <i>M</i><sub><i>i</i></sub> converges, its partial sums form a Cauchy sequence and so <i>M</i><sub><i>n</i>+1</sub>+ ... + <i>M</i><sub><i>m</i></sub> is small for large <i>m</i>, <i>n</i>. Thus (<img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub>) is a Cauchy sequence in <i>C</i>[<i>a</i>, <i>b</i>] and since this is a complete space under <i>d</i><sub>&#8734;</sub> the sequence is convergent to its pointwise limit and this limit is continuous.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Since |sin<sup>2</sup>(<i>x</i>)| &#8804; 1, we may take <i>M</i><sub><i>n</i></sub>= 1/<i>n</i><sup>2</sup> and so by the Weierstrass <i>M</i>-test, the series <img src= "../Symbolgifs/sigma.gif" > sin<sup>2</sup>(<i>x</i>)/<i>n</i><sup>2</sup> is uniformly convergent to a continuous function. <br>
+Deciding exactly where this function is differentiable is much harder.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Similarly, since |cos(<i>a</i><sup><i>n</i></sup><i>x</i>)| &#8804; 1, if 0 &lt; <i>b</i> &lt; 1 we may take <i>M</i><sub><i>n</i></sub>= 1/<i>b</i><sup><i>n</i></sup> and use the fact that <img src= "../Symbolgifs/sigma.gif" > <i>M</i><sub><i>n</i></sub> is convergent to deduce that Weierstrass's function is continuous.<br>
+Proving that this function is not differentiable anywhere is the hard bit!<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p>
+
+</body></html>
+<p>

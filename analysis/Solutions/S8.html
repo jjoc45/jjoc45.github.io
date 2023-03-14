@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Solution 8</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 8</font></h2>
+<p>
+<ol><p><li><img src= ../Diagrams/xS8-1.gif align = right><br>
+Look at the picture:
+<p align=justify>
+If a point <i>Q</i> is as shown, it is clear that <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) &#8804; <i>r</i> since "The diamond is inside the circle" and so <i>d</i><sub>2</sub>(<i>p</i>, <i>Q</i>) &#8804; <i>d</i><sub>1</sub>(<i>p</i>, <i>Q</i>).<br>
+Similarly, "The circle is inside the square and so <i>d</i><sub>&#8734;</sub>(<i>P</i>, <i>Q</i>) &#8804; <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>).<br>
+<br clear=right><br>
+<img src= ../Diagrams/xS8-2.gif align = right><br>
+Alternatively, look at the picture:
+<p align=justify>
+Then <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) = <i>c</i> &#8805; <i>a</i> + <i>b</i> = <i>d</i><sub>1</sub>(<i>P</i>, <i>Q</i>).<br>
+Also both <i>a</i>&#8804; <i>c</i> and <i>b</i> &#8804; <i>c</i> &#8658; <i>d</i><sub>&#8734;</sub>(<i>P</i>, <i>Q</i>) = max{<i>a</i>, <i>b</i>} &#8804; <i>c</i>.<br>
+<br clear=right><br>
+Without a picture, one can argue<br>
+(<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> + 2<i>ab</i> &#8805; <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> &#8658; <i>a</i> + <i>b</i> &#8805; &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8658; <i>d</i><sub>1</sub>&#8805; <i>d</i><sub>2</sub>.<br>
+Also, if <i>a</i> &#8805; <i>b</i> then max{<i>a</i>, <i>b</i>} = <i>a</i> and since <i>a</i><sup>2</sup>+ <i>b</i><sup>2</sup>&#8805; <i>a</i><sup>2</sup>we have &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i> and so <i>d</i><sub>2</sub> &#8805; <i>d</i><sub>&#8734;</sub>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> in <i>d</i><sub>1</sub>, then given <i>&#949;</i> &gt; 0 &#8707; <i>N</i> such that <i>n</i> &gt; <i>N</i> &#8658; <i>d</i><sub>1</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i> &#8658; (since <i>d</i><sub>1</sub>&#8805; <i>d</i><sub>2</sub>and <i>d</i><sub>&#8734;</sub>) that the sequence converges in <i>d</i><sub>2</sub> and <i>d</i><sub>&#8734;</sub> also.
+<p align=justify>
+<img src= ../Diagrams/xS8-3.gif align = right><br>
+One can draw the pictures :
+<p align=justify>
+to show that <i>d</i><sub>1</sub>&#8804; &#8730;2 <i>d</i><sub>2</sub> and <i>d</i><sub>2</sub>&#8804; &#8730;2 <i>d</i><sub>&#8734;</sub>.<br>
+<br clear=right><br>
+Alternatively, &#8730;2 &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i> + <i>b</i> &#8660; 2(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> &#8660; <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> &#8805; 0 which is true since (<i>a</i> - <i>b</i>)<sup>2</sup> &#8805; 0. Hence &#8730;2 <i>d</i><sub>2</sub> &#8805; <i>d</i><sub>1</sub>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> in <i>d</i><sub>&#8734;</sub>, then given <i>&#949;</i> &gt; 0 &#8707; <i>N</i> such that <i>n</i> &gt; <i>N</i> &#8658; <i>d</i><sub>&#8734;</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i> &#8658; <i>d</i><sub>2</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i>/<sub>&#8730;2</sub> and <i>d</i><sub>2</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i>/<sub>2</sub> and so the sequence converges in <i>d</i><sub>1</sub> and <i>d</i><sub>2</sub> also.
+<p align=justify>
+Similarly, if convergence takes place in <i>d</i><sub>2</sub> it also takes place in <i>d</i><sub>1</sub>. Combining this with the earlier result shows that sequences which converge in one of these metrics converge in them all. 
+<p align=justify>
+
+<p><li><i>d</i><sub>1</sub>(<i>f</i><sub><i>n</i></sub>, 0) = <img src= "../Symbolgifs/int01.gif" align=middle > <i>nx</i><sup><i>n</i></sup>- <i>nx</i><sup><i>n</i>+1</sup><i>dx</i> = [<i>n</i>/(<i>n</i> + 1) <i>x</i><sup><i>n</i>+1</sup> - <i>n</i>/(<i>n</i> + 2) <i>x</i><sup><i>n</i>+2</sup> <img src= "../Symbolgifs/eval01.gif" align=middle > = <i>n</i>/[(<i>n</i> + 1)(<i>n</i> + 2)]&#8594; 0 as <i>n</i>&#8594; &#8734;.<br>
+Thus (<i>f</i><sub><i>n</i></sub>)&#8594; the 0-function.<br>
+To find the maximum, solve <sup><i>d</i></sup>/<sub><i>dx</i></sub><i>f</i><sub><i>n</i>(<i>x</i>)</sub>= 0 to get:<br>
+<i>n</i><sup>2</sup><i>x</i><sup><i>n</i>-1</sup> - <i>n</i>(<i>n</i>+1)<i>x</i><sup><i>n</i></sup> = 0 &#8658; <i>x</i> = <i>n</i>/(<i>n</i> + 1) or 0.<br>
+The maximum is at <i>n</i>/(<i>n</i> + 1) and is thus [<i>n</i>/(<i>n</i> + 1)]<sup><i>n</i></sup> = [1 - 1/(<i>n</i> + !)]<sup><i>n</i>+1</sup>&#8594; <i>e</i><sup>-1</sup>as <i>n</i>&#8594; &#8734; (by Exercises 6 Question 7).<br>
+Thus <i>d</i><sub>&#8734;</sub>(<i>f</i><sub><i>n</i></sub>, 0) does <i>not</i> converge to 0 in <b>R</b> as <i>n</i>&#8594; &#8734; and so (<i>f</i><sub><i>n</i></sub>) does <i>not</i> converge to the 0-function in <i>d</i><sub>&#8734;</sub>.
+<p align=justify>
+
+<p><li>(a)&nbsp;&nbsp;The sequence (0.49, 0.499, 0.4999, ... )&#8594; 0.5 and applying <i>f</i> gives (0.9, 0.9, 0.99, 0.99, ... )&#8594; 1.0 while <i>f</i>(0.5) = 0. Hence <i>f</i> is not continuous at 0.5. In fact, a similar proof shows that <i>f</i> is not continuous at <i>any terminating decimal</i> -- though it is continuous at all other points.
+<p align=justify>
+(b)&nbsp;&nbsp;Apply <i>g</i> to the same sequence to give (0.50111... , 0.500111... , 0.5000111... , ... ) which converges to 0.5. However, <i>g</i>(0.5) = 0.6111... which is different and so <i>g</i> is discontinuous at 0.5.
+<p align=justify>
+(c)&nbsp;&nbsp;This map is actually the map <i>h</i>(<i>x</i>) = 1 - <i>x</i> as you can see most easily by writing 1 as 0.9999... . Hence it <i>is</i> continuous everywhere.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

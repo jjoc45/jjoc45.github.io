@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Solution 10</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 10</font></h2>
+<p>
+<ol><p><li>|<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)| &#8804; <i>d</i><sub>&#8734;</sub>(<i>f</i>, <i>g</i>) for <i>x</i> &#8712; [<i>a</i>, <i>b</i>]. So <img src= "../Symbolgifs/intab.gif" align=middle > |<i>f</i> (<i>x</i>) - <i>g</i>(<i>x</i>)| <i>dx</i> &#8804; <img src= "../Symbolgifs/intab.gif" align=middle > <i>d</i><sub>&#8734;</sub>(<i>f</i>, <i>g</i>) <i>dx</i> = (<i>b</i> - <i>a</i>)<i>d</i><sub>&#8734;</sub>(<i>f</i>, <i>g</i>).<br>
+So if we have <i>d</i><sub>&#8734;</sub>(<i>f</i><sub><i>n</i></sub>, <i>f</i>) &lt; <i>&#949;</i> for large <i>n</i>, we have <i>d</i><sub>1</sub>(<i>f</i><sub><i>n</i></sub>, <i>f</i>) &#8804; (<i>b</i> - <i>a</i>)<i>&#949;</i> which is small for <i>n</i> large and so (<i>f</i><sub><i>n</i></sub>)&#8594; <i>f</i> in <i>d</i><sub>1</sub> also.<br>
+In fact if (<i>f</i><sub><i>n</i></sub>)&#8594; <i>f</i> in <i>d</i><sub>&#8734;</sub> it also converges in <i>d</i><sub>2</sub> though the inequality is a bit trickier.
+<p align=justify>
+
+<p><li><i>h</i>(0) = <i>f</i> (0) - <i>f</i> (<sup>1</sup>/<sub>2</sub>) and <i>h</i>(<sup>1</sup>/<sub>2</sub>) = <i>f</i> (<sup>1</sup>/<sub>2</sub>) - <i>f</i> (1) = <i>f</i> (<sup>1</sup>/<sub>2</sub>) - <i>f</i> (0) and so <i>h</i> changes sign on [0, <sup>1</sup>/<sub>2</sub>] and so has a zero here.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Measure distance around the equator and scale it to fit into [0, 1]. Note that 0 and 1 represent the same point. Then assuming that temperature varies continuously, you can use the last result to deduce that two opposite points have the same temperature.
+<p align=justify>
+
+<p><li>Take <i>&#948;</i> = <i>&#949;</i> in the definition to see that a function satisfying the given condition is continuous.<br>
+Assume that <i>m</i> &lt; <i>n</i> and put |<i>a</i><sub>1</sub> - <i>a</i><sub>2</sub>| = <i>R</i>. Then |<i>a</i><sub>2</sub> - <i>a</i><sub>3</sub>| = |<i>f</i> (<i>a</i><sub>1</sub>) - <i>f</i> (<i>a</i><sub>2)</sub>| &#8804; <i>&#955;</i><i>R</i>, and so on.<br>
+In general |<i>a</i><sub><i>m</i></sub> - <i>a</i><sub><i>m</i>+1</sub>| &#8804; <i>&#955;</i><sup><i>m</i>-1</sup><i>R</i> and |<i>a</i><sub><i>m</i></sub> - <i>a</i><sub><i>n</i></sub>| &#8804; (<i>&#955;</i><sup><i>m</i>-1</sup> + <i>&#955;</i><sup><i>m</i></sup> + ... + <i>&#955;</i><sup><i>n</i></sup>)<i>R</i>.<br>
+Since the Geometric series <img src= "../Symbolgifs/sigma.gif" > <i>&#955;</i><sup><i>n</i></sup> is convergent, its partial sums form a Cauchy sequence and so the above expression can be made as small as we like by choosing <i>m</i>, <i>n</i> large. Thus (<i>a</i><sub><i>n</i></sub>) is a Cauchy sequence and hence has a limit <i>&#945;</i>. By the usual argument <i>&#945;</i> satisfies the equation <i>f</i> (<i>&#945;</i>) = <i>&#945;</i> and so is a fixed point for <i>f</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If <i>&#946;</i> is another fixed point then <i>f</i> (<i>&#945;</i>) - <i>f</i> (<i>&#946;</i>) = <i>&#945;</i> - <i>&#946;</i> and since we have |<i>f</i> (<i>&#945;</i>) - <i>f</i> (<i>&#946;</i>)| &lt; <img src= "../Symbolgifs/lambda.gif" >|<i>&#945;</i> - <i>&#946;</i>| this is impossible unless <i>&#945;</i> = <i>&#946;</i>. Thus the fixed point is unique.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xT10-1.gif align = right>The line <i>y</i> = <i>ax</i> meets <i>y</i> = <i>x</i><sup>2</sup> where <i>ax</i> = <i>x</i><sup>2</sup> &#8658; at <i>P</i> we have <i>x</i> = <i>a</i>.<br>
+Then <i>d</i><sub>1</sub>(<i>ax</i>, <i>x</i><sup>2</sup>) = <img src= "../Symbolgifs/int0a.gif" align=middle > (<i>ax</i> - <i>x</i><sup>2</sup>) <i>dx</i> + <img src= "../Symbolgifs/inta1.gif" align=middle > (<i>x</i><sup>2</sup> - <i>ax</i>) <i>dx</i> = &#91;<i>ax</i><sup>2</sup>/<sub>2</sub> - <i>x</i><sup>3</sup>/<sub>3</sub><img src= "../Symbolgifs/evala1.gif" align=middle > + &#91;<i>x</i><sup>3</sup>/<sub>3</sub> - <i>ax</i><sup>2</sup>/<sub>2</sub><img src= "../Symbolgifs/evala1.gif" align=middle > = <i>a</i><sup>3</sup>/<sub>3</sub> - <i>a</i>/<sub>2</sub> + <sup>1</sup>/<sub>3</sub>. <br>
+Differentiate to find the minimum of this. <br>
+This occurs when <i>a</i><sup>2</sup> - <sup>1</sup>/<sub>2</sub>= 0 or at <i>a</i> = 1/&#8730;2 = 0.707 (approximately).
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xT10-2.gif align = right>To find the length of the "Left-hand thick line" where the distance between the graphs is a maximum, differentiate: <font size=+1><sup><i>d</i></sup>/<sub><i>dx</i></sub></font>(<i>ax</i> - <i>x</i><sup>2</sup>) = 0 &#8658; <i>a</i> = 2<i>x</i> &#8658; <i>x</i> = <i>a</i>/<sub>2</sub>.<br>
+So the length of the "Left-hand thick line" <i>a</i><sup>2</sup>/<sub>2</sub> - <i>a</i><sup>2</sup>/<sub>4</sub> = <i>a</i><sup>2</sup>/<sub>4</sub>.<br>
+The length of the "right-hand thick line" is 1 - <i>a</i> and so if these two lengths are the same we have <i>a</i><sup>2</sup>/<sub>4</sub> = 1 - <i>a</i>  &#8658; <i>a</i> = &#8730;8 - 2 = 0.828 (approximately).
+<p align=justify>
+
+<p><li>To find the distance between the two curves in the metric <i>d</i><sub>2</sub> we have:<br>
+&#91;<i>d</i><sub>2</sub>(<i>x</i><sup>2</sup>, <i>ax</i>)]<sup>2</sup> = <img src= "../Symbolgifs/int01.gif" align=middle >(<i>x</i><sup>2</sup> - <i>ax</i>)<sup>2</sup> <i>dx</i> = &#91;<i>x</i><sup>5</sup>/<sub>5</sub> - <i>ax</i><sup>4</sup>/<sub>2</sub> + <i>a</i><sup>2</sup><i>x</i><sup>3</sup>/<sub>3</sub><img src= "../Symbolgifs/eval01.gif" align=middle > = <i>a</i><sup>2</sup>/<sub>3</sub> - <i>a</i>/<sub>2</sub> + <sup>1</sup>/<sub>5</sub><br>
+and we can differentiate to find where this is a minimum &#8658; 2<i>a</i>/<sub>3</sub> - <sup>1</sup>/<sub>2</sub> = 0 &#8658; <i>a</i> = <sup>3</sup>/<sub>4</sub> = 0.75
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

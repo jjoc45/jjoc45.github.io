@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Solution 6.5</title>
+</head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 6.5</font></h2>
+<p>
+
+Assume <i>m</i> &gt; <i>n</i> and we will prove that |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>m</i></sub>| is small for large enough <i>m</i>, <i>n</i>.<br>
+|<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>m</i></sub>| = |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>+1</sub> + <i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i>+2</sub> + ... + <i>a</i><sub><i>m</i>-1</sub> - <i>a</i><sub><i>m</i></sub>| &#8804; |<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>+1</sub>| + |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i>+2</sub>| + ... + |<i>a</i><sub><i>m</i>-1</sub> - <i>a</i><sub><i>m</i></sub>| &#8804; <i>r</i><sup><i>n</i></sup> + <i>r</i><sup><i>n</i>+1</sup> + ... + <i>r</i><sup><i>m</i></sup>. Since this is part of "the tail" of the convergent Geometric Series: <img src= "../Symbolgifs/sigma.gif" > <i>r</i><sup><i>n</i></sup> this is small for large <i>m</i>, <i>n</i>.<br>
+The sequence (<i>a</i><sub><i>n</i></sub>) is certainly bounded above by 1. Now <i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub> = <i>a</i><sub><i>n</i></sub>/3 + 2<i>a</i><sub><i>n</i>-1</sub>/3 - <i>a</i><sub><i>n</i></sub> and so |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>| = <sup>2</sup>/<sub>3</sub>|<i>a</i><sub><i>n</i></sub> - <i>a</i><sub><i>n</i>-1</sub>|. Now use induction to get |<i>a</i><sub><i>n</i>+1</sub> - <i>a</i><sub><i>n</i></sub>| &#8804; (<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup> and then the last result shows that we have a convergent sequence.
+<p align=justify>
+Finding its limit is rather tricky. Experimenting with Maple suggests that <sup>3</sup>/<sub>5</sub> is a good guess.<br>
+A standard way of dealing with recurrence relations like this one is to guess a solution of the form <i>a</i><sub><i>n</i></sub> = <i>&#956;</i><sup><i>n</i></sup> which in this case gives <i>&#956;</i> = 1 or -<sup>2</sup>/<sub>3</sub> and the general solution is then of the form <i>a</i><sub><i>n</i></sub>= <i>A</i>.1<sup><i>n</i></sup> + <i>B</i>.(-<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup> for some constants <i>A</i> and <i>B</i>. <br>
+Choosing <i>A</i> and <i>B</i> to give the correct answer for <i>a</i><sub>1</sub> and <i>a</i><sub>2</sub> gives the formula <i>a</i><sub><i>n</i></sub> = <sup>3</sup>/<sub>5</sub> + <sup>9</sup>/<sub>10</sub> &#215; (-<sup>2</sup>/<sub>3</sub>)<sup><i>n</i></sup>and so as <i>n</i>&#8594; &#8734; we have (<i>a</i><sub><i>n</i></sub>)&#8594; <sup>3</sup>/<sub>5</sub>.
+<p align=justify>
+
+<p>
+
+</body></html>
+<p>

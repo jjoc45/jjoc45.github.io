@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Solution 5.6</title>
+</head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 5.6</font></h2>
+<p>
+
+The sequence (<i>r</i><sub><i>n</i></sub>) is (1, 2, 1.5, 1.6, 1.625, 1.615, 1.619, 1.618, ... ) (approximately). Hence it is <i>not</i> monotonic -- though you might notice that the subsequences of odd and even terms are monotonic.<br>
+<i>r</i><sub><i>n</i>+1</sub> = <i>f</i><sub><i>n</i>+2</sub>/<i>f</i><sub><i>n</i>+1</sub> = (<i>f</i><sub><i>n</i>+1</sub> + <i>f</i><sub><i>n</i></sub>)/<i>f</i><sub><i>n</i>+1</sub> = 1 + <i>f</i><sub><i>n</i></sub>/<i>f</i><sub><i>n</i>+1</sub>= 1 + 1/<i>r</i><sub><i>n</i></sub>. <br>
+So if the sequence (<i>r</i><sub><i>n</i></sub>) converges to a limit <i>&#945;</i>, <i>&#945;</i> satisfies <i>&#945;</i> = 1 + 1/<i>&#945;</i> &#8658; <i>&#945;</i><sup>2</sup>- <i>&#945;</i> - 1 = 0 &#8658; (if (<i>&#945;</i> &gt; 1) <i>&#945;</i> = (&#8730;5 + 1)/2.<br>
+From the above, <i>r</i><sub><i>n</i>+2</sub> = 1 + 1/<i>r</i><sub><i>n</i>+1</sub> = 1 + 1/(1+1/<i>r</i><sub><i>n</i></sub>) = 1 + <i>r</i><sub><i>n</i></sub>/(<i>r</i><sub><i>n</i></sub>+ 1) = (2<i>r</i><sub><i>n</i></sub>+ 1)/(<i>r</i><sub><i>n</i></sub>+ 1) as required.<br>
+<i>r</i><sub><i>n</i>+2</sub> - <i>r</i><sub><i>n</i></sub>= (2<i>r</i><sub><i>n</i></sub> + 1)/(<i>r</i><sub><i>n</i></sub> + 1) - (2<i>r</i><sub><i>n</i>-2</sub> + 1)/(<i>r</i><sub><i>n</i>-2</sub> + 1) = 2(<i>r</i><sub><i>n</i></sub> - <i>r</i><sub><i>n</i>-2</sub>)/[(<i>r</i><sub><i>n</i></sub> + 1)(<i>r</i><sub><i>n</i>-2</sub> + 1)]. <br>
+Hence by induction, since <i>r</i><sub>3</sub> - <i>r</i><sub>1</sub> &gt; 0, the sequence of odd terms is monotonic increasing and since <i>r</i><sub>4</sub> - <i>r</i><sub>2</sub> &lt; 0, the subsequence of even terms is monotonic decreasing. Hence, by question 4 above, the sequence converges to (&#8730;5 + 1)/2.
+<p align=justify>
+
+<p>
+
+</body></html>
+<p>

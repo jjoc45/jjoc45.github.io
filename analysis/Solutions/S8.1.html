@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Solution 8.1</title>
+</head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 8.1</font></h2>
+<p>
+
+<img src= ../Diagrams/xS8-1.gif align = right><br>
+Look at the picture:
+<p align=justify>
+If a point <i>Q</i> is as shown, it is clear that <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) &#8804; <i>r</i> since "The diamond is inside the circle" and so <i>d</i><sub>2</sub>(<i>p</i>, <i>Q</i>) &#8804; <i>d</i><sub>1</sub>(<i>p</i>, <i>Q</i>).<br>
+Similarly, "The circle is inside the square and so <i>d</i><sub>&#8734;</sub>(<i>P</i>, <i>Q</i>) &#8804; <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>).<br>
+<br clear=right><br>
+<img src= ../Diagrams/xS8-2.gif align = right><br>
+Alternatively, look at the picture:
+<p align=justify>
+Then <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) = <i>c</i> &#8805; <i>a</i> + <i>b</i> = <i>d</i><sub>1</sub>(<i>P</i>, <i>Q</i>).<br>
+Also both <i>a</i>&#8804; <i>c</i> and <i>b</i> &#8804; <i>c</i> &#8658; <i>d</i><sub>&#8734;</sub>(<i>P</i>, <i>Q</i>) = max{<i>a</i>, <i>b</i>} &#8804; <i>c</i>.<br>
+<br clear=right><br>
+Without a picture, one can argue<br>
+(<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> + 2<i>ab</i> &#8805; <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> &#8658; <i>a</i> + <i>b</i> &#8805; &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8658; <i>d</i><sub>1</sub>&#8805; <i>d</i><sub>2</sub>.<br>
+Also, if <i>a</i> &#8805; <i>b</i> then max{<i>a</i>, <i>b</i>} = <i>a</i> and since <i>a</i><sup>2</sup>+ <i>b</i><sup>2</sup>&#8805; <i>a</i><sup>2</sup>we have &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i> and so <i>d</i><sub>2</sub> &#8805; <i>d</i><sub>&#8734;</sub>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> in <i>d</i><sub>1</sub>, then given <i>&#949;</i> &gt; 0 &#8707; <i>N</i> such that <i>n</i> &gt; <i>N</i> &#8658; <i>d</i><sub>1</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i> &#8658; (since <i>d</i><sub>1</sub>&#8805; <i>d</i><sub>2</sub>and <i>d</i><sub>&#8734;</sub>) that the sequence converges in <i>d</i><sub>2</sub> and <i>d</i><sub>&#8734;</sub> also.
+<p align=justify>
+<img src= ../Diagrams/xS8-3.gif align = right><br>
+One can draw the pictures :
+<p align=justify>
+to show that <i>d</i><sub>1</sub>&#8804; &#8730;2 <i>d</i><sub>2</sub> and <i>d</i><sub>2</sub>&#8804; &#8730;2 <i>d</i><sub>&#8734;</sub>.<br>
+<br clear=right><br>
+Alternatively, &#8730;2 &#8730;(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i> + <i>b</i> &#8660; 2(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) &#8805; <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> &#8660; <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> &#8805; 0 which is true since (<i>a</i> - <i>b</i>)<sup>2</sup> &#8805; 0. Hence &#8730;2 <i>d</i><sub>2</sub> &#8805; <i>d</i><sub>1</sub>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If (<i>a</i><sub><i>n</i></sub>)&#8594; <i>&#945;</i> in <i>d</i><sub>&#8734;</sub>, then given <i>&#949;</i> &gt; 0 &#8707; <i>N</i> such that <i>n</i> &gt; <i>N</i> &#8658; <i>d</i><sub>&#8734;</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i> &#8658; <i>d</i><sub>2</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i>/<sub>&#8730;2</sub> and <i>d</i><sub>2</sub>(<i>a</i><sub><i>n</i></sub>, <i>&#945;</i>) &lt; <i>&#949;</i>/<sub>2</sub> and so the sequence converges in <i>d</i><sub>1</sub> and <i>d</i><sub>2</sub> also.
+<p align=justify>
+Similarly, if convergence takes place in <i>d</i><sub>2</sub> it also takes place in <i>d</i><sub>1</sub>. Combining this with the earlier result shows that sequences which converge in one of these metrics converge in them all. 
+<p align=justify>
+
+<p>
+
+</body></html>
+<p>

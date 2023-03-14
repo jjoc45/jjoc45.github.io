@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Solution 6.2</title>
+</head>
+<body bgcolor="ffffff">
+<p>
+<h2><font color=blue>Solution 6.2</font></h2>
+<p>
+
+<i>s</i><sub><i>n</i>+1</sub>- <i>s</i><sub><i>n</i></sub>= 1/(<i>n</i>+1)<sup>2</sup>&gt; 0 and so the sequence is monotonic increasing. <br>
+Clearly <i>s</i><sub>1</sub>&#8804; 2 - 1/1. Now assume the result is true for <i>n</i> = <i>k</i> and consider <i>s</i><sub><i>k</i>+1</sub>= <i>s</i><sub><i>k</i></sub>+ 1/(<i>k</i> + 1)<sup>2</sup>&#8804; 2 - 1/<i>k</i> + 1/(<i>k</i> + 1)<sup>2</sup> (by the inductive hypothesis) and this can be written as: 2 - 1/(<i>k</i> + 1) &#215; [(<i>k</i> + 1)/<i>k</i> - 1/(<i>k</i> + 1)] = 2 - 1/(<i>k</i> + 1) &#215; [(<i>k</i><sup>2</sup> + <i>k</i> + 1)/(<i>k</i><sup>2</sup> + <i>k</i>)] &#8804; 2 - 1/(<i>k</i> + 1) as required.<br>
+So the sequence of partial sums is monotonic increasing and bounded above and hence convergent.
+<p align=justify>
+Proving that its sum is &#960;<sup>2</sup>/6 is quite a bit harder. One can do it by defining a function <i>f</i> (<i>x</i>) = 0 if -&#960; &#8804; <i>x</i> &#8804; 0 and x<sup>2</sup> if 0 &lt; <i>x</i> &#8804; &#960; and expanding it as a Fourier series, though that is not how Euler originally proved it!
+<p align=justify>
+
+<p>
+
+</body></html>
+<p>

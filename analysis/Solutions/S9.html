@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Solution 9</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT2002 Analysis</font>
+<hr>
+<h2><font color=blue>Solution 9</font></h2>
+<p>
+<ol><p><li><img src= ../Diagrams/xS9.gif align = right><br>
+[<i>d</i><sub>2</sub>(<i>x</i> , <i>ax</i> + <i>b</i>)]<sup>2</sup>= <img src= "../Symbolgifs/int01.gif" align=middle > (<i>x</i><sup>2</sup> - (<i>ax</i> + <i>b</i>)<sup>2</sup><i>dx</i> = <img src= "../Symbolgifs/int01.gif" align=middle > (<i>x</i><sup>4</sup> - 2<i>x</i><sup>2</sup>(<i>ax</i> + <i>b</i>) + (<i>ax</i> + <i>b</i>)<sup>2</sup>) <i>dx</i> = <sup>1</sup>/<sub>5</sub> - <sup>2</sup>/<sub>4</sub><i>a</i> -<sup>2</sup>/<sub>3</sub> <i>b</i> + <sup>1</sup>/<sub>3</sub> <i>a</i><sup>2</sup> + <i>ab</i> + <i>b</i><sup>2</sup>. The minimum value of this is where <font size=+1><sup><i>d</i></sup>/<sub><i>da</i></sub></font> = 0 and <font size=+1><sup><i>d</i></sup>/<sub><i>db</i></sub></font> = 0. That is where -<sup>1</sup>/<sub>2</sub> + <sup>2</sup>/<sub>3</sub><i>a</i> + <i>b</i> = 0 and -<sup>2</sup>/<sub>3</sub> + <i>a</i> + 2<i>b</i> = 0 &#8658; 4<i>a</i> + 6<i>b</i> = 3, 3<i>a</i> + 6<i>b</i> = 2 &#8658; <i>a</i> = 1, <i>b</i> = -1/6. So the best-fit linear approximation to <i>x</i><sup>2</sup> is <i>x</i> - <sup>1</sup>/<sub>6</sub>.
+<p align=justify>
+
+<p><li>Let <img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub> be the partial sum of <img src= "../Symbolgifs/sigma.gif" > <i>f</i><sub><i>i</i></sub>, assume that <i>m</i> &gt; <i>n</i> and look at <i>d</i><sub>&#8734;</sub>(<img src= "../Symbolgifs/sigmalc.gif" ><sub><i>m</i></sub>- <img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub>) = max { |<i>f</i><sub><i>n</i>+1</sub>(<i>x</i>) + ... + <i>f</i><sub><i>m</i></sub>(<i>x</i>)| for <i>x</i> &#8712; [<i>a</i>, <i>b</i>]} &#8804; max {|<i>f</i><sub><i>n</i>+1</sub>(<i>x</i>)| + ... + |<i>f</i><sub><i>m</i></sub>(<i>x</i>)| } &#8804; <i>M</i><sub><i>n</i>+1</sub>+ ... + <i>M</i><sub><i>m</i></sub>.<br>
+Since the series <img src= "../Symbolgifs/sigma.gif" > <i>M</i><sub><i>i</i></sub> converges, its partial sums form a Cauchy sequence and so <i>M</i><sub><i>n</i>+1</sub>+ ... + <i>M</i><sub><i>m</i></sub> is small for large <i>m</i>, <i>n</i>. Thus (<img src= "../Symbolgifs/sigmalc.gif" ><sub><i>n</i></sub>) is a Cauchy sequence in <i>C</i>[<i>a</i>, <i>b</i>] and since this is a complete space under <i>d</i><sub>&#8734;</sub> the sequence is convergent to its pointwise limit and this limit is continuous.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Since |sin<sup>2</sup>(<i>x</i>)| &#8804; 1, we may take <i>M</i><sub><i>n</i></sub>= 1/<i>n</i><sup>2</sup> and so by the Weierstrass <i>M</i>-test, the series <img src= "../Symbolgifs/sigma.gif" > sin<sup>2</sup>(<i>x</i>)/<i>n</i><sup>2</sup> is uniformly convergent to a continuous function. <br>
+Deciding exactly where this function is differentiable is much harder.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>Similarly, since |cos(<i>a</i><sup><i>n</i></sup><i>x</i>)| &#8804; 1, if 0 &lt; <i>b</i> &lt; 1 we may take <i>M</i><sub><i>n</i></sub>= 1/<i>b</i><sup><i>n</i></sup> and use the fact that <img src= "../Symbolgifs/sigma.gif" > <i>M</i><sub><i>n</i></sub> is convergent to deduce that Weierstrass's function is continuous.<br>
+Proving that this function is not differentiable anywhere is the hard bit!<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p><li>It is clear that <i>d</i>(<i>m</i>, <i>n</i>) &#8805; 0, that <i>d</i>(<i>m</i>, <i>n</i>) = 0 &#8660; <i>m</i> = <i>n</i> and that <i>d</i>(<i>m</i>, <i>n</i>) = <i>d</i>(<i>n</i>, <i>m</i>), so we need only verify the triangle inequality.<br>
+So suppose that 2<sup><i>r</i></sup> divides <i>m</i> - <i>n</i> and that 2<sup><i>s</i></sup> divides <i>n</i> - <i>q</i>. Then <i>m</i> - <i>q</i> = (<i>m</i> - <i>n</i>) + (<i>n</i> - <i>q</i>) and so if <i>t</i> = min{<i>r</i>, <i>s</i>} we have 2<sup><i>t</i></sup> divides <i>n</i> - <i>q</i>. But 1/2<sup><i>t</i></sup>&#8804; 1/2<sup><i>r</i></sup>+ 1/2<sup><i>s</i></sup> since <i>t</i> is either <i>r</i> or <i>s</i>. Hence the triangle inequality holds.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>If <i>a</i><sub><i>n</i></sub>= 1/2<sup><i>n</i>-1</sup> then <i>d</i>(<i>a</i><sub><i>n</i></sub>, 0) = 1/2<sup><i>n</i>-1</sup> and so (<i>a</i><sub><i>n</i></sub>)&#8594; 0 in this metric.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>One can define similar metrics for any odd prime in a similar way. This gives rise to some interesting algebraic objects called the <i>p-adic integers</i> which arise in a wide variety of applications.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>
