@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Symmetry groups of Platonic solids</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L9.html">Previous page</a><br>
+(Frieze groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L11.html">Next page</a><br>
+(Finite rotation groups in 3 dimensions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Symmetry groups of Platonic solids</font></h2>
+<p>
+<br>
+<img src= ../Diagrams/x10-1.gif>
+<p align=justify>
+Some of the finite subgroups of <i>I</i>(<b>R</b><sup>3</sup>) arise from these solids.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+A convex regular solid in <b>R</b><sup>3</sup> is called a <b>Platonic solid</b>.
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<ol><li 1>A <i>polyhedron</i> is a region bounded by planes in <b>R</b><sup>3</sup>. It has two-dimensional <i>faces</i> which meet in one-dimensional <i>edges</i> which meet in <i>vertices</i>.
+<p align=justify>
+<li 2>A polyhedron is <i>regular</i> if all its faces, edges and vertices are equal.<br>
+That is all the faces meet at the same angle and that the same number of edges meet at the same angles at each vertex. This implies that all the faces are the same regular polygon.
+<p align=justify>
+<li 3>These solids were first classified by <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Plato.html">Plato</a> in about 400 BC. There are numerous other <i>semi-regular</i> solids studied later by among others <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Archimedes.html">Archimedes</a> and <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Kepler.html">Kepler</a>.<br>
+</ol>
+Here are the numbers for the five Platonic solids.<br>
+<table border=1 cellpadding = 5> 
+<tr><td><td align=center><b>Number of faces</b><td align=center><b>Number of edges</b><td align=center><b>Number of vertices</b><td align=center><b>Edges per face</b><td align=center><b>Dual</b><br>
+<tr><td align=center><b>Tetrahedron</b><td align=center>4<td align=center>6<td align=center>4<td align=center>3<td align=center>Tetrahedron<br>
+<tr><td align=center><b>Cube</b><td align=center>6<td align=center>12<td align=center>8<td align=center>4<td align=center>Octahedron<br>
+<tr><td align=center><b>Octahedron</b><td align=center>8<td align=center>12<td align=center>6<td align=center>3<td align=center>Cube<br>
+<tr><td align=center><b>Dodecahedron</b><td align=center>12<td align=center>30<td align=center>20<td align=center>5<td align=center>Icosahedron<br>
+<tr><td align=center><b>Icosahedron</b><td align=center>20<td align=center>30<td align=center>12<td align=center>3<td align=center>Dodecahedron<br>
+</table><br>
+Note that all these satisfy <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Euler.html">Euler</a>'s theorem: <i>V</i> - <i>E</i> + <i>F</i> = 2.<br>
+The entry in the last column is the <i>dual solid</i>.<br>
+One gets the dual by joining the midpoints of adjacent faces and then filling in the solid.<br>
+This explains the symmetries between the entries for <i>F</i> and <i>V</i> in the table.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<i>The above five solids are the only regular solids.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose we have <i>r</i> faces (each a regular <i>n</i>-gon) meeting at every vertex. (Such a solid is said to have <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Schafli.html">Schafli</a> symbol {<i>n</i>, <i>r</i>}.)<br>
+The angle at the corner of the <i>n</i>-gon is (<i>n</i> - 2)&#960;/<i>n</i> and since the polyhedron is convex we must have <i>r</i> &#215; (<i>n</i> - 2)&#960;/<i>n</i>  &lt; 2&#960; &#8658; (<i>r</i> - 2)(<i>n</i> - 2) &lt; 4.<br>
+The only positive integers satisfying this are (<i>n</i>, <i>r</i>) = (3, 3), (4, 3), (3, 4), (5, 3), (3, 5) corresponding to the above five.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+We now investigate the symmetry groups of these solids.
+<p align=justify>
+<ol><li 1> <font color=red>The symmetry group of the tetrahedron <i>S</i>(<i>T</i>).</font>
+<p align=justify>
+To calculate the order of the group, oberve that a given vertex can be moved to one of four positions. There is a choice of three for a second and two for a third. Hence |<i>S</i>(<i>T</i>)| = 24.<br>
+Any symmetry determines a permutation of the four vertices so we get a map <i>&#952;</i> : <i>S</i>(<i>T</i>)&#8594; <i>S</i><sub>4</sub> to the <i>Symmetric group</i> which is easily seen to be an isomorphism.<br>
+Since a <i>transposition</i> (swapping a pair of vertices) corresponds to a <i>reflection</i> (an opposite symmetry), the subgroup <i>S</i><sub><i>d</i></sub>(<i>T</i>) of <i>direct symmetries</i> corresponds to the <i>Alternating subgroup</i> <i>A</i><sub>4</sub>.<br>
+We will see a different way of thinking about this group later.<br>
+</ol><br>
+All the other Platonic solids are symmetric about their centres and so (See <a href=../Tutorials/T4.html>Exercises 4 Question 5</a>) the <i>full group of symmetries</i> <i>S</i>(<i>X</i>) is isomorphic to the direct product <i>S</i><sub><i>d</i></sub>(<i>X</i>) &#215; &lt; <i>J</i> &gt; where <i>S</i><sub><i>d</i></sub>(<i>X</i>) is the subgroup of <i>direct symmetries</i> and &lt; <i>J</i> &gt; is the subgroup generated by the map <b>x</b> <img src= "../Symbolgifs/goesto.gif" alt = "goesto"> -<b>x</b>.
+<p align=justify>
+<ol start=2><li 2> <font color=red>The symmetry group of the cube or octahedron <i>S</i>(<i>C</i>).</font>
+<p align=justify>
+Because these two solids are dual to each other they have the same symmetry group.<br>
+Arguing as in the last case, the order of the group of direct symmetries (all rotations) is |<i>S</i><sub><i>d</i></sub>(<i>C</i>)| = 8 &#215; 3 = 24.<br>
+The elements are:<br>
+3 rotations (by &#177;&#960;/2 or &#960;) about centres of 3 pairs of opposite faces. [9]<br>
+1 rotation (by &#960;) about centres of 6 pairs of opposite edges. [6]<br>
+2 rotations (by &#177;2&#960;/3) about 4 pairs of opposite vertices (<i>diagonals</i>). [8]<br>
+Together with the identity this accounts for all 24 elements.
+<p align=justify>
+The orders of these elements suggests the <i>SL</i><sub><i>d</i></sub>(<i>C</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>S</i><sub>4</sub>. In fact every rotation determines a permutation of the four diagonals and this defines the isomorphism.
+<p align=justify>
+Hence <i>S</i><sub><i>d</i></sub>(<i>C</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>S</i><sub>4</sub> and <i>S</i>(<i>C</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>S</i><sub>4</sub> &#215; &lt; <i>J</i> &gt; with order 48.
+<p align=justify>
+<li 3> <font color=red>The symmetry group of the dodecahedron or icosahedron <i>S</i>(<i>D</i>).</font>
+<p align=justify>
+Because these two solids are dual to each other they have the same symmetry group.<br>
+Arguing as before, the order of the group of direct symmetries (all rotations) is |<i>S</i><sub><i>d</i></sub>(<i>D</i>)| = 20 &#215; 3 = 60.<br>
+The elements are:<br>
+4 rotations (by multiples of 2&#960;/5) about centres of 6 pairs of opposite faces. [24]<br>
+1 rotation (by &#960;) about centres of 15 pairs of opposite edges. [15]<br>
+2 rotations (by &#177;2&#960;/3) about 10 pairs of opposite vertices. [20]<br>
+Together with the identity this accounts for all 60 elements.
+<p align=justify>
+This suggests that <i>S</i><sub><i>d</i></sub>(<i>D</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>A</i><sub>5</sub> which has 24 5-cycles, 20 3-cycles and 15 permutations of the shape (..)(..).
+<p align=justify>
+In fact one can embed five cubes in the dodecahedron which are permuted by each rotation. Alternatively, one may embed five tetrahedra (partitioning the 20 vertices) and these are permuted also.
+<p align=justify>
+Hence <i>S</i><sub><i>d</i></sub>(<i>D</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>A</i><sub>5</sub> and <i>S</i>(<i>D</i>) <img src= "../Symbolgifs/iso.gif" alt = "iso"> <i>A</i><sub>5</sub> &#215; &lt; <i>J</i> &gt; with order 120.
+<p align=justify>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+It is tempting to believe that the full symmetry group <i>S</i>(<i>D</i>) is actually isomorphic to <i>S</i><sub>5</sub> but one can check that the reflections in <i>S</i>(<i>D</i>) lead to <i>even</i> permutations of the tetrahedra and so the full symmetry group is <i>not</i> <i>S</i><sub>5</sub>.<br>
+</ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L9.html">Previous page</a><br>
+(Frieze groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L11.html">Next page</a><br>
+(Finite rotation groups in 3 dimensions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

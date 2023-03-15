@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Homogeneous coordinates</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L16.html">Previous page</a><br>
+(Projective spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L18.html">Next page</a><br>
+(The projective groups)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Homogeneous coordinates</font></h2>
+<p>
+To calculate with points and figures in the projective plane we introduce homogeneous coordinates which allow us to see the relationship between points at infinity and ordinary points.
+<p align=justify>
+First we will consider the projective line.<br>
+Fix the point of projection <i>P</i> to be the origin in <b>R</b><sup>2</sup>. Then identify an ordinary point <i>A</i> on the line <i>y</i> = 1 with the line <i>AP</i>. Then every line through <i>P</i> is identified with a point of the line <i>y</i> = 1 except the <i>x</i>-axis itself. We will identify this with the point at infinity.<br>
+We can describe a line <i>AP</i> through the origin by taking a vector (<i>&#945;</i>, <i>&#946;</i>) in it. Then the point <i>A</i> has <i>x</i>-coordinate <sup><i>&#945;</i></sup>/<sub><i>&#946;</i></sub> while the point at infinity corresponds to a vector (<i>&#945;</i>, 0).
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+The <b>homogeneous coordinates</b> of a point <i>x</i> on the affine line are (<i>&#945;</i>, <i>&#946;</i>) where <i>x</i> = <font size=+1><sup><i>&#945;</i></sup>/<sub><i>&#946;</i></sub></font> . The point at infinity has homogeneous coordinates (1, 0).<br>
+Since any non-zero multiple of the vector (<i>&#945;</i>, <i>&#946;</i>) will also be in <i>AP</i>, homogeneous coordinates are only defined up to multiplication by a non-zero scalar.
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><li a>The pair [0, 0] does not represent any point on the projective line.
+<p align=justify>
+<li b>We will denote the projective line by <b>R</b><i>P</i><sup>1</sup>.
+<p align=justify>
+<li c>To do this formally, we use an equivalence relation. <br>
+<b>R</b><i>P</i><sup>1</sup> = <i>R</i><sup>2</sup> - {(0, 0)}/~ where (<i>&#945;</i>, <i>&#946;</i>) ~ (<i>&#955;</i><i>&#945;</i>, <i>&#955;</i><i>&#946;</i>) for any <i>&#955;</i> &#8800; 0.<br>
+We denote the equivalence class of (<i>&#945;</i>, <i>&#946;</i>) by [<i>&#945;</i>, <i>&#946;</i>] so that [<i>&#945;</i>, <i>&#946;</i>] =[<i>&#955;</i><i>&#945;</i>, <i>&#955;</i><i>&#946;</i>] for any <i>&#955;</i> &#8800; 0.
+<p align=justify>
+<li d>Ordinary points on the line thus have homogeneous coordinates [<i>x</i>, 1] (since [<i>&#945;</i>, <i>&#946;</i>] = [<font size=+1><sup><i>&#945;</i></sup>/<sub><i>&#946;</i></sub></font> , 1] if <i>&#946;</i> &#8800; 0) and the point at infinity has homogeneous coordinates [1,0].<br>
+</ol><br>
+Similarly, we may introduce homogeneous coordinates in the projective plane <b>R</b><i>P</i><sup>2</sup>. A point has homogeneous coordinates [<i>x</i>, <i>y</i>, <i>z</i>] (with, for example, [1, 2, 3] = [2, 4, 6] etc).<br>
+Ordinary affine points have coordinates [<font size=+1><sup><i>x</i></sup>/<sub><i>z</i></sub></font> , <font size=+1><sup><i>y</i></sup>/<sub><i>z</i></sub></font> , 1] while points on the line at infinity have coordinates [<i>x</i>, <i>y</i>, 0].
+<p align=justify>
+<b><font color=red>Properties</font></b>
+<p align=justify>
+<ol><li 1>In the ordinary affine plane a straight line has an equation <i>ax</i> + <i>by</i> + <i>c</i> = 0.<br>
+Take homogeneous coordinates and replace <i>x</i> by <font size=+1><sup><i>x</i></sup>/<sub><i>z</i></sub></font> and <i>y</i> by <font size=+1><sup><i>y</i></sup>/<sub><i>z</i></sub></font> and get an equation <i>a</i> <font size=+1><sup><i>x</i></sup>/<sub><i>z</i></sub></font> + <i>b</i> <font size=+1><sup><i>y</i></sup>/<sub><i>z</i></sub></font> + <i>c</i> = 0 or <i>ax</i> + <i>by</i> + <i>cz</i> = 0 (a homogeneous equation).  Note that this second equation has an extra solution corresponding to <i>z</i> = 0. This is the point at infinity on the line and has homogeneous coordinates [<i>b</i>, -<i>a</i>, 0].
+<p align=justify>
+<li 2>The equation <i>y</i> - <i>x</i><sup>2</sup> = 0 represents a parabola in the affine plane. Using the same trick as above &#8658; <font size=+1><sup><i>y</i></sup>/<sub><i>z</i></sub></font> - <font size=+1>(<sup><i>x</i></sup>/<sub><i>z</i></sub>)</font><sup>2</sup> = 0 &#8658; <i>yz</i> - <i>x</i><sup>2</sup> = 0. <br>
+This homogeneous equation gives a curve in <b>R</b><i>P</i><sup>2</sup> which meets the line at infinity <i>z</i> = 0 in the single point [0, 1, 0].
+<p align=justify>
+<li 3>The equation <i>xy</i>  = 1 representing a rectangular hyperbola in the affine plane &#8658; <font size=+1><sup><i>x</i></sup>/<sub><i>z</i></sub></font>.<font size=+1><sup><i>y</i></sup>/<sub><i>z</i></sub></font> = 1 &#8658; <i>xy</i> = <i>z</i><sup>2</sup>. <br>
+This homogeneous equation gives a curve in <b>R</b><i>P</i><sup>2</sup> which meets the line at infinity <i>z</i> = 0 at the two points [1, 0, 0] and [0, 1, 0] (the points at infinity on the asymptotes).
+<p align=justify>
+<li 4>The equation <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup> = 1 representing a circle in the affine plane &#8658;  <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup> = <i>z</i><sup>2</sup> and this homogeneous equation gives a curve in <b>R</b><i>P</i><sup>2</sup> which does <i>not</i> meet the line at infinity.<br>
+</ol><br>
+In fact arguing as above, one can show that ellipses do not meet the line at infinity, hyperbolae meet it at two points and parabolas touch it (meet it at one point). <br>
+Of course, if one projects so that the line at infinity is projected into an ordinary line, it is possible to project a parabola into an ellipse, etc.
+<p align=justify>
+We will see (soon!) how to get a "topological" picture of a projective space.<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L16.html">Previous page</a><br>
+(Projective spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L18.html">Next page</a><br>
+(The projective groups)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Isometries of the plane</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L5.html">Previous page</a><br>
+(Isometries of the line)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L7.html">Next page</a><br>
+(Isometries in 3 dimensions)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Isometries of the plane</font></h2>
+<p>
+Many of the observations made about the group of the line can also be applied to <i>I</i>(<b>R</b><sup>2</sup>): the isometries of the plane <b>R</b><sup>2</sup>.
+<p align=justify>
+Again we can divide the isometries into two subsets: those for which the orthogonal transformation is in <i>SO</i>(2) (with determinant +1) and those with determinant -1. These are called <b>direct</b> and <b>opposite</b> symmetries respectively.<br>
+<ol><li 1><b><font color=red>Direct symmetries</font></b>
+<p align=justify>
+Here is a complete classification of direct symmetries.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<i>Any direct symmetry is either a translation or rotation about some point.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<ol type = a><li a>If <i>f</i> has a fixed point <b>b</b> then <i>T</i><sub>-<b>b</b></sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>b</b></sub>(<b>0</b>) = <b>0</b> and so this is a length preserving map which fixes the origin and hence is a linear map. Thus it is in <i>SO</i>(2) and is rotation about <b>0</b>. Hence <i>f</i> is rotation about the point <b>b</b>.
+<p align=justify>
+<li b>We have <i>f</i> = <i>T</i><sub><b>a</b></sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i> with <i>L</i> &#8712; <i>SO</i>(2) &#8658; <i>f</i>(<b>x</b>) = <b>a</b> + <i>L</i>(<b>x</b>). Now we try to solve <i>f</i>(<b>x</b>) = <b>x</b> = <b>a</b> + <i>L</i>(<b>x</b>) to find a fixed point. That is, we look for a solution of (<i>L</i> - <i>I</i>)<b>x</b> = -<b>a</b>. The only case in which we could not find such a solution is if <i>L</i> - <i>I</i> were not invertible. That is, if +1 were an eigenvalue of <i>L</i>. But the only element in <i>SO</i>(2) with +1 as an eigenvalue is the identity. Hence if <i>f</i> fails to have a fixed point, <i>L</i> = <i>I</i> and <i>f</i> is a translation.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol>
+<li 2><b><font color=red>Opposite symmetries</font></b>
+<p align=justify>
+We now classify the opposite symmetries. There are two kinds.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<i>An opposite symmetry of</i> <b>R</b><sup>2</sup> <i>is either reflection in any line or is a glide reflection.</i> 
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Note that the reflection may be in a line not necessarily through <b>0</b>.<br>
+A <i>glide reflection</i> (or <i>glide</i>) is a reflection in a line followed by a translation in a direction parallel to that line.
+<p align=justify>
+Since any element in <i>O</i>(2) - <i>SO</i>(2) is a reflection in a line through <b>0</b>, the result follows from:
+<p align=justify>
+<b><font color=green>Lemma</font></b><br>
+<i>Let R<sub><b>b</b></sub> be reflection in a line through </i><b>0</b><i> containing the vector <b>b</b>. Then T<sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> R<sub><b>b</b></sub> is a reflection if <b>a</b> and <b>b</b> are perpendicular and a glide-reflection otherwise.</i> 
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<img src= ../Diagrams/x06-1.gif align = right>From the diagram, if <b>a</b> and <b>b</b> are perpendicular, then <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"></m> <i>R</i><sub><b>b</b></sub> is reflection in the line <i>l</i> parallel to <b>b</b> through the point <b>a</b>/2.<br>
+<br clear=right><br>
+<img src= ../Diagrams/x06-2.gif align = right>If <b>a</b> and <b>b</b> are not perpendicular, then points of <i>l</i> are mapped to other points of <i>l</i> and so <i>f</i> acts on <i>l</i> by translation. Points on one side of <i>l</i> are mapped to the other side and so we have a <i>glide</i> <i>along</i> <i>l</i>.<br>
+<br clear=right><br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol><br>
+<b><font color=red>Remarks</font></b><br>
+<ol type=a><li a>Note that glide reflections are really the most general form of an opposite symmetry. A reflection could be considered as a glide where the translation happens to be trivial.
+<p align=justify>
+<li b>Glide reflections have no fixed points and so we get the following summary about isometries of <b>R</b><sup>2</sup>.
+<p align=justify>
+<table border =1 cellpadding =2>
+<tr> <td><td align=center><b>Direct</b><td align=center><b>Opposite</b><br>
+<tr> <td align=right><b>Fixed point</b><td align=center>Rotation<td align=center>Reflection<br>
+<tr> <td align=right><b>No fixed point</b><td align=center>Translation<td align=center>Glide<br>
+</table>
+<br>
+<li c>Products of direct symmetries are direct. It is however, possible for the product of rotations to be a translation.
+<p align=justify>
+<li d>Products of reflections are rotations if the "mirror lines" meet and translations if they are parallel.
+<p align=justify>
+<li e>Any isometry of <b>R</b><sup>2</sup> can be written as a product of at most three reflections in lines.<br>
+</ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L5.html">Previous page</a><br>
+(Isometries of the line)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L7.html">Next page</a><br>
+(Isometries in 3 dimensions)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Isometries of <i>n</i>-dimensional space</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L3.html">Previous page</a><br>
+(Examples of linear groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L5.html">Next page</a><br>
+(Isometries of the line)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Isometries of <i>n</i>-dimensional space</font></h2>
+<p>
+We are now in a position to calculate the <i>group of Euclidean geometry</i>.
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+If <b>a</b> &#8712; <b>R</b><sup><i>n</i></sup> then the map <b>x</b> <img src= "../Symbolgifs/goesto.gif" alt = "goesto"> <b>x</b> + <b>a</b> is called a <b>translation</b> and is denoted by <i>T</i><sub><b>a</b></sub>.
+<p align=justify>
+Note that translations and orthogonal (linear) transformations are both isometries.
+<p align=justify>
+In fact we have the following important result.
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<i>The group I</i>(<b>R</b><i><sup>n</sup></i>)<i> of all isometries of <b>R</b><sup>n</sup> consists of composites T<sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp">  L where T<sub><b>a</b></sub> is a translation and L is an orthogonal map.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If <i>f</i> : <b>R</b><sup><i>n</i></sup>&#8594; <b>R</b><sup><i>n</i></sup> is an isometry then let <i>f</i>(<b>0</b>) = <b>a</b>.<br>
+Then <i>T</i><sub>-<b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i> maps <b>0</b> to <b>0</b>. Our result will then follow from the following:
+<p align=justify>
+<b><font color=green>Lemma</font></b><br>
+An isometry <i>L</i> which fixes <b>0</b> is a linear map.
+<p align=justify>
+<b><font color=green>Proof of lemma</font></b><br>
+Since a straight line can be defined in terms of minimising distance, any isometry maps straight lines to straight lines. <br>
+Also parallel lines are mapped to parallel lines and hence parallelograms are mapped to parallelograms.<br>
+Hence <i>L</i>(<b>a</b> + <b>b</b>) = <i>L</i>(<b>a</b>) + <i>L</i>(<b>b</b>) since addition is defined using the parallelogram law.<br>
+To show that <i>L</i>(<i>&#955;</i><b>a</b>) = <i>&#955;</i><i>L</i>(<b>a</b>) observe that this is true for <i>&#955;</i> = 1 and hence (by adding) for any <i>&#955;</i> &#8712; <b>Z</b> and hence for <i>&#955;</i> &#8712; <b>Q</b>. Note that any isometry is clearly continuous and so continuity then allows us to extend it to the whole of <b>R</b>.<br>
+This completes the proof of the lemma and (since any length preserving linear map is orthogonal) of the theorem.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Note that the set of all orthogonal transformations forms a subgroup of <i>I</i>(<b>R</b><sup><i>n</i></sup>). We also have:
+<p align=justify>
+<b><font color=green>Theorem</font></b><br>
+<i>The set of all translations forms a normal subgroup of I</i>(<b>R</b><i><sup>n</sup></i>)<i> which is isomorphic to the group </i><b>R</b><i><sup>n</sup> under addition.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Clearly the set of translations forms a subgroup isomorphic to <b>R</b><sup><i>n</i></sup>. To show it is normal, conjugate a translation <i>T</i><sub><b>b</b></sub> by an element <i>f</i> = <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp">  <i>L</i> of <i>I</i>(<b>R</b><sup><i>n</i></sup>).<br>
+<i>f</i><sup>-1</sup><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>b</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i>(<b>x</b>) = <i>L</i><sup>-1</sup> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub>-<b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>b</b></sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i>(<b>x</b>) = <i>L</i><sup>-1</sup>(<b>b</b> + <i>L</i>(<b>x</b>)) = <i>L</i><sup>-1</sup>(<b>b</b>) + <b>x</b> which is translation by <i>L</i><sup>-1</sup>(<b>b</b>) and so is in the subgroup.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+In fact the quotient group is isomorphic to the group <i>O</i>(<i>n</i>). However, in general the subgroup <i>O</i>(<i>n</i>) of <i>I</i>(<b>R</b><sup><i>n</i></sup>) is <i>not</i> a normal subgroup and so the group of isometries is <i>not</i> the direct product of these two subgroups.<br>
+In fact "as a space" <i>I</i>(<b>R</b><sup><i>n</i></sup>) is <b>R</b><sup><i>n</i></sup> &#215; <i>O</i>(<i>n</i>) but the group multiplication is <i>not</i> componentwise.
+<p align=justify>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L3.html">Previous page</a><br>
+(Examples of linear groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L5.html">Next page</a><br>
+(Isometries of the line)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

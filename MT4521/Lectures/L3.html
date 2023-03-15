@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Examples of linear groups</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L2.html">Previous page</a><br>
+(The linear groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L4.html">Next page</a><br>
+(Isometries of <i>n</i>-dimensional space)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Examples of linear groups</font></h2>
+<p>
+<ol><li 1>The group <i>O</i>(1) is the Group {1, -1} under multiplication. (Think of it as 1 &#215; 1 matrices.) The group <i>SO</i>(1) is trivial.
+<p align=justify>
+<li 2>The group <i>SO</i>(2) is the set of all rotations about the origin in <b>R</b><sup>2</sup>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Look at the effect of applying an element of <i>SO</i>(2) to the standard basis.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+<img src= ../Diagrams/x03-1.gif align = right>We can consider <i>SO</i>(2) as (say) a unit circle in <b>C</b> by identifying the rotation by an angle <i>&#952;</i> with the complex number <i>e</i><sup><i>&#952;</i> <i>i</i></sup>.<br>
+<br clear=right>
+<p align=justify>
+<li 3>The group <i>O</i>(2) is the set of all rotations about <b>0</b> together with reflections in straight lines through <b>0</b>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+As above, look at the effect of applying an element of <i>O</i>(2) to the standard basis.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><li a>The rotations in <i>O</i>(2) correspond to matrices with determinant +1, while the reflections correspond to those elements with determinant -1. Because the product of two matrices with determinant -1 has determinant +1, it follows that composing two reflections gives us a rotation.
+<p align=justify>
+<img src= ../Diagrams/x03-2.gif align = right><li b>We can think of <i>O</i>(2) as a union of two circles, one corresponding to the rotations which are in <i>SO</i>(2) as above, and the other corresponding to the angle the "mirror" line makes with some fixed direction.<br>
+<br clear=right><br>
+</ol><br>
+<li 4>The group <i>SO</i>(3) is the groups of all rotations about straight lines through <b>0</b> in <b>R</b><sup>3</sup>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+<font size=-1>[This result is non-trivial. In particular it is not obvious that the product of two rotations about lines in <b>R</b><sup>3</sup> is a rotation about some line in <b>R</b><sup>3</sup> and indeed, given two such rotations, it can be hard to spot which line their composite rotates around. The proof involves some linear algebra theory.]</font>
+<p align=justify>
+First note that for any matrix, the determinant is the product of the eigenvalues. To see this, reduce the matrix <i>A</i> to row-echelon form <i>R</i> using a change of basis. Then <i>R</i> = <i>BAB</i><sup>-1</sup> with <i>B</i> the change of basis matrix. Then <i>det</i>(<i>A</i>) = <i>det</i>(<i>R</i>) and the entries on the diagonal of <i>R</i> are the eigenvalues.
+<p align=justify>
+Any 3 &#215; 3 matrix has a real eigenvalue <i>&#955;</i> since the polynomial you have to solve to find the eigenvalues is a cubic and any cubic has a real root. <br>
+Since the transformation is length preserving we must have <i>&#955;</i> = &#177;1.<br>
+If the other eigenvalues are real too, they must also be &#177;1 and since their product is +1, one of the eigenvalues is +1.<br>
+If the other eigenvalues are non-real, they are complex conjugate to one another and so their product is positive. So the real eigenvalue is +1.<br>
+Thus in either case, the transformation <i>T</i> has a <i>fixed vector</i> <b>a</b> with <i>T</i>(<b>a</b>) = +1<b>a</b>. (This is called an <i>axis</i>.)<br>
+In the plane perpendicular to <b>a</b>, vectors in this plane are mapped into this plane (since angles are preserved) and so the transformation acts like an element of <i>SO</i>(2) and it is therefore rotation by some angle about the axis <b>a</b>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+One may get a "picture" of <i>SO</i>(3) as follows.<br>
+Represent a rotation by an angle <i>&#952;</i> (radians) about a unit vector <b>a</b> by a vector of length <i>&#952;</i> in the direction of <b>a</b>.<br>
+Then every rotation is represented by a unique point in a solid ball of radius &#960; (except that since rotation by &#960; about <b>a</b> is the same as rotation by &#960; about <b>-a</b>, one must "identify" opposite points on the boundary of the ball).
+<p align=justify>
+<li 5>The group <i>O</i>(3) consists of all <i>rotations</i> about axes through <b>0</b> in <b>R</b><sup>3</sup> together with <i>reflections</i> in planes through <b>0</b> in <b>R</b><sup>3</sup> as well as <i>rotatory reflections</i> which consist of a rotation about an axis <b>a</b> followed by reflection in the plane through <b>0</b> perpendicular to <b>a</b>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+See <a href=../Tutorials/T2.html>Exercises 2 Question 1</a><br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b>
+<p align=justify>
+Note that the different cases can be separated by their <i>fixed point sets</i> (points for which <i>T</i>(<b>x</b>) = <b>x</b>).<br>
+<ol type =i><li i>A rotation has a 1-dimensional fixed point set (a line),<br>
+<li i>A reflection has a 2-dimensional fixed point set (a plane),<br>
+<li i>A rotatory reflection has a 0-dimensional fixed point set (a point).<br>
+</ol></ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L2.html">Previous page</a><br>
+(The linear groups)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L4.html">Next page</a><br>
+(Isometries of <i>n</i>-dimensional space)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

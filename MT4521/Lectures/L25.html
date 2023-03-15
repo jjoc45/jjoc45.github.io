@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>The Euler Characteristic</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L24.html">Previous page</a><br>
+(Planar models)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L26.html">Next page</a><br>
+(The Classification Theorem)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The Euler Characteristic</font></h2>
+<p>
+The <i>Euler Characteristic</i> is something which generalises <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Euler.html">Euler</a>'s observation of 1751 (in fact already noted by <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Descartes.html">Descartes</a> in 1639) that on "triangulating" a sphere into <i>F</i> regions, <i>E</i> edges and <i>V</i> vertices one has <i>V</i> - <i>E</i> + <i>F</i> = 2.
+<p align=justify>
+If one triangulates <i>any</i> surface then <i>&#967;</i> = <i>V</i> - <i>E</i> + <i>F</i> is a number which does not depend on how the triangulation is done. This is called the <b>Euler Characteristic</b>.
+<p align=justify>
+<font color=red><b>Examples</b></font><br>
+<ol><li 1><i>&#967;</i>(Torus) = 0<br>
+<img src= ../Diagrams/x27-1.gif align = right><br>
+For example we can split up the torus into "regions" (homeomorphic to discs) with <i>F</i> = 2, <i>E</i> = 4, <i>V</i> = 2 or even more efficiently as &nbsp;&nbsp;&nbsp;<img src= ../Diagrams/x27-2.gif align = middle> with <i>F</i> = 1, <i>E</i> = 2, <i>V</i> = 1<br>
+<li 2><i>&#967;</i>(Projective plane) = 1<br>
+The planar model with edge word <i>a</i><sup>2</sup> gives a triangulation with  <i>F</i> = 1, <i>E</i> = 1, <i>V</i> = 1<br>
+<li 3><i>&#967;</i>(Klein bottle) = 0<br>
+The model <img src= ../Diagrams/x26-2.gif align = middle> gives a triangulation with  <i>F</i> = 1, <i>E</i> = 2, <i>V</i> = 1<br>
+</ol><br>
+<font color=red><b>Theorem</b></font><br>
+<i>&#967;</i>(<i>S</i><sub>1</sub> # <i>S</i><sub>2</sub>) = <i>&#967;</i>(<i>S</i><sub>1</sub>) + <i>&#967;</i>(<i>S</i><sub>2</sub>) - 2<br>
+<font color=green><b>Proof</b></font><br>
+Join <i>S</i><sub>1</sub> and <i>S</i><sub>2</sub> by removing an <i>n</i>-gon from each and matching vertices around the edge.<br>
+Then: <i>V</i>(<i>S</i><sub>1</sub> # <i>S</i><sub>2</sub>) = <i>V</i>(<i>S</i><sub>1</sub>) + <i>V</i>(<i>S</i><sub>2</sub>) - <i>n</i>, <br>
+<i>E</i>(<i>S</i><sub>1</sub> # <i>S</i><sub>2</sub>) = <i>E</i>(<i>S</i><sub>1</sub>) + <i>E</i>(<i>S</i><sub>2</sub>) - <i>n</i>, <br>
+<i>F</i>(<i>S</i><sub>1</sub> # <i>S</i><sub>2</sub>) = <i>F</i>(<i>S</i><sub>1</sub>) + <i>F</i>(<i>S</i><sub>2</sub>) - 2 <br>
+and so <i>&#967;</i>(<i>S</i><sub>1</sub> # <i>S</i><sub>2</sub>) = <i>&#967;</i>(<i>S</i><sub>1</sub>) + <i>&#967;</i>(<i>S</i><sub>2</sub>) - 2.
+<p align=justify>
+<font color=red><b>Corollary</b></font><br>
+For the join of <i>n</i> tori we have <i>&#967;</i> = -2(<i>n</i> - 1) and for the join of <i>n</i> Projective planes we have <i>&#967;</i> = -(<i>n</i> - 2).<br>
+<b><font color=green>Proof</font></b><br>
+Use induction and <i>&#967;</i>(<i>T</i>) = 0, <i>&#967;</i>(<i>P</i>) = 1.
+<p align=justify>
+So if we could recognise whether a surface could be written as a product of tori or of projective planes, the Euler characteristic would be enough to classify it.
+<p align=justify>
+<font color=red><b>Definition</b></font><br>
+If when we carry a direction around any loop in a surface we always get a consistent direction the surface is called <b>orientable</b>.
+<p align=justify>
+<font color=red><b>Examples</b></font><br>
+<ol><li 1>A sphere and any join of tori are orientable.<br>
+<font color=green><b>Proof</b></font><br>
+The direction of an "outward-pointing normal" can be used to define the direction.
+<p align=justify>
+<li 2>A M&ouml;bius band is not orientable.<br>
+<font color=green><b>Proof</b></font><br>
+Carry a direction around the curve "in the middle of the band". (A normal at a point would come back pointing the opposite way after going round once.)
+<p align=justify>
+<li 3> A Projective plane or any join of projective planes is not orientable.<br>
+<font color=green><b>Proof</b></font><br>
+These all contain a M&ouml;bius band.
+<p align=justify>
+<li 4>Any surface whose planar model contains an edge which is identified with itself rather than its inverse is not orientable.<br>
+<font color=green><b>Proof</b></font> <br>
+Cut a strip out of the model with ends on the identified edge and you have a M&ouml;bius band.<br>
+</ol>
+<p align=justify>
+
+<p align=justify>
+
+<p align=justify>
+
+<p align=justify>
+
+<p align=justify>
+
+<p align=justify>
+
+<p align=justify>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L24.html">Previous page</a><br>
+(Planar models)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L26.html">Next page</a><br>
+(The Classification Theorem)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

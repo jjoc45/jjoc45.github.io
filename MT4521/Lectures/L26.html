@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>The Classification Theorem</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L25.html">Previous page</a><br>
+(The Euler Characteristic)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "QQ1.html">Next page</a><br>
+(Geometry quotes)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The Classification Theorem</font></h2>
+<p>
+This is one of the few examples in mathematics where such a complete classification of geometric objects is known.
+<p align=justify>
+<font color=red><b>The Classification Theorem</b></font><br>
+<i>If a compact connected surface is orientable it is a sphere or a connected sum of tori; if it is not orientable it is a connected sum of projective planes.</i>
+<p align=justify>
+<font color=red><b>Remarks</b></font><br>
+<ol><li 1>This was first proved by <a href="http://www-history.mcs.st-andrews.ac.uk/Mathematicians/Dehn.html">Dehn</a> and Heergaard in 1907.
+<p align=justify>
+<li 2>One proves this result by starting with any surface and using the result (the <i>Hauptvermutung</i>) that it can be triangulated to get a planar model. Then cut up the planar model and piece it together again until one can recognise it as a join of tori or projective planes. In general this is quite hard!
+<p align=justify>
+<li 3>We use the Euler characteristic as a short cut since we can see whether the surface is orientable of not from its edge word. All we need is a method of calculating <i>&#967;</i>.<br>
+</ol><br>
+<font color=red><b>Calculation</b></font>
+<p align=justify>
+Given an edge word (a word of length 2<i>n</i> in <i>n</i> generators in which each edge is matched either by itself or its inverse.<br>
+If there is an edge matched by itself, the surface is not orientable, otherwise it is orientable.
+<p align=justify>
+So for such a surface, we have <i>F</i> = 1, <i>E</i> = <i>n</i> and all we need calculate is <i>V</i>: the number of vertices on the "edge".
+<p align=justify>
+We do this by a process similar to coset enumeration by starting with a single vertex somewhere and adding new vertices only when we have to.
+<p align=justify>
+<font color=red><b>Examples</b></font><br>
+<ol><li 1> Start with an edge word <i>a</i> <i>b</i> <i>c</i> <i>d</i> <i>c</i><sup>-1</sup><i>b</i><sup>-1</sup><i>a</i><sup>-1</sup><i>d</i><sup>-1</sup>: &nbsp;&nbsp;&nbsp;&nbsp;<img src= ../Diagrams/x28-1.gif align = middle>
+<p align=justify>
+Hence <i>F</i> = 1, <i>E</i> = 4 and <i>V</i> = 3. Hence <i>&#967;</i> = 0.<br>
+Since the surface is orientable (every edge is matched with its inverse) it is a Torus <i>T</i>.
+<p align=justify>
+<li 2>From the edge word: <i>a</i> <i>b</i> <i>c</i> <i>d</i> <i>e</i> <i>c</i><sup>-1</sup> <i>d</i><sup>-1</sup> <i>b</i> <i>a</i> <i>e</i><sup>-1</sup> we can fill in the vertices:<br>
+<img src= ../Diagrams/x28-2.gif><br>
+and so we have: <i>&#967;</i> = 1 - 5 + 2 = -2 <br>
+Since the surface is not orientable, it is a join of Projective planes and from the Corollary it is <i>P</i> # <i>P</i> # <i>P</i> # <i>P</i>.<br>
+</ol> 
+<p align=justify>
+<font color=red><b>Remarks</b></font><br>
+This way of identifying a surface is much easier than dealing directly with the edge word.
+<p align=justify>
+For example joining a Torus and a Projective plane gives a non-orientable surface with <i>&#967;</i> = -1 which is therefore a connected sum of three projective planes -- though this is hard to see by other means.
+<p align=justify>
+It follows that (Torus) # (Projective plane) <img src= "../Symbolgifs/iso.gif" alt = "iso"> (Klein bottle) # (Projective plane) but, of course the Torus and Klein bottle are not homeomorphic.
+<p align=justify>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L25.html">Previous page</a><br>
+(The Euler Characteristic)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "QQ1.html">Next page</a><br>
+(Geometry quotes)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

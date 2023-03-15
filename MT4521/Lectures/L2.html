@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>The linear groups</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "L1.html">Previous page</a><br>
+(Foundations)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L3.html">Next page</a><br>
+(Examples of linear groups)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>The linear groups</font></h2>
+<p>
+We shall investigate the groups which are associated with the usual (Pythagorean) metric on the vector space <b>R</b><sup><i>n</i></sup>. These are the groups which preserve this distance. 
+<p align=justify>
+It turns out that they involve linear algebra. The reason for this is that <i>straight lines</i> in this geometry can be defined as the shortest paths between points in the metric and since the metric is preserved by the transformations they must then map straight lines to straight lines and we will see (eventually) that this means they involve <i>linear maps</i> (but rather special ones).
+<p align=justify>
+<b><font color=red>Definitions</font></b>
+<p align=justify>
+A map <i>f</i> from <b>R</b><sup><i>m</i></sup> to <b>R</b><sup><i>n</i></sup> is called <b>linear</b> if it maps a linear combination of vectors to the <i>same</i> linear combination of the images.<br>
+That is, if <b>u</b>, <b>v</b> &#8712; <b>R</b><sup><i>m</i></sup> and <i>&#955;</i>, <i>&#956;</i> &#8712; <b>R</b> then <i>f</i>(<i>&#955;</i><b>u</b> + <i>&#956;</i><b>v</b>) = <i>&#955;</i><i>f</i>(<b>u</b>) + <i>&#956;</i><i>f</i>(<b>v</b>) &#8712; <b>R</b><sup><i>n</i></sup>.
+<p align=justify>
+By fixing a <i>basis</i> {<b>b</b><sub>1</sub> , <b>b</b><sub>2</sub> , ... , <b>b</b><sub><i>n</i></sub> } of the vector space <b>R</b><sup><i>n</i></sup> (for example, {(1, 0, 0, ... , 0), (0, 1, 0, ... , ), ... , (0, 0, ... , 0, 1)} ) we can describe the effect of such a map by its matrix. <i>M</i><sub><i>f</i></sub> = (<i>a</i><sub><i>ij</i></sub>) where <i>f</i> maps the <i>i</i>th basis element <b>b</b><sub><i>i</i></sub> to <i>a</i><sub><i>i</i>1</sub><b>b</b><sub>1</sub> + <i>a</i><sub><i>i</i>2</sub><b>b</b><sub>2</sub> + ... + <i>a</i><sub><i>in</i></sub><b>b</b><sub><i>n</i></sub>.
+<p align=justify>
+Such a transformation is a bijection if it has an inverse map <i>f</i><sup>-1</sup> or equivalently if the determinant of its matrix is non-zero. 
+<p align=justify>
+The set of all such invertible linear transformations from the vector space <b>R</b><sup><i>n</i></sup> to itself is called the <b>General Linear group</b> and is denoted by <i>GL</i>(<i>n</i>, <b>R</b>) or <i>GL</i><sub><i>n</i></sub>(<b>R</b>) or <i>GL</i>(<b>R</b><sup><i>n</i></sup>)
+<p align=justify>
+Note that the determinant of a matrix satisfies <i>det</i>(<i>AB</i>) = <i>det</i>(<i>A</i>) &#215; <i>det</i>(<i>B</i>) and so is a <i>group homomorphism</i> from the group <i>GL</i>(<i>n</i>, <b>R</b>) to the group <b>R</b> - {0} under real multiplication. The set of all invertible transformations (or equivalently of invertible matrices) with determinant 1 is then a subgroup of <i>GL</i>(<i>n</i>, <b>R</b>) called the <b>Special Linear group</b> and denoted by <i>SL</i>(<i>n</i>, <b>R</b>).
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><li a>The set of all real <i>n</i> &#215; <i>n</i> matrices can be regarded as <b>R</b><sup><i>n</i><sup>2</sup></sup> and since the determinant map is a polynomial in these <i>n</i><sup>2</sup> entries it is continuous. It follows that the set <i>GL</i>(<i>n</i>, <b>R</b>) which is <i>det</i><sup>-1</sup>(<b>R</b> - {0}) is an open set of <b>R</b><sup><i>n</i><sup>2</sup></sup> and can be thought of as having dimension <i>n</i><sup>2</sup>. The set <i>SL</i>(<i>n</i>, <b>R</b>) satisfies one equation and so has one "degree of freedom" less and so has dimension <i>n</i><sup>2</sup> - 1.
+<p align=justify>
+For example, <i>GL</i>(1, <b>R</b>) is just <b>R</b> - {0} and so has dimension 1. <i>SL</i>(1, <b>R</b>) is the set {1, -1} and so has dimension 0.<br>
+<i>GL</i>(2, <b>R</b>) = {(<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>) &#8712; <b>R</b><sup>4</sup> | <i>ad</i> - <i>bc</i> &#8800; 0 } and is the set of points which "miss" the hypersurface with equation <i>ad</i> = <i>bc</i> and so is an open set in <b>R</b><sup>4</sup>. The subgroup <i>SL</i>(2, <b>R</b>) = {(<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>) &#8712; <b>R</b><sup>4</sup> | <i>ac</i> - <i>bd</i> = 1 } and is a 3-dimensional subset of <b>R</b><sup>4</sup>.
+<p align=justify>
+<li b>In general elements of <i>GL</i> or <i>SL</i> do <i>not</i> preserve the metric. <br>
+A linear map will in general map a rectangle to a parallelogram and so even if it manages to preserve the lengths of the sides of the rectangle, it will in general stretch the diagonals and so will not preserve all lengths.<br>
+You can think of elements of <i>SL</i> as preserving the "multi-dimensional volume" in <b>R</b><sup><i>n</i></sup> (area in the case <i>n</i> = 2) but even these will in general change lengths of some vectors.
+<p align=justify>
+<li c>There are also maps from <b>R</b><sup><i>n</i></sup> to itself which do preserve the metric but which are not linear maps. Since any linear transformation maps the <b>0</b>-vector to itself, a map like a translation: <b>x</b> <img src= "../Symbolgifs/goesto.gif" alt = "goesto"> <b>x</b> + <b>a</b> for a fixed vector <b>a</b>, will preserve length but is not linear.<br>
+</ol><br>
+We now look at linear transformations which <i>do</i> preserve distance.
+<p align=justify>
+<b><font color=red>Definitions</font></b>
+<p align=justify>
+We will denote the <b>norm</b> or <b>length</b> of a vector <b>x</b> by <img src= "../Symbolgifs/norm.gif" alt = "norm"><b>x</b><img src= "../Symbolgifs/norm.gif" alt = "norm"> This is <i>d</i>(<b>x</b>, <b>0</b>).
+<p align=justify>
+A <i>distance preserving</i> linear transformation <i>T</i> is said to be <b>orthogonal</b>. That is <img src= "../Symbolgifs/norm.gif" alt = "norm"><i>T</i>(<b>x</b>)<img src= "../Symbolgifs/norm.gif" alt = "norm"> = <img src= "../Symbolgifs/norm.gif" alt = "norm"><b>x</b><img src= "../Symbolgifs/norm.gif" alt = "norm"> for all vectors <b>x</b>.
+<p align=justify>
+Such transformations form the <b>orthogonal group</b> <i>O</i>(<i>n</i>).
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type = a><li a>Such maps are invertible.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Since <i>T</i> is length preserving it can't map a non-zero vector to <b>0</b> and so the null-space has dimension 0 and <i>T</i> is one-one. It is a standard result about linear transformations from <i>n</i> dimensional spaces to <i>n</i> dimensional spaces that <i>dim</i>(null space) + <i>dim</i>(range) = <i>n</i> and so the dimension of the range of <i>T</i> is <i>n</i> and it is hence an onto map. Thus it is a bijection.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li b>Since <i>T</i> preserves lengths, it preserves angles also. This is because the angles of any triangle are determined by the lengths of its sides.
+<p align=justify>
+<li c>With respect to an <i>orthonormal</i> basis (one whose elements are all of unit length and mutually perpendicular) the matrix of such a transformation has orthonormal columns and also orthonormal rows. <br>
+Unless we state otherwise we will usually take our basis to be orthonormal and we will blur the distinction between a transformation and the matrix representing it.
+<p align=justify>
+<li d>One may prove that such a matrix satisfies <i>A</i><sup><i>t</i></sup><i>A</i> = <i>AA</i><sup><i>t</i></sup>= <i>I</i> where <sup><i>t</i></sup> indicates the <i>transpose</i>. It then follows [since <i>det</i>(<i>A</i>) = <i>det</i>(<i>A</i><sup><i>t</i></sup>)] that (<i>det</i> <i>A</i>)<sup>2</sup> = 1 and hence <i>det</i> <i>A</i> = &#177;1.<br>
+</ol>
+<p align=justify>
+<b><font color=red>Definition</font></b>
+<p align=justify>
+The <b>Special Orthogonal group</b> <i>SO</i>(<i>n</i>) is the subgroup of <i>O</i>(<i>n</i>) of elements whose matrix has determinant 1.
+<p align=justify>
+<b><font color=red>Remarks</font></b>
+<p align=justify>
+<ol type=a><li a>The group <i>O</i>(<i>n</i>) is the union of <i>SO</i>(<i>n</i>) and the coset <i>K</i>.<i>SO</i>(<i>n</i>) where <i>K</i> is a matrix (say) <img src= ../Diagrams/x02-1.gif align = middle> which is orthogonal with determinant -1.<br>
+Since <i>SO</i>(<i>n</i>) has two cosets in <i>O</i>(<i>n</i>) it is a <i>normal</i> subgroup.
+<p align=justify>
+<li b>Note that the subset <i>H</i> = {<i>I</i>, <i>K</i>} is a subgroup of <i>O</i>(<i>n</i>). In general the group <i>O</i>(<i>n</i>) is <i>not</i> the direct product <i>SO</i>(<i>n</i>) &#215; <i>H</i> although it is equal to the cartesian product <i>as a set</i>.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L1.html">Previous page</a><br>
+(Foundations)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L3.html">Next page</a><br>
+(Examples of linear groups)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>
