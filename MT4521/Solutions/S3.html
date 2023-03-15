@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Solutions 3</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4521 Geometry and topology</font>
+<hr>
+<h2><font color=blue>Solutions 3</font></h2>
+<p>
+<ol><p><li>If <i>f</i><sub>1</sub> = <i>Rot</i><sub><b>a</b>,<i>&#945;</i></sub> and <i>f</i><sub>2</sub> = <i>Rot</i><sub><b>b</b>,<i>&#946;</i></sub> then <i>f</i><sub>1</sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i><sub>2</sub> is a translation if and only if <i>&#945;</i> = -<i>&#946;</i>.<br>
+To prove that, write <i>f</i><sub>1</sub> = <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub>-<b>a</b></sub> and <i>f</i><sub>2</sub> = <i>T</i><sub><b>b</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i>' <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub>-<b>b</b></sub> and note that if <i>&#945;</i> = -<i>&#946;</i> then <i>L</i>' = <i>L</i> <sup>-1</sup>.<br>
+Then <i>f</i><sub>1</sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i><sub>2</sub> = <b>a</b> + <i>L</i>(-<b>a</b> + <b>b</b> + <i>L</i> <sup>-1</sup>(-<b>b</b> + <b>x</b>)) = <b>a</b> + <i>L</i>(<b>b - a</b>) - <b>b</b> + <b>x</b> which is translation by the vector <b>a</b> + <i>L</i>(<b>b - a</b>) - <b>b</b>
+<p align=justify>
+If the lines meet then their intersection is a fixed point for the composition and so this is a rotation. If they are parallel the product is a translation by twice the distance between them.
+<p align=justify>
+A glide reflection <i>f</i> is <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>l</i></sub> = <i>R</i><sub><i>l</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>a</b></sub>. <br>
+So the product <i>f</i><sub>1</sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>f</i><sub>2</sub> = (<i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>l</i></sub>) <img src= "../Symbolgifs/comp.gif" alt = "comp"> (<i>T</i><sub><b>b</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>m</i></sub>) = <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> (<i>R</i><sub><i>l</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>m</i></sub>) <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>T</i><sub><b>b</b></sub> and so is a rotation if the lines <i>l</i>, <i>m</i> meet (by twice the angle between them) and a translation if they are parallel.
+<p align=justify>
+
+<p><li>The product of a rotation and reflection is either a reflection or a glide reflection. If <b>a</b> &#8712; <i>l</i> then there is a fixed point and we have a reflection.<br>
+If <b>a</b> &#8713; <i>l</i>, then write the rotation about <b>a</b> as the product of reflection in a line <i>m</i> parallel to <i>l</i> and reflection in a line <i>n</i>. <br>
+So <i>f</i> = <i>R</i><sub><i>l</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>Rot</i><sub><b>a</b></sub> = <i>R</i><sub><i>l</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>m</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>n</i></sub> = <i>T</i><sub><b>b</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>R</i><sub><i>n</i></sub> where <b>b</b> is a vector perpendicular to <i>l</i>. Thus since <b>b</b> is not perpendicular to <i>n</i>, this is a glide reflection by the lemma proved earlier.
+<p align=justify>
+
+<p><li>It is easy to verify that <i>H</i><sub><b>a</b>/2</sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>H</i><sub><b>0</b></sub> = <i>T</i><sub><b>a</b></sub>.<br>
+As in the last question, the condition is that <b>a</b> &#8712; <i>L</i>.<br>
+Note that <i>H</i><sub><b>0</b></sub> is the map <b>x&#8594; -x</b> and so <i>H</i><sub><b>a</b></sub> maps <b>a + x</b> to <b>a - x</b>.<br>
+So acting on <b>a - b + c</b> with <i>H</i><sub><b>c</sub></b> maps it to <b>-a + b + c</b> and then acting on this with <i>H</i><sub><b>b</b></sub> gives <b>a + b - c</b> and acting on this with <i>H</i><sub><b>a</b></sub> gives <b>a - b + c</b> again. So this is a fixed point and since the composition of three half-turns is rotation by 3&#960; which is the same as &#960; the result is a half-turn about this point.
+<p align=justify>
+
+<p><li>Note that <img src= ../Diagrams/xS3-1.gif align = middle> and so this matrix maps the line <i>y</i> = 1 to itself. Identifying this matrix with the isometry <i>f</i>(<i>x</i>) = &#177;<i>x</i> + <i>a</i> gives the isomorphism with <i>I</i>(<b>R</b>).<br>
+Similarly the matrix <img src= ../Diagrams/xS3-2.gif align = middle> acts on a vector of the form <img src= ../Diagrams/xS3-3.gif align = middle> to give another such vector. Hence the matrix <img src= ../Diagrams/xS3-4.gif align = middle> corresponds to the isometry of <b>R</b><sup>2</sup> given by <i>T</i><sub><b>a</b></sub><img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i> where <b>a</b> = (<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>) and <i>A</i> is the matrix of <i>L</i> &#8712; <i>O</i>(2).
+<p align=justify>
+
+<p><li> <img src= ../Diagrams/xS3-5.gif align = right>Look at the picture:
+<p align=justify>
+Start with a pair of axes: 1 and 2 and follow their images under the glides.<br>
+<br clear=right><br>
+ <img src= ../Diagrams/xS3-6.gif align = right>The composite of a pair of glides is a rotation (about some point) by twice the angle between them.<br>
+So <i>G</i><sub><i>BC</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>G</i><sub><i>AB</i></sub> = rotation by 2<i>&#946;</i> and <i>G</i><sub><i>DA</i></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>G</i><sub><i>CD</i></sub> = rotation by 2<i>&#948;</i>.<br>
+So if 2<i>&#946;</i> + 2<i>&#948;</i> &#8800; 2&#960; the composite cannot be the identity.<br>
+If <i>&#946;</i> + <i>&#948;</i> = &#960; then, since <i>A</i> is fixed by the composite, we <i>do</i> have the identity.<br>
+This is the condition that the quadrilateral is <i>cyclic</i> (the four vertices lie on a circle).
+<p align=justify>
+
+<p><li>If <i>h</i>, <i>k</i> are either direct or opposite, so are their inverses and so composing <i>h</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>k</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>h</i> <sup>-1</sup> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>k</i> <sup>-1</sup> gives a direct symmetry.
+<p align=justify>
+If <i>h</i>, <i>k</i> are both rotations then their inverses are rotations by the opposite amount and so (by Question 1 above) when we compose we get a translation. The same thing happens if one is a translation.  If both are translations, they commute and we have the identity.
+<p align=justify>
+If <i>f</i> is a rotation about <b>a</b> by <i>&#952;</i> then take <i>h</i>, <i>k</i> to be reflections in lines meeting at <b>a</b> at an angle of <i>&#945;</i>. Then <i>f</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>g</i> is rotation by 2<i>&#945;</i> and since <i>h</i> = <i>h</i> <sup>-1</sup> and <i>k</i> = <i>k</i> <sup>-1</sup> we have <i>h</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>k</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>h</i> <sup>-1</sup> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>k</i> <sup>-1</sup> =  rotation by 4<i>&#945;</i> and so we may take <i>&#945;</i> = <i>&#952;</i>/4.
+<p align=justify>
+To get a translation by <b>a</b>, take <i>h</i> to be rotation by &#960; about <b>0</b> and take <i>k</i> to be rotation by &#960; about <b>a</b>/4.
+<p align=justify>
+
+<p><li>The 2 &#215; 2 matrix representing anticlockwise rotation about the origin is A = <img src= ../Diagrams/xS3-7.gif align = middle>. Note that it has determinant +1.
+<p align=justify>
+So the matrices representing rotation about the <i>x</i> and <i>y</i> axis in <b>R</b><sup>3</sup> are <i>B</i> = <img src= ../Diagrams/xS3-11.gif align = middle>  and <i>C</i> = <img src= ../Diagrams/xS3-8.gif align = middle>. Then <i>D</i> = <i>BC</i> = <img src= ../Diagrams/xS3-9.gif align = middle>  . To find the axis of this rotation we solve <i>D</i><b>x</b> =  <b>x</b>.<br>
+That is -<i>z</i> = <i>x</i>, -<i>x</i> = <i>y</i>, <i>y</i> = <i>z</i> and we can take the vector <img src= ../Diagrams/xS3-10.gif align = middle>  as a solution. <br>
+If you think of the rotations as acting on a cube centred at the origin, this is one of the cube's diagonals.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

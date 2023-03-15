@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Solutions 7</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4521 Geometry and topology</font>
+<hr>
+<h2><font color=blue>Solutions 7</font></h2>
+<p>
+<ol><p><li><i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> = <b>a</b><sub>1</sub> - <i>&#955;</i><sub>2</sub><b>a</b><sub>1</sub> - <i>&#955;</i><sub>3</sub><b>a</b><sub>1</sub> ... - <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub>1</sub> and so <i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + <i>&#955;</i><sub>2</sub><b>a</b><sub>2</sub> + ... + <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub> = <b>a</b><sub>1</sub> + <i>&#955;</i><sub>2</sub>(<b>a</b><sub>2</sub> - <b>a</b><sub>1</sub>) + <i>&#955;</i><sub>3</sub>(<b>a</b><sub>3</sub> - <b>a</b><sub>1</sub>) + ... + <i>&#955;</i><sub><i>r</i></sub>(<b>a</b><sub><i>r</i></sub> - <b>a</b><sub>1</sub>) and so the span is the translation by <b>a</b><sub>1</sub> of the <i>linear</i> subspace spanned by { (<b>a</b><sub>2</sub> - <b>a</b><sub>1</sub>), (<b>a</b><sub>3</sub> - <b>a</b><sub>1</sub>), ... , (<b>a</b><sub><i>r</i></sub> - <b>a</b><sub>1</sub>) }.
+<p align=justify>
+
+<p><li>Suppose we have <i>&#956;</i><sub>2</sub>(<b>a</b><sub>2</sub> - <b>a</b><sub>1</sub>) + <i>&#956;</i><sub>3</sub>(<b>a</b><sub>3</sub> - <b>a</b><sub>1</sub>) + ... + <i>&#956;</i><sub><i>r</i></sub>(<b>a</b><sub><i>r</i></sub> - <b>a</b><sub>1</sub>) = <b>0</b>. Then -(<i>&#956;</i><sub>2</sub> + <i>&#956;</i><sub>3</sub> + ... + <i>&#956;</i><sub><i>r</i></sub>)<b>a</b><sub>1</sub> + <i>&#956;</i><sub>2</sub><b>a</b><sub>2</sub> + ... + <i>&#956;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub> = <b>0</b> and since the sum of the coefficients is 0 it follows that <i>&#956;</i><sub>2</sub> = <i>&#956;</i><sub>3</sub> = ... = <i>&#956;</i><sub><i>r</i></sub> = 0 and so the given set is <i>linearly</i> independent.
+<p align=justify>
+To prove that (<b>a</b><sub>1</sub>, 1), (<b>a</b><sub>2</sub>, 1), ... , (<b>a</b><sub><i>r</i></sub> , 1) are linearly independent, suppose that <i>&#955;</i><sub>1</sub>(<b>a</b><sub>1</sub>, 1) + <i>&#955;</i><sub>2</sub>(<b>a</b><sub>2</sub>, 1) + ... + <i>&#955;</i><sub><i>r</i></sub>(<b>a</b><sub><i>r</i></sub> , 1) = <b>0</b> in <b>R</b><sup><i>n</i>+1</sup>. Then we have <i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + <i>&#955;</i><sub>2</sub><b>a</b><sub>2</sub> + ... + <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub>  = <b>0</b> in <b>R</b><sup><i>n</i></sup> and <i>&#955;</i><sub>1</sub> + <i>&#955;</i><sub>2</sub> + ... + <i>&#955;</i><sub><i>r</i></sub> = 0 in <b>R</b> and so from the definition of affine independence we have  <i>&#955;</i><sub>1</sub> = <i>&#955;</i><sub>2</sub> = ... = <i>&#955;</i><sub><i>r</i></sub> = 0 and so the given set is <i>linearly</i> independent.
+<p align=justify>
+Given two affinely independent sets { <b>a</b><sub>0</sub> , <b>a</b><sub>1</sub> , ... , <b>a</b><sub><i>n</i></sub> } and { <b>b</b><sub>0</sub> , <b>b</b><sub>1</sub> , ... , <b>b</b><sub><i>n</i></sub> } in <b>R</b><sup><i>n</i></sup>the sets { <b>a</b><sub>1</sub> - <b>a</b><sub>0</sub> , ... , <b>a</b><sub><i>n</i></sub> - <b>a</b><sub>0</sub> } and { <b>b</b><sub>1</sub> - <b>b</b><sub>0</sub> , ... , <b>b</b><sub><i>n</i></sub> - <b>b</b><sub>0</sub> } are <i>linearly</i> independent and so there is a <i>unique</i> linear map <i>L</i> taking one to the other. Then the map <i>T</i><sub><b>b</b><sub>0</sub></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"><i>T</i><sub>-<b>a</b><sub>0</sub></sub> is the required affine map. It is easily seen to be unique.
+<p align=justify>
+
+<p><li>As in the Question 3 of Exercises 3, let <i>M</i> be the matrix <img src= ../Diagrams/xS7-1.gif align = middle> with <i>A</i> &#8712;<i>GL</i>(<i>n</i>, <b>R</b>). Then <i>M</i> maps a column <img src= ../Diagrams/xS7-2.gif align = middle> to a similar column and so acts on this affine subspace by <img src= ../Diagrams/xS7-3.gif align = middle> <img src= "../Symbolgifs/goesto.gif" alt = "goesto"> <img src= ../Diagrams/xS7-4.gif align = middle> where <b>y</b> = <i>A</i><b>x</b> + (<i>a</i><sub>1</sub>, ... , <i>a</i><sub><i>n</i></sub>) Hence <i>M</i> acts as an affine transformation.<br>
+As in the last example, the <i>n</i> + 1 affinely independent points give <i>n</i> + 1 linearly independent points whose image determines a matrix and hence the map.
+<p align=justify>
+
+<p><li>Suppose <i>f</i> is <i>T</i><sub><b>a</b></sub> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>L</i> with <i>L</i> linear. Then <i>f</i>(<i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + <i>&#955;</i><sub>2</sub><b>a</b><sub>2</sub> + ... + <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub>) = <b>a</b> + <i>&#955;</i><sub>1</sub><i>L</i>(<b>a</b><sub>1</sub>) + <i>&#955;</i><sub>2</sub><i>L</i>(<b>a</b><sub>2</sub>) + ... + <i>&#955;</i><sub><i>r</i></sub><i>L</i>(<b>a</b><sub><i>r</i></sub>).<br>
+<i>&#955;</i><sub>1</sub><i>f</i>(<b>a</b><sub>1</sub>) + <i>&#955;</i><sub>2</sub><i>f</i>(<b>a</b><sub>2</sub>) + ... + <i>&#955;</i><sub><i>r</i></sub><i>f</i>(<b>a</b><sub><i>r</i></sub>) = <i>&#955;</i><sub>1</sub>(<b>a</b> + <i>L</i>(<b>a</b><sub>1</sub>)) + <i>&#955;</i><sub>2</sub>(<b>a</b> + <i>L</i>(<b>a</b><sub>2</sub>)) + ... + <i>&#955;</i><sub><i>r</i></sub>(<b>a</b> + <i>L</i>(<b>a</b><sub><i>r</i></sub>)) which is the same since <i>&#955;</i><sub>1</sub> + <i>&#955;</i><sub>2</sub> + ... + <i>&#955;</i><sub><i>r</i></sub> = 0.<br>
+The centroid of { <b>a</b><sub>1</sub> , <b>a</b><sub>2</sub> , ...  , <b>a</b><sub>r</sub> } is <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>(<b>a</b><sub>1</sub> + <b>a</b><sub>2</sub> + ...  + <b>a</b><sub><i>r</i></sub>) and so this is mapped to <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>(<i>f</i>(<b>a</b><sub>1</sub>) + <i>f</i>(<b>a</b><sub>2</sub>) + ...  + <i>f</i>(<b>a</b><sub><i>r</i></sub>)) as required.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xS7-5.gif align = right>A line joining the midpoints of two sides of a triangle is parallel to the third side.<br>
+<br clear=right><br>
+<img src= ../Diagrams/xS7-6.gif align = right>Hence the pair of sides shown is parallel. Similarly for the other pair of sides.<br>
+<br clear=right><br>
+The centroid of the quadrilateral is <sup>1</sup>/<sub>4</sub> (<b>a</b> + <b>b</b> + <b>c</b> + <b>d</b>). This is also the centroid of the parallelogram: <sup>1</sup>/<sub>4</sub> [(<b>a</b> + <b>b</b>)/<sub>2</sub> + (<b>b</b> + <b>c</b>)/<sub>2</sub> + (<b>c</b> + <b>d</b>)/<sub>2</sub> + (<b>d</b> + <b>a</b>)/<sub>2</sub>] whose centroid is the meet of its diagonals.<br>
+This result <i>does</i> hold in <b>R</b><sup>3</sup> also.
+<p align=justify>
+
+<p><li>To find a fixed point, we solve (<b>a</b> + <i>L</i> <img src= "../Symbolgifs/comp.gif" alt = "comp"> <i>&#955;</i><i>I</i>)<b>x</b> = <b>x</b>. That is (<i>I</i> - <i>&#955;</i><i>L</i>)<b>x</b> = <b>a</b> with <i>L</i> &#8712; <i>O</i>(2). But <i>L</i> can only have eigenvalues of &#177;1 and so the transformation <i>I</i> - <i>&#955;</i><i>L</i> is invertible unless <i>&#955;</i> = &#177;1 (when the transformation will be an isometry). Hence we can solve the equation to find a unique fixed point. 
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xS7-7.gif align = right>Take a square <i>ABCD</i> on <i>AB</i> and two possible squares <i>A</i>'<i>B</i>'<i>C</i>'<i>D</i>' and <i>A</i>'<i>B</i>'<i>C</i>''<i>D</i>'' on <i>A</i>'<i>B</i>'.<br>
+Note that similarity transformations map squares to squares. <br>
+There is a unique affine map taking &#916;<i>ABC</i> to &#916;<i>A</i>'<i>B</i>'<i>C</i>' and another (opposite) affine map taking &#916;<i>ABC</i> to &#916;<i>A</i>'<i>B</i>'<i>C</i>'' and these are the required pair of similarities.<br>
+<br clear=right>
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xS7-8.gif align = right>If you think of the cards as extending out to the faces of a cube, you get the picture on the right.<br>
+So (as in Exercises 5 Question 3(c)) the rotational symmetry group is <i>A</i><sub>4</sub> (consisting of three rotations by &#960; about the centres of faces and 8 rotations by &#177;2&#960;/3 about the diagonals (but no rotations by &#177;&#960;/2 about the faces or rotations about the centres of edges).<br>
+Since the figure has central symmetry, the full rotation group is <i>A</i><sub>4</sub> &#215; &lt; J >.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>
