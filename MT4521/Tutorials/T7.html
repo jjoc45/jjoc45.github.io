@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Exercises 7</title>
+<script language="JavaScript">
+var puw=0;
+
+function popwind(which,h,v,sb)
+{puw = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+if (window.focus) {puw.focus()}}
+function hidepuw()
+{if (puw.location) {puw.close();}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 7</font></h2>
+<p>
+<ol><li 1>The affine span of vectors <b>a</b><sub>1</sub>, <b>a</b><sub>2</sub>, ... , <b>a</b><sub><i>r</i></sub>  in <b>R</b><sup><i>n</i></sup>  is the set <br>
+<dd>{<i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + ... + <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub>  | <i>&#955;</i><sub><i>i</i></sub> &#8712; <b>R</b>, <i>&#955;</i><sub>1</sub> + ... + <i>&#955;</i><sub><i>r</i></sub> = 1}. <br>
+<dt>Prove that it is an affine subspace (i.e. a translated linear subspace).
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.1.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Points <b>a</b><sub>1</sub>, <b>a</b><sub>2</sub>, ... , <b>a</b><sub><i>r</i></sub>  in <b>R</b><sup><i>n</i></sup> are called <i>affinely independent</i> if whenever <i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + ... + <i>&#955;</i><sub>r</sub><b>a</b><sub>r</sub> = 0 with <i>&#955;</i><sub>1</sub> + ... + <i>&#955;</i><sub>r</sub> = 0 then <i>&#955;</i><sub>1</sub> = ... = <i>&#955;</i><sub>r</sub> = 0.<br>
+Prove that for such points the set { <b>a</b><sub>2</sub> - <b>a</b><sub>1</sub>, <b>a</b><sub>3</sub> - <b>a</b><sub>1</sub>, ... , <b>a</b><sub><i>r</i></sub> - <b>a</b><sub>1</sub> } is linearly independent.<br>
+Prove that for such points the set of vectors { (<b>a</b><sub>1</sub>, 1), (<b>a</b><sub>2</sub>, 1), ... , (<b>a</b><sub><i>r</i></sub> , 1) } in <b>R</b><sup><i>n</i></sup>  &#215; <b>R</b> is linearly independent.<br>
+Prove that there is a <i>unique</i> affine map taking any (<i>n</i> + 1) affinely independent points in <b>R</b><sup><i>n</i></sup> into any other (<i>n</i> + 1) affinely independent points.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.2.html',400,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Find a group of (<i>n</i> + 1)  &#215; (<i>n</i> + 1) matrices isomorphic to the affine group <i>A</i>(<b>R</b><sup><i>n</i></sup>). <br>
+[Look at Exercises 3 Question 3 to see the same result for <i>I</i>(<b>R</b><sup><i>n</i></sup>).]<br>
+Hence prove (again!) the result of Question 2, that there is a unique affine map taking any (<i>n</i> + 1) affinely independent points in <b>R</b><sup><i>n</i></sup> into any other (<i>n</i> + 1) affinely independent points.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.3.html',400,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>If <i>f</i> is an affine map, prove that <i>f</i> maps the affine span of <b>a</b><sub>1</sub>, <b>a</b><sub>2</sub>, ... , <b>a</b><sub>r</sub>  to the affine span of  <i>f</i>(<b>a</b><sub>1</sub>), <i>f</i>(<b>a</b><sub>2</sub>), ... , <i>f</i>(<b>a</b><sub><i>r</i></sub>) and in fact, if <i>&#955;</i><sub>1</sub> + ... + <i>&#955;</i><sub>r</sub> = 1 then <i>f</i>(<i>&#955;</i><sub>1</sub><b>a</b><sub>1</sub> + ... + <i>&#955;</i><sub><i>r</i></sub><b>a</b><sub><i>r</i></sub>) =  <i>&#955;</i><sub>1</sub><i>f</i>(<i>a</i>1) + ... + <i>&#955;</i><sub><i>r</i></sub><i>f</i>(<i>a</i><sub><i>r</i></sub>). Deduce that an affine map takes the centroid of any set to the centroid of its image.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.4.html',400,300,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>If <i>ABCD</i> is a quadrilateral in <b>R</b><sup>2</sup>, prove that the midpoints of its sides form a parallelogram whose diagonals meet at the centroid of its vertices. <br>
+Is this true for a quadrilateral in <b>R</b><sup>3</sup> also?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.5.html',400,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Prove that any similarity transformation which is not an isometry has a fixed point.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.6.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>If <i>AB</i> and <i>A</i>'<i>B</i>' are two line segments in <b>R</b><sup>2</sup>, prove that there are two similarity transformations mapping <i>A</i> to <i>A</i>' and <i>B</i> to <i>B</i>' -- one of them direct (i.e. with linear part having positive determinant) and the other opposite. <br>
+[Hint: Consider squares with <i>AB</i> and <i>A</i>'<i>B</i>' as sides and consider affine maps taking one square to the other.]
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.7.html',500,300,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a>
+<p align=justify>
+<li 8>What is the rotational symmetry group of the figure of Exercises 4 Question 6 ? <br>
+<font size=-1>[It may help to think of this figure embedded in a cube -- with the edges reaching as far as the faces of the cube. Then look at Exercises 5 Question 3(c).]</font><br>
+What is the full symmetry group of this figure?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.8.html',500,300,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 8</font></a>
+<p align=justify>
+</ol><br>
+
+<p>
+<center>
+<a href= ../Solutions/S7.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

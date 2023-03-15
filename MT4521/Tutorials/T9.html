@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Exercises 9</title>
+<script language="JavaScript">
+var puw=0;
+
+function popwind(which,h,v,sb)
+{puw = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+if (window.focus) {puw.focus()}}
+function hidepuw()
+{if (puw.location) {puw.close();}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "T8.html">Previous page</a><br>
+(Exercises 8)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 9</font></h2>
+<p>
+<ol><br>
+<li 1>Consider the upper-case letters of the alphabet  { A, B, C, D, ... , Z } as being made up of (infinitely thin) lines. Classify them up to topological equivalence.<br>
+	If we treat them as being made of lines of finite thickness (so that they are two-dimensional sets) how does the classification change?<br>
+	If we treat them as being carved out of (say) wood (so that they are three-dimensional sets) does the classification change again?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.1.html',500,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a><br>
+<img src= ../Diagrams/xT9-1.gif align = right><br>
+<li 2>Show that the two embeddings of the two-holed torus shown on the right can be deformed into one another in <b>R</b><sup>3</sup>.<br>
+[<i>Hint: Think of the two-holed torus as being made from a sphere by attaching two "tubes"</i>.]<br clear=right><br>
+<img src= ../Diagrams/xT9-4.gif align = right>Show how the two views on the right of a ring and a two-holed torus can be deformed into one another in <b>R</b><sup>3</sup>.<br clear=right><br>
+<a href="javascript:popwind('../Solutions/S9.2.html',500,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<img src= ../Diagrams/xT9-2.gif align = right><br>
+<li 3>	Sketch the planar model obtained by slicing the space model of <i>T</i> # <i>T</i> # <i>T</i>  along the curves <i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>, <i>e</i>, <i>f</i> indicated.<br>
+<br clear=right><br>
+<a href="javascript:popwind('../Solutions/S9.3.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>Which of the following are the edge words of planar models of compact surfaces ?  For those that are, decide whether the surfaces are orientable or not.<br>
+<ol type=i><li a><i>a</i> <i>b</i> <i>c</i> <i>b</i><sup>-1</sup> <i>c</i><sup>-1</sup> <i>a</i> <i>a</i><sup>-1</sup> <i>d</i> <i>a</i> <i>d</i><sup>-1</sup>	<br>
+<li a><i>a</i> <i>b</i> <i>a</i><sup>-1</sup> <i>c</i> <i>b</i> <i>d</i> <i>e</i> <i>d</i><sup>-1</sup> <i>e</i><sup>-1</sup>	<br>
+<li b><i>a</i> <i>ba</i><sup>-1</sup> <i>c</i><sup>-1</sup> <i>b</i><sup>-1</sup> <i>c</i><br>
+<li c><i>a</i> <i>b</i><sup>-1</sup> <i>c</i><sup>-1</sup> <i>b</i><sup>-1</sup> <i>a</i><sup>-1</sup> <i>c</i><sup>-1</sup>	<br>
+<li d><i>a</i> <i>bc</i> <i>d</i> <i>a</i><sup>-1</sup> <i>b</i><sup>-1</sup> <i>c</i><sup>-1</sup> <i>d</i><sup>-1</sup>	<br>
+<li e><i>a</i> <i>b</i> <i>c</i> <i>d</i> <i>c</i> <i>d</i><sup>-1</sup> <i>b</i><sup>-1</sup>	<br>
+<li f><i>a</i> <i>b</i> <i>c</i> <i>b</i> <i>a</i> <i>c</i><br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S9.4.html',400,300,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>If <i>T</i>, <i>K</i> and <i>P</i> are a Torus, Klein bottle and Projective plane, draw planar models and write down edge-words for the surfaces:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>T</i> # <i>K</i>&nbsp;&nbsp;&nbsp;&nbsp;<i>K</i> # <i>K</i>&nbsp;&nbsp;&nbsp;&nbsp;<i>T</i> # <i>T</i> # <i>P</i>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.5.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Calculate the Euler Characteristics of the surfaces whose planar models have the following edge-words and hence give their standard forms as joins of either tori or projective planes.<br>
+<ol type=i><li a><i>a</i> <i>b</i> <i>c</i> <i>d</i> <i>b</i> <i>e</i> <i>a</i> <i>f</i> <i>g</i> <i>d</i><sup>-1</sup> <i>g</i><sup>-1</sup> <i>h</i> <i>c</i> <i>j</i> <i>f</i> <i>e</i><sup>-1</sup> <i>j</i> <i>h</i><sup>-1</sup><br>
+<li a><i>a</i><sub>1</sub> <i>a</i><sub>2</sub> <i>a</i><sub>3</sub><sup>-1</sup> <i>a</i><sub>4</sub><sup>-1</sup> <i>a</i><sub>5</sub> <i>a</i><sub>6</sub><sup>-1</sup> <i>a</i><sub>6</sub> <i>a</i><sub>5</sub><sup>-1</sup> <i>a</i><sub>4</sub> <i>a</i><sub>3</sub> <i>a</i><sub>2</sub><sup>-1</sup> <i>a</i><sub>1</sub><sup>-1</sup><br>
+<li b><i>a</i><sub>1</sub> <i>a</i><sub>2</sub> <i>a</i><sub>3</sub> . . . <i>a</i><sub><i>n</i></sub> <i>a</i><sub>1</sub> <i>a</i><sub>2</sub> <i>a</i><sub>3</sub> . . . <i>a</i><sub><i>n</i></sub><br>
+<li c><i>a</i><sub>1</sub> <i>a</i><sub>2</sub> <i>a</i><sub>3</sub> <i>a</i><sub>4</sub> <i>a</i><sub>1</sub><sup>-1</sup> <i>a</i><sub>2</sub><sup>-1</sup> <i>a</i><sub>3</sub><sup>-1</sup> <i>a</i><sub>4</sub><sup>-1</sup><br>
+<li d><i>a</i><sub>1</sub> <i>a</i><sub>2</sub> <i>a</i><sub>3</sub> <i>a</i><sub>4</sub> <i>a</i><sub>5</sub> <i>a</i><sub>1</sub><sup>-1</sup> <i>a</i><sub>2</sub><sup>-1</sup> <i>a</i><sub>3</sub><sup>-1</sup> <i>a</i><sub>4</sub><sup>-1</sup> <i>a</i><sub>5</sub><sup>-1</sup><br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S9.6.html',600,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<img src= ../Diagrams/xT9-3.gif align = right><br>
+<li 7>A model of a surface is made from the annulus shown (the area between the two squares) by identifying the edges as indicated.<br>
+	Show that by adding an extra edge connecting the outer and inner sqares, this can be made into the usual kind of planar model and identify the surface.<br>
+	If the surface is sliced along the dotted curve, identify the two pieces that this gives.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S9.7.html',500,300,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a>
+<p align=justify>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S9.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T8.html">Previous page</a><br>
+(Exercises 8)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "../index.html">Next page</a><br>
+(Contents)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>

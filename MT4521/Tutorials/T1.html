@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Exercises 1</title>
+<script language="JavaScript">
+var puw=0;
+
+function popwind(which,h,v,sb)
+{puw = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+if (window.focus) {puw.focus()}}
+function hidepuw()
+{if (puw.location) {puw.close();}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color=red>Course MT4521 Geometry and topology</font>
+<center>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr >
+<td align=center width=40%><a href = "../index.html">Previous page</a><br>
+(Contents)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T2.html">Next page</a><br>
+(Exercises 2)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 1</font></h2>
+<p>
+<ol><li 1>Devise ways of using straight edges/compasses (or stretched strings!) to carry out the following tasks:<br>
+<ol type=a><li a>Bisect a given line segment;<br>
+<li b>Bisect a given angle;<br>
+<li c>Construct a line a right angles to a given line through a point on that line;<br>
+<li d>Drop a perpendicular to a given line from any point not on the line;<br>
+<li e>Draw a line through any point parallel to a given line;<br>
+<li f>Constuct a circle through any three non-collinear points; <font size=-1><br>
+[The circumcentre is the meet of the perpendicular bisectors of the sides]</font><br>
+<li g>(*) Divide a given line segment into three equal pieces.<br>
+<li h>Given a segment of a line, extend it at one end; <font size=-1><br>
+[You probably needed that earlier without realising it!]</font></ol>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.1.html',600,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Prove that the set of rigid motions of the plane <b>R</b><sup>2</sup> forms a group.<br>
+Two figures in the plane are called <i>congruent</i> if there is a rigid motion mapping one to the other. Prove that figures congruent to the same figure are congruent to each other. <br>
+(If you know what the word means) deduce that congruence is an <i>equivalence relation</i>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<img src= ../Diagrams/xT1-1.gif align = right><li 3>In the diagram shown the three triangles <i>A</i>, <i>B</i> and <i>C</i> are congruent. Find a rotation about some point of the plane which maps <i>A</i> to <i>B</i>. <br>
+Find one that maps <i>B</i> to <i>C</i> and one that maps <i>A</i> to <i>C</i>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.3.html',400,250,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a><br>
+<br clear=right>
+<p align=justify>
+<li 4>The corners of a tile in the form of an equilateral triangle are labelled <i>A</i>, <i>B</i>, <i>C</i> anticlockwise. Describe the result of rotating the tile anticlockwise by &#960;/3 (= 60&#176;) about <i>A</i>, then by the same amount about <i>B</i> and <i>C</i> ?<br>
+What happens if you rotate by this same angle first about <i>A</i>, then about <i>C</i> and finally about <i>B</i> ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.4.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>If <i>f</i> is a bijection from the plane to itself which preserves all lengths <br>
+<dd>(i.e. <i>d</i>(<i>x</i>, <i>y</i>) = <i>d</i>(<i>f</i>(<i>x</i>), <i>f</i>(<i>y</i>)) for all <i>x</i>, <i>y</i>) <br>
+<dt>show that <i>f</i> also preserves all angles.<br>
+Give an example of a bijection which preserves all angles but not lengths.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.5.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Prove that the determinant map is a group homomorphism from the group <i>GL</i>(<i>n</i>, <b>R</b>) of all invertible <i>n</i> &#215; <i>n</i> real matrices to the multiplicative group <b>R</b> - {0}.<br>
+Deduce that <i>SL</i>(<i>n</i>, <b>R</b>) is a normal subgroup of <i>GL</i>(<i>n</i>, <b>R</b>).
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.6.html',400,200,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>Let <i>A</i> be an <i>n</i> &#215; <i>n</i> matrix. Prove that <i>A</i> is orthogonal (i.e. has orthonormal columns -- of length 1 which are mutually orthogonal) if and only if <i>A</i><sup><i>t</i></sup><i>A</i> = <i>I</i>. <br>
+Deduce that for such a matrix     <i>AA</i><sup><i>t</i></sup> = <i>I</i> and that <i>A</i> also has orthonormal rows.<br>
+Prove this last fact directly for the 2 &#215; 2 matrix <img src= ../Diagrams/xT1-2.gif align = middle>  by showing that if <br>
+<i>a</i><sup>2</sup> + <i>c</i><sup>2</sup> = <i>b</i><sup>2</sup> + <i>d</i><sup>2</sup> = 1 and <i>ab</i> + <i>cd</i> = 0  then  <i>ac</i> + <i>bd</i> = 0 and <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = <i>c</i><sup>2</sup> + <i>d</i><sup>2</sup> = 1.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.7.html',400,500,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a>
+<p align=justify>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S1.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "../index.html">Previous page</a><br>
+(Contents)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T2.html">Next page</a><br>
+(Exercises 2)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2010</font>
+</body></html>
+<p>
