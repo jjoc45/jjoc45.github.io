@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Exercises 1</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "../index.html">Previous page</a><br>
+(Contents)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T2.html">Next page</a><br>
+(Exercises 2)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 1</font></h2>
+<p>
+<ol><li 1>Consider the upper-case letters of the alphabet  { A, B, C, D, ... , Z } as being made up of (infinitely thin) lines. Classify them up to topological equivalence.<br>
+	If we treat them as being made of lines of finite thickness (so that they are two-dimensional sets) how does the classification change?<br>
+	If we treat them as being carved out of (say) wood (so that they are three-dimensional sets) does the classification change again?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Recall the definitions:<br>
+	A <i>closed interval </i>is the set [<i>a</i>, <i>b</i>] = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>a</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>x</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>b</i> }<br>
+	An <i>open interval</i> is the set (<i>a</i>, <i>b</i>) = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>a</i> &lt; <i>x</i> &lt; <i>b</i> } and there are also open intervals<br>
+	(<i>a</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>a</i> &lt; <i>x</i>  }, (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>b</i>) = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>x</i> &lt; <i>b</i> } and (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) = <b>R</b>.<br>
+	A <i>half-open interval</i> is the set [<i>a</i>, <i>b</i>) = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>a</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>x</i> &lt; <i>b</i> } or (<i>a</i>, <i>b</i>] = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> | <i>a</i> &lt; <i>x</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>b</i> } and there are also half-open intervals [a, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, b] defined similarly.<br>
+	Draw the graphs of continuous maps which show that any two closed intervals are homeomorphic (topologically equivalent).<br>
+	Prove that any two <i>finite</i> open intervals are homeomorphic.<br>
+	Prove that the open interval  (-<font face=symbol>p</font>/2, <font face=symbol>p</font>/2) is homeomorphic to the real line <b>R</b>.<br>
+	[Hint: Consider the map <i>f</i>(<i>x</i>) = tan(<i>x</i>).]<br>
+	Prove that any two open intervals are homeomorphic.<br>
+	Prove that any two half-open intervals are homeomorphic.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Draw the graph of a continuous function from the open interval (0, 1) onto the closed interval [0, 1].<br>
+Can you find a continuous function from the interval [0, 1] onto the interval (0, 1) ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4><img src= ../Diagrams/xT1-1.gif align = right>Show that the two embeddings of (the surface of the) two-holed torus shown on the right can be deformed into one another in <b>R</b><sup>3</sup>.<br>
+	[Hint: Think of the two-holed torus as being made from a sphere by attaching two "tubes".]<br>
+<br clear=right><br>
+Show how the two views below of a ring and a two-holed torus can be deformed into one another in <b>R</b><sup>3</sup>.
+<p align=justify>
+<img src= ../Diagrams/xT1-2.gif>
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S1.4.html',600,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a><br>
+</ol><br>
+
+<p>
+<center>
+<a href= ../Solutions/S1.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "../index.html">Previous page</a><br>
+(Contents)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T2.html">Next page</a><br>
+(Exercises 2)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Exercises 6</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T5.html">Previous page</a><br>
+(Exercises 5)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T7.html">Next page</a><br>
+(Exercises 7)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 6</font></h2>
+<p>
+<ol><li 1>If  <i>U</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>X</i>, prove that <i>U</i> is closed in the subspace topology on <i>A</i> if and only if <i>U</i> = <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>Z</i> for <i>Z</i> a closed subset of <i>X</i>.<br>
+	Prove or disprove the following:<br>
+	<ol type=i><li i>The interior of <i>U</i> in the subspace topology on <i>A</i> is equal to the interior of <i>U</i> in the topology on <i>X</i>,<br>
+<li ii>The closure of <i>U</i> in the subspace topology on <i>A</i> is equal to the closure of <i>U</i> in the topology on <i>X</i>.<br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S6.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>		Let <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> and <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> be the subsets of the natural numbers <b>N</b> defined by:<br>
+<i>U</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> if either	<i>U</i> = <img src= "../Symbolgifs/empty.gif" alt = "empty"> or <b>N</b> - <i>U</i> is finite,<br>
+<i>U</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> if either	1 <img src= "../Symbolgifs/notbelongs.gif" alt = "notbelongs"> <i>U</i> or <b>N</b> - <i>U</i> is finite.<br>
+Prove that <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> and <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> are topologies on <b>N</b>.<br>
+Let <i>f</i> be the identity map on <b>N</b> and let <i>g</i> be the map from <b>N</b> to <b>N</b> defined by<br>
+<i>g</i>(<i>n</i>)	= 1		if <i>n</i> is odd; <i>g</i>(<i>n</i>) = 1 + <i>n</i>/2	if <i>n</i> is even.<br>
+Determine whether <i>f</i> and <i>g</i> are continuous either as maps from (<b>N</b>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub>) to (<b>N</b>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub>) or as maps from (<b>N</b>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub>) to (<b>N</b>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub>).
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Let <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>Y</i> and <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>Y</i> so that <i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i>. Prove that:<br>
+<ol type=i><li i><i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>cl</i>(<i>B</i>) = <i>cl</i>(<i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>)<br>
+<li ii><i>int</i>(<i>A</i>) <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>int</i>(<i>B</i>) = <i>int</i>(<i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>)<br>
+</ol> where <i>cl</i> denotes the closure and <i>int</i> denotes the interior.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>A set <img src= "../Symbolgifs/curlyS.gif" alt = "curlyS"> of subsets of a topological space <i>X</i> is called a <i>sub-basis for the topology</i> if every open set can be written as a arbitrary union of finite intersections of sets in <img src= "../Symbolgifs/curlyS.gif" alt = "curlyS">.<br>
+Show that a function <i>f</i> from a topological space <i>X</i> to a topological space <i>Y</i> is continuous if and only if <i>f</i> <sup>-1</sup>(<i>U</i>) is open for every set <i>U</i> in a sub-basis for the topology on <i>Y</i>.<br>
+Prove that the set of all unbounded open intervals of <b>R</b> forms a sub-basis for the usual topology on <b>R</b> which is not a basis.<br>
+Prove that a sub-basis of the product topology on <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> is the set of subsets of the form <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> and <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>V</i> for <i>U</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub><i>X</i></sub> and <i>V</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub><i>Y</i></sub> .
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Prove that the set of all <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods of rational points of <b>R</b> with <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> also rational, forms a basis for the usual topology on <b>R</b>. Deduce that the usual topology on <b>R</b> has a countable basis. Prove that the discrete topology on <b>R</b> does not have a countable basis.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Let <i>X</i> be the open unit square and let <i>Y</i> be the open unit quadrant, each with their topology as subsets of <b>R</b><sup>2</sup>. Prove that the map which takes the point (<i>x</i>, <i>y</i>) (in Cartesian co-ordinates) to (<i>x</i>,  <sup>1</sup>/<sub>2</sub><font face=symbol><i>p</i></font><i>y</i>) (in polar co-ordinates) is a homeomorphism.<br>
+Prove that this homeomorphism cannot be extended to a homeomorphism between the <i>closed</i> unit square and <i>closed</i> unit quadrant.<br>
+Show, however, that the closed unit square and closed unit quadrant <i>are</i> homeomorphic.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>Prove that [0, 1) <img src= "../Symbolgifs/cross.gif" alt = "cross"> (0, 1) and [0, 1) <img src= "../Symbolgifs/cross.gif" alt = "cross"> [0, 1] are homeomorphic subspaces of <b>R</b><sup>2</sup>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S6.7.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a><br>
+</ol><br>
+
+<p>
+<center>
+<a href= ../Solutions/S6.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T5.html">Previous page</a><br>
+(Exercises 5)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T7.html">Next page</a><br>
+(Exercises 7)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Exercises 2</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T1.html">Previous page</a><br>
+(Exercises 1)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T3.html">Next page</a><br>
+(Exercises 3)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 2</font></h2>
+<p>
+<ol><li 1>Prove that the metrics <i>d</i><sub>1</sub> , <i>d</i><sub>2</sub> and <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> on <b>R</b><sup>2</sup> do indeed satisfy the triangle inequality. What about the corresponding metrics on <b>R</b><sup><i>n</i></sup> ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S2.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>Define a metric on the unit circle in <b>R</b><sup>2</sup> by <i>d</i>(<i>X</i>, <i>Y</i>) = the length of the arc <i>XY</i>. Hence or otherwise prove that the formula <i>d</i>(<i>x</i>, <i>y</i>) = <i>min</i>{ |<i>x</i> - <i>y</i>|, 1 - |<i>x</i> - <i>y</i>| } defines a metric on the open unit interval (0, 1). Does the same formula define a metric on the closed interval [0, 1] ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S2.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Let <i>p</i> be a prime number. Define a function <i>f</i> on the positive integers <b>N</b> by the formula <br>
+	<i>f</i> (<i>n</i>) = <i>p</i><sup><i>k</i></sup> where this is the largest power of <i>p</i> dividing <i>n</i> and a function <i>g</i> on the rationals <b>Q</b> by <i>g</i>(<i>a</i>/<i>b</i>) = <i>f</i> (|<i>a</i>|) / <i>f</i> (|<i>b</i>|) so that <i>g</i>(<i>r</i>) is the "largest power of <i>p</i> dividing <i>r</i>".<br>
+	Prove that the function <i>d</i> given by <i>d</i>(<i>r</i>, <i>s</i>) = 1/<i>g</i>(|<i>r</i> - <i>s</i>|) defines a metric on <b>Q</b>. <br>
+	[This is called the <i>p</i>-adic metric.]<br>
+	Prove that in this metric the sequence (<i>p</i>, <i>p</i><sup>2</sup> , <i>p</i><sup>3</sup> , ... ) converges to 0.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S2.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>If <i>P</i> and <i>Q</i> are any two points in <b>R</b><sup>2</sup>, prove that   <i>d</i><sub>1</sub>(<i>P</i>, <i>Q</i>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>P</i>, <i>Q</i>).<br>
+Hence prove that if a sequence (<b>a</b><sub>1</sub> , <b>a</b><sub>2</sub> , ...) in <b>R</b><sup>2</sup> is convergent in the metric <i>d</i><sub>1</sub> then it is also convergent in <i>d</i><sub>2</sub> and <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>.<br>
+Prove also that <i>d</i><sub>1</sub>(<i>P</i>, <i>Q</i>) <img src= "../Symbolgifs/lte.gif" alt = "lte"> <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">2 <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) and <i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) <img src= "../Symbolgifs/lte.gif" alt = "lte"> <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">2 <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>P</i>, <i>Q</i>).<br>
+Deduce that if a sequence (<b>a</b><sub>1</sub> , <b>a</b><sub>2</sub> , ...) in <b>R</b><sup>2</sup> is convergent in one of the metrics <i>d</i><sub>1</sub> , <i>d</i><sub>2</sub> , <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> then it is convergent in all of them.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S2.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Which of the following real-valued functions on the open interval (0, 1) are continuous?<br>
+<ol type=a><br>
+<li a>	Define a function <i>f</i> on a real-number <i>x</i> by taking the decimal expansion of <i>x</i> (terminating in infinitely many 0's rather than infinitely many 9's if it is an exact decimal) and discarding the first, third, fifth and so on, decimal places.<br>
+	So, for example,  <i>f</i>( 0.1234) = 0.24,    <i>f</i> (0.1415926536...) = 0.45256... .
+<p align=justify>
+	<li b>	Define a function <i>g</i> on a real-number <i>x</i> by taking the decimal expansion of <i>x</i> and replacing 0's by 1's, replacing 1's by 2's and so on except that 9's are replaced by 0's.<br>
+	So, for example,  <i>g</i>(0.1298) = 0.23091111... (since the infinitely many 0's at the end all get replaced),   g(0.1415926536...) = 0.2526037647... .
+<p align=justify>
+<li c>	Define a function <i>h</i> on a real-number <i>x</i> by taking the decimal expansion of <i>x</i> and replacing 0's by 9's, replacing 1's by 8's , 2's by 7's, 3's by 6's, 4's by 5's and vice-versa.<br>
+	So, for example,  <i>h</i>(0.1298) = 0.9701999999... = 0.9702 (since the infinitely many 0's at the end all get replaced),   <i>h</i>(0.1415926536...) = 0.9594073463... .<br>
+</ol><br>
+	[Hint: Observe that the sequence (0.49, 0.499, 0.4999, ...) converges to 0.5 and use the fact that continuous functions map convergent sequences to convergent sequences.]
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S2.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a><br>
+</ol>
+<p>
+<center>
+<a href= ../Solutions/S2.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T1.html">Previous page</a><br>
+(Exercises 1)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T3.html">Next page</a><br>
+(Exercises 3)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

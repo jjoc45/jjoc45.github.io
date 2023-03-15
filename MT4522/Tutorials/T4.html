@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Exercises 4</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T3.html">Previous page</a><br>
+(Exercises 3)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T5.html">Next page</a><br>
+(Exercises 5)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 4</font></h2>
+<p>
+<ol><li 1>Prove that in a discrete metric space, every subset is both open and closed.<br>
+If <i>f</i> is a map from a discrete metric space to any metric space, prove that <i>f</i> is continuous.<br>
+Which maps from <b>R</b> (with its usual metric) to a discrete metric space are continuous ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>If <i>f</i> from <b>R</b> to <b>R</b> is a continuous map, is the image of an open set always open ?	<br>
+Is the inverse image of a closed set always closed ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Show that in any metric space an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood is an open set. <br>
+Show that any open set can be written as a union of suitable <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods.<br>
+Give an example of an open subset of <b>R</b> (with its usual metric) which cannot be written as a union of finitely many <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods.<br>
+Can any open set can be written as a union of countably many suitable <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>	If <i>f</i> is a continuous function from <b>R</b><sup>2</sup> to <b>R</b> (usual metrics!) prove that the set <br>
+	{ (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b><sup>2</sup> | <i>f</i>(<i>x</i>, <i>y</i>) &gt; 0 } is an open subset of <b>R</b><sup>2</sup>. <br>
+Deduce that the open unit disc and open unit square are open sets.<br>
+Is the set { (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b><sup>2</sup> | <i>f</i>(<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> 0 } necessarily a closed set ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>If (<i>a</i><sub><i>i</i></sub>) is a sequence in a metric space convergent to a point <img src= "../Symbolgifs/alpha.gif" alt = "alpha">, prove that <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> is the only limit point of the set {<i>a</i><sub><i>i</i></sub>}. Give an example of a set with exactly two limit points. Give an example of a set with countably many limit points.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>Let <i>X</i> be the set {<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>, <i>e</i>}. Determine which of the following sets <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> are topologies on <i>X</i>.<br>
+<ol type=i><li i><img src= "../Symbolgifs/curlyT.gif" alt = "curlyT">	  = {<i>X</i>, <img src= "../Symbolgifs/empty.gif" alt = "empty">, {<i>a</i>}, {<i>a</i>, <i>b</i>}, {<i>a</i>, <i>c</i>}}		<br>
+<li ii><img src= "../Symbolgifs/curlyT.gif" alt = "curlyT">	  = {<i>X</i>, <img src= "../Symbolgifs/empty.gif" alt = "empty">, {<i>a</i>}, {<i>a</i>, <i>b</i>}, {<i>a</i>, <i>c</i>, <i>d</i>}, {<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>}}<br>
+<li iii><img src= "../Symbolgifs/curlyT.gif" alt = "curlyT">	  = {<i>X</i>, <img src= "../Symbolgifs/empty.gif" alt = "empty">, {<i>a</i>}, {<i>a</i>, <i>b</i>, <i>c</i>}, {<i>a</i>, <i>b</i>, <i>d</i>}, {<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>}}<br>
+<li iv><img src= "../Symbolgifs/curlyT.gif" alt = "curlyT">	  = {<i>X</i>, <img src= "../Symbolgifs/empty.gif" alt = "empty">, {<i>a</i>}, {<i>b</i>}, {<i>a</i>, <i>b</i>}, {<i>a</i>, <i>b</i>, <i>c</i>}}<br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S4.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>Let <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> be the set consisting of <b>R</b>, <img src= "../Symbolgifs/empty.gif" alt = "empty"> and all intervals of the form (<i>q</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) with <i>q</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>Q</b>. Show that <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is closed under all finite unions and intersections, but is not a topology on <b>R</b>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.7.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a>
+<p align=justify>
+<li 8>Let <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> be the set consisting of <b>N</b>,  and all subsets of <b>N</b> of the form {<i>n</i>, <i>n</i>+1, <i>n</i>+2, ...} for <i>n</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b>. Prove that <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is a topology on <b>N</b>. What are the closed subsets of <b>N</b> ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.8.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 8</font></a>
+<p align=justify>
+<li 9>Let <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> be the set of all subsets of <b>R</b> whose complements are countable, together with the empty set. Prove that <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is a topology on <b>R</b>. (This is called the <i>co-countable topology</i>.)
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S4.9.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 9</font></a>
+<p align=justify>
+</ol>
+<p align=justify>
+
+<p>
+<center>
+<a href= ../Solutions/S4.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T3.html">Previous page</a><br>
+(Exercises 3)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T5.html">Next page</a><br>
+(Exercises 5)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

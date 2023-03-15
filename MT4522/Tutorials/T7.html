@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Exercises 7</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 7</font></h2>
+<p>
+<ol><li 1>Make a <i>twisted cylinder</i> by gluing the (short) sides of a strip after a full (360 <img src= "../Symbolgifs/degrees.gif" alt = "degrees">) twist. Prove that the resulting space is homeomorphic to the cylinder (made by gluing the strip with no twist).
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>	
+<p align=justify>
+<li 2>Let <i>S</i><sup>1</sup> be a circle in <b>R</b><sup>2</sup> and let <i>X</i> be a cylinder <i>S</i><sup>1</sup> <img src= "../Symbolgifs/cross.gif" alt = "cross"> [0, 1] with its subspace topology as a subset of <b>R</b><sup>3</sup>. Let <i>Y</i> be the subset <i>S</i><sup>1</sup> <img src= "../Symbolgifs/cross.gif" alt = "cross"> {0} of <i>X</i> and let <i>Z</i> be the subset <i>S</i><sup>1</sup> <img src= "../Symbolgifs/cross.gif" alt = "cross"> {0, 1} of <i>X</i>. <br>
+	Describe the sets <i>X</i> / <i>Y</i> and <i>X</i> / <i>Z</i> with their identification topologies and identify them as more familiar topological spaces.<br>
+	What is the space <i>X</i> / <i>S</i><sup>1</sup> <img src= "../Symbolgifs/cross.gif" alt = "cross"> {<sup>1</sup>/<sub>2</sub>}  ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Let <i>X</i> and <i>Y</i> be disjoint topological spaces with <i>x</i> a point in <i>X</i> and <i>y</i> a point in <i>Y</i>. Then the <i>one-point union</i> or <i>wedge</i> of <i>X</i> and <i>Y</i>, written <i>X</i> <img src= "../Symbolgifs/wedge.gif" alt = "wedge"> <i>Y</i>, is the space obtained by identifying the points <i>x</i> and <i>y</i> in X <img src= "../Symbolgifs/union.gif" alt = "union"> Y. i.e. the space (<i>X</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>Y</i>)/{<i>x</i>, <i>y</i>}. Show that this space is homeomorphic to the subspace {<i>x</i>} <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> {<i>y</i>} of <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i>.<br>
+The <i>smash product</i> of spaces <i>X</i> and <i>Y</i>, written <i>X</i> <img src= "../Symbolgifs/smash.gif" alt = "smash"> <i>Y</i>, is the space <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> / <i>X</i> <img src= "../Symbolgifs/wedge.gif" alt = "wedge"> <i>Y</i>.<br>
+Prove that the smash product of a circle <i>S</i><sup>1</sup> with itself is homeomorphic to the sphere <i>S</i><sup>2</sup> in <b>R</b><sup>3</sup>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>Define an equivalence relation on <b>R</b> with the usual topology by <i>x</i> ~ <i>y</i> if and only if <i>x</i> - <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>Q</b>.<br>
+	Let <font face=symbol><i>p</i></font> : <b>R</b> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <b>R</b>/~ be the natural map. Show that the image of any open interval in <b>R</b> is the whole of <b>R</b>/~.<br>
+	If <i>Y</i><sub><i>x</i></sub> = <font face=symbol><i>p</i></font><sup>-1</sup>({<i>x</i>}) for an equivalence class {<i>x</i>} in <b>R</b>/~ use the fact that any open set containing <i>Y</i><sub><i>x</i></sub> must contain an interval to deduce that the only open sets in <b>R</b>/~ with the identification topology are <b>R</b>/~ and <img src= "../Symbolgifs/empty.gif" alt = "empty">. <br>
+	Hence show that <b>R</b>/~ with the identification topology is homeomorphic to <b>R</b> with the trivial topology.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Make two surfaces <i>A</i> and <i>B</i> by joining two sheets of paper by twisted strips as shown below.
+<p align=justify>
+<img src= ../Diagrams/xT7-1.gif>
+<p align=justify>
+What can you say about the spaces you get ?<br>
+What would happen if we reversed the twist on one of the strips or if one of the strips was untwisted ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S7.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a><br>
+</ol>
+<p align=justify>
+<br>
+
+<p>
+<center>
+<a href= ../Solutions/S7.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T6.html">Previous page</a><br>
+(Exercises 6)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T8.html">Next page</a><br>
+(Exercises 8)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

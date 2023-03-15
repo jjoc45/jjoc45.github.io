@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Exercises 8</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T7.html">Previous page</a><br>
+(Exercises 7)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T9.html">Next page</a><br>
+(Exercises 9)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 8</font></h2>
+<p>
+<ol><li 1>Prove that every subset of a Hausdorff space is Hausdorff in the subspace topology.<br>
+	<ol type=i><li i>If <i>X</i> and <i>Y</i> are Hausdorff, prove that <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> is Hausdorff.<br>
+<li ii>Prove or disprove: The image of a Hausdorff space under a continuous map is Hausdorff.<br>
+<li iii>If ~ is an equivalence relation on a Hausdorff space <i>X</i>, is the space <i>X</i>/~ with the identification topology always Hausdorff ?<br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S8.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>	Show that the topology on <b>R</b> whose basis is the set of half-open intervals [<i>a</i>, <i>b</i>) is normal.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S8.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>A <i>T</i><sub>1</sub> space is one in which for every pair of points <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i> there is an open set containing <i>x</i> but not <i>y</i>. <br>
+Prove that a space is <i>T</i><sub>1</sub> if and only if every singleton set {<i>x</i>} is closed. <br>
+Prove that the only <i>T</i><sub>1</sub> topology on a finite set is the discrete topology.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S8.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>Prove or disprove: <br>
+	<ol type=i><li i>The product of connected spaces is connected.<br>
+<li ii>If <i>X</i> is connected, then <i>X</i>/~ is connected (where ~ is an equivalence relation).<br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S8.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a>
+<p align=justify>
+<li 5>Let <i>Y</i> be the space {<i>a</i>, <i>b</i>} with the discrete topology. Prove that a space <i>X</i> is connected if and only if the only continuous maps from <i>X</i> to <i>Y</i> are the two constant maps which map the whole of <i>X</i> to either <i>a</i> or <i>b</i>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S8.5.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 5</font></a>
+<p align=justify>
+<li 6>If <i>A</i> is connected, prove that the closure <i>cl</i>(<i>A</i>) is also connected. Deduce that the components of a space are always closed subsets.<br>
+Is the interior <i>int</i>(<i>A</i>) always connected ?
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S8.6.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 6</font></a>
+<p align=justify>
+<li 7>Is the space <b>R</b> with the topology of Question 2 a connected space? What are its components?<br>
+	What are the components of <b>R</b> with:<br>
+<ol type=i><li i>the co-finite topology,<br>
+<li ii>the co-countable topology.<br>
+</ol><br>
+<a href="javascript:popwind('../Solutions/S8.7.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 7</font></a>
+<p align=justify>
+<li 8>If <i>a</i>, <i>b</i> are points in a topological space, define <i>a</i> <img src= "../Symbolgifs/tilda.gif" alt = "tilda"> <i>b</i> if there is a connected subset of <i>X</i> containing <i>a</i> and <i>b</i>. Prove that <img src= "../Symbolgifs/tilda.gif" alt = "tilda"> is an equivalence relation.<br>
+If <i>a</i>, <i>b</i> are points in a topological space, define <i>a</i> <img src= "../Symbolgifs/tilda2.gif" alt = "tilda2"> <i>b</i> if there is a path in <i>X</i> connecting <i>a</i> and <i>b</i>. Prove that <img src= "../Symbolgifs/tilda2.gif" alt = "tilda2"> is an equivalence relation.<br>
+Deduce that pathwise connectedness implies connectedness.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S8.8.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 8</font></a><br>
+</ol><br>
+	
+<p>
+<center>
+<a href= ../Solutions/S8.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T7.html">Previous page</a><br>
+(Exercises 7)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T9.html">Next page</a><br>
+(Exercises 9)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

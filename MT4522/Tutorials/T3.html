@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Exercises 3</title>
+<script language="JavaScript">
+<!-- Begin
+windowstatus = 0;
+function popwind(which,h,v,sb)
+{aWindow = window.open(which,"mywind",
+"toolbar=0,status=0,scrollbars=" + sb + ",location=0,resize=0,menubar=0,width=" + h + ",height=" + v);
+windowstatus = 1;
+if (window.focus) {aWindow.focus()}}
+function hidepic()
+{if (windowstatus == 1){if (aWindow.location) {aWindow.close();windowstatus = 0;}}}
+// End -->
+</script>
+</head>
+<body bgcolor="ffffff" onFocus="hidepic();">
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T2.html">Previous page</a><br>
+(Exercises 2)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T4.html">Next page</a><br>
+(Exercises 4)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Exercises 3</font></h2>
+<p>
+<ol><li 1>	If <i>f</i>, <i>g</i> are continuous functions on an interval [<i>a</i>, <i>b</i>], prove that <i>d</i><sub>1</sub>(<i>f</i>, <i>g</i>) <img src= "../Symbolgifs/lte.gif" alt = "lte"> (<i>b</i> - <i>a</i>)<i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>f</i>, <i>g</i>).<br>
+	Hence prove that if a sequence (<i>f</i><sub><i>n</i></sub>) in <i>C</i>[<i>a</i>, <i>b</i>] converges to a function <i>f</i> in <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> it also converges to <i>f</i> in <i>d</i><sub>1</sub>.
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.1.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 1</font></a>
+<p align=justify>
+<li 2>A sequence (<i>x</i><sub><i>i</i></sub>) in a metric space (<i>X</i>, <i>d</i>) is called a <i>Cauchy sequence</i> if:<br>
+Given <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0,  there exists <i>N</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b> such that <i>m</i>, <i>n</i> &gt; <i>N</i> <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>d</i>(<i>x</i><sub><i>m</i></sub>, <i>x</i><sub><i>n</i></sub>) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">.<br>
+Let (<i>f</i><sub><i>n</i></sub>) be the sequence of functions on [-1, 1] defined by <br>
+<i>f</i><sub><i>n</i></sub>(<i>x</i>) = 0 for <i>x</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> 0, <i>f</i><sub><i>n</i></sub>(<i>x</i>) = <i>nx</i>  for 0 &lt; <i>x</i> &lt; <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>  and  <i>f</i><sub><i>n</i></sub>(<i>x</i>) = 1 for <i>x</i> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <font size=+1><sup>1</sup>/<sub><i>n</i></sub></font>.<br>
+Sketch the graphs of a typical pair of functions <i>f</i><sub><i>m</i></sub> and <i>f</i><sub><i>n</i></sub> and hence or otherwise prove that the sequence (<i>f</i><sub><i>n</i></sub>) is a Cauchy sequence in <i>C</i>[-1, 1] with the metric <i>d</i><sub>1</sub>.<br>
+Calculate the pointwise limit of the sequence (<i>f</i><sub><i>n</i></sub>) and hence prove that the sequence (<i>f</i><sub><i>n</i></sub>) is <i>not</i> a convergent sequence in <i>C</i>[-1, 1] under this metric. 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.2.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 2</font></a>
+<p align=justify>
+<li 3>Let <i>f</i> be a map from a metric space <i>X</i> to a metric space <i>Y</i>. If the metric on <i>X</i> is the discrete metric, prove that <i>f</i> is continuous. If the metric on <i>Y</i> is discrete, is <i>f</i> necessarily continuous ?	
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.3.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 3</font></a>
+<p align=justify>
+<li 4>This question tries to show you why the metric <i>d</i><sub>2</sub> on a space of continuous functions is an easier one to work with than <i>d</i><sub>1</sub> or <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>.<br>
+ <br>
+<img src= ../Diagrams/xT3-1.gif align = right>Find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub>1</sub> . <br>
+That is, find the value of <i>a</i> which minimises <i>d</i><sub>1</sub>(<i>x</i><sup>2</sup>, <i>ax</i>). 
+<p align=justify>
+For this you have to minimise the shaded area. Calculate this area by first finding the <i>x</i>-coordinate of the point <i>P</i> in terms of <i>a</i>.<br>
+<br clear=right><br>
+<img src= ../Diagrams/xT3-2.gif align = right>Find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> . <br>
+That is, find the value of <i>a</i> which minimises <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>x</i><sup>2</sup>, <i>ax</i>). <br>
+For this you have to choose <i>a</i> so that the "vertical distance between the graphs" is a minimum. From the picture, you can see that the best you can do is to adjust the value of <i>a</i> so that the two dark lines have equal length.<br>
+<br clear=right><br>
+Calculate <i>d</i><sub>2</sub>(<i>x</i><sup>2</sup>, <i>ax</i>) and then use the usual calculus method for finding the maximal value of a function to find the best-fit straight-line through the origin to the function <i>x</i><sup>2</sup> in the metric <i>d</i><sub>2</sub> . 
+<p align=justify>
+<a href="javascript:popwind('../Solutions/S3.4.html',400,400,0)" onmouseover="window.status='Click to see solution';return true"><font color=green style=text-decoration:none>Solution to question 4</font></a><br>
+</ol><br>
+
+<p>
+<center>
+<a href= ../Solutions/S3.html target=_blank><font color=red style=text-decoration:none>SOLUTIONS TO WHOLE SET</font></a>
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "T2.html">Previous page</a><br>
+(Exercises 2)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "T4.html">Next page</a><br>
+(Exercises 4)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>
