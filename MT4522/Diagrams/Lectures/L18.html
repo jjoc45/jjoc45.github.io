@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Separation axioms</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L17.html">Previous page</a><br>
+(More identification spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L19.html">Next page</a><br>
+(Connectedness)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Separation axioms</font></h2>
+<p>
+We saw earlier how the ideas of convergence could be interpreted in a topological rather than a metric space: <br>
+A sequence (<i>a</i><sub><i>i</i></sub>) converges to <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> if every open set containing <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> contains all but a finite number of the {<i>a</i><sub><i>i</i></sub>}.<br>
+Unfortunately, this definition does not give some of thr "nice" properties we get in a metric space. <br>
+For example, if a sequence in a metric space converges, it has a unique limit, but in a topological space this need not happen. For example, in <b>R</b> with the trivial topology every sequence converges to every point.
+<p align=justify>
+To recove the nice properties of convergence we need to have "enough" open sets in the topology. Topologists have devised various <i>separation axioms</i> to classify how this happens.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+A topological space <i>X</i> is called <b>Hausdorff</b> if every pair of points can be separated by open sets.<br>
+That is, if <i>x</i><sub>1</sub> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>x</i><sub>2</sub> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> then there are <i>disjoint</i> open sets <i>U</i><sub>1</sub> and <i>U</i><sub>2</sub> with <i>x</i><sub>1</sub> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>U</i><sub>1</sub> and <i>x</i><sub>2</sub> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>U</i><sub>2</sub> .
+<p align=justify>
+<b><font color=red>Remarks</font></b><br>
+<ol><li 1><a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Hausdorff.html">Felix Hausdorff</a> (1869 to 1942) introduced this idea. He was also responsible for the first formulation of the idea of fractional dimension encountered in fractal Geometry.
+<p align=justify>
+<li 2>The Hausdorff condition is sometimes called <i>T</i><sub>2</sub> . This axiom is one of a number of separation axioms: <i>T</i><sub>0</sub> , <i>T</i><sub>1</sub> , <i>T</i><sub>2</sub> , <i>T</i><sub>3</sub> , <i>T</i><sub>3<sup>1</sup>/<sub>2</sub></sub> , <i>T</i><sub>4</sub> . <br>
+These were named by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Tietze.html">Heinreich Tietze</a> (1880 to 1964) in 1923. The <i>T</i> stands for <i>trennung</i> (= <i>separation</i> in German). Some references call them the <i>Tychonoff axioms</i> after <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Tychonoff.html">Andrei Tychonoff</a> (1906 to 1993).<br>
+Just for the record, <i>T</i><sub>0</sub> spaces are sometimes called <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Kolmogorov.html">Kolmogorov</a> spaces, <i>T</i><sub>1</sub> spaces are called <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Frechet.html">Fr&eacute;chet</a> spaces, <i>T</i><sub>2</sub> spaces are <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Hausdorff.html">Hausdorff</a>, <i>T</i><sub>3</sub> spaces are <i>regular</i>, <i>T</i><sub>3<sup>1</sup>/<sub>2</sub></sub> spaces are <i>completely regular</i>. We will see about <i>T</i><sub>4</sub> spaces shortly. <br>
+See <a href=http://www.math.toronto.edu/jjchew/math/topology/separation.html>this link</a> for more details.
+<p align=justify>
+<li 3>In a Hausdorff space, distinct points are "housed off" from one another by open sets.<br>
+</ol><br>
+<b><font color=red>Theorem</font></b><br>
+<i>Every metric space is Hausdorff.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b>
+<p align=justify>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>In any Hausdorff space sequences have at most one limit.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b>
+<p align=justify>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>In a Hausdorff space every point is a closed set.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b>
+<p align=justify>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Remark</font></b><br>
+It follows that every finite set is closed in a Hausdorff space and the topology is therefore <i>stronger</i> than the cofinite topology.
+<p align=justify>
+The other separation axiom we will consider is:
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+A topological space <i>X</i> is called <b>normal</b> if every disjoint pair of closed sets can be separated by open sets.<br>
+That is, if <i>A</i><sub>1</sub> <i>and</i> <i>A</i><sub>2</sub> are disjoint closed subsets of <i>X</i> then there are <i>disjoint</i> open sets <i>U</i><sub>1</sub> and <i>U</i><sub>2</sub> with <i>A</i><sub>1</sub> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i><sub>1</sub> and <i>A</i><sub>2</sub> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i><sub>2</sub> .
+<p align=justify>
+<b><font color=red>Remark</font></b><br>
+If every point is a closed set (that is <i>T</i><sub>1</sub>) then such a normal space is Hausdorff. [normal + <i>T</i><sub>1</sub> = <i>T</i><sub>4</sub>]
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>Every metric space is normal.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b>
+<p align=justify>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Remark</font></b><br>
+Note that the distance between disjoint closed sets <i>may</i> be 0 (but they can still be separated by open sets).
+<p align=justify>
+<b><font color=red>Examples</font></b><br>
+<ol><li 1>As above, all metric spaces are both Hausdorrf and normal.
+<p align=justify>
+<li 2>The space <i>X</i> = {<i>a</i>, <i>b</i>} with <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> = {<img src= "../Symbolgifs/empty.gif" alt = "empty">, <i>X</i>, {<i>a</i>} } is <i>not</i> Hausdorff since <i>a</i>, <i>b</i> cannot be separated by open sets.<br>
+It is, however, normal since there are no non-empty disjoint closed sets.<br>
+</ol>
+<p align=justify>
+<b><font color=red>Remarks</font></b><br>
+<ol><li 1>Finding a Hausdorff space which is not normal is possible, but tricky!
+<p align=justify>
+<li 2>By demanding more separation axioms one gets closer to a metric space. <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Urysohn.html">Paul Urysohn</a> (1898 to 1924) proved in 1923 that any <i>T</i><sub>4</sub> space with a <i>countable basis</i> is metrisable (that is, the topology may be obtained from a metric). <br>
+In fact this is not a necessary condition for metrisability. For example, <b>R</b> with the discrete topology is metrisable but does not have a countable basis. <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Stone.html">Marshall Stone</a> (1903 to 1989) and <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Bing.html">R H Bing</a> (1914 to 1986) found a necessary and sufficient condition for metrisability in 1950.<br>
+</ol><br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L17.html">Previous page</a><br>
+(More identification spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L19.html">Next page</a><br>
+(Connectedness)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

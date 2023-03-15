@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Compactness</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L20.html">Previous page</a><br>
+(Pathwise connectedness)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L22.html">Next page</a><br>
+(Sequential compactness)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Compactness</font></h2>
+<p>
+The property of being a bounded set in a metric space is <i>not</i> preserved by homeomorphism. For example, the interval (0, 1) and the whole of <b>R</b> are homeomorphic under the usual topology. So to generalise theorems in Real analysis like "a continuous function on a closed bounded interval is bounded" we need a new concept.
+<p align=justify>
+This is the idea of <i>compactness</i>. We will give a definition which applies to metric spaces later, but meanwhile, phrased purely in terms of open sets we have:
+<p align=justify>
+<b><font color=red>Definitions</font></b><br>
+A topological space is <b>compact</b> if every open covering has a finite sub-covering.
+<p align=justify>
+An <b>open covering</b> of a space <i>X</i> is a collection {<i>U</i><sub><i>i</i></sub>} of open sets with <img src= "../Symbolgifs/unionoveri.gif" alt = "unionoveri" align=middle> <i>U</i><sub><i>i</i></sub> = <i>X</i> and this has a <b>finite sub-covering</b> if a finite number of the <i>U</i><sub><i>i</i></sub>'s can be chosen which still cover <i>X</i>.
+<p align=justify>
+The most important thing is what this means for <b>R</b> with its usual metric.
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>The interval</i> [0, 1] <i>is compact under the usual metric on</i> <b>R</b>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Let {<i>U</i><sub><i>i</i></sub>} be an open covering of [0, 1]. The trick is to consider the set <i>A</i> = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> [0, 1] | [0, <i>x</i>] can be covered by finitely many of the <i>U</i><sub><i>i</i></sub>'s}. Then use the Completeness property of <b>R</b> to take <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> to be the least upper bound of <i>A</i>.
+<p align=justify>
+Suppose <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> &lt; 1. Then <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> is contained in some open set <i>U</i><sub><i>i</i><sub>0</sub></sub> and so lies in an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood lying in <i>U</i><sub><i>i</i><sub>0</sub></sub> .<br>
+But now [0, <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> - <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">/2] is covered by finitely many of the <i>U</i><sub><i>i</i></sub>'s and so this collection, together with <i>U</i><sub><i>i</i><sub>0</sub></sub> covers [0, <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> + <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">/2] which contradicts the definition of <img src= "../Symbolgifs/alpha.gif" alt = "alpha">.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+A similar proof shows that <i>any</i> closed bounded interval of <b>R</b> is compact. We will see later that in fact any closed bounded <i>subset</i> of <b>R</b> (with its usual metric) is compact.
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>A compact subset of</i> <b>R</b> <i>with its usual metric is closed and bounded.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If a set <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> is not closed then there is a limit point <i>p</i> <img src= "../Symbolgifs/notbelongs.gif" alt = "notbelongs"> <i>A</i>. Then cover <i>A</i> by complements of <i>closed</i> <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods of <i>p</i> for <i>p</i> = 1, <sup>1</sup>/<sub>2</sub> , <sup>1</sup>/<sub>3</sub> , ... .<br>
+For example If <i>A</i> = (0, 1) and <i>p</i> = 0 then (0, 1) = (<sup>1</sup>/<sub>2</sub> ,1) <img src= "../Symbolgifs/union.gif" alt = "union"> (<sup>1</sup>/<sub>3</sub> ,1) <img src= "../Symbolgifs/union.gif" alt = "union"> (<sup>1</sup>/<sub>4</sub> ,1) <img src= "../Symbolgifs/union.gif" alt = "union"> ...<br>
+We cannot take a finite subcover to cover <i>A</i>.
+<p align=justify>
+A similar proof shows that an <i>unbounded</i> set is not compact.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Properties of compactness</font></b>
+<p align=justify>
+<ol><li 1><i>Continuous images of compact sets are compact.</i><br>
+That is , if <i>f</i> : <i>C</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> is continuous and <i>C</i> is compact then <i>f</i>(<i>C</i>) is compact also.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Let {<i>U</i><sub><i>i</i></sub>} be an open cover of <i>f</i>(<i>C</i>). Then {<i>f</i> <sup>-1</sup>(<i>U</i><sub><i>i</i></sub>)} is an open cover of <i>C</i> and can therefore be reduced to a finite subcover. The corresponding collection of <i>U</i><sub><i>i</i></sub>'s will be a finite sub-cover of <i>f</i>(<i>C</i>).<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Corollary</font></b><br>
+<i>If X is compact and ~ is any equivalence relation then X/~ is compact.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+The natural map <font face=symbol><i>p</i></font>: <i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>X</i>/~ is continuous and onto.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2><i>Any closed subset of a compact space is compact.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If {U<sub>i</sub>} is an open cover of A <img src= "../Symbolgifs/subset.gif" alt = "subset"> C then each U<sub>i</sub> = V<sub>i</sub> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> A with V<sub>i</sub> oopen in C. Then the collection {V<sub>i</sub>} together with the open set C - A cover C and hence have a finite subcover. The corresponding U<sub>i</sub>'s then cover A.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Corollary</font></b> (The <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Heine.html">Heine</a>-<a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Borel.html">Borel</a> theorem)<br>
+<i>Any closed bounded subset of</i> <b>R</b> <i>with its usual metric is compact.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Any such subset is a closed subset of a closed bounded interval which we saw above is compact.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Remarks</font></b><br>
+<ol><li 1>Note that the condition of "with its usual metric" is necessary. For example, <b>R</b> under the metric of Exercise 9 Question 7 has the same topology as the usual metric on <b>R</b> but the result fails.<br>
+<li 2><a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Heine.html">Eduard Heine</a> (1821 to 1881) stated a version of this result in 1872. This had in fact been proved in lectures by <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Dirichlet.html">Dirichlet</a> in 1862. <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Borel.html">Emile Borel</a> (1871 to 1956) published his theory of <i>countable</i> coverings in 1895 as part of his study of measure theory. The priority question is complicated.<br>
+</ol><br>
+<b><font color=red>Corollary</font></b><br>
+<i>Any real-valued function on a closed bounded interval is bounded and attains its bounds.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+The closed bounded interval is compact and hence its image is compact and hence is also a closed bounded subset which is in fact an interval also, by connectedness. Thus the function is bounded and its image is an interval [<i>p</i>, <i>q</i>]. It attains its bounds at points mapped to <i>p</i> and <i>q</i>. <br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 3><i>Any compact subset of a Hausdorff space is closed.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose <i>C</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>X</i> is compact. To show that <i>X</i> - <i>C</i> is open we take <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> - <i>C</i> and try and show that <i>x</i> is in an open subset of <i>X</i> - <i>C</i>.<br>
+For each <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>C</i> we can find disjoint open sets <i>U</i><sub><i>y</i></sub> and <i>V</i><sub><i>y</i></sub> separating <i>x</i> and <i>y</i>: <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>U</i><sub><i>y</i></sub> <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>V</i><sub><i>y</i></sub> . The set <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>U</i><sub><i>y</i></sub> where the intersection is over all <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>C</i> does not meet <i>C</i> and hence is in <i>X</i> - <i>C</i>. Unfortunately, it is not necessarily open since a topology <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is not closed under infinite intersections. However, since <i>C</i> is compact, we may discard all but finitely many of the <i>V</i><sub><i>y</i></sub>'s and the intersection of the corresponding <i>U</i><sub><i>y</i></sub>'s <i>will</i> be the open set we need.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 4> <i>Any compact Hausdorff space is also normal.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b>
+<p align=justify>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 5><i>The product of compact spaces is compact.</i>
+<p align=justify>
+This result is known as Tychonoff's theorem after <a href="http://www-history.mcs.st-andrews.ac.uk/history/Mathematicians/Tychonoff.html">Andrei Tychonoff</a> (1906 to 1993) who proved it for a product of infinitely many spaces. Even for two spaces the proof is surprisingly tricky.
+<p align=justify>
+<b><font color=red>Corollary</font></b><br>
+<i>The closed unit square</i> [0, 1] <img src= "../Symbolgifs/cross.gif" alt = "cross"> [0, 1] <i>is compact.</i> <br>
+Hence too are spaces like the M&ouml;bius band, Real projective palne, torus, sphere, ... made from it by identification.<br>
+</ol>
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L20.html">Previous page</a><br>
+(Pathwise connectedness)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L22.html">Next page</a><br>
+(Sequential compactness)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>
