@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Definition and examples of metric spaces</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L4.html">Previous page</a><br>
+(Revision of real analysis )  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L6.html">Next page</a><br>
+(Convergence in metric spaces)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Definition and examples of metric spaces</font></h2>
+<p>
+One  measures <i>distance on the line</i> <b>R</b> by:<br>
+The distance from <i>a</i> to <i>b</i> is |<i>a</i> - <i>b</i>|.
+<p align=justify>
+Some important properties of this idea are abstracted into: 
+<p align=justify>
+<b><font color=red>Definition</font></b> <br>
+A <b>metric space</b> is a set <i>X</i> together with a function <i>d</i> (called a <b>metric</b> or "distance function") which assigns a real number <i>d</i>(<i>x</i>, <i>y</i>) to every pair <i>x</i>, <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> satisfying the properties (or <i>axioms</i>):<br>
+<ol><li><i>d</i>(<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> 0 and <i>d</i>(<i>x</i>, <i>y</i>) = 0 <img src= "../Symbolgifs/iff.gif" alt = "iff"> <i>x</i> = <i>y</i>,<br>
+<li><i>d</i>(<i>x</i>, <i>y</i>) = <i>d</i>(<i>y</i>, <i>x</i>),<br>
+<li><i>d</i>(<i>x</i>, <i>y</i>) + <i>d</i>(<i>y</i>, <i>z</i>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>d</i>(<i>x</i>, <i>z</i>).<br>
+</ol><br>
+<b><font color=red>Remarks</font></b><img src= ../Diagrams/x5-1.gif align = right><br>
+The last property is called the <i>triangle inequality</i> because (when applied to <b>R</b><sup>2</sup> with the usual metric) it says that <i>the sum of two sides of a triangle is at least as big as the third side</i>. 
+<p align=justify>
+<b><font color=red>Examples</font></b> <br>
+<ol><li 1>The prototype: the line <b>R</b> with its usual distance <i>d</i>(<i>x</i>, <i>y</i>) = |<i>x</i> - <i>y</i>|.
+<p align=justify>
+<li 2><img src= ../Diagrams/x5-2.gif align = right>The plane <b>R</b><sup>2</sup> with the "usual distance" (measured using Pythagoras's theorem):<br>
+<i>d</i>((<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub>),  (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub>)) = <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">[(<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>)<sup>2</sup> + (<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>)<sup>2</sup>].<br>
+This is sometimes called the 2-metric <i>d</i><sub>2</sub> . <br>
+<br clear=right><br>
+<li 3>The same picture will give  metric on the complex numbers <b>C</b> interpreted as the Argand diagram. In this case the formula for the metric is now:  <br>
+<i>d</i>(<i>z</i>, <i>w</i>) = |<i>z</i> - <i>w</i>| <br>
+where the | | in the formula represent the modulus of the complex number rather than the absolute value of a real number.<br>
+<br clear=right><br>
+<li 4><img src= ../Diagrams/x5-3.gif align = right>The plane with the <i>taxi cab metric</i> <i>d</i>((<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub>),  (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub>)) = |<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>| + |<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>|.<br>
+This is often called the 1-metric <i>d</i><sub>1</sub> . <br>
+<br clear=right><br>
+<li 5><img src= ../Diagrams/x5-5.gif align = right>The plane with the <i>supremum</i> or <i>maximum</i> metric <i>d</i>((<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub>),  (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub>)) = <i>max</i>(|<i>x</i><sub>1</sub> - <i>x</i><sub>2</sub>|, |<i>y</i><sub>1</sub> - <i>y</i><sub>2</sub>| ).<br>
+It is often called the infinity metric <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> .<br>
+<br clear=right><br>
+<img src= ../Diagrams/x5-6.gif align = right>These last examples turn out to be used a lot. To understand them it helps to look at the unit circles in each metric. <br>
+That is the sets { <b>x</b> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b><sup>2</sup> |  <i>d</i>(<b>0</b>, <b>x</b>) = 1 }. <br>
+We get the following picture: <br>
+<br clear=right><br>
+<li 6>Take <i>X</i> to be any set. <br>
+The discrete metric on the X is given by : <i>d</i>(<i>x</i>, <i>y</i>) = 0 if <i>x</i> = <i>y</i> and <i>d</i>(<i>x</i>, <i>y</i>) = 1 otherwise.<br>
+Then this <i>does</i> define a metric, in which no distinct pair of points are "close". <br>
+The fact that every pair is "spread out" is why this metric is called discrete. 
+<p align=justify>
+<li 7>Metrics on spaces of functions<br>
+These metrics are important for many of the applications in analysis. <br>
+Let <i>C</i>[0, 1] be the set of all continuous <b>R</b>-valued functions on the interval [0, 1]. <br>
+We define metrics on by analogy with the above examples by: <br>
+<ol type=a><li a><img src= ../Diagrams/x5-7.gif align = right><i>d</i><sub>1</sub>(<i>f</i>, <i>g</i>) = <img src= "../Symbolgifs/int01.gif" alt = "int01" align=middle> |<i>f</i>(<i>x</i>) - <i>g</i>(<i>x</i>)| <i>dx</i><br>
+So the distance between functions is the area between their graphs. <br>
+<br clear=right><br>
+<li b><i>d</i><sub>2</sub>(<i>f</i>, <i>g</i>) = <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">[<img src= "../Symbolgifs/int01.gif" alt = "int01" align=middle> (<i>f</i>(<i>x</i>) - <i>g</i>(<i>x</i>))<sup>2</sup> <i>dx</i>]<br>
+Although this does not have such case straight forward geometric interpretation as the last example, this case turns out to be the most important in practice. It corresponds to who doing a "least squares approximation". 
+<p align=justify>
+<li c><img src= ../Diagrams/x5-8.gif align = right><i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>f</i>, <i>g</i>) = <i>max</i> {|<i>f</i>(<i>x</i>) - <i>g</i>(<i>x</i>))| | 0 <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>x</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> 1 }<br>
+Geometrically, this is the largest distance between the graphs. <br>
+<br clear=right></ol></ol><br>
+<b><font color=red>Remarks</font></b> <br>
+<ol><br>
+<li 1>The triangle inequality <i>does</i> hold for these metrics <br>
+<li 2>As in the <b>R</b><sup>2</sup> case one may define <i>d</i><sub><i>p</i></sub> for any <i>p</i> <img src= "../Symbolgifs/gte.gif" alt = "gte"> 1 and get a metric. <br>
+</ol><br>
+Now we can do some analysis in this new environment. 
+<p align=justify>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L4.html">Previous page</a><br>
+(Revision of real analysis )  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L6.html">Next page</a><br>
+(Convergence in metric spaces)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

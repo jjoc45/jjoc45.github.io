@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Neighbourhoods and open sets in metric spaces</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L7.html">Previous page</a><br>
+(Continuity in metric spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L9.html">Next page</a><br>
+(Limit points and closed sets in metric spaces)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Neighbourhoods and open sets in metric spaces</font></h2>
+<p>
+Although it will not be clear for a little while, the next definition represents the first stage of the generalisation from metric to topological spaces.
+<p align=justify>
+An (open) <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood of a point <i>p</i> is the set of all points within <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> of it.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+An <b>open neighbourhood</b> of a point <i>p</i> in a metric space (<i>X</i>, <i>d</i>) is the set <i>V</i><sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sub>(<i>p</i>) = {<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> | <i>d</i>(<i>x</i>, <i>p</i>) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">}
+<p align=justify>
+<b><font color=red>Examples</font></b><br>
+<ol>
+<li 1>In the real line <b>R</b> an open neighbourhood is the open interval (<i>p</i> - <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">, <i>p</i> + <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">).<br>
+<li 2>In <b>R</b><sup>2</sup> (with the usual metric <i>d</i><sub>2</sub>) an open neighbourhood is an "open disc" (one not containing its boundary); in <b>R</b><sup>3</sup> it is an "open ball" etc.<br>
+<li 3>Let <i>X</i> be the interval [0, 1] with its usual metric. Then a <sup>1</sup>/<sub>4</sub> -neighbourhood of 0 is the interval [0, <sup>1</sup>/<sub>4</sub>).<br>
+Note that this is <i>not</i> an open interval.<br>
+The fact that when one takes a subset of a metric space (called a <i>subspace</i>) the appearance of things like neighbourhoods may change is an important fact that we will need later on. <img src= ../Diagrams/x8-5.gif align = right><br>
+<li 4>In <i>C</i>[0, 1] with the metric <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> one can recognise an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood of a point (or function) <i>f</i> as the set of functions whose graphs lie in an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-band around the graph of <i>f</i>.<br>
+</ol><br>
+Use of the idea of neighbourhood allows us the rephrase our important analytic definitions:<br>
+<ol type=a>
+<li a>A sequence (<i>x</i><sub><i>i</i></sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>x</i> in a metric space if every <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood contains all but a finite number of terms of (<i>x</i><sub><i>i</i></sub>).<br>
+<li b>A function <i>f</i> from a metric space <i>X</i> to a metric space <i>Y</i> is continuous at <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> if every <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood of <i>f</i>(<i>p</i>) contains the image of some <img src= "../Symbolgifs/delta.gif" alt = "delta">-neighbourhood of <i>p</i>.<br>
+</ol>
+<p align=justify>
+We can now use the concept of an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood to define one of the most important ideas in a metric space.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+A subset <i>A</i> of a metric space <i>X</i> is called <b>open in <i>X</i></b> if every point of <i>A</i> has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood which lies completely in <i>A</i>.
+<p align=justify>
+<b><font color=red>Examples</font></b><br>
+<ol>
+<li 1>An open interval (0, 1) is an open set in <b>R</b> with its usual metric.<br>
+<b><font color=green>Proof</font></b><img src= ../Diagrams/x8-7.gif align = right><br>
+Choose <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &lt; <i>min</i> {<i>a</i>, 1-<i>a</i>}. Then <i>V</i><sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sub>(<i>a</i>)  <img src= "../Symbolgifs/subset.gif" alt = "subset"> (0, 1).<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Note, however, that there are other subsets of <b>R</b> which are open but which are not open intervals. For example (0, 1) <img src= "../Symbolgifs/union.gif" alt = "union"> (2, 3) is an open set.
+<p align=justify>
+<li 2>Let <i>X</i> = [0, 1] with its usual metric (which it inherits from <b>R</b>). Then the subset [0, <sup>1</sup>/<sub>4</sub>) is an open subset of <i>X</i> (but not of course of <b>R</b>).<br>
+<li 3> A set like {(<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b><sup>2</sup> | <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup> &lt; 1} is an open subset of <b>R</b><sup>2</sup> with its usual metric.<br>
+So also is "an open square" [a square without its boundary <img src= "../Symbolgifs/iso.gif" alt = "iso"> (0, 1) <img src= "../Symbolgifs/cross.gif" alt = "cross"> (0, 1) ].<br>
+<b><font color=green>Proof</font></b><img src= ../Diagrams/x8-6.gif align = right><br>
+Any point can be in included in a "small disc" inside the square.<br>
+<br clear=right><br>
+In general, any region of <b>R</b><sup>2</sup> given by an inequality of the form {(<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>R</i><sup>2</sup> | <i>f</i>(<i>x</i>, <i>y</i>)  &lt; 1} with <i>f</i>(<i>x</i>, <i>y</i>) a continuous function, is an open set.<br>
+<li 4>Any metric space is an open subset of itself. The empty set is an open subset of any metric space.<br>
+We will see later why this is an important fact.<br>
+<li 5>In a discrete metric space (in which <i>d</i>(<i>x</i>, <i>y</i>) = 1 for every <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i>) <i>every</i> subset is open.<br>
+</ol><br>
+<b><font color=red>Properties of open sets</font></b><br>
+<ol>
+<li 1>The union (of an arbitrary number) of open sets is open.<br>
+<b><font color=green>Proof</font></b><br>
+Let <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <img src= ../Diagrams/x8-1.gif align = middle><i>A</i><sub><i>i</i></sub> = <i>A</i>. Then <i>s</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i><sub><i>i</i></sub> for some <i>i</i>. Since this is open, <i>x</i> has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood lying completely inside <i>A</i><sub><i>i</i></sub> and this is also inside <i>A</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li 2>The intersection of finitely many open sets is open.<br>
+<b><font color=green>Proof</font></b><br>
+It is enough to show this for just two open sets <i>A</i> and <i>B</i>.<br>
+So suppose <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>.<br>
+Then <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i> and so has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>1</sub>-neighbourhood lying in <i>A</i>. Similarly <i>x</i> has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>2</sub>-neighbourhood lying in <i>B</i>. So if <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> = min {<img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>1</sub> , <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>2</sub>} this <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood lies in both <i>A</i> and <i>B</i> and hence in <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Note that the same proof will not necessarily work for the intersection of infinitely many sets since we could not be sure that min {<img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>1</sub> , <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>2</sub> , <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"><sub>3</sub> , ...} &gt; 0.<br>
+For example, in <b>R</b> with its usual metric the intersection of open intervals:   <img src= ../Diagrams/x8-2.gif align = middle> (-1/<i>i</i>, 1/<i>i</i>) = {0} which is not open.
+<p align=justify>
+We can now connect the concept of continuity with open sets.
+<p align=justify>
+<li 3>If <i>f</i>:<i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> is a continuous function between metric spaces and <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>Y</i> is open, then <i>f</i> <sup>-1</sup>(<i>B</i>) is an open subset of <i>X</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><img src= ../Diagrams/x8-3.gif align = right><br>
+Note that even if <i>f</i> is not a one-one-correspondance (and does not have an inverse function <i>f</i> <sup>-1</sup>) the set <i>f</i> <sup>-1</sup>(<i>B</i>)  ={<i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> | <i>f</i>(<i>x</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>B</i>} still exists.<br>
+Take <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>f</i> <sup>-1</sup>(<i>B</i>). Then <i>f</i>(<i>x</i>) = <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>B</i>.<br>
+Since <i>B</i> is open the point <i>y</i> has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>B</i>.<br>
+Then, from the definition of continuity this <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neihbourhood contains the image of some <img src= "../Symbolgifs/delta.gif" alt = "delta">-neighbourhood <i>V</i> of <i>x</i>. Since <i>f</i>(<i>V</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>B</i> we have <i>V</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>f</i> <sup>-1</sup>(<i>B</i>) and so <i>x</i> has this <img src= "../Symbolgifs/delta.gif" alt = "delta"> neighbourhood <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>f</i> <sup>-1</sup>(<i>B</i>).<br>
+Hence <i>f</i> <sup>-1</sup>(<i>B</i>) is open in <i>X</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+The converse of this result also holds:
+<p align=justify>
+If <i>f</i>:<i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> is a function for which <i>f</i> <sup>-1</sup>(<i>B</i>) is open in <i>X</i> for every open set <i>B</i> in <i>Y</i>, then <i>f</i> is continuous at every point of <i>X</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+To show that <i>f</i> is continuous at <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i>, take <i>B</i> to be an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood of <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>Y</i>.<br>
+Then <i>f</i> <sup>-1</sup>(<i>B</i>) is open in <i>X</i> and so <i>x</i> has a <img src= "../Symbolgifs/delta.gif" alt = "delta">-neighbourhood in <i>f</i> <sup>-1</sup>(<i>B</i>). This <img src= "../Symbolgifs/delta.gif" alt = "delta">-neighbourhood is mapped inside the <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood of <i>f(x)</i> and so <i>f</i> is continuous at <i>x</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol>
+<b><font color=red>Remark</font></b><br>
+We will see later that the above properties of open sets in metric spaces are the basis for the generalisation from metric to topological spaces.
+<p align=justify>
+
+<p align=justify>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L7.html">Previous page</a><br>
+(Continuity in metric spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L9.html">Next page</a><br>
+(Limit points and closed sets in metric spaces)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

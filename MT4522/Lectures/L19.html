@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Connectedness</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L18.html">Previous page</a><br>
+(Separation axioms)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L20.html">Next page</a><br>
+(Pathwise connectedness)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Connectedness</font></h2>
+<p>
+One way of distinguishing between different topological spaces is to look at the way thay "split up into pieces".<br>
+To make this idea rigorous we need the idea of <i>connectedness</i>.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+A space which is a union of two disjoint non-empty open sets is called <b>disconnected</b>.
+<p align=justify>
+<b><font color=red>Equivalently</font></b><br>
+A space <i>X</i> is <b>connected</b> if the only subsets of <i>X</i> which are both open and closed (= <i>clopen</i>) are <img src= "../Symbolgifs/empty.gif" alt = "empty"> and <i>X</i>.
+<p align=justify>
+<b><font color=green>Proof of equivalence</font></b><br>
+If <i>X</i> = <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i> with <i>A</i> and <i>B</i> open and disjoint, then <i>X</i> - <i>A</i> = <i>B</i> and so <i>B</i> is the complement of an open set and hence is closed. Similarly, <i>B</i> is clopen.<br>
+Conversely, if <i>A</i> is a non-empty, proper open subset then <i>A</i> and <i>X</i> - <i>A</i> disconnect <i>X</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+A <i>subset</i> of a topological space is called connected if it is connected in the subspace topology.
+<p align=justify>
+<b><font color=red>Example</font></b><br>
+The set [0, 1] <img src= "../Symbolgifs/union.gif" alt = "union"> [2, 3] <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> with its usual topology is not connected since the sets [0, 1] and [2, 3] are both open in the subspace topology.
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>The interval</i> (0, 1) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> <i>with its usual topology is connected.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose that (0, 1) = <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i> with <i>A</i>, <i>B</i> disjoint non-empty clopen subsets. Choose <i>a</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i> and <i>b</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>B</i> with (say) <i>a</i> &lt; <i>b</i>.<br>
+Then let <img src= "../Symbolgifs/beta.gif" alt = "beta"> be the least upper bound of the set <i>C</i> = { ([<i>a</i>, <i>b</i>] <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>A</i> }. This least upper bound exists by the standard properties of <b>R</b>. <br>
+Since <i>C</i> is a closed subset it contains its limit points and so <img src= "../Symbolgifs/beta.gif" alt = "beta"> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>C</i> and hence is in <i>A</i>. Since <i>A</i> is open <img src= "../Symbolgifs/beta.gif" alt = "beta"> has an <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbouhood lying inside <i>A</i> and so unless <img src= "../Symbolgifs/beta.gif" alt = "beta"> = <i>b</i> it would not be an upper bound of <i>C</i>. But <img src= "../Symbolgifs/beta.gif" alt = "beta"> = <i>b</i> contradicts the fact that <i>b</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>B</i> = (0, 1) - <i>A</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+A similar proof shows that any interval is a connected subset of <b>R</b>. In fact, we have:
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>Intervals are the only connected subsets of</i> <b>R</b> <i>with the usual topology.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> is not an interval, then choose <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b> - <i>A</i> which is not a bound of <i>A</i>.<br>
+Then the subsets <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>x</i>) and <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>x</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) are open subsets in the subspace topology <i>A</i> which would disconnect <i>A</i> and we would have a contradiction.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+The most important property of connectedness is how it affected by continuous functions.
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>The continuous image of a connected space is connected.</i>
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If <i>f</i>: <i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> is continuous and <i>f</i>(<i>X</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>Y</i> is disconnected by open sets <i>U</i>, <i>V</i> in the subspace topology on <i>f</i>(<i>X</i>) then the open sets <i>f</i> <sup>-1</sup>(<i>U</i>) and <i>f</i> <sup>-1</sup>(<i>V</i>) would disconnect <i>X</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Corollary</font></b><br>
+<i>Connectedness is preserved by homeomorphism.</i><br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+We may use this fact to distinguish between some non-homeomorphic spaces.
+<p align=justify>
+<b><font color=red>Example</font></b>
+<p align=justify>
+The spaces [0, 1] and (0, 1) (both with the subspace topology as subsets of <b>R</b>) are not homeomorphic. 
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Removing any point from (0, 1) gives a non-connected space, whereas removing an end-point from [0, 1] still leaves an interval which is connected.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+A similar method may be used to distinguish between the non-homeomorphic spaces obtained by thinking of the letters of the alphabet as in Exercises 1 question 1.
+<p align=justify>
+<b><font color=red>Corollary</font></b> (<b>The Intermediate Value Theorem</b>)<br>
+<i>If f</i>: <b>R</b> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <b>R</b> <i>is continuous then for any a, b in</i> <b>R</b><i>, f attains any value between</i> <i>f</i>(<i>a</i>) <i>and</i> <i>f</i>(<i>b</i>) <i>at some point between a and b</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Since the interval [<i>a</i>, <i>b</i>] is connected, so is its image <i>f</i>([<i>a</i>, <i>b</i>]) and so this too is an interval.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+<b><font color=red>Remark</font></b><br>
+A similar result holds for a continuous real-valued function on <i>any</i> connected space.
+<p align=justify>
+Fastening together connected space "with an overlap" gives a conected space:
+<p align=justify>
+<b><font color=red>Theorem</font></b><br>
+<i>If A and B are connected and A <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> B <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <img src= "../Symbolgifs/empty.gif" alt = "empty"> then A <img src= "../Symbolgifs/union.gif" alt = "union"> B is connected</i>.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+Suppose open sets <i>U</i> and <i>V</i> disconnect <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i>. Then <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>U</i> and <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i> would disconnect <i>A</i> and so one of them is <img src= "../Symbolgifs/empty.gif" alt = "empty">. So suppose <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i>.<br>
+Similarly we have either <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>V</i> or <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i>. Since <i>B</i> meets <i>A</i> the first of these is imposssible and so we have <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i> and <i>V</i> = <img src= "../Symbolgifs/empty.gif" alt = "empty">.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+In fact if {<i>A</i><sub><i>i</i></sub>| <i>i</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>I</i>} is any set of connected subsets with <img src= "../Symbolgifs/interoveri.gif" alt = "interoveri" align=middle> <i>A</i><sub><i>i</i></sub> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <img src= "../Symbolgifs/empty.gif" alt = "empty"> then <img src= "../Symbolgifs/unionoveri.gif" alt = "unionoveri" align=middle> <i>A</i><sub><i>i</i></sub> is connected.
+<p align=justify>
+<b><font color=red>Definition</font></b><br>
+The maximal connected subsets of a space are called its <b>components</b>.
+<p align=justify>
+Note that every point of a space lies in a <i>unique</i> component and that this is the union of all the connected sets containing the point (This is connected by the last theorem.)
+<p align=justify>
+<b><font color=red>Examples</font></b><br>
+<ol><li 1>The components of the space [0, 1] <img src= "../Symbolgifs/union.gif" alt = "union"> [2, 3] with the subspace topology inherited from <b>R</b>, are the subspaces [0, 1] and [2, 3].<br>
+<li 2>Components of <b>Z</b> (with the subspace topology from <b>R</b>) are the single points.<br>
+<li 3>(Harder!) Components of <b>Q</b> (with the subspace topology from <b>R</b>) are also single points.
+<p align=justify>
+<b><font color=green>Proof</font></b><br>
+If <i>r</i> &lt; <i>s</i> are rationals, choose an irrational <i>x</i> between them. Then <b>Q</b> <img src= "../Symbolgifs/intersect.gif" alt = "intersect">(-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>x</i>) and <b>Q</b> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>x</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) disconnect <b>Q</b> and so <i>r</i>, <i>s</i> are in different components.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol>
+<p align=justify>
+
+<p align=justify>
+<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L18.html">Previous page</a><br>
+(Separation axioms)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L20.html">Next page</a><br>
+(Pathwise connectedness)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>

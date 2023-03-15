@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Continuity in metric spaces</title>
+
+</head>
+<body bgcolor="ffffff" >
+<font color = red>Metric and Topological Spaces</font>
+<center><hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Convergence in metric spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Neighbourhoods and open sets in metric spaces)
+</table>
+<hr>
+</center>
+<p>
+<h2><font color=blue>Continuity in metric spaces</font></h2>
+<p>
+We look at continuity for maps between metric spaces . 
+<p align=justify>
+<b><font color=red>Definition</font></b> <br>
+A map <i>f</i> between metric spaces is <b>continuous at a point <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i></b> if<br>
+Given <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0 <img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <img src= "../Symbolgifs/delta.gif" alt = "delta"> &gt; 0 such that <i>d</i><sub><i>X</i></sub>(<i>p</i>, <i>x</i>) &lt; <img src= "../Symbolgifs/delta.gif" alt = "delta"> <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>d</i><sub><i>X</i></sub>(<i>f</i>(<i>p</i>), <i>f</i>(<i>x</i>)) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">.
+<p align=justify>
+Informally: points close to <i>p</i> (in the metric <i>d</i><sub><i>X</i></sub>) are mapped close to <i>f</i>(<i>p</i>) (in the metric <i>d</i><sub><i>Y</i></sub>). <br>
+A <i>continuous function</i> is one which is continuous for all <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i>. 
+<p align=justify>
+<b><font color=red>Remarks</font></b> <br>
+When one is given a point <i>p</i> and <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0 the <img src= "../Symbolgifs/delta.gif" alt = "delta"> one needs for the definition may depend on both <i>p</i> and <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">. It is therefore <i>incorrect</i> to define continuity as: <br>
+<img src= "../Symbolgifs/forall.gif" alt = "forall"> <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i>, <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0 <img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <img src= "../Symbolgifs/delta.gif" alt = "delta"> &gt; 0 such that <img src= "../Symbolgifs/forall.gif" alt = "forall"> <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> with <i>d</i><sub><i>X</i></sub>(<i>p</i>, <i>x</i>) &lt; <img src= "../Symbolgifs/delta.gif" alt = "delta"> <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>d</i><sub><i>X</i></sub>(<i>f</i>(<i>p</i>), <i>f</i>(<i>x</i>)) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">.<br>
+since this would imply that the same choice of <img src= "../Symbolgifs/delta.gif" alt = "delta"> would work for all <i>p</i>. 
+<p align=justify>
+As in the prototype <b>R</b> case, one can connect continuity and convergence with: <br>
+<b><font color=red>Theorem</font></b> <br>
+<i>Continuous functions map convergent sequences to convergent sequences. </i>
+<p align=justify>
+Formally if <i>f</i>: <i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> is a map between metric spaces which is continuous and (<i>a</i><sub><i>n</i></sub>) is a sequence in <i>X</i> which is <br>
+convergent to a point <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> them (<i>f</i>(<i>a</i><sub><i>n</i></sub>)) is a sequence in <i>Y</i> convergent to <i>f</i>(<i>p</i>). 
+<p align=justify>
+<b><a href="javascript:win1('../Glossary/proof',350,200)" onmouseover="window.status='Click for glossary entry';return true"><font color="green" style="text-decoration:none">Proof</font></a></b> <br>
+Points close to <i>p</i> are mapped close to <i>f</i>(<i>p</i>). <br>
+More rigorously: to prove (<i>f</i>(<i>a</i><sub><i>n</i></sub>)) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>f</i>(<i>p</i>), given <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0, use continuity at <i>p</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>X</i> to find <img src= "../Symbolgifs/delta.gif" alt = "delta"> &gt; 0 such that if <i>d</i><sub><i>X</i></sub>(<i>p</i>, <i>x</i>) &lt; <img src= "../Symbolgifs/delta.gif" alt = "delta"> then <i>d</i><sub><i>Y</i></sub>(<i>f</i>(<i>p</i>),<i>f</i>(<i>x</i>)) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">. <br>
+Then use convergence in <i>X</i> to find <i>N</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b> such that if <i>n</i> &gt; <i>N</i> we have <i>d</i><sub><i>X</i></sub>(<i>x</i><sub><i>n</i></sub>,<i>p</i>) &lt; <img src= "../Symbolgifs/delta.gif" alt = "delta">. For this <i>N</i> we have <i>d</i><sub><i>Y</i></sub>(<i>f</i>(<i>x</i><sub><i>n</i></sub>), <i>f</i>(<i>p</i>)) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> and so we have convergence in <i>Y</i>.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+In fact, as in the <b>R</b> case, there is a converse to this theorem.
+<p align=justify>
+<b><font color=red>Converse</font></b><br>
+<i>If all convergent sequences are mapped to convergent sequences then the function is continuous.</i>
+<p align=justify>
+More exactly: If (<i>x</i><sub><i>n</i></sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>x</i> <img src= "../Symbolgifs/implies.gif" alt = "implies"> (<i>f</i>(<i>x</i><sub><i>n</i></sub>)) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>f</i>(<i>p</i>) then <i>f</i> is continuous at <i>p</i>.
+<p align=justify>
+<b><a href="javascript:win1('../Glossary/proof',350,200)" onmouseover="window.status='Click for glossary entry';return true"><font color="green" style="text-decoration:none">Proof</font></a></b><br>
+Suppose that <i>f</i> were not continuous at <i>p</i>. Then for some <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0 we cannot find any choice of <img src= "../Symbolgifs/delta.gif" alt = "delta"> to satisfy the continuity condition. <br>
+In particular, <img src= "../Symbolgifs/delta.gif" alt = "delta"> = 1 will not work. Hence for some point <i>x</i><sub>1</sub> we have <i>d</i><sub><i>X</i></sub>(<i>x</i><sub>1</sub> , <i>p</i>) &lt; 1 but <i>d</i><sub><i>Y</i></sub>(<i>f</i>(<i>x</i><sub>1</sub>), <i>f</i>(<i>p</i>)) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">.<br>
+Similarly <img src= "../Symbolgifs/delta.gif" alt = "delta"> = <sup>1</sup>/<sub>2</sub> will not work and so for some point <i>x</i><sub>2</sub> we have <i>d</i><sub><i>X</i></sub>(<i>x</i><sub>2</sub> , <i>p</i>) &lt; <sup>1</sup>/<sub>2</sub> but <i>d</i><sub><i>Y</i></sub>(<i>f</i>(<i>x</i><sub>2</sub>), <i>f</i>(<i>p</i>)) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">, ...<br>
+Continue like this to get a sequence (<i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x</i><sub>3</sub> , ...) with <i>d</i><sub><i>X</i></sub>(<i>x</i><sub><i>n</i></sub> , <i>p</i>) &lt; <sup>1</sup>/<sub><i>n</i></sub> but <i>d</i><sub><i>Y</i></sub>(<i>f</i>(<i>x</i><sub><i>n</i></sub>), <i>f</i>(<i>p</i>)) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> for each <i>n</i>. But since (<i>x</i><sub><i>n</i></sub>) has been constructed so that (<i>x</i><sub><i>n</i></sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>p</i> this contradicts the condition given in the theorem.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<b><font color=red>Remark</font></b><br>
+Since "nice behaviour on convergent sequences" is a necessary and sufficient condition for continuity, this can be used as the <i>definition</i> of a continuous function.<br>
+
+<p>
+<center>
+
+<hr>
+<table border=0 bgcolor="cyan" width=80% cellspacing=0>
+<tr>
+<td align=center width=40%><a href = "L6.html">Previous page</a><br>
+(Convergence in metric spaces)  
+<td align=center width=20%><a href = "../index.html">Contents</a>
+<td align=center width=40%><a href = "L8.html">Next page</a><br>
+(Neighbourhoods and open sets in metric spaces)
+</table>
+<hr>
+</center>
+<font fontsize=-1 color=red>JOC February 2004</font>
+</body></html>
+<p>
