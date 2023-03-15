@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Solution 5</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4522 Metric and Topological Spaces</font>
+<hr>
+<h2><font color=blue>Solution 5</font></h2>
+<p>
+<ol><p><li><ol type=i><li 1><i>int</i>(<b>Q</b>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = <b>R</b><br>
+<li ii><i>int</i>(<b>Q</b>) = <i>cl</i>(<b>Q</b>) = <b>Q</b><br>
+<li iii><i>int</i>(<b>Q</b>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = <b>R</b><br>
+<li iv><i>int</i>(<b>Q</b>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = <b>R</b><br>
+<li v><i>int</i>(<b>Q</b>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = <b>Q</b><br>
+<li vi><i>int</i>(<b>Q</b>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = <b>R</b><br>
+</ol>
+<p align=justify>
+
+<p><li><ol type=i><li 1><i>int</i>(<i>A</i>) = <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(<b>Q</b>) = {1, 2, ... , 48}.<br>
+<li ii><i>int</i>(2<b>N</b>) =  <img src= "../Symbolgifs/empty.gif" alt = "empty">; <i>cl</i>(2<b>N</b>) = <b>N</b><br>
+</ol>
+<p align=justify>
+
+<p><li><ol type=i><li 1>Both follow from the fact that every interval contains both rational and irrational points.<br>
+<li ii>It is easy to verify that <i>any</i> infinite set is dense.<br>
+</ol>
+<p align=justify>
+
+<p><li>The set <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>cl</i>(<i>B</i>) is a closed set which contains <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i> and so it also contains <i>cl</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>).<br>
+Take <i>A</i> = (0, 1) and <i>B</i> = (1, 2). Then <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i> = <img src= "../Symbolgifs/empty.gif" alt = "empty"> and <i>cl</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>) = <img src= "../Symbolgifs/empty.gif" alt = "empty"> while <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>cl</i>(<i>B</i>) = {1}.
+<p align=justify>
+If <i>C</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>D</i> then <i>int</i>(<i>C</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>int</i>(<i>D</i>) (since <i>int</i>(<i>C</i>) is an open subset of <i>D</i>). Also <i>int</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>int</i>(<i>A</i>) and similarly <i>int</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>int</i>(<i>B</i>). Hence <i>int</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>int</i>(<i>A</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>int</i>(<i>B</i>).<br>
+Also <i>int</i>(<i>A</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>int</i>(<i>B</i>) is an open subset of <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i> and hence lies in <i>int</i>(<i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i>). Thus the two sets are equal.
+<p align=justify>
+<i>int</i>(<i>A</i>) <img src= "../Symbolgifs/union.gif" alt = "union"> <i>int</i>(<i>B</i>) is an open subset of <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i> and hence lies inside <i>int</i>(<i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i>).
+<p align=justify>
+The other inclusion may fail. For example take <i>A</i> = [0, 1] <i>and</i> <i>B</i> = [1, 2] in <b>R</b> (with the usual topology). Then <i>int</i>(<i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i>) = (0, 2) while <i>int</i>(<i>A</i>) <img src= "../Symbolgifs/union.gif" alt = "union"> <i>int</i>(<i>B</i>) = (0, 2) - {1}.
+<p align=justify>
+
+<p><li>In the usual topology finite sets are closed, but there are some closed subsets that are not finite. Thus the usual topology has more closed subsets thatn the cofinite topology and hence more open subsets. Thus it is stronger.<br>
+ <br>
+
+<p><li>Every singleton subset {<i>n</i>} is closed and hence every finite union of such sets is closed also. Hence every finite subset is closed and so every finite set is open in the subspace topology which is therefore discrete.
+<p align=justify>
+In the cofinite topology on <b>R</b>, the subset 2<b>Z</b> is not closed and hence it is not closed in the subspace topology on <b>Z</b>. So the topology on <b>Z</b> is not discrete
+<p align=justify>
+
+<p><li>There are four topologies on <i>X</i> = {<i>a</i>, <i>b</i>}: discrete, trivial, {<img src= "../Symbolgifs/empty.gif" alt = "empty">, <i>X</i>, {<i>a</i>}} and {<img src= "../Symbolgifs/empty.gif" alt = "empty">, <i>X</i>, {<i>b</i>}}. The last two are homeomorphic.<br>
+To handle <i>X</i> = {<i>a</i>, <i>b</i>, <i>c</i>} note that <i>X</i> and <img src= "../Symbolgifs/empty.gif" alt = "empty"> are always open and we will list the others (leaving out the { }'s and commas).<br>
+<i>One extra set</i>: (3 sets in all)<br>
+<i>a</i>, <i>b</i>, <i>c</i>, <i>ab</i>, <i>ac</i>, <i>bc</i><br>
+We have 6 topologies in all -- 2 up to homeomorphism.<br>
+<i>Two extra sets</i>: (4 sets in all)<br>
+<i>a</i>, <i>ab</i> (6 like this)<br>
+<i>a</i>, <i>bc</i> (3 like this)<br>
+We have 9 topologies in all -- 2 up to homeomorphism.<br>
+<i>Three extra sets</i>: (5 sets in all)<br>
+<i>a</i>, <i>b</i>, <i>ab</i> (3 like this)<br>
+<i>a</i>, <i>ab</i>, <i>ac</i> (3 like this)<br>
+We have 6 topologies in all -- 2 up to homeomorphism.<br>
+<i>Four extra sets</i>: (6 sets in all)<br>
+<i>a</i>, <i>b</i>, <i>ab</i>, <i>ac</i> (6 like this)<br>
+We have 6 topologies in all -- 1 up to homeomorphism.<br>
+Together with the trivial (2 sets) and discrete (8 sets) topologies, this gives the full list of 29. Up to homeomorphism there are 9 topologies.
+<p align=justify>
+<img src= ../Diagrams/xS5-1.gif>
+<p align=justify>
+Here is a "lattice diagram" showing how they are related.<br>
+Topologies with the same number of sets are on the same level.<br>
+[The {<i>ac</i>} and {<i>a</i> <i>c</i> <i>ac</i>} "points" have been plotted twice to make the diagram more symmetric.]<br>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

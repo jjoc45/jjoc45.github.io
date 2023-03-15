@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Solution 8</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4522 Metric and Topological Spaces</font>
+<hr>
+<h2><font color=blue>Solution 8</font></h2>
+<p>
+<ol><p><li>If <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>X</i> which is Hausdorff and <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i> then <img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <i>U</i>, <i>V</i> in <i>X</i> separating <i>x</i> and <i>y</i>.<br>
+Then <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>U</i> and <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>V</i> are open in the subspace topology on <i>A</i> and separate <i>x</i>, <i>y</i>.<br>
+<ol type=i><li i>Given (<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub> ) <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub> ) in <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i>, either <i>x</i><sub>1</sub> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i><sub>1</sub> or <i>x</i><sub>2</sub> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i><sub>2</sub>. Suppose the former. Then <img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <i>U</i>, <i>V</i> in <i>X</i> separating <i>x</i><sub>1</sub> and <i>x</i><sub>2</sub> and then <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> and <i>V</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> separate (<i>x</i><sub>1</sub> , <i>y</i><sub>1</sub> ) and (<i>x</i><sub>2</sub> , <i>y</i><sub>2</sub> ).<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li ii>Since it is the <i>inverse</i> images of open sets that are open, one would not expect this to happen. In fact, if you take the identity map from <b>R</b> with the usual topology to <b>R</b> with the trivial topology, you can see that it doesn't.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<li iii>For the same reason, you would not expect this. In fact the identity map from <b>R</b> with the usual topology to <b>R</b> with the trivial topology (which is the example of Exercises 7 Question 4 : <b>R</b> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <b>R</b> / <b>Q</b>) shows that it doesn't.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+</ol><br>
+
+<p><li>Open sets are the usual ones together with those of the form [<i>a</i>, <i>b</i>) or [<i>a</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and those made using these.<br>
+So the closed sets are the usual ones together with [<i>a</i>, <i>b</i>), (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>a</i>) and those made by combining them, Hence the only extra ones are open as well and so the separation cannot be done.<br>
+<b><font color=red>Remark</font></b><br>
+The really amazing thing about this example is that the product of this space with itself is <i>not</i> normal.
+<p align=justify>
+
+<p><li>Given <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i>, if {<i>y</i>} is closed we have <i>X</i> - {<i>y</i>} is an open set containing <i>x</i> but not <i>y</i>. Hence <i>X</i> is <i>T</i><sub>1</sub>.<br>
+If <i>x</i> is <i>T</i><sub>1</sub> and <i>U</i><sub><i>y</i></sub> is an open set containing <i>y</i> but not <i>x</i> then <img src= "../Symbolgifs/union.gif" alt = "union">{ <i>U</i><sub><i>y</i></sub> | <i>y</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq">&nbsp;<i>x</i> } = <i>X</i> - {<i>x</i>} and so {<i>x</i>} is closed.<br>
+For a finite <i>T</i><sub>1</sub> space, every subset is a <i>finite</i> union of singletons and so is closed. Hence every subset is open also and the topology is discrete.
+<p align=justify>
+
+<p><li>(i) The product of connected sets is connected.<br>
+To see this, note that both the projection maps <font face=symbol><i>p</i></font><sub><i>X</i></sub> : <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> to <i>X</i>  and <font face=symbol><i>p</i></font><sub><i>Y</i></sub> : <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> map open sets to open sets and closed sets to closed sets.<br>
+So if <i>U</i> is a non-empty clopen set  in <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i> its images in <i>X</i> and <i>Y</i> are both clopen and hence the whole of <i>X</i> and <i>Y</i>. Hence <i>U</i> = <i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i>. <br>
+(ii) <i>X</i>/~ is the continuous image of a connected set and hence is connected.
+<p align=justify>
+
+<p><li>If <i>f</i> : <i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> {<i>a</i>, <i>b</i>} is not constant then the open sets <i>f</i> <sup>-1</sup>({<i>a</i>}) and <i>f</i> <sup>-1</sup>({<i>b</i>}) would disconnect <i>X</i>.<br>
+If <i>X</i> is disconnected by sets <i>U</i> and <i>V</i>, map <i>U</i> to <i>a</i> and <i>V</i> to <i>b</i> and get a continuous map.
+<p align=justify>
+
+<p><li>Suppose <i>cl</i>(<i>A</i>) were disconnected by <i>U</i> and <i>V</i>. Then one of <i>U</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>A</i> or <i>V</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>A</i> would be the whole of <i>A</i>. Say <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i> (which is a closed set). Hence <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>U</i> and <i>U</i>, <i>V</i> would not be a disconnection.
+<p align=justify>
+If <i>C</i> is a component, then <i>C</i> = <i>cl</i>(<i>C</i>) and so <i>C</i> is closed.
+<p align=justify>
+Take <i>X</i> to be a (closed) "filled in" figure 8. Taking the interior removes the "crossing point" and so the interior is disconnected.
+<p align=justify>
+
+<p><li>The space <b>R</b> = (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>a</i>) <img src= "../Symbolgifs/union.gif" alt = "union"> [<i>a</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and so is disconnected. Its components are singleton sets since if <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i> we can take <i>a</i> between them and disconnect them by sets like those above.
+<p align=justify>
+(i) In the cofinite topology <b>R</b> is connected since the only proper closed subsets are finite ones.
+<p align=justify>
+(ii) Similarly, <b>R</b> is connected in the co-countable topology.
+<p align=justify>
+
+<p><li>It is clear that <img src= "../Symbolgifs/tilda.gif" alt = "tilda"> is reflexive and symmetric. Use the fact that <i>A</i> <img src= "../Symbolgifs/union.gif" alt = "union"> <i>B</i> is connected if <i>A</i> and <i>B</i> are and <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>B</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <img src= "../Symbolgifs/empty.gif" alt = "empty"> to prove transitivity. [The equivalence classes are the <i>components</i>.]
+<p align=justify>
+Again it is clear that <img src= "../Symbolgifs/tilda2.gif" alt = "tilda2"> is symmetric and reflexive. To prove transitivity, take a path <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> connecting <i>p</i> and <i>q</i> and a path <img src= "../Symbolgifs/beta.gif" alt = "beta"> connecting <i>q</i> and <i>r</i> and make a new path <img src= "../Symbolgifs/gamma.gif" alt = "gamma"> by <img src= "../Symbolgifs/gamma.gif" alt = "gamma">(<i>t</i>) = <img src= "../Symbolgifs/alpha.gif" alt = "alpha">(2<i>t</i>) if 0 <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>t</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <sup>1</sup>/<sub>2</sub> and <img src= "../Symbolgifs/beta.gif" alt = "beta">(2<i>t</i>-1) otherwise.. Then <img src= "../Symbolgifs/gamma.gif" alt = "gamma"> connects <i>p</i> and <i>r</i>.
+<p align=justify>
+Since a path (which is the continuous image of the connected interval) is connected it follows that pathwise connected <img src= "../Symbolgifs/implies.gif" alt = "implies"> connected
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

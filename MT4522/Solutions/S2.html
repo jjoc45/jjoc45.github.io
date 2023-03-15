@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Solution 2</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4522 Metric and Topological Spaces</font>
+<hr>
+<h2><font color=blue>Solution 2</font></h2>
+<p>
+<ol><p><li>In <b>R</b><sup>2</sup> you can simplify things by taking <b>u</b> = <b>x</b> - <b>y</b> and <b>v</b> = <b>y</b> - <b>z</b> with <b>u</b> + <b>v</b> = <b>x</b> - <b>z</b>.<br>
+Then summing the coordinates of <b>u</b> and <b>v</b> and using |<i>a</i> + <i>b</i>| <img src= "../Symbolgifs/lte.gif" alt = "lte"> |<i>a</i>| + |<i>b</i>| in <b>R</b> gives the triangle inequality in <i>d</i><sub>1</sub>.
+<p align=justify>
+For <i>d</i><sub>2</sub> : |<b>u</b> + <b>v</b>|<sup>2</sup> = |<b>u</b>|<sup>2</sup> + |<b>v</b>|<sup>2</sup> + 2 <b>u.v</b> and since <b>u.v</b> = cos(<img src= "../Symbolgifs/theta.gif" alt = "theta">)|<b>u</b>||<b>v</b>| and cos(<img src= "../Symbolgifs/theta.gif" alt = "theta">) <img src= "../Symbolgifs/lte.gif" alt = "lte"> 1 this is <img src= "../Symbolgifs/lte.gif" alt = "lte"> |<b>u</b> + <b>v</b>|<sup>2</sup> and the result follows.
+<p align=justify>
+For <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> : the maximum of the first coordinates of <b>u</b>+ <b>v</b> <img src= "../Symbolgifs/lte.gif" alt = "lte"> maximum of |coordinates of <b>u</b>| + maximum of |coordinates of <b>v</b>| and similarly for the second coordinates.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/xS2-1.gif align = right>&nbsp;&nbsp;<br clear=right><br>
+On the interval (0, 1) if |<i>x</i> - <i>y</i>| &lt; <sup>1</sup>/<sub>2</sub> then <i>d</i>(<i>x</i>, <i>y</i>) = |<i>x</i> - <i>y</i>| otherwise it is 1 - |<i>x</i> - <i>y</i>| and so this is the same as the distance measured on a circle of perimeter 1.
+<p align=justify>
+The same formula does <i>not</i> define a metric on the closed interval [0, 1] since <i>d</i>(0, 1) = 0 but these two points are not the same.
+<p align=justify>
+
+<p><li><i>d</i>(<i>r</i>, <i>s</i>) = 1/ (largest power dividing |<i>r</i> - <i>s</i>|). Use (<i>r</i> - <i>s</i>) + (<i>s</i> - <i>t</i>) = (<i>r</i> - <i>t</i>) to prove the triangle inequality. All the other properties follow easily.
+<p align=justify>
+<i>d</i>(0, <i>p</i><sup><i>k</i></sup>) = 1/<i>p</i><sup><i>k</i></sup> and this <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> 0 as <i>k</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <img src= "../Symbolgifs/infinity.gif" alt = "infinity">. That is, the sequence (<i>p</i>, <i>p</i><sup>2</sup>, <i>p</i><sup>3</sup>, ...) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> 0.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/x5-6.gif align = right>Look at the picture:
+<p align=justify>
+A point on the set <i>d</i><sub>1</sub> = 1 is inside the set <i>d</i><sub>2</sub> = 1 and so <i>d</i><sub>2</sub> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>d</i><sub>1</sub> . Similarly (since the circle is inside the square) we have <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>d</i><sub>2</sub> .<br>
+<br clear=right><br>
+<img src= ../Diagrams/xS2-2.gif align = right>Alternatively, look at a different picture:
+<p align=justify>
+<i>d</i><sub>2</sub>(<i>P</i>, <i>Q</i>) = <i>c</i> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>a</i> + <i>b</i> = <i>d</i><sub>1</sub>(<i>P</i>, <i>Q</i>).<br>
+Also, both <i>a</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>c</i> and <i>b</i> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>c</i> and so<br>
+ <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>P</i>, <i>Q</i>) = <i>max</i>{<i>a</i>, <i>b</i>} <img src= "../Symbolgifs/lte.gif" alt = "lte"> <i>c</i>.<br>
+<br clear=right>
+<p align=justify>
+<br>
+Without a picture, (<i>a</i> + <i>b</i>)<sup>2</sup> = <i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>a</i> + <i>b</i> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) and so <i>d</i><sub>1</sub><img src= "../Symbolgifs/gte.gif" alt = "gte">&nbsp;<i>d</i><sub>2</sub> .<br>
+Also if <i>a</i> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>b</i> then <i>max</i>{<i>a</i>, <i>b</i>} = <i>a</i> and since <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>a</i><sup>2</sup> we have <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">(<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) <img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>a</i> and so <i>d</i><sub>2</sub><img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> .<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+If (<b>a</b><sub><i>n</i></sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <b>v</b> in <i>d</i><sub>1</sub> then given <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0, <img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <i>N</i> such that <i>n</i> &gt; <i>N</i> <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>d</i><sub>1</sub>(<b>a</b><sub><i>n</i></sub> ,<b>v</b>) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> <img src= "../Symbolgifs/implies.gif" alt = "implies"> (since <i>d</i><sub>1</sub><img src= "../Symbolgifs/gte.gif" alt = "gte"> <i>d</i><sub>2</sub> and <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>) and so convergence also takes place in <i>d</i><sub>2</sub> and <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> .<br>
+<img src= ../Diagrams/xS2-3.gif align = right>One can draw pictures to show that <i>d</i><sub>1</sub> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">2 <i>d</i><sub>2</sub> and <i>d</i><sub>2</sub> <img src= "../Symbolgifs/lte.gif" alt = "lte"> <img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">2 <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> .<br>
+(One can of course argue without using pictures too!)<br>
+<br clear=right><br>
+Then if (<i>a</i><sub><i>n</i></sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> in <i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub> we have:<br>
+(<img src= "../Symbolgifs/forall.gif" alt = "forall"> <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> &gt; 0) (<img src= "../Symbolgifs/thereexists.gif" alt = "thereexists"> <i>n</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b>) (<forall> <i>n</i> &gt; <i>N</i>) (<i>d</i><sub><img src= "../Symbolgifs/infinity.gif" alt = "infinity"></sub>(<i>a</i><sub><i>n</i></sub>, <img src= "../Symbolgifs/alpha.gif" alt = "alpha">) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">) <img src= "../Symbolgifs/implies.gif" alt = "implies"> <i>d</i><sub>2</sub>(<i>a</i><sub><i>n</i></sub>, <img src= "../Symbolgifs/alpha.gif" alt = "alpha">) &lt; <font size=+1><sup><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sup>/<sub><img src= "../Symbolgifs/sqrt.gif" alt = "sqrt">2</sub></font> and <i>d</i><sub>1</sub>(<i>a</i><sub><i>n</i></sub>, <img src= "../Symbolgifs/alpha.gif" alt = "alpha">) &lt; <font size=+1><sup><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sup>/<sub>2</sub></font> and so convergence also takes place in <i>d</i><sub>1</sub> and <i>d</i><sub>2</sub> .<br>
+Similarly, if convergence takes place in <i>d</i><sub>2</sub> it also takes place in <i>d</i><sub>1</sub> . <br>
+Combining this with the earlier result, sequences convergent in one of these norms are convergent in all of them.
+<p align=justify>
+
+<p><li><ol type=a><li a>The sequence (0.49, 0.499, 0.4999, ...) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> 0.5 and applying <i>f</i> gives the sequence (0.9, 0.9, 0.99, ...) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> 1 while <i>f</i>(0.5) = 1. <br>
+Hence <i>f</i> is not continuous and indeed is discontinuous at any terminating decimal (but continuous elsewhere).<br>
+<li b>Applying <i>g</i> to the same sequence gives (0.50111... , 0.500111... , 0.5000111... , ...) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> 0.5<br>
+However, <i>g</i>(0.5) = 0.6111... = <sup>11</sup>/<sub>18</sub> which is different.<br>
+<li c>Write 1.0 as 0.999... to see that this is actually the map <i>h</i>(<i>x</i>) = 1 - <i>x</i> and so it is continuous.
+<p align=justify>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

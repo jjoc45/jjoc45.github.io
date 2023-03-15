@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Solution 6</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4522 Metric and Topological Spaces</font>
+<hr>
+<h2><font color=blue>Solution 6</font></h2>
+<p>
+<ol><p><li>A subset <i>U</i> is closed in the subspace topology <img src= "../Symbolgifs/iff.gif" alt = "iff"> <i>A</i> - <i>U</i> is open in the subspace topology <img src= "../Symbolgifs/iff.gif" alt = "iff"> <i>A</i> - <i>U</i> = <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> <i>Y</i> for <i>Y</i> open in <i>X</i> <img src= "../Symbolgifs/iff.gif" alt = "iff"> <i>U</i> = <i>A</i> <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>X</i> - <i>Y</i>) and <i>X</i> - <i>Y</i> is a <i>closed</i> subset of <i>X</i>.
+<p align=justify>
+<ol type=i><li i>This is false. Take <i>U</i> = <i>A</i> = [0, 1] <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> = <i>X</i>. Then <i>A</i> is open in <i>A</i> and so the interior of <i>U</i> in the subspace topology is [0, 1] but in the usual topology on <b>R</b> it is (0, 1).<br>
+<li ii>This is also false.  Take <i>U</i> = <i>A</i> = (0, 1) <img src= "../Symbolgifs/subset.gif" alt = "subset"> <b>R</b> = <i>X</i> and argue similarly.<br>
+</ol><br>
+
+<p><li>To prove that <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> and <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> are topologies it is easiest to work with <i>closed</i> sets.<br>
+In <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> proper closed sets are finite and this set is easily seen to be closed (!) under arbitrary unions and finite intersections.
+<p align=justify>
+In <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> proper closed sets are either finite or contain 1. Again it is easily seen to be closed under arbitrary unions and finite intersections.
+<p align=justify>
+<img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> is stronger (more open sets) than <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> and so the identity map from (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub>) to (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub>) is continuous but its inverse is not.
+<p align=justify>
+Consider the map <i>g</i>: (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub>). The set <i>B</i> = <b>N</b> - {1} is open in <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub> but <i>g</i><sup>-1</sup>(<i>B</i>) = 2<b>N</b> and is not open in <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> . Hence this map is not continuous.
+<p align=justify>
+Consider the map <i>g</i>: (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>2</sub>) <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> (<i>X</i>, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub>). Take <i>U</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs">  <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"><sub>1</sub> . Then <b>N</b> - <i>U</i> is finite. <br>
+If 1 <img src= "../Symbolgifs/notbelongs.gif" alt = "notbelongs"> <i>U</i> then since <i>g</i>(1) = 1, we have 1 <img src= "../Symbolgifs/notbelongs.gif" alt = "notbelongs"> <i>g</i><sup>-1</sup>(<i>U</i>) and so <i>g</i><sup>-1</sup>(<i>U</i>) is open.<br>
+If 1 <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>U</i> then <b>N</b> - <i>g</i><sup>-1</sup>(<i>U</i>) contains only finitely many even integers and so <i>g</i><sup>-1</sup>(<i>U</i>) is an open subset.<br>
+Hence <i>g</i> is continuous.
+<p align=justify>
+
+<p><li><ol type=i><li 1>We prove these sets equal by proving a double inclusion. <br>
+So suppose (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>cl</i>(<i>B</i>). Let <i>W</i> be an open set containing (<i>x</i>, <i>y</i>) in <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>cl</i>(<i>B</i>). Then <i>W</i> contains a subset of the form <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>V</i> with <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>U</i> and <i>U</i> open in <i>X</i> and  <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>V</i> and <i>V</i> open in <i>Y</i> since sets of this form are a basis for the topology. But <i>U</i> meets <i>A</i> (since <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i>) ) and <i>V</i> meets <i>B</i>. So <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>V</i> and hence <i>W</i> meet <i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>. Hence (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>).
+<p align=justify>
+To prove the other inclusion, suppose now that (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>). Then every open set containing (<i>x</i>, <i>y</i>) of the form <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>V</i>  meets <i>A</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>B</i>. Hence every open set <i>U</i> containing <i>x</i> meets <i>A</i> and every open set <i>V</i> containing <i>y</i> meets <i>B</i>. Thus <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i>) and <i>y</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>B</i>) and so (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>cl</i>(<i>A</i>) <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>cl</i>(<i>B</i>).
+<p align=justify>
+<li 2>One may use a similar double inclusion or use the fact (Exercise!) that <i>int</i>(<i>A</i>) = <i>X</i> - <i>cl</i>(<i>X</i> - <i>A</i>).<br>
+</ol>
+<p align=justify>
+
+<p><li>If an open set <i>A</i> is a union (over <i>i</i>) of intersections (over <i>j</i>) of sets <i>U</i><sub><i>i</i>,<i>j</i></sub> of sets of the subbasis then <i>f</i> <sup>-1</sup>(<i>A</i>) is the corresponding union of intersections of the <i>f</i> <sup>-1</sup>(<i>U</i><sub><i>i</i>,<i>j</i></sub>) and providing all these are open the union of the (finite) intersections of them will be too.
+<p align=justify>
+An interval (<i>a</i>, <i>b</i>) = (-<img src= "../Symbolgifs/infinity.gif" alt = "infinity">, <i>b</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>a</i>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and since the intervals form a basis, the unbouded ones form a subbasis. However, taking unions of such intevals never gives a bounded set and so they do not form a basis.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+<i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> (<i>V</i> = <i>U</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>Y</i>) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>X</i> <img src= "../Symbolgifs/cross.gif" alt = "cross"> <i>V</i>) and so every set in the basis can be written as such an intersection. 
+<p align=justify>
+
+<p><li>Any open interval (<i>a</i>, <i>b</i>) in <b>R</b> can be written as a union of <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods of rational points with <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> rational by taking ssuitable rational sequences converging to <i>a</i> (from above) and <i>b</i> (from below). Since these intervals form a basis the rational neighbourhoods do too. There are only countably many of these.<br>
+Every basis for the discrete topology must contain all the "singleton" sets and so is uncountable.
+<p align=justify>
+
+<p><li><img src= ../Diagrams/S6-1.gif align = right>The map acts like :<br>
+It is easy to see that this is a bijection. (It would not be if we took the <i>closed</i> square and quadrant.)
+<p align=justify>
+To see that it is a homeomorphism take small open sets in each space and see what their images are.<br>
+<br clear=right><br>
+<img src= ../Diagrams/S6-2.gif align = right>To see that the closed square and quadrant are homeomorphic, take a different map which "shrinks back" along the radius as shown.<br>
+<br clear=right><br>
+
+<p><li>The space [0, 1) <img src= "../Symbolgifs/cross.gif" alt = "cross"> (0, 1) is the set: <img src= ../Diagrams/S6-3.gif align = middle> (including the left-hand edge) while  [0, 1) <img src= "../Symbolgifs/cross.gif" alt = "cross"> [0, 1] is:  <img src= ../Diagrams/S6-4.gif align = middle> (including the edges marked).
+<p align=justify>
+<img src= ../Diagrams/S6-5.gif align = right>To see that these are the same use a homeomorphism to map the squares to discs and then "expand the sector" to get a homeomorphism.<br>
+<br clear=right><br>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>

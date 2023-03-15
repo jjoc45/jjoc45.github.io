@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Solution 4</title>
+</head>
+<body bgcolor="ffffff">
+<font color=red>Course MT4522 Metric and Topological Spaces</font>
+<hr>
+<h2><font color=blue>Solution 4</font></h2>
+<p>
+<ol><p><li>In a discrete metric space (where <i>d</i>(<i>x</i>, <i>y</i>) = 1 if <i>x</i> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <i>y</i>) a <sup>1</sup>/<sub>2</sub> -neighbourhood of a point <i>p</i> is the singleton set {<i>p</i>}. Thus since every singleton is open and any subset <i>A</i> is the union of all the singleton sets of points in <i>A</i> we get the result that every subset is open.<br>
+Since all the complements are open too, every set is also closed.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Since all inverse images are open, every function <i>from</i> a discrete space is continuous.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+If <i>f</i>: <b>R</b> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>X</i> is continuous and <i>X</i> is discrete, this means that the inverse image of every singleton set is open. But then we cannot have any interval (<i>a</i>, <i>b</i>) which is mapped to more than one point. Hence the only continuous functions are constant ones.<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+
+<p><li>The map <i>x</i> <img src= "../Symbolgifs/goesto.gif" alt = "goesto"> <i>x</i><sup>2</sup> maps (-1, 1) to [0, 1) and so open sets are <i>not</i> mapped to open sets necessarily.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+For any continuous map <i>f</i>: <i>X</i> <img src= "../Symbolgifs/rarrow.gif" alt = "rarrow"> <i>Y</i> between metric (or topological) spaces we have <i>f</i> <sup>-1</sup>(<i>Y</i> - <i>B</i>) = <i>X</i> - <i>f</i> <sup>-1</sup>(<i>B</i>). So if <i>B</i> is open in <i>Y</i>, <i>Y</i> - <i>B</i> is closed and its inverse image is the complement of the open set <i>f</i> <sup>-1</sup>(<i>B</i>) and hence is closed.<img src= ../Diagrams/xproofend.gif align = right><br clear=right>
+<p align=justify>
+
+<p><li>Suppose <i>x</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>V</i><sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sub>(<i>p</i>). Then <i>d</i>(<i>x</i>, <i>p</i>) &lt; <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> and if we take <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"> - <i>d</i>(<i>x</i>, <i>p</i>) = <img src= "../Symbolgifs/delta.gif" alt = "delta"> a <img src= "../Symbolgifs/delta.gif" alt = "delta">-neighbourhood of <i>x</i> is in V<sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon"></sub>(p).<br>
+If <i>A</i> <img src= "../Symbolgifs/subset.gif" alt = "subset"> <i>X</i> is open then <i>A</i> = <img src= "../Symbolgifs/union.gif" alt = "union"> <i>V</i><sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">(<i>a</i>)</sub>(<i>a</i>) where the union is over all <i>a</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <i>A</i> and <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">(<i>a</i>) is chosen so that <i>V</i><sub><img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">(<i>a</i>)</sub>(<i>a</i>) is inside <i>A</i>. It is easy to verify the double inclusion to prove equality.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+Not every open set can be written as a union of countably many <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhoods. For example, take <b>R</b> with the discrete topology. Then any <img src= "../Symbolgifs/epsilon.gif" alt = "epsilon">-neighbourhood is either <b>R</b> or a singleton set and so no proper uncountable set can be written as a countable union of these.<br>
+However, <b>R</b> with its usual metric <i>does</i> have this property.
+<p align=justify>
+
+<p><li>{ (<i>x</i>, <i>y</i>) <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>R</b><sup>2</sup> | <i>f</i>(<i>x</i>, <i>y</i>) &gt; 0 } = <i>f</i> <sup>-1</sup>((0, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">)) and so is an open set.<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+For the unit disc take <i>f</i>(<i>x</i>, <i>y</i>) = 1 - <i>x</i><sup>2</sup> - <i>y</i><sup>2</sup><br>
+For the unit square: a function like <i>x</i>(1 - <i>x</i>) gives a vertical strip as an open set. Take the intersection of this with a similar horizontal strip.<br>
+<i>f</i> <sup>-1</sup>([0, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">)) is a closed set by Question 2 above.
+<p align=justify>
+
+<p><li>If <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> <img src= "../Symbolgifs/noteq.gif" alt = "noteq"> <img src= "../Symbolgifs/beta.gif" alt = "beta"> were limit points of {<i>a</i><sub><i>i</i></sub>} then there would have to be subsequences converging to <img src= "../Symbolgifs/alpha.gif" alt = "alpha"> and to <img src= "../Symbolgifs/beta.gif" alt = "beta">. But every subsequence of a convergent sequence converges to the same limit.
+<p align=justify>
+Take a union of two convergent sequences.
+<p align=justify>
+Take a union of countably many sequences converging to limits a finite distance apart. e.g. {<i>m</i> + 1/<i>n</i> | <i>m</i>, <i>n</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b>}
+<p align=justify>
+
+<p><li>(i) and (iii) are not topologies, (ii) and (iv) are.<br>
+&nbsp;<br>
+
+<p><li>(<i>q</i><sub>1</sub> , <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) <img src= "../Symbolgifs/union.gif" alt = "union"> (<i>q</i><sub>2</sub> , <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) = (<i>min</i>{<i>q</i><sub>1</sub> , <i>q</i><sub>2</sub>}, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and (<i>q</i><sub>1</sub> , <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) <img src= "../Symbolgifs/intersect.gif" alt = "intersect"> (<i>q</i><sub>2</sub> , <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) = (<i>max</i>{<i>q</i><sub>1</sub> , <i>q</i><sub>2</sub>}, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and so <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is closed under <i>finite</i> unions and intersections.<br>
+Take a monotonic decreasing sequence of rationals (<i>r</i><sub><i>i</i></sub>) converging to an irrational <img src= "../Symbolgifs/alpha.gif" alt = "alpha">. Then <img src= "../Symbolgifs/unionoveri.gif" alt = "unionoveri" align=middle> (<i>r</i><sub><i>i</i></sub>, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) = (<img src= "../Symbolgifs/alpha.gif" alt = "alpha">, <img src= "../Symbolgifs/infinity.gif" alt = "infinity">) and so is not in <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> and <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is not a topology.
+<p align=justify>
+
+<p><li>As in the last question, <img src= "../Symbolgifs/curlyT.gif" alt = "curlyT"> is closed under finite unions and intersections. This time, however, <img src= "../Symbolgifs/unionoveri.gif" alt = "unionoveri" align=middle> {<i>n</i><sub><i>i</i></sub> , <i>n</i><sub><i>i</i>+1</sub> , ... } <i>is</i> in the set since the minimum <i>min</i>{<i>n</i><sub><i>i</i></sub> | <i>i</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b>} exists since <b>N</b> is bounded below.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+The closed sets are the finite sets {1, 2, 3, ... , <i>n</i>} for each <i>n</i> <img src= "../Symbolgifs/belongs.gif" alt = "belongs"> <b>N</b><br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+
+<p><li>It is easiest to check the corresponding topological properties for the <i>closed</i> sets which are the countable ones.<br>
+The union of two countable sets is countable and since the intersection of (arbitrarily many!) countable sets is a subset of any one of them, it too is countable.<br>
+<img src= ../Diagrams/xproofend.gif align = right><br clear=right><br>
+
+</ol>
+<p>
+<center>
+<form >
+<input type="button" onclick="window.close()" value="Close this window">
+</form>
+</center>
+
+</body></html>
+<p>
